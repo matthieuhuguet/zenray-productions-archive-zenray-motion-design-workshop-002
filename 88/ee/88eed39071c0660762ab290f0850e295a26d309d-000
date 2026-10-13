@@ -1,0 +1,112 @@
+{
+ "date": "12 October 2026",
+ "version": "V_012",
+ "sabotage": false,
+ "ok": false,
+ "limits": {
+  "fitGreen": 99.0,
+  "crossGreen": 97.0,
+  "fitRed": 90.0,
+  "crossDrop": 10.0,
+  "barDrop": 5.0,
+  "onsetDrop": 0.2,
+  "tonalTfGreen": 97.0,
+  "drumNoiseTfGreen": 97.0,
+  "drumTfGreen": 88.0,
+  "tableErrGreenDb": 1.5,
+  "redDrop": 5.0,
+  "stableEventDrop": 20.0,
+  "stableTfDrop": 3.0
+ },
+ "checks": {
+  "fit.green": {
+   "ok": false,
+   "block": "synth_voice",
+   "fit": 92.123,
+   "cross": 93.415,
+   "crossTransposed": 67.11,
+   "seconds": 238.09
+  },
+  "fit.red": {
+   "ok": true,
+   "wrongBlock": {
+    "block": "sine_env",
+    "fit": 1.665,
+    "cross": 0.182,
+    "crossTransposed": 0.203,
+    "seconds": 101.06
+   },
+   "transposeDrop": 26.305
+  },
+  "score.green": {
+   "ok": true,
+   "plossFull": 100.0,
+   "plossBarMedian": 100.0,
+   "onsetF": 1.0
+  },
+  "score.red": {
+   "ok": true,
+   "plossBarMedianShifted": 61.761,
+   "onsetFShifted": 0.1459
+  },
+  "render": {
+   "ok": true,
+   "deterministic": true,
+   "matchesStoredMix": true,
+   "tempoChangeLengthS": 61.943
+  },
+  "sms.green": {
+   "ok": true,
+   "tonal": {
+    "kind": "tonal",
+    "wrong": false,
+    "tfBands": 99.977,
+    "tableErrDb": 1.053
+   },
+   "drumKickWithTone": {
+    "kind": "drum",
+    "wrong": false,
+    "tfBands": 89.551,
+    "tableErrDb": 8.902
+   },
+   "drumNoise": {
+    "kind": "drumNoise",
+    "wrong": false,
+    "tfBands": 99.623,
+    "tableErrDb": 1.275
+   }
+  },
+  "sms.red": {
+   "ok": true,
+   "tonalWrongPitch": {
+    "kind": "tonal",
+    "wrong": true,
+    "tfBands": 94.122,
+    "tableErrDb": 5.2
+   },
+   "drumWrongTimes": {
+    "kind": "drum",
+    "wrong": true,
+    "tfBands": 73.404,
+    "tableErrDb": 12.219
+   }
+  },
+  "stable.green": {
+   "ok": true,
+   "plossEvents": 100.0,
+   "eventCount": 80,
+   "plossBarNoOnset": 100.0,
+   "tfBands": 100.0
+  },
+  "stable.red": {
+   "ok": true,
+   "shifted": {
+    "plossEvents": 56.663,
+    "eventCount": 80,
+    "plossBarNoOnset": 64.729,
+    "tfBands": 93.987
+   }
+  }
+ },
+ "seconds": 321.8
+}

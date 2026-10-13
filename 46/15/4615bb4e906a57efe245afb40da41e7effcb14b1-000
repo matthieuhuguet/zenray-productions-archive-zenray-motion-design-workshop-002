@@ -1,0 +1,83 @@
+# MI, bass stem iteration toward 99 (12 October 2026)
+
+Private 1:1 benchmark of the onekey-pro-2 music, never published. The bass is still played by the measured additive voice of `zrmd/audio/sms.py` from the transcribed notes; the reference only supplies numbers (per-note shape parameters, a fader lane, the equaliser and residual tables already used by M2/M3). No reference sample enters any render.
+
+## 1. Result
+
+Best version: **`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/bass/V_022`** (`bass.wav`, `params.json`, `scores.json`).
+
+| Measure (bass stem) | V_034 (start, = stem-iter V_001) | V_022 |
+|---|---|---|
+| tfBands, MusicCritic third-octave scorer | 97.711 | **99.054** |
+| plossBarNoOnset (bar-level loss, median) | 70.52 | **79.37** (no regression, +8.85) |
+| plossEvents | 66.63 | 68.77 |
+| error 30 to 120 Hz, mean abs / signed dB | 2.90 / +0.41 | 1.76 / -0.07 |
+| error 120 to 500 Hz | 3.00 / +0.69 | 1.78 / +0.02 |
+| error 500 to 2000 Hz | 3.05 / +0.67 | 2.25 / +0.01 |
+| error 2 to 6 kHz | 6.35 / +1.60 | 6.28 / +1.88 (4 percent of the error, unchanged) |
+| extra-energy share of the error | 0.356 | 0.182 |
+| full mix tfBands with this bass (V_034 stems, mix bus replayed) | 97.458 | 97.505 |
+
+The target of 99 on the M3 scorer is reached for the bass, so the loop stopped there (rule: stop at 99).
+
+## 2. What was built (new files only, shared modules untouched)
+
+| File | Role |
+|---|---|
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/bass.py` | `tonal_note_fit`: sms.tonal_note plus per-note `releaseS` (T60), low-pass tilt `tiltDbOct` above `cornerHz`, `attackDb`, `sustainDb` (from 60 ms, 40 ms crossfade) and an optional per-note third-octave gain `bandDb` (21 centres 30 Hz to 3 kHz, clipped to 12 dB). Neutral values reproduce V_034 bit for bit. `chain` replays residual, per-bar equaliser, automation (adaptive or a frozen fader lane) and stereo exactly as `resynth.render`. Two fit models in the critic's frame domain: `BandModel` (power sum, no cross terms) and `ComplexModel` (complex critic frames per note, cross terms included, starts exactly at the critic's E). `fit_fader` / `fit_fader_c` refit the fader lane point by point. |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/IterateBass.py` | `selftest`, `run` (steps `neutral`, `freeze`, `fit`, `fit:<keys>`, `fader`, `remeasure`, options `--resume`, `--revert`, `--model power|complex`), `mix`. Each step writes a new `stem-iter/bass/V_NNN`. |
+
+Interface (HDA): `FIT` in `bass.py` (neutral values, grids, sustain start and ramp, band centres and grid, sweeps) and `CFG` in `IterateBass.py` (target, plateau, fader grid and sweeps, model). Every version's `params.json` holds the per-note fits (`notes`, keyed `role:index`), the fader lane `faderDb` (dB per 50 ms automation hop), and the stem `eq` and `residual` it was rendered with.
+
+Rebuild of the best version (about 6 minutes on a loaded machine):
+
+```bash
+cd /Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign
+~/.venvs/zenray-motion/bin/python -I Scripts/IterateBass.py run --no-stop          # V_006 to V_013 chain (power model)
+~/.venvs/zenray-motion/bin/python -I Scripts/IterateBass.py run --resume V_013 --revert --no-stop --plan "fit:bandDb,fader,fit,fader,fit:bandDb,fader,remeasure,fader"
+~/.venvs/zenray-motion/bin/python -I Scripts/IterateBass.py run --model complex --resume V_017 --revert --no-stop --plan "fit,fader,fit:bandDb,fader"
+```
+
+## 3. Versions
+
+| Version | Step | Model | tfBands | plossBarNoOnset | plossEvents | Note |
+|---|---|---|---|---|---|---|
+| V_001 | neutral | | 97.711 | 70.52 | 66.63 | V_034 reproduced bit for bit |
+| V_002 | fit (release, sustain, attack, corner, tilt) | power | 97.899 | 71.71 | 69.01 | adaptive automation kept |
+| V_003 | remeasure eq + residual | | 97.869 | 71.96 | 69.11 | |
+| V_004, V_005 | fit, remeasure | power | 97.802, 97.784 | | | plateau: the adaptive automation re-rides the sustain changes |
+| V_006 | freeze (fader lane as a parameter) | | 97.711 | 70.52 | 66.63 | identical score, lane frozen |
+| V_007 | fit | power | 97.908 | 71.61 | 68.99 | |
+| V_008 | fader | power | 98.602 | 76.98 | 68.34 | the largest single gain |
+| V_009 to V_013 | fit, fader, remeasure, fit, fader | power | 98.578 to 98.841 | 79.34 | 66.99 | |
+| V_014 to V_021 | fit:bandDb, fader, fit, remeasure | power | 98.892 to 98.933 | 79.55 | 69.58 | plateau near 98.93; the power model predicted E 0.87 against a real 1.04 |
+| **V_022** | fit (shape) | **complex** | **99.054** | 79.37 | 68.77 | model E 0.961, real E 0.973 |
+
+## 4. Pitch and glide against pyin
+
+pyin on the reference bass stem (11025 Hz, hop 64, fmin 25 Hz) against every note (median f0 over the note body): of 116 notes, 80 are voiced long enough to measure; 78 sit within 20 cents of the score pitch (most at +4 or -6 cents), so the transcribed pitches are right. Two exceptions: the note at 2.64 s (midi 58, level -33 dB, 0.1 s) is measured one octave higher (+1204 cents), and the note at 34.69 s is 56 cents flat; both are short and quiet. The large "start" offsets seen at 10.26, 17.95, 20.88 and 48.19 s equal the interval to the previous note (1000, 1000, 500 and 1200 cents): they are the previous note's release overlapping the onset, not unmodelled glides. The seven scored glides (`glide.fromMidi`, `ms`) follow the pyin curve (for example at 7.20 s: -276, -116, -26 cents at 27, 61, 96 ms after the onset, an exponential approach as in `tonal_note`). No pitch or glide correction was applied; the 2.64 s octave is left as a known detail.
+
+## 5. Verification both ways
+
+`IterateBass.py selftest` (exit 0, `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/bass/selftest.json`):
+
+| Check | Green | Red |
+|---|---|---|
+| renderer | neutral fit = V_034 `stems/bass.wav`, max difference 0.0 | every note tilted 24 dB/oct above 120 Hz: critic 97.711 to 75.414 (drop >= 3 required) |
+| power model | E 1.4824 against the critic's 1.5179 (tolerance 0.05) | |
+| complex model | E 1.5179 = critic 1.5179 (tolerance 0.005) | on the sabotage, model E 5.2988 = critic 5.2988 |
+
+Every score in the tables comes from MusicCritic's own tfBands (`MC.compare` on the WAV) and resynth's stable scores (`_stable_job`), computed on the written `bass.wav`.
+
+## 6. What the measurements taught
+
+1. The release, tilt and sustain fit alone gave only +0.19 (97.71 to 97.90) while the adaptive automation stayed on: it rides the RMS every 50 ms toward the lane and undoes level changes. Freezing the lane and fitting it against the critic error (the fader step) gave +0.69 at once.
+2. The power-sum model overrates the fits (cross terms between repeated notes of one pitch, which this bass plays constantly); the complex-frame model is exact at its starting point and crossed 99 in one step.
+3. Fitted shapes: median release 0.08 s (the voice macro was 0.25 s, confirming the M3 diagnosis of too long a release), median tilt 3 dB/oct above 1 kHz, median attack +1 dB, sustain median 0 dB with a range of -9 to +6 dB.
+4. The 2 to 6 kHz overshoot (+1.9 dB, 4 percent of the error) does not come from the notes (the voice stops at 3 kHz); it comes from the residual bed and the per-bar equaliser. It is the next lever only if a stricter score is wanted.
+
+## 7. Next
+
+- Feed `stem-iter/bass/V_022` into a full music-bench version (bass stem, its fader lane and eq) once the other stems land, then rerun VerifyResynth.
+- The complex model can drive the same fit on the "other" stem's tonal voices.
+- Logs: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-logs/bass-run1.log` to `bass-run4.log`.

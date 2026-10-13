@@ -1,0 +1,67 @@
+bed start score 98.015
+  bed iter 0 score 96.881
+  bed iter 1 score 96.950
+  bed iter 2 score 96.972
+  bed iter 3 score 96.973
+  bed iter 4 score 96.964
+  bed iter 5 score 96.948
+{
+ "version": "V_008",
+ "tfBands": 96.881,
+ "plossBarNoOnset": 79.092,
+ "plossEvents": 73.93,
+ "groups": [
+  {
+   "hz": [
+    30,
+    120
+   ],
+   "errorShare": 0.48,
+   "meanAbsDb": 5.96,
+   "signedDb": 3.47
+  },
+  {
+   "hz": [
+    120,
+    500
+   ],
+   "errorShare": 0.199,
+   "meanAbsDb": 4.0,
+   "signedDb": 0.56
+  },
+  {
+   "hz": [
+    500,
+    2000
+   ],
+   "errorShare": 0.09,
+   "meanAbsDb": 2.43,
+   "signedDb": 0.29
+  },
+  {
+   "hz": [
+    2000,
+    6000
+   ],
+   "errorShare": 0.095,
+   "meanAbsDb": 2.0,
+   "signedDb": 0.12
+  },
+  {
+   "hz": [
+    6000,
+    16000
+   ],
+   "errorShare": 0.135,
+   "meanAbsDb": 2.03,
+   "signedDb": 0.11
+  }
+ ],
+ "split": {
+  "onsetFrames": 0.606,
+  "sustainFrames": 0.394,
+  "missingEnergy": 0.137,
+  "extraEnergy": 0.447,
+  "within6Db": 0.416
+ }
+}

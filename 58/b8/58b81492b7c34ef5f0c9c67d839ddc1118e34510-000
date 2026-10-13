@@ -1,0 +1,19 @@
+{
+ "version": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/V_019",
+ "scores": {
+  "sound": 80.76,
+  "sfx": 52.82,
+  "timing": 100.0,
+  "mix": 99.71,
+  "music": 99.96
+ },
+ "musicAlone": {
+  "sound": 0.0,
+  "sfx": 0.0,
+  "timing": 0.0,
+  "mix": 0.21,
+  "music": 99.96
+ },
+ "seconds": 16.5
+}
+exit 1

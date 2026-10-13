@@ -1,0 +1,141 @@
+start score 98.304
+  gap 0/80 t=1.88 tom score 98.309
+  gap 1/80 t=2.25 tom score 98.311
+  gap 2/80 t=2.39 burst score 98.315
+  gap 3/80 t=3.09 kick score 98.319
+  gap 4/80 t=3.55 kick score 98.321
+  gap 5/80 t=4.16 tom score 98.324
+  gap 6/80 t=4.48 burst score 98.326
+  gap 7/80 t=4.76 kick score 98.329
+  gap 8/80 t=5.83 kick score 98.332
+  gap 9/80 t=6.66 kick score 98.333
+  gap 10/80 t=9.91 kick score 98.335
+  gap 11/80 t=10.66 burst score 98.341
+  gap 12/80 t=10.75 kick score 98.342
+  gap 13/80 t=11.31 kick score 98.343
+  gap 14/80 t=11.91 kick score 98.345
+  gap 15/80 t=13.96 burst score 98.347
+  gap 16/80 t=15.39 burst score 98.349
+  gap 17/80 t=15.53 kick score 98.352
+  gap 18/80 t=16.18 burst score 98.356
+  gap 19/80 t=16.70 burst score 98.359
+  gap 20/80 t=16.97 burst score 98.363
+  gap 21/80 t=17.58 tom score 98.365
+  gap 22/80 t=18.13 burst score 98.369
+  gap 23/80 t=18.55 burst score 98.378
+  gap 24/80 t=18.69 burst score 98.380
+  gap 25/80 t=18.78 tom score 98.385
+  gap 26/80 t=19.11 kick score 98.387
+  gap 27/80 t=19.53 kick score 98.389
+  gap 28/80 t=20.87 burst score 98.392
+  gap 29/80 t=21.29 burst score 98.396
+  gap 30/80 t=29.14 tom score 98.398
+  gap 31/80 t=29.28 tom score 98.400
+  gap 32/80 t=29.65 burst score 98.404
+  gap 33/80 t=29.74 burst score 98.406
+  gap 34/80 t=30.16 burst score 98.408
+  gap 35/80 t=30.30 tom score 98.410
+  gap 36/80 t=31.18 kick score 98.412
+  gap 37/80 t=31.74 kick score 98.414
+  gap 38/80 t=32.39 kick score 98.416
+  gap 39/80 t=34.39 burst score 98.418
+  gap 40/80 t=34.48 burst score 98.419
+  gap 41/80 t=35.18 burst score 98.422
+  gap 42/80 t=35.83 kick score 98.424
+  gap 43/80 t=37.13 kick score 98.425
+  gap 44/80 t=38.01 kick score 98.429
+  gap 45/80 t=39.36 tom score 98.430
+  gap 46/80 t=39.92 kick score 98.432
+  gap 47/80 t=40.05 kick score 98.433
+  gap 48/80 t=40.43 burst score 98.436
+  gap 49/80 t=40.75 burst score 98.442
+  gap 50/80 t=40.89 tom score 98.446
+  gap 51/80 t=41.22 burst score 98.452
+  gap 52/80 t=41.40 kick score 98.458
+  gap 53/80 t=42.10 kick score 98.461
+  gap 54/80 t=43.31 kick score 98.461
+  gap 55/80 t=44.00 kick score 98.465
+  gap 56/80 t=45.35 kick score 98.467
+  gap 57/80 t=46.09 kick score 98.468
+  gap 58/80 t=46.74 kick score 98.469
+  gap 59/80 t=47.21 burst score 98.471
+  gap 60/80 t=48.09 kick score 98.475
+  gap 61/80 t=48.88 kick score 98.479
+  gap 62/80 t=49.39 tom score 98.480
+  gap 63/80 t=50.27 kick score 98.481
+  gap 64/80 t=50.83 kick score 98.485
+  gap 65/80 t=52.31 kick score 98.487
+  gap 66/80 t=52.83 kick score 98.490
+  gap 67/80 t=53.48 kick score 98.491
+  gap 68/80 t=53.57 kick score 98.493
+  gap 69/80 t=56.26 kick score 98.495
+  gap 70/80 t=56.91 burst score 98.497
+  gap 71/80 t=57.10 kick score 98.499
+  gap 72/80 t=57.75 kick score 98.500
+  gap 73/80 t=58.12 burst score 98.505
+  gap 74/80 t=59.00 kick score 98.509
+  gap 75/80 t=60.30 kick score 98.511
+  gap 76/80 t=61.00 kick score 98.512
+  gap 77/80 t=61.18 kick score 98.515
+  gap 78/80 t=61.74 kick score 98.516
+  gap 79/80 t=62.21 burst score 98.519
+{
+ "version": "V_012",
+ "tfBands": 98.519,
+ "plossBarNoOnset": 80.315,
+ "plossEvents": 77.582,
+ "groups": [
+  {
+   "hz": [
+    30,
+    120
+   ],
+   "errorShare": 0.301,
+   "meanAbsDb": 2.87,
+   "signedDb": 0.45
+  },
+  {
+   "hz": [
+    120,
+    500
+   ],
+   "errorShare": 0.259,
+   "meanAbsDb": 3.43,
+   "signedDb": 0.95
+  },
+  {
+   "hz": [
+    500,
+    2000
+   ],
+   "errorShare": 0.123,
+   "meanAbsDb": 2.18,
+   "signedDb": 0.42
+  },
+  {
+   "hz": [
+    2000,
+    6000
+   ],
+   "errorShare": 0.131,
+   "meanAbsDb": 1.82,
+   "signedDb": 0.23
+  },
+  {
+   "hz": [
+    6000,
+    16000
+   ],
+   "errorShare": 0.185,
+   "meanAbsDb": 1.83,
+   "signedDb": 0.2
+  }
+ ],
+ "split": {
+  "onsetFrames": 0.616,
+  "sustainFrames": 0.384,
+  "missingEnergy": 0.128,
+  "extraEnergy": 0.257,
+  "within6Db": 0.615
+ }
+}

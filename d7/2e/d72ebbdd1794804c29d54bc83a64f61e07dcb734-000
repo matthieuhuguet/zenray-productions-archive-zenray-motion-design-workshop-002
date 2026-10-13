@@ -1,0 +1,43 @@
+{
+ "block": {
+  "before": 4.955,
+  "greenKickFit": 99.649,
+  "redTomAbove200Hz": 39.919,
+  "fitted": {
+   "f1Hz": 52.156,
+   "ratio": 3.001,
+   "tauMs": 31.098,
+   "ampDb": -13.36,
+   "t60Ms": 406.646,
+   "clickDb": -39.875,
+   "clickMs": 14.112,
+   "clickHz": 3609.936,
+   "dtMs": -0.72
+  },
+  "pass": true
+ },
+ "tables": {
+  "before": 99.464,
+  "greenRightClass": 99.999,
+  "redWrongClass": 99.44,
+  "pass": true
+ },
+ "burst": {
+  "greenBurstFit": 99.767,
+  "redKickOnBurst": 50.9,
+  "pass": true
+ },
+ "segeq": {
+  "before": 99.864,
+  "greenFit": 99.998,
+  "redNoCuts": 99.864,
+  "pass": true
+ },
+ "bed": {
+  "before": 0.174,
+  "greenOtherSeed": 99.359,
+  "redMax120Hz": 4.304,
+  "pass": true
+ },
+ "pass": true
+}

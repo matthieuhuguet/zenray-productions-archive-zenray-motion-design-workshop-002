@@ -1,0 +1,72 @@
+# MI-assemble, the best stems assembled into music bench V_037 (12 October 2026)
+
+Private 1:1 benchmark of the onekey-pro-2 music, never published. The four stems come from their stem-iter versions and are rendered by code from their own params; the reference audio is only a fitting and scoring target, it never enters a render. (12 October 2026)
+
+## 1. Result (12 October 2026)
+
+Best version: **`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/V_037`** (`mix.wav`, `stems/*.wav`, `params.json` with `stemIter` and the refitted `mixBus`, `stem-iter/<stem>/` copies of each stem's params, `scores.json`, `fits.json` with the trim history).
+
+| Stem | Source | tfBands V_034 | tfBands V_037 | plossBarNoOnset V_034 | V_037 | plossEvents V_034 | V_037 |
+|---|---|---|---|---|---|---|---|
+| drums | stem-iter/drums/V_025 | 96.270 | **99.109** | 78.38 | 82.01 | 77.06 | 80.16 |
+| bass | stem-iter/bass/V_022 | 97.711 | **99.054** | 70.52 | 79.37 | 66.63 | 78.54 |
+| other | stem-iter/other/V_043 | 94.725 | **98.463** | 67.42 | 82.12 | 66.89 | 81.31 |
+| vocals | stem-iter/vocals/V_011 | 96.858 | **99.166** | 70.96 | 81.10 | n.a. | n.a. |
+| mix | refitted bus | 97.458 | **99.064** | 78.92 | 83.18 | 73.40 | 81.72 |
+
+All five numbers are the M3 critic (`Scripts/MusicCritic.py --version V_037`, exit 0); its independent implementation agrees with the stored `scores.json` to the third decimal on every row (`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-assemble-logs/critic-V_037.json`). No bar-level loss regresses; every one rises. (12 October 2026)
+
+Mix loudness: V_037 is -9.86 LUFS, -1.05 dBTP; the reference is -9.02 LUFS (+0.99 dBTP), V_034 was -9.31 LUFS. See section 4. (12 October 2026)
+
+## 2. Mix bus refit (12 October 2026)
+
+Three bus candidates were built in each of two passes and the best by the mix critic was kept (all logged in `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-assemble-logs/build-V037.log`):
+
+| Version | Bus | mix tfBands |
+|---|---|---|
+| V_035 | eq and compressor refit, then per-stem trims, then eq refit again (last state kept) | 98.842 |
+| V_036 | best of the refit bus and the trimmed bus with loudness re-matched | 98.839 |
+| **V_037** | **trims plus the bus output gain as a coordinate (pass 1 kept)** | **99.064** |
+
+Kept bus of V_037: stem trims bass -1.5 dB, other -1.0 dB, drums -0.25 dB, vocals 0; per-section eq measured by `resynth.measure_eq`; the compressor grid chose no compression (threshold 100 dB over the loudness, ratio 1.5, inactive); output gain 1.45 dB; limiter ceiling -1.05 dBTP. (12 October 2026)
+
+Diagnosis that redirected V_036 to V_037: the reference peaks at +0.99 dBTP while our delivery ceiling is -1.05 dBTP, so matching -9.02 LUFS pushes about 2.4 LU into the limiter (our V_036 mix measures -6.89 LUFS without it). A probe of the V_036 bus gain gave -3 dB 98.73, -2 dB 99.01, -1.5 dB 99.03, -1 dB 99.00, 0 dB 98.84, +0.5 dB 98.73: the critic prefers a less limited, slightly quieter mix. (12 October 2026)
+
+## 3. Pipeline integration (12 October 2026)
+
+| File | Change |
+|---|---|
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/assemble.py` (new) | `render_stem(stem, dir, bench, sr, n)`: drums replays the IterateDrums op chain, bass the per-note shapes with eq, residual and frozen fader lane, other the re-transcribed notes with timbre tables and fx, vocals the formant pad over V_034 stems; interface `CFG` (stems, files to copy) |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/ResynthMusic.py` | stage `assemble` (`build --stage assemble --from V_034 [--stems drums=V_025,...]`, best stem-iter version per stem when `--stems` is absent); `render_full` (resynth.render, then the `stemIter` stems, then the bus; the base render is skipped when all four stems come from stem-iter); `fit_mix_bus` accepts rendered stems and trims; `fit_stem_trims` (coordinate descent on the mix critic, optional bus gain); `relufs`; `copy_stem_iter` (a version keeps its own copy of each stem's params); `render --params` goes through `render_full`; interface `ASSEMBLE` (trim grid, sweeps, workers, eq passes, busGain) |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/VerifyResynth.py` | the render check uses `render_full` with the version's own copies; a stemIter sabotage (vocals from stem-iter V_001) must turn it red; the tempo variation is proven on the base pipeline (stemIter stems are fixed renders at the score tempo) |
+
+Reproduction: `ResynthMusic.py render --params .../V_037/params.json` wrote `music-bench/V_038`, whose mix and four stems are bit-identical to V_037 (`np.array_equal` true, max difference 0.0). Each stem module alone against its stem-iter file: bass, other, vocals 0.0; drums max 3.3e-4, RMS 2.7e-5 against a stem RMS of 0.19 (-77 dB, float accumulation order in the op replay; scores unchanged). (12 October 2026)
+
+Proof both ways: `VerifyResynth.py --version V_037` exit 0, every check green (render deterministic and equal to the stored mix); `--sabotage` exit 1 with render, score.red, sms and stable.red red (`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-assemble-logs/verify-V_037.clean.json`, `verify-V_037-sabotage.clean.json`). (12 October 2026)
+
+## 4. Soundtrack, listening page, A/B (12 October 2026)
+
+- Soundtrack: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/V_020` = music bench V_037 plus the SFX of V_017 (the latest SFX version; V_018 and V_019 only reused it). verify: sound 80.81 (V_019 80.76), mix 99.90 (99.71), music 99.95, timing 100, sfx 52.82 unchanged; integrated -9.10 LUFS, -1.09 dBTP. `AssembleSoundtrack.py` exits 1 because the SFX score stays under its 99 threshold, as for V_019; the music is not the blocker there.
+- Listening page: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/compare-V_020/index.html` (`SoundCompare.py --version V_020 --music-bench V_037`, exit 0), stems A/B with the independent critic beside each score.
+- A/B: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/compare-music-V_037/AB.mp3` (reference mix 5 to 30 s, 1 s silence, our V_037 mix 5 to 30 s; 51 s file).
+
+## 5. What still blocks 99 (12 October 2026)
+
+- **other, 98.463** is the only stem under 99, and it plateaued in its own iteration (MI-other). Its error is scatter, not a level bias (missing 19.4 percent, extra 19.1 percent; fixing either alone gives 99.0); the heaviest groups are 120 to 500 Hz (32 percent of the error, 2.88 dB mean) and 30 to 120 Hz (18.5 percent, 4.80 dB), and 70 percent of the error sits on onset frames. Next methods: a frame-level complex model like the bass ComplexModel for the other voices (the bass gained 0.12 over the power model there), per-note attack transients, and a re-transcription check of the low register where the 4.8 dB error lives.
+- **mix, 99.064**, is above 99 but sits on a loudness trade: at the reference loudness under the -1.05 dBTP ceiling it scores 98.84. A transparent multiband or look-ahead limiter fitted to the reference crest factor would let the mix match -9.02 LUFS without the limiter error; the signed mix error is -0.3 to -0.6 dB in every group, the remaining level gap.
+- **vocals** depends on V_034 drums, bass and other as leakage components; with the new stems the leakage could be refitted on V_037 stems (IterateVocals `--base V_037`), which may move it a few hundredths either way.
+- Measured but not changed: the bass 2 to 6 kHz group (6.3 dB mean, 7 percent of the bass error), the bass note at 2.64 s one octave off.
+
+## 6. Commands (12 October 2026)
+
+```bash
+cd /Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign
+~/.venvs/zenray-motion/bin/python -I Scripts/ResynthMusic.py build --stage assemble --from V_034 --set workers=4      # V_037 (about 8 minutes)
+~/.venvs/zenray-motion/bin/python -I Scripts/ResynthMusic.py render --params ../sound/onekey-pro-2/music-bench/V_037/params.json
+~/.venvs/zenray-motion/bin/python -I Scripts/MusicCritic.py --version V_037 --json OUT.json
+~/.venvs/zenray-motion/bin/python -I Scripts/VerifyResynth.py --version V_037 --json [--sabotage]
+~/.venvs/zenray-motion/bin/python -I Scripts/AssembleSoundtrack.py --music V_037 --sfx V_017
+~/.venvs/zenray-motion/bin/python -I Scripts/SoundCompare.py --version V_020 --music-bench V_037
+```
+
+Editable parameters: `ASSEMBLE` in ResynthMusic.py (trimGridDb, trimSweeps, trimWorkers, eqPasses, busGain), `assemble.CFG`, `--stems` to pick versions, and in a version's params.json `mixBus.stemGainsDb`, `mixBus.gainDb`, `mixBus.ceilingDbtp`, `stemIter.<stem>.version`. Versions V_035 and V_036 are kept as the history of the bus refit; V_038 is the reproduction check of V_037. (12 October 2026)

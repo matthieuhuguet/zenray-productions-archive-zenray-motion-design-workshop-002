@@ -1,0 +1,65 @@
+start score 98.519
+  iter 0 score 98.589
+  iter 1 score 98.592
+  iter 2 score 98.582
+  iter 3 score 98.565
+{
+ "version": "V_013",
+ "tfBands": 98.592,
+ "plossBarNoOnset": 80.711,
+ "plossEvents": 76.516,
+ "groups": [
+  {
+   "hz": [
+    30,
+    120
+   ],
+   "errorShare": 0.303,
+   "meanAbsDb": 2.8,
+   "signedDb": 0.04
+  },
+  {
+   "hz": [
+    120,
+    500
+   ],
+   "errorShare": 0.258,
+   "meanAbsDb": 3.36,
+   "signedDb": 0.1
+  },
+  {
+   "hz": [
+    500,
+    2000
+   ],
+   "errorShare": 0.122,
+   "meanAbsDb": 2.12,
+   "signedDb": 0.04
+  },
+  {
+   "hz": [
+    2000,
+    6000
+   ],
+   "errorShare": 0.131,
+   "meanAbsDb": 1.77,
+   "signedDb": -0.03
+  },
+  {
+   "hz": [
+    6000,
+    16000
+   ],
+   "errorShare": 0.186,
+   "meanAbsDb": 1.78,
+   "signedDb": -0.05
+  }
+ ],
+ "split": {
+  "onsetFrames": 0.622,
+  "sustainFrames": 0.378,
+  "missingEnergy": 0.149,
+  "extraEnergy": 0.217,
+  "within6Db": 0.634
+ }
+}

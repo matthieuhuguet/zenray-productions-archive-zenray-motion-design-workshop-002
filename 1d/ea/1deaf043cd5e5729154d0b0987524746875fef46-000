@@ -1,0 +1,29 @@
+{
+ "date": "12 October 2026",
+ "sabotage": true,
+ "green": [
+  {
+   "t": 0.2,
+   "pitchHz": 150.73
+  },
+  {
+   "t": 1.2,
+   "pitchHz": 150.73
+  }
+ ],
+ "redHigh": [],
+ "redLow": [
+  {
+   "t": 0.2,
+   "pitchHz": 150.73
+  },
+  {
+   "t": 1.2,
+   "pitchHz": 150.73
+  }
+ ],
+ "greenOk": false,
+ "redOk": true,
+ "pass": false
+}
+exit 1

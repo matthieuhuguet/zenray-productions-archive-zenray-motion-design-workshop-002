@@ -1,0 +1,57 @@
+/Users/zenray/.venvs/zenray-motion/lib/python3.11/site-packages/librosa/core/spectrum.py:266: UserWarning: n_fft=1024 is too large for input signal of length=690
+  warnings.warn(
+/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/other.py:343: RuntimeWarning: All-NaN slice encountered
+  tmpl[r] = np.nan_to_num(np.nanmedian(np.asarray(cols), axis=0), nan=0.0)
+/Users/zenray/.venvs/zenray-motion/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1215: RuntimeWarning: All-NaN slice encountered
+  return fnb._ureduce(a, func=_nanmedian, keepdims=keepdims,
+{
+ "green": {
+  "f": 0.2759,
+  "precision": 0.6061,
+  "recall": 0.1786,
+  "truth": 112,
+  "est": 33
+ },
+ "red": {
+  "f": 0.0,
+  "precision": 0.0,
+  "recall": 0.0,
+  "truth": 112,
+  "est": 33
+ },
+ "pass": false,
+ "set": {
+  "templateMask": "none",
+  "noiseMode": "free"
+ },
+ "transcription": {
+  "templates": {
+   "isolatedFrames": 998,
+   "registers": {
+    "3": 235,
+    "2": 763
+   },
+   "learned": [
+    2,
+    3
+   ]
+  },
+  "tracking": {
+   "rawNotes": 52,
+   "notes": 33,
+   "noiseShare": 0.5192
+  },
+  "onsets": 48,
+  "retimed": 15,
+  "pyin": {
+   "tried": 18,
+   "changed": 0
+  },
+  "perRole": {
+   "otherLow": 0,
+   "otherMid": 0,
+   "otherHigh": 23,
+   "otherHighShort": 10
+  }
+ }
+}

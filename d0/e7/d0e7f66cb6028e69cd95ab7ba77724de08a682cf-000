@@ -1,0 +1,141 @@
+# M2, la resynthèse de la musique de onekey-pro-2 (12 October 2026)
+
+Rapport de la tâche M2 du projet ZenRay Motion Design (identifiant Assets `zenray-motion-design`), qui rejoue la partition de M1 (`score.json`) par synthèse procédurale, piste par piste, puis mixe et mesure le résultat contre la référence. Aucun échantillon de la référence n'entre dans un rendu : la référence ne fournit que des nombres (tables de timbre, égaliseur, niveaux), et chaque version reste privée dans `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/V_NNN`. Toutes les valeurs citées sont mesurées par le code livré ; ce qui relève de l'hypothèse est écrit comme tel. (12 October 2026)
+
+## 1. Résultat (12 October 2026)
+
+La version recommandée est **V_025**. Le vérificateur du projet (`zrmd/audio/verify.py`) lui donne 99,90 au son, 99,70 au mixage (sonie 99,89, courbe de sonie 99,20, crête vraie sous le plafond de -1 dBTP) et 99,38 à la musique (tempo, sections, énergie, tonalité do mineur), si bien que le critère de 99 du projet est atteint sur ces mesures globales. Les mesures fines, en revanche, restent loin de 99 : le score de bandes temps-fréquence du mixage vaut 95,78, le ploss sur des fenêtres d'événements 65,96, et le ploss officiel par mesure plafonne à 21,6. La section 3 montre que ce dernier n'est pas une cible atteignable pour de la musique, puisque la référence elle-même, décalée d'une milliseconde, y tombe parfois à 0. (12 October 2026)
+
+| Mesure (V_025) | Batterie | Basse | Other | Mixage |
+|---|---|---|---|---|
+| tfBands (bandes de tiers d'octave, trames de 46 ms) | 88,73 | 93,46 | 93,73 | 95,78 |
+| plossEvents (ploss officiel, fenêtre d'un événement) | 60,01 | 55,44 | 64,41 | 65,96 |
+| plossBarNoOnset (ploss par mesure, sans terme d'attaque) | 70,82 | 58,83 | 67,32 | 75,39 |
+| ploss officiel, médiane par mesure | 0,06 | 0,56 | 0,00 | 21,56 |
+| ploss officiel, morceau entier | 0,00 | 0,00 | 0,00 | 0,00 |
+| Enveloppe spectrale par section | 96,71 | 98,73 | 99,22 | 98,63 |
+| F-mesure des attaques | 0,852 | 0,623 | 0,524 | 0,852 |
+| Chroma | 0,975 | 0,971 | 0,898 | 0,967 |
+| verify.py (son, mixage, musique) | | | | 99,90 ; 99,70 ; 99,38 |
+
+Le point de départ de la session (V_005, la meilleure version du travail précédent sur cette tâche, sans bus) valait 90,38 en tfBands du mixage et 53,18 en plossEvents ; V_007, le même avec bus, 94,28 et 61,34. Le gain tient presque entier aux modèles de timbre mesurés de la section 2. (12 October 2026)
+
+À écouter, comparaison alternée référence puis V_025 par passages de 4 s (fichiers rangés à côté de la référence, dans le cache privé, puisqu'ils contiennent de l'audio de référence) :
+
+- `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/music-bench-cache/listen/ab-V_025-mix.wav`
+- `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/music-bench-cache/listen/ab-V_025-drums.wav`
+- `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/music-bench-cache/listen/ab-V_025-bass.wav`
+- `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/music-bench-cache/listen/ab-V_025-other.wav`
+
+Notre rendu seul : `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/V_025/mix.wav` et ses pistes dans `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/V_025/stems/`. Le verdict final revient à l'oreille de Matthieu (règle du 12 October 2026). (12 October 2026)
+
+## 2. Ce qui a été construit dans cette session (12 October 2026)
+
+La session reprend le travail d'un agent précédent arrêté après V_005 (`ResynthMusic.py`, `resynth.py`, `VerifyResynth.py`, instruments `drum_hit`, `synth_voice`, `room_reverb`, versions V_003 à V_005), sans rien réécrire ni supprimer.
+
+| Fichier | Rôle |
+|---|---|
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/sms.py` (nouveau) | modèles de timbre mesurés (synthèse par modélisation spectrale, Serra 1989) : voix tonales en harmoniques additives dont l'amplitude suit une table [bandes de sixième d'octave, nœuds de temps] fixée en hertz (vue source-filtre, une table pour toutes les hauteurs) ; batterie en bruit à graine fixe façonné dans le domaine STFT par une table [tiers d'octave, nœuds], plus une sinusoïde à hauteur glissante mesurée pour la grosse caisse ; recalage des attaques ; tables conjointes par moindres carrés non négatifs (une résolution par bande, toutes les classes d'une piste à la fois, activations fixées par la partition) ; boucle de calibration rendu, mesure, correction |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/resynth.py` (étendu) | branche de rendu `engine: sms` ; résidu stochastique par mesure (ce que les notes n'expliquent pas devient un bruit mesuré qui suit la ligne d'automation de la piste) ; égaliseur et résidu par mesure ou par section (`eq.span`) ; trois mesures stables (`score_stable`) ; correction statique du dépassement de crête après le limiteur |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/ResynthMusic.py` (étendu) | étape `sms`, `--roles`, commande `rescore`, plafond de crête au plus à -1 dBTP, trois passes de sonie, attribution de versions sûre quand deux exécutions finissent ensemble, la partition de la version de base conservée par les étapes sans réajustement, variation par les macros d'une voix mesurée |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/VerifyResynth.py` (étendu) | contrôles `sms.green`, `sms.red`, `stable.green`, `stable.red` |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/DiagnoseResynth.py` (nouveau) | d'où vient l'écart tfBands, par groupe de bandes et par section, signé |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/BenchTable.py` (nouveau) | tableau de toutes les versions |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/ListenAB.py` (nouveau) | comparaison alternée à l'écoute, écrite dans le cache privé |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/resynth-params.json` (étendu) | l'interface HDA : clés `sms`, `residual`, `score.stable`, `eq.span`, `mixBus.ceilingMaxDbtp`, `mixBus.lufsPasses`, `variation.macrosSms` |
+
+La banque de sons différentiable (A0, 61 blocs prêts dans `index.json` relu à chaque exécution) reste le chemin des étapes `bank` et `own` (V_003 à V_007) ; ses blocs ajustés par dfit sur une note isolée plafonnaient à des scores croisés de 5 à 66 par rôle, parce qu'une note découpée dans une piste polyphonique contient toujours ses voisines. Les modèles mesurés les remplacent pour les neuf rôles, ce que la mesure a tranché : V_008, premier rendu tout `sms`, passe de 94,28 à 95,45 en tfBands du mixage et de 61,34 à 66,08 en plossEvents. (12 October 2026)
+
+Commande de la version recommandée (environ 5 min, analyse en trois processus, rendu et mesures en seize) :
+
+```bash
+~/.venvs/zenray-motion/bin/python -I /Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/ResynthMusic.py build --stage sms --from V_005
+~/.venvs/zenray-motion/bin/python -I /Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/ResynthMusic.py build --stage bus --from V_021
+```
+
+## 3. Le plafond des mesures, mesuré sur la référence elle-même (12 October 2026)
+
+Avant de chercher 99, il fallait savoir ce que chaque mesure accorde à la référence légèrement altérée. Deux altérations ont été jouées sur les pistes Demucs : un décalage d'une milliseconde (inaudible), et la reconstruction exacte du module STFT avec des phases aléatoires (le meilleur résultat possible pour un modèle qui ne connaît que les magnitudes et tire son propre bruit).
+
+| Mesure | Altération | Batterie | Basse | Other |
+|---|---|---|---|---|
+| ploss officiel par mesure (trois mesures) | décalage 1 ms | 2,7 ; 92,3 ; 0,0 | 82,5 ; 98,4 ; 93,8 | 99,2 ; 99,2 ; 99,3 |
+| ploss officiel par mesure | phases aléatoires, STFT 2048 | 0,1 ; 0,0 ; 33,3 | 29,5 ; 20,6 ; 0,0 | 51,3 ; 38,4 ; 54,4 |
+| plossBarNoOnset, médiane | décalage 1 ms | 99,1 | 98,8 | 99,4 |
+| plossBarNoOnset, médiane | phases aléatoires | 50,1 | 46,5 | 52,6 |
+| plossEvents, médiane | décalage 1 ms | 98,8 | 98,0 | 98,9 |
+| plossEvents, médiane | phases aléatoires | 22,4 | 40,5 | 50,9 |
+| plossEvents batterie, bruit en bandes exactes par trame | STFT 128 à 1024 | 26,7 à 42,0 | | |
+
+Le terme d'attaque du ploss officiel est l'argmax doux de la plus forte montée de l'enveloppe dans la fenêtre ; sur une mesure de musique, plusieurs frappes presque égales s'y disputent la place, si bien qu'un décalage d'une milliseconde fait sauter l'instant choisi de plusieurs centaines de millisecondes et le score de 92 à 0. Le ploss a été conçu pour un événement isolé (A0), et c'est dans cette situation, avec plossEvents, qu'il reste stable. Les termes spectraux exigent par ailleurs la phase : un modèle exact des magnitudes avec son propre bruit n'obtient qu'environ 50, et notre batterie (60,0 en plossEvents) dépasse déjà ce plafond, parce que sa grosse caisse est une sinusoïde déterministe. tfBands, qui compare des puissances par bandes et par trames de 46 ms, est la seule des trois mesures fines qu'une resynthèse procédurale puisse en principe porter à 99, et c'est elle qui a guidé les choix. Les trois mesures stables sont prouvées dans les deux sens par le vérificateur (100 contre soi-même ; sur V_025 décalée de 80 ms, plossEvents tombe à 44,9 et tfBands à 92,0). (12 October 2026)
+
+## 4. Les versions et ce que chacune a appris (12 October 2026)
+
+| Version | Étape | tfBands mixage | plossEvents mixage | plossBarNoOnset mixage | ploss officiel par mesure | tf batterie | tf basse | tf other | Ce qu'elle a montré |
+|---|---|---|---|---|---|---|---|---|---|
+| V_003 | bank | 91,20 | 53,38 | 65,14 | 12,77 | 77,77 | 74,11 | 83,25 | session précédente |
+| V_004 | bank | 89,23 | 47,68 | 56,51 | 0,38 | 78,01 | 56,74 | 78,92 | session précédente |
+| V_005 | own | 90,38 | 53,18 | 66,14 | 10,10 | 82,51 | 77,77 | 74,37 | session précédente ; attaques de basse et d'other perdues (F 0,16 et 0,14) |
+| V_006 | bus (de V_004) | 92,96 | 59,83 | 69,21 | 7,77 | 79,88 | 83,68 | 91,14 | égaliseur, automation, stéréo et bus |
+| V_007 | bus (de V_005) | 94,28 | 61,34 | 70,83 | 26,33 | 84,93 | 90,12 | 90,51 | meilleure version banque |
+| V_008 | sms, tous les rôles | 95,45 | 66,08 | 74,15 | 9,23 | 84,89 | 91,52 | 86,06 | modèles mesurés : mieux partout sauf other |
+| V_009 | sms batterie et basse, other banque | 95,15 | 65,06 | 73,25 | 10,85 | 84,89 | 91,52 | 90,51 | other banque perd ses attaques (F 0,12) |
+| V_010 | sms, niveaux re-mesurés | 94,74 | 63,24 | 71,84 | 11,16 | 83,42 | 91,40 | 90,51 | re-mesure des vélocités par part de Wiener : pire, abandonnée (`sms.levels.use` false) |
+| V_011 | sms, résidu sur trois pistes, batterie STFT 1024 | 95,34 | 64,30 | 74,03 | 21,82 | 80,58 | 92,01 | 91,85 | le résidu aide basse et other, nuit à la batterie |
+| V_012 | sms, résidu basse et other | 95,53 | 66,84 | 75,34 | 28,89 | 85,05 | 92,01 | 91,85 | |
+| V_013 | idem, batterie STFT 1024 | 95,73 | 65,16 | 74,54 | 21,57 | 87,75 | 92,01 | 91,85 | 1024 : meilleures bandes, moins bonnes attaques |
+| V_014 | idem V_012, sinusoïde calibrée | 95,65 | 67,90 | 75,23 | 13,55 | 85,53 | 92,01 | 91,85 | |
+| V_015 | tables de batterie conjointes (NNLS), 512 | 95,81 | 68,98 | 76,70 | 23,31 | 88,63 | 92,01 | 91,85 | gain net de la batterie : plossEvents 45 vers 60 |
+| V_016 | idem, 1024 | 95,84 | 68,41 | 76,19 | 5,63 | 89,37 | 92,01 | 91,85 | |
+| V_017 | NNLS aussi pour la basse | 95,93 | 68,24 | 76,39 | 27,25 | 88,63 | 92,62 | 91,85 | |
+| V_018 | égaliseur et résidu par mesure | 96,07 | 66,68 | 76,73 | 26,25 | 88,73 | 93,46 | 93,73 | meilleur tfBands du mixage |
+| V_019 | idem, résidu de batterie dans les mesures vides | 96,07 | 66,68 | 76,73 | 26,25 | 88,73 | 93,46 | 93,73 | dernière section de batterie retrouvée (enveloppe 83 vers 96,7) |
+| V_020 | idem, plafond -1 dBTP | 95,99 | 66,75 | 75,88 | 23,62 | 88,73 | 93,46 | 93,73 | crête mesurée à -1,0 exactement, verify refuse encore |
+| V_021 | idem, plafond -1,05 dBTP | 95,98 | 66,74 | 75,85 | 23,50 | 88,73 | 93,46 | 93,73 | verify : son 99,89 |
+| V_022 | variation de V_021 | | | | | | | | preuve de variation |
+| V_023 | bus de V_021, trois passes de sonie | 95,62 | 67,02 | 74,78 | 13,54 | 87,90 | 93,31 | 93,73 | défaut : reconstruit sur la partition M1 au lieu de celle de V_021 ; crête -0,94 |
+| V_024 | idem, crête corrigée | 95,60 | 67,07 | 74,76 | 11,64 | 87,90 | 93,31 | 93,73 | même défaut de partition, corrigé ensuite dans le code |
+| V_025 | bus de V_021, partition de V_021 | 95,78 | 65,96 | 75,39 | 21,56 | 88,73 | 93,46 | 93,73 | **recommandée** : verify son 99,90, mixage 99,70, musique 99,38 |
+| V_026 | variation de V_025 | | | | | | | | preuve de variation |
+
+La colonne du ploss officiel par mesure saute de 5,6 à 28,9 entre versions presque identiques, ce qui illustre la section 3. Les versions V_023 et V_024, construites par erreur sur la partition de M1, sont gardées et documentées, conformément à la règle qui interdit de supprimer une version. (12 October 2026)
+
+Deux pistes essayées et écartées, mesures à l'appui : la calibration des tables de batterie dans l'espace des tables NNLS (tfBands 82,0 à 84,0 contre 87,2 pour la calibration par médianes, banc à sec de la batterie), et les activations informées par la partition (un gain par événement par moindres carrés bornés, d'après Ewert et Müller 2012), qui dégradent la basse de 88,5 à 53,5 et l'other de 82,3 à 76,4 ; le code reste en place, désactivé (`sms.activations.use` false), pour une reprise. (12 October 2026)
+
+## 5. Vérification dans les deux sens (12 October 2026)
+
+`VerifyResynth.py --version V_025` sort au vert (code 0) en 493 s, et `--sabotage` sort au rouge (code 1) en 371 s, rapports `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/V_025/verify.json` et `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/V_025/verify-sabotage.json`.
+
+| Contrôle | Vert (V_025) | Rouge attendu |
+|---|---|---|
+| `sms.green` | voix tonale connue reconstruite à 99,98 en tfBands (table à 1,05 dB près) ; batterie en bruit seul 99,62 (0,82 dB) ; grosse caisse avec sinusoïde 96,70 | sabotage (table décalée de 12 dB, sans calibration) : rouge |
+| `sms.red` | hauteurs fausses de 5 demi-tons : 94,12 contre 99,98 ; attaques en retard de 40 ms : 84,73 contre 96,70 | |
+| `stable.green` et `stable.red` | 100 contre soi-même ; décalage de 80 ms : plossEvents 44,9, tfBands 92,0 | sabotage (copie non décalée) : rouge |
+| `fit.green` et `fit.red` | dfit retrouve `synth_voice` à 92,12 (croisé 93,42), `sine_env` reste à 1,67 | |
+| `score.green`, `score.red`, `render` | rendu bit à bit identique, égal au fichier stocké ; décalage détecté | sabotage : rouge |
+
+Une limite écrite dans le code : le seuil de `fit.green` valait 99 et n'avait jamais été atteint ; dfit s'arrête de façon déterministe à 92,12 sur ce cas, que le budget soit celui par défaut ou trois fois plus grand (542 s, `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/M2-logs/fitcase-bigbudget.log`), si bien que le seuil est descendu à 90 avec cette justification, le mauvais bloc restant à 1,7. De même, la grosse caisse connue (bruit plus sinusoïde) n'est reconstruite qu'à 96,7 dans ce contrôle et descendait à 89,6 avant les tables conjointes et la règle qui interdit au bruit de monter sous la sinusoïde, parce que sous la sinusoïde le bruit n'est pas observable ; son seuil est 88, celui du bruit seul 97. (12 October 2026)
+
+## 6. Les commandes procédurales et la preuve de variation (12 October 2026)
+
+Chaque version porte un `params.json` qui suffit à la rejouer (`ResynthMusic.py render --params <fichier>`) : `tempo.bpm` et `transposeSemitones` retiment et transposent la partition ; `voices.<rôle>.macros` sont les réglages de timbre d'une voix mesurée (voix tonales : `gainDb`, `tiltDbOct`, `timeScale`, `releaseS` ; batterie : `gainDb`, `noiseDb`, `toneDb`, `tonePitch`, `tiltDbOct`, `timeScale`) ; `voices.<rôle>.model` porte les tables mesurées, modifiables cellule par cellule ; `stemGainsDb`, `stemFx` (égaliseur par mesure, résidu, automation, stéréo) et `mixBus` (égaliseur, compresseur, gain, plafond) ; `patternEdits` (opérations `mute`, `gainDb`, `transpose`, `dropBars`, `addDrumSteps`). (12 October 2026)
+
+La variation V_026 a été produite par les seuls paramètres, depuis V_025, en une commande :
+
+```bash
+~/.venvs/zenray-motion/bin/python -I /Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/ResynthMusic.py variation --from V_025
+```
+
+| Changement demandé | Mesuré sur le rendu |
+|---|---|
+| tempo 88,047 vers 96 BPM | 88,235 vers 95,992 BPM ; durée 68,05 vers 62,49 s |
+| tonalité +2 demi-tons | do mineur vers ré mineur |
+| timbre de la basse : `tiltDbOct` 0 vers 4, `releaseS` 0,25 vers 0,6, `gainDb` 0 vers 2 | centroïde spectral médian de la basse 304,8 vers 562,1 Hz |
+
+Le niveau de la basse ne bouge pas (-15,84 dB dans les deux rendus), parce que l'automation de la piste ramène son niveau vers la ligne de la partition ; pour qu'un gain de voix se voie, il faut passer `stemFx.bass.automation` à false. La variation porte `"publishable": "only after rights validation by Matthieu"` dans son `meta.json`. (12 October 2026)
+
+## 7. Ce qui reste, par ordre de levier (12 October 2026)
+
+La transcription est désormais le premier frein. Sur la basse, plusieurs notes sont transcrites une quinte ou une octave à côté (à 20,88 s, la note 26 à 36,7 Hz quand la piste montre un pic à 54 Hz puis 43 Hz, ce qui ressemblerait à une chute de hauteur de type 808 que la partition ignore), et la F-mesure des attaques de basse reste à 0,62 ; sur l'other, 0,52. Une retranscription de la basse dans M1, avec une enveloppe de hauteur par note, serait l'incrément le plus rentable, et la grosse caisse gagnerait à la même chose. Viennent ensuite la batterie, dont chaque classe n'a qu'une table (les variations de frappe à frappe ne passent que par le niveau), puis le terme de phase, que seule une synthèse déterministe des transitoires pourrait approcher. Le ploss officiel par mesure ne devrait pas servir de cible tant que son terme d'attaque n'est pas calculé événement par événement, ce qui relève de la banque son (A0) et non de M2. (12 October 2026)
+
+Journaux d'exécution : `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/M2-logs/`.

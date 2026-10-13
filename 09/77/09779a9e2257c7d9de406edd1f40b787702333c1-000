@@ -1,0 +1,48 @@
+{
+ "date": "12 October 2026",
+ "version": "V_025",
+ "sabotage": true,
+ "limits": {
+  "green": 97.0,
+  "gain": 3.0,
+  "redDrop": 2.0,
+  "knownDb": 12.0,
+  "notes": 24,
+  "shiftS": 0.08,
+  "seconds": 14.0,
+  "redMode": "drop",
+  "pitchSemis": 7
+ },
+ "noDeviation": 96.806,
+ "green": 96.806,
+ "red": 52.901,
+ "redMode": "drop",
+ "historyGreen": [
+  {
+   "round": 0,
+   "meanAbsDb": 3.098,
+   "cells": 981
+  },
+  {
+   "round": 1,
+   "meanAbsDb": 3.098,
+   "cells": 981
+  },
+  {
+   "round": 2,
+   "meanAbsDb": 3.098,
+   "cells": 981
+  },
+  {
+   "round": 3,
+   "meanAbsDb": 3.098,
+   "cells": 981
+  }
+ ],
+ "checks": {
+  "dev.green": false,
+  "dev.red": true
+ },
+ "pass": false
+}
+exit 1

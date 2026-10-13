@@ -1,0 +1,87 @@
+# MI, other stem iteration toward 99 (12 and 13 October 2026)
+
+Private 1:1 benchmark of the onekey-pro-2 music, never published. The other stem is played by the measured additive voices of `zrmd/audio/sms.py` from a fresh transcription; the reference only supplies numbers (notes, per-note dev tables, residual and equaliser tables per beat, the score's fader lane). No reference sample enters any render. This report covers the whole task: the first session (12 October 2026, V_001 to V_026, transcription and dev tables) and its resumption (13 October 2026, V_027 to V_045, residual bed and fx).
+
+## 1. Result
+
+Best version: **`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/other/V_043`** (`other.wav`, `params.json`, `scores.json`, `score-other.json`, `meta.json`). Its notes and per-note dev tables are also copied to `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/other/score-other.json` (the base `score.json` is not touched).
+
+| Measure (other stem) | V_034 (start) | V_026 (end of session 1) | **V_043** |
+|---|---|---|---|
+| tfBands, MusicCritic third-octave scorer | 94.725 | 98.319 | **98.463** |
+| E (99 needs E = 1.0) | 2.32 | 1.299 | 1.242 |
+| plossBarNoOnset (bar-level loss) | 67.42 | 81.69 | **82.12** (no regression) |
+| plossEvents | 66.89 | 81.19 | 81.39 |
+| full mix tfBands with this stem swapped into V_034 (mix bus replayed) | 97.46 | 97.968 | 97.991 |
+| dry tonal render alone (before bed, eq, automation) | | 92.78 | 92.78 |
+
+Target 99 is **not reached**. The loop stopped on a plateau: after V_038 (98.458) the next five versions gained at most 0.005 (noise level), and two full rebuilds with every finding combined scored 98.393.
+
+Remaining error of V_043 by band group (share of error, mean abs dB): 30 to 120 Hz 18.5 percent, 4.80 dB; 120 to 500 Hz 32.3 percent, 2.88 dB; 500 to 2000 Hz 22 percent, 1.65 dB; 2 to 6 kHz 10.9 percent, 1.54 dB; 6 to 16 kHz 16.3 percent, 3.41 dB. Missing and extra energy are balanced (fixing either alone gives 99.0), so the error is scatter, not a level bias.
+
+## 2. What was built (new code only, shared modules read-only)
+
+| File | Role |
+|---|---|
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/other.py` | Re-transcription: CQT (36 bins per octave, C2 to C9), per-register templates learned from isolated notes and shifted to every pitch, KL NMF with fixed templates plus free smooth noise components, hysteresis note tracking, onset-aligned retiming (50 ms), pyin on monophonic segments, duration split into long and short roles. Fitting: sms timbre tables per voice, per-note dev tables (eventdev), residual bed, beat-span dB-median equaliser, automation, post equaliser, stereo. 13 October 2026 additions: `render_residual_steady` and `BED_STEADY` (steady sine-cloud bed), `dry_shaped` (optional zero-phase high-pass of the tonal render), automation crossover option. Interface: `TRANSCRIBE_DEFAULTS`, `BED_STEADY`, `EQ_DB`, `FX_SPAN_RAMP_S`. |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/IterateOther.py` | `build`, `proxy`, `refx`, `render`, `selftest`, `bedtest` (13 October 2026), `best`. Every setting is a `--set key=json` over `TRANSCRIBE_DEFAULTS` (new keys: `bed`, `dryHighpassHz`, `automationCrossoverHz`). |
+
+Re-render any version: `~/.venvs/zenray-motion/bin/python -I Scripts/IterateOther.py render --version V_043` (measured: max abs difference to the stored file 0.0).
+
+## 3. Proofs both ways
+
+- Transcriber (`selftest`, `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/other/selftest.json`): known synthetic chords and line rendered by the V_034 voices, note F = 0.991 (green), against the same truth shifted 80 ms and one semitone F = 0.0 (red). Sabotaged transcriber (`templateMask none`, `noiseMode free`): F = 0.276, test fails as it must (`selftest-sabotage.json`).
+- Steady bed (`bedtest`, `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/other/bedtest.json`): flat 0 dB table, 10 s. Green: level error 0.17 dB against `resynth.render_residual` above 150 Hz, frame scatter 0.016 dB (random bed 0.965 dB). Red: spacing 1 bin (adjacent sines beat) scatter 0.77 dB; levelDb 0 level error 6.19 dB. The red threshold for scatter was set at 0.3 dB after measuring the sabotage (first draft at 1.0 dB failed on 0.77), stated here so the threshold is not mistaken for a prior.
+- Scorer: the M3 critic `MusicCritic.py compare`, proven both ways in M3 (self 100, muted group or 80 ms shift at least 3 points lower).
+
+## 4. Iteration log
+
+Session 1 (12 October 2026), transcription and dev tables, full builds of about 6 minutes each:
+
+| Version | Change | tfBands |
+|---|---|---|
+| V_001 | NMF CQT learned templates, defaults | 95.656 |
+| V_002 to V_007 | harmonic template mask, smooth noise, beat-span fx, dev 5 rounds | 95.53 to 96.55 |
+| V_008 | duration split 0.25 s (long and short roles) | 96.808 |
+| V_009 to V_011, V_013, V_014, V_016 | frame threshold, on/off levels, dev 8 rounds, split 0.15 or 0.4 s, calibration rounds | 96.46 to 96.81 |
+| V_012 | fx refit, dB-median eq plus post eq | 97.186 |
+| V_015, V_017 | dev on third-octave bands, then dB eq | 97.115, 97.400 |
+| V_018, V_021 | residual margin -6 dB, automation unsmoothed | 97.753, 97.888 |
+| V_019, V_022 | finer dev time segments, then fx refit | 97.848, 98.179 |
+| V_020, V_023 | dev sixth-octave; dev 8 rounds (worse) | 97.561, 97.394 |
+| V_024, V_025 | full fx chain; sixth-octave plus finer segments | 97.777, 98.236 |
+| V_026 | dev third-octave, 50 ms body segments, finer attack edges, full fx | 98.319 |
+
+Session 2 (13 October 2026), resumed from V_026:
+
+| Version | Change | tfBands |
+|---|---|---|
+| V_027, V_028 | residual margin -9 dB, -4 dB | 98.303, 98.330 |
+| V_029, V_030, V_031 | dev body step 25 ms; sixth-octave dev bands; finer attack and tail edges | 98.287, 98.322, 98.183 |
+| V_032 to V_034 | steady sine-cloud bed (margins -4, -9, 0 dB) | **98.415**, 98.394, 98.291 |
+| V_035 to V_037 | automation only above 120, 250, 500 Hz | 98.393, 98.371, 98.265 |
+| V_038 to V_040 | tonal render high-passed at 80, 120, 200 Hz, low band left to the steady bed | **98.458**, 98.448, 98.435 |
+| V_041 to V_043 | bed from 27 Hz with 4, 3, 2 bin spacing | 98.398, 98.440, **98.463** |
+| V_044, V_045 | full rebuild with all findings (5 and 3 dev rounds) | 98.393, 98.393 |
+
+## 5. What the measurements say
+
+1. The error is fast, not slow. Splitting each band's dB error into a 0.5 s moving average and the remainder: in 30 to 120 Hz the slow part is 1.6 dB and the fast part 5.0 dB; the same holds in every group. Tables per beat cannot reach it, and the code refuses tables finer than a beat (below the grid an equaliser becomes a vocoder of the reference).
+2. Fast fluctuations above 500 Hz already follow the reference (correlation 0.73 to 0.89 between our and the reference's sub-0.5 s band movement). In 30 to 120 Hz the correlation is 0.00: our low band moved on its own (tonal partials and the random bed) while the reference's moved independently. That motivated the steady bed and the high-pass, which removed our own scatter there (low group 5.42 to 4.80 dB) but cannot add the reference's.
+3. The random-phase bed scatters by about 1 dB per frame above 150 Hz and 3 to 5 dB in the lowest bands at the critic's resolution; the steady bed removes that scatter (+0.085). Caveat for listening: the bed is now a cloud of fixed sines (16 Hz spacing at 3 bins, 11 Hz at 2 bins, jittered, random phases); it sits under the notes at the measured deficit level and was not judged by ear.
+4. Automation only above a crossover was worse at every crossover: the score's broadband fader lane helps the low band too.
+5. More dev resolution (25 ms steps, sixth-octave bands, finer edges, more rounds) no longer helps: the per-note tables are saturated.
+6. Full rebuilds land 0.07 below the refx chain (98.393 against 98.463) with a lower dry score (92.44 against 92.78) from the same settings: the dev fit is not reproducible run to run, and `--dev-rounds` gave a bit-identical result to the default, which suggests the round count is overridden by the `pOver` stem settings. Not resolved; the best version is the refx chain, which re-renders exactly.
+
+## 6. Next methods (the plateau is a method limit, not a tuning limit)
+
+1. Port the bass agent's `ComplexModel` (`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/bass.py`, report `MI-bass.md`): per-note band gains fitted on complex critic frames with the cross terms between overlapping notes. It took the bass from 97.71 to 99.05. For other, 120 to 500 Hz holds a third of the error where chord partials beat; that is exactly what a cross-term model can fit and a power model cannot.
+2. Fix the dev-round override and seed the dev fit, so a full build reproduces the refx chain.
+3. Revisit 6 to 16 kHz (16 percent, 3.4 dB): the stem carries noise-like air there; a per-note noise component (sms noise part per note) rather than the per-beat bed.
+
+## 7. Files
+
+- Best: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/other/V_043`
+- Score of the best: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/other/score-other.json`
+- Logs: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-other-logs` (build-NN, refx-NN, selftest, proxy)
+- Code: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/other.py`, `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/IterateOther.py`

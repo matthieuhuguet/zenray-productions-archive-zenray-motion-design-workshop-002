@@ -1,0 +1,9 @@
+22:38:53 V_006 freeze: tfBands 97.711 plossBarNoOnset 70.52 plossEvents 66.626 None
+22:39:42 V_007 fit: tfBands 97.908 plossBarNoOnset 71.61 plossEvents 68.99 [1.4824, 1.3838, 1.3788, 1.3784]
+22:40:33 V_008 fader: tfBands 98.602 plossBarNoOnset 76.975 plossEvents 68.344 [1.4345, 1.0448]
+22:41:25 V_009 fit: tfBands 98.578 plossBarNoOnset 76.598 plossEvents 67.854 [1.0634, 1.052, 1.0512, 1.0512]
+22:42:14 V_010 fader: tfBands 98.782 plossBarNoOnset 78.51 plossEvents 68.493 [1.0701, 0.9577]
+22:42:43 V_011 remeasure: tfBands 98.729 plossBarNoOnset 78.311 plossEvents 68.093 None
+22:43:33 V_012 fit: tfBands 98.754 plossBarNoOnset 78.521 plossEvents 66.598 [0.9866, 0.9748, 0.9741, 0.974]
+22:44:28 V_013 fader: tfBands 98.841 plossBarNoOnset 79.344 plossEvents 66.99 [0.9855, 0.931]
+22:44:28 best V_013 98.841

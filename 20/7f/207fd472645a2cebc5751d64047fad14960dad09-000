@@ -1,0 +1,7 @@
+/Users/zenray/.venvs/zenray-motion/lib/python3.11/site-packages/librosa/core/spectrum.py:266: UserWarning: n_fft=1024 is too large for input signal of length=690
+  warnings.warn(
+/Users/zenray/.venvs/zenray-motion/lib/python3.11/site-packages/numpy/lib/_nanfunctions_impl.py:1215: RuntimeWarning: All-NaN slice encountered
+  return fnb._ureduce(a, func=_nanmedian, keepdims=keepdims,
+transcribed {'otherLow': 26, 'otherMid': 38, 'otherHigh': 17, 'otherMidShort': 292, 'otherHighShort': 365, 'otherLowShort': 113} 52s
+timbres 760s
+{"version": "V_014", "tfBands": 96.703, "dry": 90.655, "plossBarNoOnset": 70.198, "plossEvents": 72.011, "mixSwapped": 97.748, "seconds": 835}

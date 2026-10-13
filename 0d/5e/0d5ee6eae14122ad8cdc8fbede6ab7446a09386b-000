@@ -1,0 +1,105 @@
+# MI-drums, the drums stem iterated to 99 (12 October 2026)
+
+Private 1:1 benchmark of the onekey-pro-2 music, never published. The drums stem of bench V_034 (third-octave critic score 96.27) is refined by procedural operations replayed on our own render; the reference drums stem only yields numbers (block parameters fitted per hit, coarse tables), and no reference sample enters a render. (12 October 2026)
+
+## 1. Result (12 October 2026)
+
+Best version: **`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/drums/V_025`** (`drums.wav`, `params.json`, `scores.json`).
+
+| Measure | V_034 (start) | V_025 |
+|---|---|---|
+| tfBands, M3 critic (`MusicCritic.compare`) | 96.270 | **99.109** |
+| tfBands, published implementation (`resynth.tf_bands_score`) | 96.270 | 99.109 |
+| plossBarNoOnset (bar-level loss, median) | 78.381 | **82.008** (no regression, +3.6) |
+| plossEvents | 77.061 | 80.156 |
+| missing energy share / extra energy share of the error | 46 % / n.a. | 11.0 % / 14.8 % |
+| signed error 30 to 120 Hz / 120 to 500 Hz | -1.8 dB / -2.0 dB | +0.06 dB / +0.06 dB |
+
+The render is deterministic: `IterateDrums.py render --params .../V_025/params.json` gives 99.109 / 82.008 / 80.156 again (`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-drums-logs/render-V025.log`). The full mix was not re-rendered here (shared files untouched); V_025 `drums.wav` is a drop-in replacement for `V_034/stems/drums.wav`. (12 October 2026)
+
+## 2. What was built (12 October 2026)
+
+| File | Role |
+|---|---|
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/zrmd/audio/stems/drums.py` (new) | blocks `kick_body` (sine with exponential pitch and amplitude envelopes, band-passed noise click), `tom` (two membrane modes 1 and 1.59 with glide), `burst` (band-passed noise with decay); `Grid` (the critic's own frames and bands, global E recomputed only on the frames a block touches, 1.6 ms per evaluation); `fit_hit` (CMA-ES from `zrmd.audio.dfit.cma_es` on the unit cube of a block, minimising the global critic E); `gap_times`; class tables; low bed; segment EQ |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/IterateDrums.py` (new) | commands `body`, `gaps`, `bed`, `segeq`, `tables`, `render`, `selftest`; each version is a chain of operations (`params.json` key `ops`) replayed on bench V_034 `stems/drums.wav` |
+
+The interface (HDA) is `drums.CFG`: block ranges (`kick`, `tom`, `burst`), CMA-ES budget (`cma`), `tables.nodesS`, `bed` (segment, seed, maxHz, tonalHz), `segeq` (minDb, maxDb, step). A version's `params.json` holds every fitted value, editable one by one, and `render --params` rebuilds the stem from it. (12 October 2026)
+
+## 3. Diagnosis that redirected the method (12 October 2026)
+
+The task assumed the missing low end was thin kick and tom bodies. Measured on V_034: the reference drums stem carries a continuous bed of 20 to 30 dB in every third-octave band from 30 to 500 Hz in every frame, between hits as much as on them (Demucs bleed or room), while our render is nearly empty there outside the kick sine. Per-hit bodies therefore fill only part of it (+1.0 point), and a low bed fitted per eighth note fills the rest. After bodies, gap blocks and bed, the residual turned into extra energy (V_014: +1.1 dB at 120 to 500 Hz), which the segment EQ removes. (12 October 2026)
+
+## 4. Iterations (stem-iter/drums, nothing overwritten) (12 October 2026)
+
+| Version | Operation | Parent | tfBands | plossBarNoOnset | plossEvents |
+|---|---|---|---|---|---|
+| V_001 | bed, beats | V_034 | 97.088 | 79.348 | 79.055 |
+| V_002 | bed, eighth notes | V_034 | 97.461 | 79.416 | 79.084 |
+| V_003 | kick body and tom blocks, 107 hits | V_034 | 97.295 | 78.180 | 75.217 |
+| V_004 | bed, eighth notes | V_003 | 97.809 | 79.541 | 78.840 |
+| V_005 | class tables, hats, snare, clap | V_004 | 97.878 | 79.631 | 77.459 |
+| V_006 | class tables, all six classes | V_004 | 98.015 | 80.079 | 76.393 |
+| V_007 | bed again | V_006 | 98.038 | 80.135 | 75.716 |
+| V_008 | tonal bed below 130 Hz | V_006 | 96.881 | 79.092 | 73.930 |
+| V_009 | tonal bed below 250 Hz | V_006 | 96.850 | 79.083 | 72.982 |
+| V_010 | body pass 2, kick, tom, snare, clap (136 hits) | V_006 | 98.304 | 80.118 | 76.545 |
+| V_011 | gap blocks, 60 times | V_006 | 98.261 | 80.183 | 76.396 |
+| V_012 | gap blocks, 80 times | V_010 | 98.519 | 80.315 | 77.582 |
+| V_013 | class tables, 9 nodes | V_012 | 98.592 | 80.711 | 76.516 |
+| V_014 | gap blocks pass 2 | V_012 | 98.625 | 81.308 | 77.752 |
+| V_015 | class tables, 9 nodes | V_014 | 98.705 | 81.294 | 79.605 |
+| V_016 | segment EQ, eighth notes | V_014 | 98.788 | 80.958 | 79.095 |
+| V_017 | body pass 3 | V_014 | 98.745 | 81.071 | 79.357 |
+| V_018 | segment EQ | V_017 | 98.899 | 81.019 | 79.574 |
+| V_019 | gap blocks pass 3 | V_014 | 98.707 | 81.356 | 79.313 |
+| V_020 | gap blocks | V_017 | 98.817 | 81.275 | 79.763 |
+| V_021 | class tables | V_020 | 98.900 | 81.852 | 80.023 |
+| V_022 | segment EQ | V_020 | 98.970 | 81.373 | 79.970 |
+| V_023 | class tables | V_022 | 99.029 | 81.788 | 80.330 |
+| V_024 | body pass 4 | V_022 | 99.060 | 81.519 | 79.646 |
+| **V_025** | class tables, 9 nodes | V_024 | **99.109** | **82.008** | 80.156 |
+
+What each step taught, measured: the kick body and tom blocks alone give +1.03 but lower plossBarNoOnset by 0.2 (V_003); the bed restores and raises it. The tonal bed (one steady sine per band below 130 or 250 Hz, V_008 and V_009) is worse than the noise bed by about 1.1 points and is abandoned (`bed.tonalHz` stays 0). Each further pass of bodies, gap blocks, tables or segment EQ adds 0.05 to 0.16; the chain stopped at 99 as instructed. (12 October 2026)
+
+V_025 chain: base V_034, then 107 + 136 + 136 + 136 body blocks (kick and two-mode tom at transcribed kick, tom, snare and clap hits), 3 x 80 gap blocks (kick, tom or burst at the strongest deficits away from transcribed hits), one bed table 28 bands x 202 eighth notes, one segment EQ table of the same size, two class tables (6 classes x 6 then 9 nodes). Total about 835 blocks and about 12 000 table cells for 68 s of audio. (12 October 2026)
+
+## 5. Honest limits (12 October 2026)
+
+The score is magnitude only (46 ms frames); the stem has not been checked by ear, and the verdict belongs to Matthieu. The model is heavily parameterised: the bed and segment EQ tables are coarse (eighth notes, about 7 critic frames per cell, deliberately not finer, so they stay a dynamic EQ and noise bed rather than a vocoder of the reference), but the blocks are fitted greedily on the very measure they are scored by, so part of the gain is fitting rather than transcription; plossBarNoOnset and plossEvents, which the fit never sees, also rise (+3.6 and +3.1), which suggests the gain is not only overfitting. Gap blocks sit at times where the score has no hit: they are a measured hint that the drum transcription still misses events (onsetF 0.903). (12 October 2026)
+
+## 6. Verifiers, both ways (12 October 2026)
+
+`IterateDrums.py selftest` exits 0 (`/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-drums-logs/selftest3.log`):
+
+| Check | Green | Red |
+|---|---|---|
+| kick body block, known kick in silence | 99.649 (f1 52.2 Hz for 52, ratio 3.0 for 3.2, t60 407 ms for 420) | tom block limited to f above 200 Hz: 39.919 |
+| burst block, known burst | 99.767 | kick body with its click off: 50.900 |
+| class tables, known tilt on closed hats (before 99.464) | right class: 99.999 | wrong class (kick): 99.440 |
+| segment EQ, known -10 dB cuts (before 99.864) | 99.998 | cuts disabled: 99.864 |
+| bed, known bed rebuilt with another noise seed (before 0.174) | 99.359 | bed limited to 120 Hz: 4.304 |
+
+The Grid was checked against the critic: on V_034 it gives 96.2697, equal to `MusicCritic.py` (96.27). (12 October 2026)
+
+## 7. Commands (12 October 2026)
+
+```bash
+PY=~/.venvs/zenray-motion/bin/python; S=/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/IterateDrums.py
+$PY -I $S body                                   # V_003
+$PY -I $S bed --from V_003 --segment beats/2     # V_004
+$PY -I $S tables --from V_004 --classes hatClosed,hatOpen,snare,clap,kick,tom
+$PY -I $S body --from V_006 --kinds kick,tom,snare,clap --seed 1000
+$PY -I $S gaps --from V_010 --top 80 --seed 7000
+$PY -I $S segeq --from V_020
+$PY -I $S render --params /Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/music-bench/stem-iter/drums/V_025/params.json
+$PY -I $S selftest
+```
+
+Logs: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/MI-drums-logs/`. A body pass takes 8 to 12 min on one process, a gap pass about 10 min, bed, tables and segment EQ 1 to 3 min each (machine load about 250 during the runs, at most 3 processes used). (12 October 2026)
+
+## 8. Next (12 October 2026)
+
+1. Rebuild the mix with V_025 drums and the other agents' stems, and rescore with `MusicCritic.py`.
+2. Feed the gap block times back into the drum transcription (`retag` or a new onset pass) so the hits exist in `score.json` rather than as anonymous blocks.
+3. Listen to the A/B (`Scripts/ListenAB.py`) before trusting the gain: the bed and segment EQ may sound like bleed.

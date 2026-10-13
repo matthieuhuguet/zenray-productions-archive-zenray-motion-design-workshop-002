@@ -1,0 +1,89 @@
+[10:24:05] stemIter: drums=V_025, bass=V_022, other=V_043, vocals=V_011
+[10:24:05] rendering the stems
+[10:24:05] stem drums from V_025
+[10:24:11] stem bass from V_022
+[10:24:27] stem other from V_043
+[10:26:19] stem vocals from V_011
+[10:26:33] fitting the mix bus, pass 1
+[10:27:55] trim bass -1.50 dB -> mix 98.925
+[10:28:03] trim other -1.50 dB -> mix 99.029
+[10:28:22] trim _bus +1.45 dB -> mix 99.049
+[10:28:30] trim drums -0.25 dB -> mix 99.056
+[10:28:47] trim other -1.00 dB -> mix 99.064
+[10:29:18] pass 1: refit bus 98.819, trims with loudness re-matched 98.777, trims and bus gain 99.064
+[10:29:18] fitting the mix bus, pass 2
+[10:30:27] trim drums -0.50 dB -> mix 98.837
+[10:30:34] trim bass -3.00 dB -> mix 98.908
+[10:30:41] trim other -2.50 dB -> mix 99.015
+[10:30:55] trim _bus +1.94 dB -> mix 99.024
+[10:31:04] trim drums -1.00 dB -> mix 99.042
+[10:31:18] trim other -2.25 dB -> mix 99.042
+[10:31:48] pass 2: refit bus 98.835, trims with loudness re-matched 98.793, trims and bus gain 99.042
+[10:31:48] kept bus: mix 99.064, trims {'bass': -1.5, 'other': -1.0, 'drums': -0.25}
+[10:31:48] rendering from params
+[10:31:48] stem drums from V_025
+[10:31:53] stem bass from V_022
+[10:32:08] stem other from V_043
+[10:33:41] stem vocals from V_011
+[10:33:58] scoring
+[10:34:26] V_037 written
+{
+ "version": "V_037",
+ "headline": {
+  "drums": {
+   "plossFull": 82.2686,
+   "plossBarMedian": 80.96,
+   "onsetF": 0.9108,
+   "chroma": 0.9774,
+   "envCorr": 0.9867,
+   "sectionEnv": 96.78,
+   "plossEvents": 80.156,
+   "plossBarNoOnset": 82.008,
+   "tfBands": 99.109
+  },
+  "bass": {
+   "plossFull": 80.029,
+   "plossBarMedian": 78.219,
+   "onsetF": 0.5658,
+   "chroma": 0.9842,
+   "envCorr": 0.9933,
+   "sectionEnv": 98.675,
+   "plossEvents": 78.542,
+   "plossBarNoOnset": 79.368,
+   "tfBands": 99.054
+  },
+  "other": {
+   "plossFull": 82.3527,
+   "plossBarMedian": 81.919,
+   "onsetF": 0.5739,
+   "chroma": 0.9544,
+   "envCorr": 0.9867,
+   "sectionEnv": 99.368,
+   "plossEvents": 81.305,
+   "plossBarNoOnset": 82.118,
+   "tfBands": 98.463
+  },
+  "vocals": {
+   "plossFull": 82.7749,
+   "plossBarMedian": 81.099,
+   "onsetF": 0.7667,
+   "chroma": 0.9657,
+   "envCorr": 0.8702,
+   "sectionEnv": 99.198,
+   "plossEvents": null,
+   "plossBarNoOnset": 81.099,
+   "tfBands": 99.166
+  },
+  "mix": {
+   "plossFull": 83.6096,
+   "plossBarMedian": 83.062,
+   "onsetF": 0.9181,
+   "chroma": 0.9792,
+   "envCorr": 0.9874,
+   "sectionEnv": 99.604,
+   "plossEvents": 81.715,
+   "plossBarNoOnset": 83.183,
+   "tfBands": 99.064
+  }
+ }
+}

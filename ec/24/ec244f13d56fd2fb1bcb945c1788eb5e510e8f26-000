@@ -1,0 +1,75 @@
+start E 1.1736 score 98.625
+  hit 0/136 t=2.17 tom E 1.1728 score 98.627 kept 1 (4 s)
+  hit 10/136 t=3.96 kick E 1.1703 score 98.633 kept 11 (42 s)
+  hit 20/136 t=6.75 tom E 1.1667 score 98.641 kept 21 (82 s)
+  hit 30/136 t=10.50 kick E 1.1627 score 98.651 kept 31 (117 s)
+  hit 40/136 t=15.28 kick E 1.1586 score 98.660 kept 41 (161 s)
+  hit 50/136 t=17.82 tom E 1.1550 score 98.668 kept 51 (209 s)
+  hit 60/136 t=20.35 tom E 1.1525 score 98.674 kept 61 (247 s)
+  hit 70/136 t=28.88 tom E 1.1485 score 98.683 kept 71 (308 s)
+  hit 80/136 t=32.30 kick E 1.1429 score 98.696 kept 81 (354 s)
+  hit 90/136 t=37.25 kick E 1.1392 score 98.704 kept 91 (415 s)
+  hit 100/136 t=41.84 kick E 1.1349 score 98.714 kept 101 (470 s)
+  hit 110/136 t=47.30 kick E 1.1312 score 98.722 kept 111 (517 s)
+  hit 120/136 t=53.44 kick E 1.1270 score 98.732 kept 121 (565 s)
+  hit 130/136 t=58.89 kick E 1.1229 score 98.741 kept 131 (620 s)
+{
+ "version": "V_017",
+ "tfBands": 98.745,
+ "plossBarNoOnset": 81.071,
+ "plossEvents": 79.357,
+ "groups": [
+  {
+   "hz": [
+    30,
+    120
+   ],
+   "errorShare": 0.281,
+   "meanAbsDb": 2.48,
+   "signedDb": 0.53
+  },
+  {
+   "hz": [
+    120,
+    500
+   ],
+   "errorShare": 0.259,
+   "meanAbsDb": 3.15,
+   "signedDb": 1.22
+  },
+  {
+   "hz": [
+    500,
+    2000
+   ],
+   "errorShare": 0.127,
+   "meanAbsDb": 2.07,
+   "signedDb": 0.62
+  },
+  {
+   "hz": [
+    2000,
+    6000
+   ],
+   "errorShare": 0.138,
+   "meanAbsDb": 1.76,
+   "signedDb": 0.32
+  },
+  {
+   "hz": [
+    6000,
+    16000
+   ],
+   "errorShare": 0.194,
+   "meanAbsDb": 1.76,
+   "signedDb": 0.29
+  }
+ ],
+ "split": {
+  "onsetFrames": 0.614,
+  "sustainFrames": 0.386,
+  "missingEnergy": 0.101,
+  "extraEnergy": 0.255,
+  "within6Db": 0.644
+ }
+}

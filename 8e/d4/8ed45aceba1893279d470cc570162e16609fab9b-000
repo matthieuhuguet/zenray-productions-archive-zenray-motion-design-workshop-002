@@ -1,0 +1,70 @@
+[19:57:34] gap fill: 5 drum hits added 21.21s clap (peakBand), 49.87s hatOpen (nearest), 53.98s hatOpen (nearest), 55.34s hatOpen (peakBand), 59.43s hatOpen (peakBand)
+[19:57:34] per-event deviation
+[20:01:47] dev drums: mean |dB| per round [2.59, 2.431, 2.358, 2.31]
+[20:01:47] dev bass: mean |dB| per round [1.237, 1.153, 1.099, 1.063]
+[20:01:47] dev other: mean |dB| per round [6.663, 6.516, 6.428]
+[20:01:47] measuring stem eq and stereo
+[20:02:30] fitting the mix bus
+[20:03:36] rendering from params
+[20:04:01] scoring
+[20:04:29] V_030 written
+{
+ "version": "V_030",
+ "headline": {
+  "drums": {
+   "plossFull": 0.0,
+   "plossBarMedian": 0.0,
+   "onsetF": 0.9004,
+   "chroma": 0.9721,
+   "envCorr": 0.9751,
+   "sectionEnv": 97.212,
+   "plossEvents": 77.325,
+   "plossBarNoOnset": 76.253,
+   "tfBands": 95.092
+  },
+  "bass": {
+   "plossFull": 0.0,
+   "plossBarMedian": 0.037,
+   "onsetF": 0.6435,
+   "chroma": 0.9816,
+   "envCorr": 0.9787,
+   "sectionEnv": 98.627,
+   "plossEvents": 63.997,
+   "plossBarNoOnset": 70.616,
+   "tfBands": 97.72
+  },
+  "other": {
+   "plossFull": 0.0,
+   "plossBarMedian": 0.0,
+   "onsetF": 0.5428,
+   "chroma": 0.8898,
+   "envCorr": 0.9215,
+   "sectionEnv": 99.084,
+   "plossEvents": 66.84,
+   "plossBarNoOnset": 67.562,
+   "tfBands": 94.784
+  },
+  "vocals": {
+   "plossFull": 0.0465,
+   "plossBarMedian": 57.657,
+   "onsetF": 0.6679,
+   "chroma": 0.9502,
+   "envCorr": 0.8409,
+   "sectionEnv": 93.457,
+   "plossEvents": null,
+   "plossBarNoOnset": 70.962,
+   "tfBands": 96.858
+  },
+  "mix": {
+   "plossFull": 0.0,
+   "plossBarMedian": 28.933,
+   "onsetF": 0.8703,
+   "chroma": 0.9623,
+   "envCorr": 0.9679,
+   "sectionEnv": 98.655,
+   "plossEvents": 70.959,
+   "plossBarNoOnset": 78.539,
+   "tfBands": 97.296
+  }
+ }
+}

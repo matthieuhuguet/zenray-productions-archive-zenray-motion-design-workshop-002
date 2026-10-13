@@ -1,0 +1,75 @@
+# M3, music critic and soundtrack assembly (12 October 2026)
+
+Private 1:1 benchmark, never published. Reference audio stays in `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache`. Every render is rebuilt by code (transcribed notes and hits played by fitted synthesis blocks), no reference sample is pasted.
+
+## 1. Iterations in this task (music-bench, nothing overwritten)
+
+| Version | Stage | Parent | What changed |
+|---|---|---|---|
+| V_025 | bus | V_021 | M3 start: EQ, automation, stereo, mix bus |
+| V_027 | dev | V_025 | per-event deviation (eventdev): each hit/note gets its own measured gain and spectral offset |
+| V_028, V_029 | dev | V_027 | eventdev variants (shared tolerances) |
+| V_030, V_031 | gap | V_027 | gapfill: residual energy the transcription missed is rebuilt by tonal/noise blocks (tolerance 1 and 2) |
+| V_032, V_033 | dev | V_031 | shared deviation, drums-only deviation |
+| **V_034** | retag | V_031 | drum class retagging by measured pitch (`zrmd/audio/retag.py`, better transcription) plus SMS partials |
+
+V_022 and V_026 are aborted runs without scores (kept, not deleted).
+
+## 2. Independent re-score of the best version, V_034
+
+`Scripts/MusicCritic.py --version V_034` recomputes the third-octave time-frequency score (nFft 4096, hop 2048, JND 2 dB, 30 Hz to 16 kHz) from the WAV files, independently of the pipeline. Agreement with the stored score: 0.000 on every stem (other: -0.001). Log: `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/docs/build/M3-logs/critic-V_034.json`.
+
+| Stem | tfBands V_025 | tfBands V_034 | onsetF | chroma | envCorr | plossBarNoOnset |
+|---|---|---|---|---|---|---|
+| drums | 88.73 | **96.27** | 0.903 | 0.969 | 0.979 | 78.4 |
+| bass | 93.46 | **97.71** | 0.629 | 0.981 | 0.979 | 70.5 |
+| other | 93.73 | **94.72** | 0.544 | 0.889 | 0.921 | 67.4 |
+| vocals | 96.86 | 96.86 | 0.668 | 0.950 | 0.841 | 71.0 |
+| mix | 95.78 | **97.46** | 0.873 | 0.962 | 0.969 | 78.9 |
+
+None reaches 99. The strict perceptual loss on the full track (plossFull) stays at 0 for every stem, so that metric is saturated and does not rank versions; tfBands and the bar-level ploss are the useful signals.
+
+## 3. What blocks 99, per stem (critic diagnosis)
+
+- **drums 96.27**: 46 percent of the error is missing energy, concentrated below 500 Hz (30 to 120 Hz: 4.9 dB mean, -1.8 dB; 120 to 500 Hz: 6.4 dB, -2.0 dB). The kick and tom bodies are too thin. Fixing missing energy alone would give about 98.9.
+- **bass 97.71**: mostly sustain frames (80 percent) and extra energy (36 percent), 2 to 6 kHz overshoot of 6.35 dB: the synth bass has too much upper harmonic content and too long a release. Fixing extra energy gives about 99.0.
+- **other 94.72**, the main blocker: onset frames carry 66 percent of the error, onsetF 0.54 and chroma 0.89. The transcription of the pads, plucks and keys misses or misplaces notes; 120 to 2000 Hz is under by 0.7 to 1.4 dB. Fixing onsets alone would give about 99.4.
+- **vocals 96.86**: unchanged since M2, no vocal block yet (the stem is a sustained texture, envCorr 0.84). 120 to 500 Hz is 2.2 dB low and 500 to 2000 Hz 2.0 dB high: a formant tilt.
+- **mix 97.46**: error spread evenly, onset frames 52 percent; fixing onsets gives about 99.4.
+
+Ceiling check from the critic: a 1 ms shift keeps 99.99, but a random phase with 512 or 2048 hops already drops to 84 to 92. tfBands is magnitude only, so 99 is reachable in principle, but any waveform-level metric will need phase-coherent synthesis.
+
+## 4. Soundtrack benchmark assembly
+
+A4 (`A4-sound-refit.md`) is not finished, so the SFX come from V_017.
+
+`Scripts/AssembleSoundtrack.py --music V_034 --sfx V_017` wrote `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/sound/onekey-pro-2/V_019` (V_018, the earlier V_025 assembly, kept). Scores from the existing verify pipeline:
+
+| Score | V_018 (bench V_025) | V_019 (bench V_034) |
+|---|---|---|
+| music | 99.93 | **99.96** |
+| mix | 99.67 | **99.71** |
+| timing | 100.0 | 100.0 |
+| sfx | 52.82 | 52.82 |
+| sound (overall) | 80.75 | **80.76** |
+
+The script exits 1 because the sound gate is not met: the SFX score (52.82) is now the only real blocker of the soundtrack score; the music part of the verify pipeline is near saturated and is less strict than the per-stem critic above.
+
+## 5. Listening page
+
+`Scripts/SoundCompare.py --version V_019 --music-bench V_034` (exit 0) wrote `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/onekey-pro-2/compare-V_019/index.html`, with the full film, the four worst SFX events, and the section "Morceau entier, piste par piste": for drums, bass, other and vocals, the reference stem, our V_034 stem, and an A/B file (reference then ours). Private, kept in the refcache, not published.
+
+## 6. Verifiers, proven both ways
+
+- MusicCritic selftest: green 100.0 on identity; red 91.52 on an 80 ms shift and 95.38 on a 500 to 2000 Hz mute; pass (`critic-selftest.json`).
+- eventdev: green 99.88 on a known deviation, red 67.02 on the drop; sabotaged run fails with exit 1 (`verify-eventdev2*.log`).
+- retag: green finds the 99.7 Hz hit and rejects 43 Hz; the sabotaged run (all 150.7 Hz) fails with exit 1 (`verify-retag*.log`).
+
+## 7. Next methods, by expected gain
+
+1. **other, onsets**: re-transcribe the "other" stem by NMF on a CQT with per-note templates learned from isolated notes, plus pyin on the monophonic segments; then onset-aligned note retiming. Expected about +4 on other, +1.5 on mix.
+2. **drums, low end**: add a kick body block (pitched sine with a pitch envelope, fitted per hit by dfit) and a tom block; the missing energy is all below 500 Hz.
+3. **bass**: fit the release time and a low-pass tilt per note (extra energy at 2 to 6 kHz and in sustain).
+4. **vocals**: a formant-filtered noise and saw pad block fitted per section (tilt 120 to 2000 Hz).
+5. **SFX**: finish A4 refit; with music at 99.96 in the soundtrack pipeline, the SFX score drives the overall 80.76.
+6. Add a phase-aware metric before claiming 99 at waveform level.

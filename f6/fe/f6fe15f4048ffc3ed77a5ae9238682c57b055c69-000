@@ -1,0 +1,124 @@
+[10:43:37] stem drums from V_025
+[10:43:41] stem bass from V_022
+[10:43:51] stem other from V_043
+[10:44:57] stem vocals from V_011
+[10:45:09] stem drums from V_025
+[10:45:12] stem bass from V_022
+[10:45:22] stem other from V_043
+[10:46:27] stem vocals from V_011
+[10:46:38] stem drums from V_025
+[10:46:42] stem bass from V_022
+[10:46:51] stem other from V_043
+[10:47:58] stem vocals from V_001
+{
+ "date": "12 October 2026",
+ "version": "V_037",
+ "sabotage": true,
+ "ok": false,
+ "limits": {
+  "fitGreen": 90.0,
+  "crossGreen": 90.0,
+  "fitRed": 90.0,
+  "crossDrop": 10.0,
+  "barDrop": 5.0,
+  "onsetDrop": 0.2,
+  "tonalTfGreen": 97.0,
+  "drumNoiseTfGreen": 97.0,
+  "drumTfGreen": 88.0,
+  "tableErrGreenDb": 1.5,
+  "redDrop": 5.0,
+  "stableEventDrop": 20.0,
+  "stableTfDrop": 3.0
+ },
+ "checks": {
+  "fit.green": {
+   "ok": true,
+   "block": "synth_voice",
+   "fit": 92.123,
+   "cross": 93.409,
+   "crossTransposed": 67.107,
+   "seconds": 190.82
+  },
+  "fit.red": {
+   "ok": true,
+   "wrongBlock": {
+    "block": "sine_env",
+    "fit": 1.479,
+    "cross": 0.0,
+    "crossTransposed": 0.0,
+    "seconds": 101.75
+   },
+   "transposeDrop": 26.302
+  },
+  "score.green": {
+   "ok": true,
+   "plossFull": 100.0,
+   "plossBarMedian": 100.0,
+   "onsetF": 1.0
+  },
+  "score.red": {
+   "ok": false,
+   "plossBarMedianShifted": 100.0,
+   "onsetFShifted": 1.0
+  },
+  "render": {
+   "ok": false,
+   "deterministic": false,
+   "matchesStoredMix": false,
+   "tempoChangeLengthS": 68.053
+  },
+  "sms.green": {
+   "ok": false,
+   "tonal": {
+    "kind": "tonal",
+    "wrong": false,
+    "tfBands": 74.778,
+    "tableErrDb": 11.353
+   },
+   "drumKickWithTone": {
+    "kind": "drum",
+    "wrong": false,
+    "tfBands": 80.432,
+    "tableErrDb": 12.117
+   },
+   "drumNoise": {
+    "kind": "drumNoise",
+    "wrong": false,
+    "tfBands": 93.274,
+    "tableErrDb": 5.04
+   }
+  },
+  "sms.red": {
+   "ok": false,
+   "tonalWrongPitch": {
+    "kind": "tonal",
+    "wrong": true,
+    "tfBands": 94.122,
+    "tableErrDb": 5.2
+   },
+   "drumWrongTimes": {
+    "kind": "drum",
+    "wrong": true,
+    "tfBands": 84.733,
+    "tableErrDb": 11.242
+   }
+  },
+  "stable.green": {
+   "ok": true,
+   "plossEvents": 100.0,
+   "eventCount": 80,
+   "plossBarNoOnset": 100.0,
+   "tfBands": 100.0
+  },
+  "stable.red": {
+   "ok": false,
+   "shifted": {
+    "plossEvents": 100.0,
+    "eventCount": 80,
+    "plossBarNoOnset": 100.0,
+    "tfBands": 100.0
+   }
+  }
+ },
+ "seconds": 510.3
+}

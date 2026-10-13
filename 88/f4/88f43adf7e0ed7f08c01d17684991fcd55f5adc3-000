@@ -1,0 +1,70 @@
+[19:58:46] gap fill: 17 drum hits added 5.91s kick (peakBand), 7.28s kick (peakBand), 8.64s kick (peakBand), 12.73s kick (peakBand), 14.10s kick (peakBand), 21.21s clap (peakBand), 32.48s kick (peakBand), 33.17s kick (peakBand), 37.25s kick (peakBand), 43.39s kick (peakBand), 49.87s hatOpen (nearest), 51.57s kick (peakBand), 53.98s hatOpen (nearest), 54.30s kick (peakBand), 54.98s kick (peakBand), 55.34s hatOpen (peakBand), 59.43s hatOpen (peakBand)
+[19:58:46] per-event deviation
+[20:02:34] dev drums: mean |dB| per round [3.196, 2.803, 2.551, 2.448]
+[20:02:34] dev bass: mean |dB| per round [1.237, 1.153, 1.099, 1.063]
+[20:02:34] dev other: mean |dB| per round [6.663, 6.516, 6.428]
+[20:02:34] measuring stem eq and stereo
+[20:03:09] fitting the mix bus
+[20:04:15] rendering from params
+[20:04:56] scoring
+[20:05:33] V_031 written
+{
+ "version": "V_031",
+ "headline": {
+  "drums": {
+   "plossFull": 0.0,
+   "plossBarMedian": 0.0,
+   "onsetF": 0.9004,
+   "chroma": 0.9725,
+   "envCorr": 0.9757,
+   "sectionEnv": 97.23,
+   "plossEvents": 76.618,
+   "plossBarNoOnset": 76.4,
+   "tfBands": 95.023
+  },
+  "bass": {
+   "plossFull": 0.0,
+   "plossBarMedian": 0.037,
+   "onsetF": 0.6435,
+   "chroma": 0.9816,
+   "envCorr": 0.9787,
+   "sectionEnv": 98.627,
+   "plossEvents": 63.997,
+   "plossBarNoOnset": 70.616,
+   "tfBands": 97.72
+  },
+  "other": {
+   "plossFull": 0.0,
+   "plossBarMedian": 0.0,
+   "onsetF": 0.5428,
+   "chroma": 0.8898,
+   "envCorr": 0.9215,
+   "sectionEnv": 99.084,
+   "plossEvents": 66.84,
+   "plossBarNoOnset": 67.562,
+   "tfBands": 94.784
+  },
+  "vocals": {
+   "plossFull": 0.0465,
+   "plossBarMedian": 57.657,
+   "onsetF": 0.6679,
+   "chroma": 0.9502,
+   "envCorr": 0.8409,
+   "sectionEnv": 93.457,
+   "plossEvents": null,
+   "plossBarNoOnset": 70.962,
+   "tfBands": 96.858
+  },
+  "mix": {
+   "plossFull": 0.0,
+   "plossBarMedian": 26.752,
+   "onsetF": 0.8748,
+   "chroma": 0.9624,
+   "envCorr": 0.9685,
+   "sectionEnv": 98.689,
+   "plossEvents": 73.384,
+   "plossBarNoOnset": 78.551,
+   "tfBands": 97.329
+  }
+ }
+}

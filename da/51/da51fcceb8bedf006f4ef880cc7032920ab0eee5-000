@@ -1,0 +1,66 @@
+segeq start score 98.625
+  segeq iter 0 score 98.785
+  segeq iter 1 score 98.788
+  segeq iter 2 score 98.778
+  segeq iter 3 score 98.765
+  segeq iter 4 score 98.753
+{
+ "version": "V_016",
+ "tfBands": 98.788,
+ "plossBarNoOnset": 80.958,
+ "plossEvents": 79.095,
+ "groups": [
+  {
+   "hz": [
+    30,
+    120
+   ],
+   "errorShare": 0.304,
+   "meanAbsDb": 2.62,
+   "signedDb": -0.2
+  },
+  {
+   "hz": [
+    120,
+    500
+   ],
+   "errorShare": 0.252,
+   "meanAbsDb": 3.05,
+   "signedDb": -0.03
+  },
+  {
+   "hz": [
+    500,
+    2000
+   ],
+   "errorShare": 0.117,
+   "meanAbsDb": 1.88,
+   "signedDb": -0.01
+  },
+  {
+   "hz": [
+    2000,
+    6000
+   ],
+   "errorShare": 0.133,
+   "meanAbsDb": 1.66,
+   "signedDb": 0.01
+  },
+  {
+   "hz": [
+    6000,
+    16000
+   ],
+   "errorShare": 0.194,
+   "meanAbsDb": 1.72,
+   "signedDb": 0.0
+  }
+ ],
+ "split": {
+  "onsetFrames": 0.623,
+  "sustainFrames": 0.377,
+  "missingEnergy": 0.14,
+  "extraEnergy": 0.164,
+  "within6Db": 0.696
+ }
+}

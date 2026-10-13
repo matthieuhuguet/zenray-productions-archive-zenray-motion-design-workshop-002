@@ -1,0 +1,1 @@
+~/.venvs/zenray-motion/bin/python -I Scripts/VerifyEventDev.py --json  >  2>&  23.73s user 1.72s system 79% cpu 32.088 total

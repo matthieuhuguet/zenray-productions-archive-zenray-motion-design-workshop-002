@@ -1,0 +1,6 @@
+22:33:16 V_001 neutral: tfBands 97.711 plossBarNoOnset 70.52 plossEvents 66.626 None
+22:34:46 V_002 fit: tfBands 97.899 plossBarNoOnset 71.712 plossEvents 69.013 [1.4824, 1.3838, 1.3788, 1.3784]
+22:35:30 V_003 remeasure: tfBands 97.869 plossBarNoOnset 71.956 plossEvents 69.109 None
+22:37:21 V_004 fit: tfBands 97.802 plossBarNoOnset 71.808 plossEvents 66.926 [1.4136, 1.3772, 1.3744, 1.3742]
+22:38:03 V_005 remeasure: tfBands 97.784 plossBarNoOnset 71.642 plossEvents 68.236 None
+22:38:03 best V_002 97.899

@@ -1,0 +1,640 @@
+{
+ "date": "12 October 2026",
+ "version": "V_027",
+ "critic": {
+  "nFft": 4096,
+  "hop": 2048,
+  "fMin": 30.0,
+  "fMax": 16000.0,
+  "bandsPerOct": 3,
+  "jndDb": 2.0,
+  "floorDb": 60.0,
+  "base": 0.99,
+  "groupsHz": [
+   [
+    30,
+    120
+   ],
+   [
+    120,
+    500
+   ],
+   [
+    500,
+    2000
+   ],
+   [
+    2000,
+    6000
+   ],
+   [
+    6000,
+    16000
+   ]
+  ],
+  "onsetWindowS": 0.1,
+  "missDb": 6.0,
+  "selftestDropMin": 3.0,
+  "agreeTol": 1.0,
+  "workers": 16
+ },
+ "tfBandsIndependent": {
+  "drums": 94.833,
+  "bass": 97.681,
+  "other": 94.914,
+  "vocals": 96.858,
+  "mix": 97.278
+ },
+ "tfBandsStored": {
+  "drums": 94.833,
+  "bass": 97.681,
+  "other": 94.914,
+  "vocals": 96.858,
+  "mix": 97.278
+ },
+ "agreement": {
+  "drums": 0.0,
+  "bass": 0.0,
+  "other": 0.0,
+  "vocals": 0.0,
+  "mix": 0.0
+ },
+ "diagnosis": {
+  "drums": {
+   "E": 2.2977,
+   "score": 94.833,
+   "groups": [
+    {
+     "hz": [
+      30,
+      120
+     ],
+     "errorShare": 0.296,
+     "meanAbsDb": 5.36,
+     "signedDb": -1.69
+    },
+    {
+     "hz": [
+      120,
+      500
+     ],
+     "errorShare": 0.316,
+     "meanAbsDb": 8.16,
+     "signedDb": -4.45
+    },
+    {
+     "hz": [
+      500,
+      2000
+     ],
+     "errorShare": 0.101,
+     "meanAbsDb": 3.21,
+     "signedDb": 1.23
+    },
+    {
+     "hz": [
+      2000,
+      6000
+     ],
+     "errorShare": 0.115,
+     "meanAbsDb": 2.99,
+     "signedDb": -0.23
+    },
+    {
+     "hz": [
+      6000,
+      16000
+     ],
+     "errorShare": 0.172,
+     "meanAbsDb": 3.2,
+     "signedDb": -0.85
+    }
+   ],
+   "sections": [
+    {
+     "start": 0.0,
+     "end": 5.7469,
+     "errorShare": 0.133,
+     "meanAbsDb": 8.38,
+     "signedDb": -4.68
+    },
+    {
+     "start": 5.7469,
+     "end": 16.6502,
+     "errorShare": 0.154,
+     "meanAbsDb": 3.63,
+     "signedDb": -1.0
+    },
+    {
+     "start": 16.6502,
+     "end": 22.1018,
+     "errorShare": 0.214,
+     "meanAbsDb": 9.26,
+     "signedDb": 0.91
+    },
+    {
+     "start": 22.1018,
+     "end": 27.5534,
+     "errorShare": 0.005,
+     "meanAbsDb": 2.81,
+     "signedDb": -1.79
+    },
+    {
+     "start": 27.5534,
+     "end": 33.0051,
+     "errorShare": 0.098,
+     "meanAbsDb": 4.59,
+     "signedDb": -1.37
+    },
+    {
+     "start": 33.0051,
+     "end": 62.989,
+     "errorShare": 0.396,
+     "meanAbsDb": 3.5,
+     "signedDb": -1.36
+    },
+    {
+     "start": 62.989,
+     "end": 68.0533,
+     "errorShare": 0.0,
+     "meanAbsDb": 0.0,
+     "signedDb": 0.0
+    }
+   ],
+   "split": {
+    "onsetFrames": 0.557,
+    "sustainFrames": 0.443,
+    "missingEnergy": 0.486,
+    "extraEnergy": 0.202,
+    "within6Db": 0.312
+   },
+   "ifFixed": {
+    "missingEnergy": 98.61,
+    "extraEnergy": 96.68,
+    "onsetFrames": 98.96,
+    "lowUnder120Hz": 97.41
+   }
+  },
+  "bass": {
+   "E": 1.5278,
+   "score": 97.681,
+   "groups": [
+    {
+     "hz": [
+      30,
+      120
+     ],
+     "errorShare": 0.406,
+     "meanAbsDb": 2.92,
+     "signedDb": 0.49
+    },
+    {
+     "hz": [
+      120,
+      500
+     ],
+     "errorShare": 0.389,
+     "meanAbsDb": 3.02,
+     "signedDb": 0.79
+    },
+    {
+     "hz": [
+      500,
+      2000
+     ],
+     "errorShare": 0.16,
+     "meanAbsDb": 3.07,
+     "signedDb": 0.87
+    },
+    {
+     "hz": [
+      2000,
+      6000
+     ],
+     "errorShare": 0.044,
+     "meanAbsDb": 6.3,
+     "signedDb": 1.98
+    },
+    {
+     "hz": [
+      6000,
+      16000
+     ],
+     "errorShare": 0.001,
+     "meanAbsDb": 5.17,
+     "signedDb": -3.72
+    }
+   ],
+   "sections": [
+    {
+     "start": 0.0,
+     "end": 5.7469,
+     "errorShare": 0.012,
+     "meanAbsDb": 2.76,
+     "signedDb": -0.14
+    },
+    {
+     "start": 5.7469,
+     "end": 16.6502,
+     "errorShare": 0.234,
+     "meanAbsDb": 3.42,
+     "signedDb": 0.74
+    },
+    {
+     "start": 16.6502,
+     "end": 22.1018,
+     "errorShare": 0.084,
+     "meanAbsDb": 2.51,
+     "signedDb": 0.66
+    },
+    {
+     "start": 22.1018,
+     "end": 27.5534,
+     "errorShare": 0.066,
+     "meanAbsDb": 2.08,
+     "signedDb": 0.51
+    },
+    {
+     "start": 27.5534,
+     "end": 33.0051,
+     "errorShare": 0.068,
+     "meanAbsDb": 3.41,
+     "signedDb": 0.46
+    },
+    {
+     "start": 33.0051,
+     "end": 62.989,
+     "errorShare": 0.536,
+     "meanAbsDb": 3.17,
+     "signedDb": 0.78
+    },
+    {
+     "start": 62.989,
+     "end": 68.0533,
+     "errorShare": 0.0,
+     "meanAbsDb": 0.0,
+     "signedDb": 0.0
+    }
+   ],
+   "split": {
+    "onsetFrames": 0.204,
+    "sustainFrames": 0.796,
+    "missingEnergy": 0.133,
+    "extraEnergy": 0.365,
+    "within6Db": 0.502
+   },
+   "ifFixed": {
+    "missingEnergy": 98.25,
+    "extraEnergy": 99.06,
+    "onsetFrames": 98.52,
+    "lowUnder120Hz": 99.17
+   }
+  },
+  "other": {
+   "E": 2.2789,
+   "score": 94.914,
+   "groups": [
+    {
+     "hz": [
+      30,
+      120
+     ],
+     "errorShare": 0.137,
+     "meanAbsDb": 6.5,
+     "signedDb": -0.21
+    },
+    {
+     "hz": [
+      120,
+      500
+     ],
+     "errorShare": 0.311,
+     "meanAbsDb": 5.19,
+     "signedDb": -1.25
+    },
+    {
+     "hz": [
+      500,
+      2000
+     ],
+     "errorShare": 0.28,
+     "meanAbsDb": 3.9,
+     "signedDb": -0.51
+    },
+    {
+     "hz": [
+      2000,
+      6000
+     ],
+     "errorShare": 0.124,
+     "meanAbsDb": 3.21,
+     "signedDb": 0.5
+    },
+    {
+     "hz": [
+      6000,
+      16000
+     ],
+     "errorShare": 0.148,
+     "meanAbsDb": 5.29,
+     "signedDb": 2.22
+    }
+   ],
+   "sections": [
+    {
+     "start": 0.0,
+     "end": 5.7469,
+     "errorShare": 0.068,
+     "meanAbsDb": 4.25,
+     "signedDb": 0.48
+    },
+    {
+     "start": 5.7469,
+     "end": 16.6502,
+     "errorShare": 0.157,
+     "meanAbsDb": 5.37,
+     "signedDb": -0.78
+    },
+    {
+     "start": 16.6502,
+     "end": 22.1018,
+     "errorShare": 0.107,
+     "meanAbsDb": 4.65,
+     "signedDb": 0.2
+    },
+    {
+     "start": 22.1018,
+     "end": 27.5534,
+     "errorShare": 0.088,
+     "meanAbsDb": 4.16,
+     "signedDb": -0.34
+    },
+    {
+     "start": 27.5534,
+     "end": 33.0051,
+     "errorShare": 0.094,
+     "meanAbsDb": 4.47,
+     "signedDb": 0.18
+    },
+    {
+     "start": 33.0051,
+     "end": 62.989,
+     "errorShare": 0.445,
+     "meanAbsDb": 4.51,
+     "signedDb": -0.24
+    },
+    {
+     "start": 62.989,
+     "end": 68.0533,
+     "errorShare": 0.041,
+     "meanAbsDb": 3.95,
+     "signedDb": 0.28
+    }
+   ],
+   "split": {
+    "onsetFrames": 0.665,
+    "sustainFrames": 0.335,
+    "missingEnergy": 0.331,
+    "extraEnergy": 0.272,
+    "within6Db": 0.397
+   },
+   "ifFixed": {
+    "missingEnergy": 97.69,
+    "extraEnergy": 97.27,
+    "onsetFrames": 99.41,
+    "lowUnder120Hz": 96.18
+   }
+  },
+  "vocals": {
+   "E": 1.7824,
+   "score": 96.858,
+   "groups": [
+    {
+     "hz": [
+      30,
+      120
+     ],
+     "errorShare": 0.128,
+     "meanAbsDb": 4.88,
+     "signedDb": -0.01
+    },
+    {
+     "hz": [
+      120,
+      500
+     ],
+     "errorShare": 0.304,
+     "meanAbsDb": 4.16,
+     "signedDb": -2.16
+    },
+    {
+     "hz": [
+      500,
+      2000
+     ],
+     "errorShare": 0.28,
+     "meanAbsDb": 3.51,
+     "signedDb": 2.0
+    },
+    {
+     "hz": [
+      2000,
+      6000
+     ],
+     "errorShare": 0.125,
+     "meanAbsDb": 2.54,
+     "signedDb": 1.18
+    },
+    {
+     "hz": [
+      6000,
+      16000
+     ],
+     "errorShare": 0.163,
+     "meanAbsDb": 3.12,
+     "signedDb": -1.0
+    }
+   ],
+   "sections": [
+    {
+     "start": 0.0,
+     "end": 5.7469,
+     "errorShare": 0.047,
+     "meanAbsDb": 3.65,
+     "signedDb": 0.61
+    },
+    {
+     "start": 5.7469,
+     "end": 16.6502,
+     "errorShare": 0.148,
+     "meanAbsDb": 3.23,
+     "signedDb": -0.18
+    },
+    {
+     "start": 16.6502,
+     "end": 22.1018,
+     "errorShare": 0.091,
+     "meanAbsDb": 3.52,
+     "signedDb": -0.26
+    },
+    {
+     "start": 22.1018,
+     "end": 27.5534,
+     "errorShare": 0.075,
+     "meanAbsDb": 3.64,
+     "signedDb": -0.31
+    },
+    {
+     "start": 27.5534,
+     "end": 33.0051,
+     "errorShare": 0.097,
+     "meanAbsDb": 3.74,
+     "signedDb": 0.16
+    },
+    {
+     "start": 33.0051,
+     "end": 62.989,
+     "errorShare": 0.515,
+     "meanAbsDb": 3.61,
+     "signedDb": 0.02
+    },
+    {
+     "start": 62.989,
+     "end": 68.0533,
+     "errorShare": 0.027,
+     "meanAbsDb": 3.92,
+     "signedDb": 1.9
+    }
+   ],
+   "split": {
+    "onsetFrames": 0.0,
+    "sustainFrames": 1.0,
+    "missingEnergy": 0.216,
+    "extraEnergy": 0.196,
+    "within6Db": 0.589
+   },
+   "ifFixed": {
+    "missingEnergy": 98.05,
+    "extraEnergy": 97.95,
+    "onsetFrames": 96.86,
+    "lowUnder120Hz": 97.6
+   }
+  },
+  "mix": {
+   "E": 1.6572,
+   "score": 97.278,
+   "groups": [
+    {
+     "hz": [
+      30,
+      120
+     ],
+     "errorShare": 0.26,
+     "meanAbsDb": 3.29,
+     "signedDb": 0.58
+    },
+    {
+     "hz": [
+      120,
+      500
+     ],
+     "errorShare": 0.27,
+     "meanAbsDb": 3.44,
+     "signedDb": 0.15
+    },
+    {
+     "hz": [
+      500,
+      2000
+     ],
+     "errorShare": 0.21,
+     "meanAbsDb": 3.27,
+     "signedDb": 0.6
+    },
+    {
+     "hz": [
+      2000,
+      6000
+     ],
+     "errorShare": 0.112,
+     "meanAbsDb": 2.91,
+     "signedDb": -0.16
+    },
+    {
+     "hz": [
+      6000,
+      16000
+     ],
+     "errorShare": 0.149,
+     "meanAbsDb": 3.56,
+     "signedDb": -0.99
+    }
+   ],
+   "sections": [
+    {
+     "start": 0.0,
+     "end": 5.7469,
+     "errorShare": 0.115,
+     "meanAbsDb": 5.75,
+     "signedDb": 1.73
+    },
+    {
+     "start": 5.7469,
+     "end": 16.6502,
+     "errorShare": 0.156,
+     "meanAbsDb": 3.0,
+     "signedDb": -0.32
+    },
+    {
+     "start": 16.6502,
+     "end": 22.1018,
+     "errorShare": 0.083,
+     "meanAbsDb": 3.16,
+     "signedDb": 0.59
+    },
+    {
+     "start": 22.1018,
+     "end": 27.5534,
+     "errorShare": 0.079,
+     "meanAbsDb": 3.2,
+     "signedDb": 1.87
+    },
+    {
+     "start": 27.5534,
+     "end": 33.0051,
+     "errorShare": 0.098,
+     "meanAbsDb": 3.86,
+     "signedDb": 0.17
+    },
+    {
+     "start": 33.0051,
+     "end": 62.989,
+     "errorShare": 0.435,
+     "meanAbsDb": 2.97,
+     "signedDb": -0.4
+    },
+    {
+     "start": 62.989,
+     "end": 68.0533,
+     "errorShare": 0.035,
+     "meanAbsDb": 4.96,
+     "signedDb": 3.44
+    }
+   ],
+   "split": {
+    "onsetFrames": 0.499,
+    "sustainFrames": 0.501,
+    "missingEnergy": 0.217,
+    "extraEnergy": 0.204,
+    "within6Db": 0.579
+   },
+   "ifFixed": {
+    "missingEnergy": 98.32,
+    "extraEnergy": 98.27,
+    "onsetFrames": 99.31,
+    "lowUnder120Hz": 98.5
+   }
+  }
+ },
+ "ceilings": null
+}

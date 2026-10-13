@@ -1,0 +1,132 @@
+# S1, look inventory of onekey-pro-2 (12 October 2026)
+
+This report lists the 23 visual looks of the reference that must become shader code, ranked by screen time, each measured on the local reference cache: colours as sRGB medians, sizes as fractions of the frame (or pixels at 1080p), and timings from a 30 fps decode. No reference pixel is used as a texture. The crops are for analysis only: they stay local and are never archived. (12 October 2026)
+
+## Files (12 October 2026)
+
+| File | Content |
+|---|---|
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/shaders/looks-onekey.json` | schema `zrmd/looks@1`. For every look: `id`, `name`, `shots`, `time_ranges_s`, `screen_time_s`, `screen_share`, `priority`, `summary` (the measured description), `block_families`, `measured` (the raw numbers: ramps, profiles, halo falloffs, curves) and `crops` |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/Scripts/MeasureLooksOnekey.py` | the measurement, reproducible. All look definitions (ranges, families, crop boxes) live in the `LOOKS` list. Takes 8 s on 16 threads |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/<refcache>/onekey-pro-2/looks/<look-id>-1.png`, `-2.png` | 46 analysis crops, 2 per look |
+| `/Users/zenray/.claude/tmp/tmp-zenray-motion-design/<refcache>/onekey-pro-2/looks/_frames/` | the full-resolution PNG frames the crops and samples come from (local cache, 37 MB) |
+
+To rerun: `cd /Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign && ~/.venvs/zenray-motion/bin/python -I Scripts/MeasureLooksOnekey.py`. (12 October 2026)
+
+Shot count (12 October 2026): the task brief said 26 shots. The bible holds 30 shots (26 cuts from the detector plus 3 added in review, 29 cuts in all), and this inventory follows the bible's S01 to S30.
+
+## Looks by screen time (12 October 2026)
+
+Screen time is the union of each look's time ranges. Looks overlap (for example, a copper rim against a black void with bloom), so the shares add up to more than 100 percent.
+
+| # | Look id | Shots | Seconds | Share | Families |
+|---|---|---|---|---|---|
+| 1 | void-black-grain | S01 S02 S05 S11 S16 S23 to S26 S30 | 27.7 | 40.7 % | colour |
+| 2 | low-key-cool-grade | S14 S15 S17 to S22 | 23.5 | 34.5 % | colour grade, vignette, grain, emission glow |
+| 3 | depth-of-field-blur | S03 S04 S12 S14 S15 S18 S20 to S22 | 23.4 | 34.3 % | blur/dof |
+| 4 | screen-ui-emission | S14 S15 S19 S21 S22 S24 S25 | 19.4 | 28.4 % | gradient, sdf, glow |
+| 5 | copper-metal-rim | S01 S05 to S07 S09 S10 S23 S24 S29 | 14.5 | 21.2 % | lighting (fresnel, specular), gradient, reflection |
+| 6 | bloom-halo | S01 S11 S12 S17 S23 | 8.9 | 13.1 % | glow/bloom |
+| 7 | text-card-fade | S02 S16 S26, captions | 8.1 | 11.9 % | time, blur |
+| 8 | logo-colour-fade | S30 | 6.0 | 8.8 % | time, gradient, mask |
+| 9 | dark-device-fresnel-rim | S05 S13 S27 | 6.0 | 8.8 % | lighting (fresnel), sdf |
+| 10 | strata-landscape-wallpaper | S06 to S10 | 5.7 | 8.3 % | noise (fbm, warp), contour pattern, gradient |
+| 11 | smoke-letters-volumetric | S27 to S29 | 4.0 | 5.9 % | noise, gradient, glyph mask, volumetric, glow |
+| 12 | reflective-floor-fog | S27 to S29 | 4.0 | 5.9 % | reflection, gradient, noise |
+| 13 | brushed-aluminium-studio | S03 to S05 S28 | 3.9 | 5.8 % | anisotropic specular, gradient, noise, dof |
+| 14 | chip-emissive-iridescent | S11 S12 | 3.7 | 5.5 % | glow, thin-film colour, sdf |
+| 15 | arch-glow-wallpaper | S01 | 3.5 | 5.2 % | arch sdf, distance ramp, glow, droplet |
+| 16 | studio-bluegrey-backdrop | S13 | 3.0 | 4.4 % | gradient, vignette, grain |
+| 17 | blue-light-sweep | S17 | 2.3 | 3.3 % | arc sdf, glow, travelling time, chromatic fringe |
+| 18 | title-luminance-ramp | S01 | 2.0 | 3.0 % | time (luminance curve) |
+| 19 | green-light-beams | S11 | 2.0 | 2.9 % | line pattern, additive glow, time |
+| 20 | neon-ring-glow | S23 S24 S21 | 1.5 | 2.2 % | arc sdf, glow, gradient along arc |
+| 21 | orb-radial-glow | S01 | 1.5 | 2.1 % | disc sdf, radial and polar gradient, colour pools, glow, scale curve |
+| 22 | grazing-glass-reflection | S08 S09 | 1.4 | 2.0 % | reflection ramp, fresnel, blur |
+| 23 | dip-to-black-transitions | 8 cuts | n/a | n/a | time (opacity) |
+
+## Measured descriptions (12 October 2026)
+
+The full numbers are in `measured` of each look. Here are the values the blocks must reproduce.
+
+- **void-black-grain.** The black is pure digital black, not a dark grey: the corner median is #000000, luma p95 is 0, and the high-pass standard deviation is 0.0. 3D and graphic shots therefore need no grain layer. In 27 % of all frames the mean luma is below 8. (12 October 2026)
+- **low-key-cool-grade.** On live shots the median luma runs from 14 (S19) to 56 (S21) and p99 from 100 to 208, while the darkest 10 % of pixels sit at #000000 to #060606, so the blacks are crushed. Mid tones are shifted blue (mean B minus R from +4 in S14 to +17 in S22) and turn violet in S19 (#100c1f) and S22 (#211b41). The corners are 0.78 as bright as the centre at 22.9 s (a vignette). Grain high-pass std is 0.31 to 0.36. (12 October 2026)
+- **depth-of-field-blur.** On a 3x3 sharpness map (variance of the Laplacian, normalised), live shots have one sharp cell (1.0) and every other cell below 0.05. S03 is sharp in a vertical band in the centre column (0.5 to 1.0), with sides below 0.24. S12 is sharp at top left and in the centre and soft in the right column (0.016). (12 October 2026)
+- **screen-ui-emission.** Blue tiles ramp #031d69, #042cb1, #0b70bd, #bac7da; the violet screen ramps #221f72, #3d4ab2, #919bd5, #cdd4e9; skin lit by the screen has a median of #4c3737. UI content (text, numbers, icons) is never copied. Only the gradients and the light spill are looks. (12 October 2026)
+- **copper-metal-rim.** The body ramps #1f0603, #331005, #4f2114, #96492f, #dc9174 (p5 to p95), and a lit rim ramps #a63d21, #f1a563, #f5bc7c, #fcd9a8. Highlights stay warm and never reach pure white. (12 October 2026)
+- **bloom-halo.** Measured as mean luma by distance from the saturated core, in bins of 0-2, 2-4, 4-8, 8-16, 16-32, 32-64 and 64-128 px at 1080p: chip 249, 211, 200, 190, 173, 133, 76; ring 243, 171, 143, 109, 81, 58, 42; orb rim 210, 156, 138, 117, 98, 83, 62. Around the green beam the halo is saturated, from #0b7c07 at 2 px down to #042d03 at 128 px. These long tails call for a sum of about three gaussians (radius near 3, 15 and 60 px). (12 October 2026)
+- **text-card-fade.**
+  - Text is #e5e5e5 at full strength and #909090 mid fade.
+  - S16 swaps its phrases through a dip to luma 51 between 27.0 and 27.4 s.
+  - S26 fades in over 0.3 s (55.4 to 55.7) and out over about 0.2 s, swaps at 56.5, and fades out between 57.8 and 58.0.
+  - A blur-in appears on the brand word at 1.9 s.
+  - The text itself is set by the typography system, and only its opacity and blur are shader looks. (12 October 2026)
+- **logo-colour-fade.** The colour of the end mark over time:
+  - 62.55 s: the mark appears.
+  - 62.55 to 63.0 s: a copper ramp rises, #421b12, #552817, #6f361f, #844123, #bb5d2e.
+  - 63.3 s: it dims to #522f1f.
+  - 63.4 to 63.6 s: it turns white, #777777, #babbba, #fdfdfd.
+  - Until 66.1 s it holds; at 66.2 s a hard cut goes to black, which lasts to 68.0 s.
+
+  The reproduction draws its own mark and keeps only the colour timeline. (12 October 2026)
+- **dark-device-fresnel-rim.** The black body is #101012 (luma 10 to 24). Rim pixels reach p90 #677c97 and p98 #bbc2cb at 58.7 s, and p98 #929cb0 on the S13 edge, so the rim reads cool. (12 October 2026)
+- **strata-landscape-wallpaper.** The colour ramp by luma runs #8d0005, #ac1c06, #c03106, #d3400b, #e6600c, #f19e34, with cream peaks near #fbce8c. The rock is near black, #121414 to #212320. The fine contour bands have a dominant period of 54 px at 1080p, or 0.05 of the frame height. (12 October 2026)
+- **smoke-letters-volumetric.** Letter ramps (p10 to p98):
+  - blue: #080910, #10151d, #212a37, #465972, #9ba9be, #c1c6ce
+  - silver: #1d212a, #535862, #8d8e97, #b7b8bf, #d3d4d6, #e0e0e0
+  - copper: #1a0400, #290b00, #34180b, #642a13, #c5674b, #cdb88d
+
+  The fog band (y 0.66 to 0.74) is #334256, #a8aab0 and #301002 for the three variants. The letter shapes are our own glyphs, never the reference text. (12 October 2026)
+- **reflective-floor-fog.** Floor medians are #151c28, #636670 and #080101. Reflection strength (floor luma over letter-band luma) is 0.83, 0.89 and 0.37. The floor's sharpness is only 0.7 to 6 % of the letters', so the reflection is strongly blurred vertically. (12 October 2026)
+- **brushed-aluminium-studio.** Strictly neutral grey (R = G = B), ramping #080808, #0f0f0f, #1b1b1b, #6b6b6b, #cecece. Specular strips are sharp: #5e5e5e, #d0d0d0, #070707 within 0.07 of the width. The surface high-pass std of 0.85 is micro texture, not grain. (12 October 2026)
+- **chip-emissive-iridescent.** The chip top ramps #76818d, #ada7ae, #bebebd, #dadade, #fefdff, with magenta, green and cyan fringes on the edges (thin film). The board is #27282d. (12 October 2026)
+- **arch-glow-wallpaper.**
+  - Vertical profile through the apex at 1.5 s: #000031 at the top edge, #000012 at 0.1 to 0.2, #04234f at 0.32, #335a80 at 0.37, #8092a8 at 0.42, white #d6d6d8 at 0.58, a cyan edge #81b4ce at 0.63, deep blue #01076e at 0.68, and black from 0.74.
+  - On the flank at 1.9 s: white down to cream #d8d5c8, then amber #b59e52, #9a6e1f, #743908, and #4c1100 at the bottom.
+  - Crossing the arch edge: white, then amber #be9846, then dark red #1e0001, then black, within about 0.03 of the width.
+  - An earlier per-frame fit already exists in `zrmd/shaders/archglow.py`. Its 9 shape parameters and 6 colours can seed the bank block. (12 October 2026)
+- **studio-bluegrey-backdrop.** Lighter on the left (#4d5e72 at top left, #68748a at bottom left) and dark on the right (#131620, #1f2534). The horizontal ramp is almost linear, and the backdrop gets brighter toward the bottom (#48586b to #627086). Grain high-pass std is 0.31. (12 October 2026)
+- **blue-light-sweep.**
+  - Timing: visible from 30.0 to 30.9 s, rising 30.1 to 30.37, peaking at 30.4, falling 30.47 to 30.9.
+  - Path: the centroid moves from (0.65, 0.82) to (0.98, 0.96) of the frame along the floor curve.
+  - Colour: #1a7fcb with a thin white core.
+  - Halo: short, luma 208 at the core and 63 within 2 to 4 px. (12 October 2026)
+- **title-luminance-ramp.** A neutral grey title whose luma p90 rises linearly, about 120 levels per second, from 37 at 3.0 s to 252 at 4.8 s (ease none): #3d3d3d at 3.2 s, #c7c7c7 at 4.4 s. (12 October 2026)
+- **green-light-beams.**
+  - White traces (#fefefe) appear at 15.9 s.
+  - Green coverage is 1.8 % at 15.97 s, jumps to 7 % at 16.57 s, holds until 17.07 s and is gone by 17.17 s.
+  - The core is green white #92e889, the ambient wash is #010f00, and the halo is as in bloom-halo. (12 October 2026)
+- **neon-ring-glow.** The orange arc is #e68945, the white arc ramps #91a8c0, #dfeaf7, #f0f8ff, #f7fcff (blue white), and the halo tail is warm (#51352d at 32 to 64 px). (12 October 2026)
+- **orb-radial-glow.**
+  - Radius (fraction of frame height): 0.007 at 0.13 s, 0.070 at 0.33 s, 0.170 at 0.53 s, 0.283 at 0.73 s, 0.400 at 1.03 s, 0.482 at 1.23 s, then clipped by the frame.
+  - Centre: (0.499, 0.49 to 0.52).
+  - At 0.7 s: interior #d4d6d7, rim amber #d48d0f at the top and #c3a34c at the bottom, a thin dark red outer edge #510f03.
+  - At 1.1 s: an upper blue pool #5a89b3, a lower cyan pool #18add2, centre #d0d2d2. (12 October 2026)
+- **grazing-glass-reflection.** A cool grey reflection #292d30, a warm grey #564d4f, and a vertical ramp from #1c2022 to #4c5053 down to the horizon. (12 October 2026)
+- **dip-to-black-transitions.** 8 cuts pass through black: 4.93, 6.28, 25.40, 29.53, 51.68, 55.37, 58.00 and 62.00 s. Each is flagged because one side reaches a mean luma below 3 while the neighbouring shot is brighter than 6. (12 October 2026)
+
+## Block families for S2, by summed screen time (12 October 2026)
+
+| Family | Seconds | Looks |
+|---|---|---|
+| gradient (linear, radial, distance ramp, ramp of N stops) | 79.9 | 15 |
+| colour (grade lift gamma gain, tint, thin film) | 60.7 | 5 |
+| noise and grain (fbm, domain warp, ridged, film grain) | 73.2 | 8 |
+| glow and bloom (multi-scale gaussian, additive) | 70.3 | 10 |
+| sdf and mask (disc, arc band, power arch, rounded rect, parallel lines, glyph) | 59.0 | 12 |
+| lighting (fresnel, anisotropic specular strip, metallic tint) | 27.2 | 5 |
+| blur and depth of field | 36.8 | 4 |
+| vignette | 26.5 | 2 |
+| time (opacity, luminance and colour curves, travelling path) | 21.9 | 7 |
+| reflection (mirrored, blurred, attenuated) | 18.4 | 2 |
+| pattern (contour bands on a height) | 7.7 | 2 |
+| volumetric (fog spill) | 4.0 | 1 |
+
+Rows that are the sum of several labels in the JSON: noise is noise/grain plus noise; glow is glow plus glow/bloom; sdf is sdf, mask and sdf/mask; blur is blur/dof plus blur. (12 October 2026)
+
+## Notes and limits (12 October 2026)
+
+- **What a look excludes.** Hands, people, fabric, circuit boards and device geometry are live footage or 3D models, not shader looks. Only their grade, light and blur are listed here. The device body itself belongs to the existing `templates/device3d` path. (12 October 2026)
+- **Soft shadows.** No distinct soft shadow was found: devices float on pure black, and the final shots show a reflection rather than a shadow, so no shadow look is listed. (12 October 2026)
+- **Not separated as its own measure.** The colour of the centre droplet of the orb and the arch was not measured separately; its size is already fitted by `archglow.py` (`dot_y`, `dot_r`). (12 October 2026)
+- **Screen time versus effort.** Priority follows screen time, as asked. The first look, the black void, costs one flat colour, so the real effort order would rather be: grade, depth of field and bloom first, then copper, strata, arch glow and smoke. (12 October 2026)
