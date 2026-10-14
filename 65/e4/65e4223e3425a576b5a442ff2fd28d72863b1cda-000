@@ -1,0 +1,98 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-gorilla",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "with Corning® Gorilla® Glass",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/AlbertSans/AlbertSans[wght].ttf",
+    "family": "AlbertSans",
+    "axes": {
+      "wght": 578.8039063372886
+    }
+  },
+  "size_px": 37.0693,
+  "tracking_em": -0.019832,
+  "deltas_px": [
+    -0.3956,
+    0.1742,
+    1.0369,
+    -0.561,
+    -0.561,
+    -0.9985,
+    0.2564,
+    0.9744,
+    0.0554,
+    -0.0154,
+    0.7679,
+    0.5774,
+    -0.4994,
+    -0.4994,
+    -0.5079,
+    0.1578,
+    0.1988,
+    -0.4452,
+    0.2591,
+    0.4585,
+    1.1317,
+    -0.5562,
+    -0.5562,
+    -0.7827,
+    0.1577,
+    0.3971,
+    -0.1022,
+    0.0
+  ],
+  "origin_px": [
+    716.16,
+    1007.475
+  ],
+  "blur_px": 0.4663,
+  "colour": "#e5bbaa",
+  "lightmap": {
+    "x_px": [
+      745.88,
+      803.62,
+      861.38,
+      919.12,
+      976.88,
+      1034.62,
+      1092.38,
+      1150.12
+    ],
+    "gain": [
+      0.8771,
+      0.8848,
+      0.8814,
+      0.8831,
+      0.8908,
+      0.8447,
+      1.0,
+      0.9898
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 14.0,
+    "region": [
+      680,
+      955,
+      560,
+      80
+    ],
+    "crop_box_tlbr": [
+      11,
+      25,
+      80,
+      511
+    ]
+  }
+}

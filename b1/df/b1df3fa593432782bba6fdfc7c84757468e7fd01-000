@@ -1,0 +1,8 @@
+{
+  "version": "V_003",
+  "parent": "V_002",
+  "created": "13 October 2026, 09:25",
+  "note": "F3 V_003: Figtree, from V_002, noise floor and working per-glyph deltas",
+  "author": "zrmd",
+  "overrides": {}
+}

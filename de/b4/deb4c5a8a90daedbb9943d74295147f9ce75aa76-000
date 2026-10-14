@@ -1,0 +1,78 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-eal",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "EAL 6+ Certified",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/fonts/onekey-f3-t-eal/V_001/font.ttf",
+    "family": "V_001",
+    "axes": {}
+  },
+  "size_px": 38.9855,
+  "tracking_em": -0.012182,
+  "deltas_px": [
+    0.1279,
+    -0.045,
+    -0.0294,
+    0.2319,
+    -0.0277,
+    0.0117,
+    -0.2496,
+    -0.0732,
+    -0.019,
+    -0.2213,
+    0.2196,
+    -0.1325,
+    0.3082,
+    -0.1535,
+    0.0108,
+    0.0
+  ],
+  "origin_px": [
+    804.801,
+    1015.123
+  ],
+  "blur_px": 0.5639,
+  "colour": "#acadb2",
+  "lightmap": {
+    "x_px": [
+      836.0,
+      892.0,
+      948.0,
+      1004.0,
+      1060.0
+    ],
+    "gain": [
+      0.9503,
+      1.0,
+      0.9962,
+      0.9924,
+      0.9924
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 19.0667,
+    "region": [
+      700,
+      960,
+      520,
+      80
+    ],
+    "crop_box_tlbr": [
+      15,
+      96,
+      68,
+      400
+    ]
+  }
+}

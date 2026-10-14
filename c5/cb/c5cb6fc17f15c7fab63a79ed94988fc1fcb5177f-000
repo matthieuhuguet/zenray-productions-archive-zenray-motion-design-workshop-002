@@ -1,0 +1,108 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-four-secure",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "Four secure elements",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/Figtree/Figtree[wght].ttf",
+    "family": "Figtree",
+    "axes": {
+      "wght": 530.4752365477788
+    }
+  },
+  "size_px": 104.8598,
+  "tracking_em": -0.001442,
+  "deltas_px": [
+    0.1237,
+    0.489,
+    0.4412,
+    -1.0155,
+    -1.0155,
+    -0.053,
+    0.0103,
+    1.0717,
+    0.2516,
+    0.738,
+    -0.8571,
+    -0.8571,
+    0.6568,
+    -0.5101,
+    0.4497,
+    -0.1603,
+    0.6451,
+    1.4868,
+    -3.5679,
+    0.0
+  ],
+  "origin_px": [
+    449.399,
+    923.57
+  ],
+  "blur_px": 0.5129,
+  "colour": "#cdccce",
+  "lightmap": {
+    "x_px": [
+      487.41,
+      546.24,
+      605.06,
+      663.88,
+      722.71,
+      781.53,
+      840.35,
+      899.18,
+      958.0,
+      1016.82,
+      1075.65,
+      1134.47,
+      1193.29,
+      1252.12,
+      1310.94,
+      1369.76,
+      1428.59
+    ],
+    "gain": [
+      0.9992,
+      1.0,
+      0.9967,
+      1.0,
+      1.0,
+      0.9951,
+      0.9951,
+      0.9951,
+      0.9967,
+      0.9984,
+      0.9935,
+      0.9967,
+      0.9967,
+      0.9967,
+      1.0,
+      0.9902,
+      1.0
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 18.0,
+    "region": [
+      160,
+      820,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      18,
+      286,
+      117,
+      1310
+    ]
+  }
+}

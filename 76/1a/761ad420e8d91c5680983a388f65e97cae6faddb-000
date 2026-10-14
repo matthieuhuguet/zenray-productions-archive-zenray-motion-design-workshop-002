@@ -1,0 +1,96 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-gorilla",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "with Corning® Gorilla® Glass",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/fonts/onekey-f3-t-gorilla/V_002/font.ttf",
+    "family": "V_002",
+    "axes": {}
+  },
+  "size_px": 35.864,
+  "tracking_em": -0.006544,
+  "deltas_px": [
+    0.0735,
+    0.1569,
+    0.1125,
+    -0.0508,
+    -0.0729,
+    -0.0274,
+    -0.0477,
+    0.488,
+    -0.3864,
+    0.0203,
+    0.6037,
+    0.3764,
+    -0.4531,
+    -0.442,
+    0.7401,
+    -0.307,
+    -0.2564,
+    -0.5775,
+    0.2335,
+    0.8195,
+    0.803,
+    0.0918,
+    0.1029,
+    -1.1303,
+    -0.6209,
+    -0.0796,
+    0.0485,
+    0.0511
+  ],
+  "origin_px": [
+    716.664,
+    1007.408
+  ],
+  "blur_px": 0.4725,
+  "colour": "#e5bbaa",
+  "lightmap": {
+    "x_px": [
+      745.88,
+      803.62,
+      861.38,
+      919.12,
+      976.88,
+      1034.62,
+      1092.38,
+      1150.12
+    ],
+    "gain": [
+      0.8771,
+      0.8848,
+      0.8814,
+      0.8831,
+      0.8908,
+      0.8447,
+      1.0,
+      0.9898
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 14.0,
+    "region": [
+      680,
+      955,
+      560,
+      80
+    ],
+    "crop_box_tlbr": [
+      11,
+      25,
+      80,
+      511
+    ]
+  }
+}

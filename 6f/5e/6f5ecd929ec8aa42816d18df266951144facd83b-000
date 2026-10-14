@@ -1,0 +1,123 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-find-my",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "Works with Apple Find My",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/DMSans/DMSans[opsz,wght].ttf",
+    "family": "DMSans",
+    "axes": {
+      "wght": 546.7912849859662,
+      "opsz": 11.6796574396922
+    }
+  },
+  "size_px": 111.8928,
+  "tracking_em": -0.019161,
+  "deltas_px": [
+    4.5682,
+    1.2666,
+    0.1985,
+    -0.3082,
+    -1.1768,
+    -1.1746,
+    -1.8735,
+    -0.4691,
+    -0.8765,
+    -0.1308,
+    -0.1308,
+    0.2554,
+    -1.2783,
+    -0.7931,
+    0.1444,
+    0.7828,
+    0.7828,
+    0.5073,
+    0.5394,
+    -1.532,
+    0.846,
+    0.846,
+    -2.0158,
+    0.0
+  ],
+  "origin_px": [
+    294.072,
+    920.246
+  ],
+  "blur_px": 0.4109,
+  "colour": "#e4e1e4",
+  "lightmap": {
+    "x_px": [
+      323.14,
+      383.41,
+      443.68,
+      503.95,
+      564.23,
+      624.5,
+      684.77,
+      745.05,
+      805.32,
+      865.59,
+      925.86,
+      986.14,
+      1046.41,
+      1106.68,
+      1166.95,
+      1227.23,
+      1287.5,
+      1347.77,
+      1408.05,
+      1468.32,
+      1528.59,
+      1588.86
+    ],
+    "gain": [
+      0.9162,
+      0.9096,
+      0.914,
+      0.914,
+      0.9184,
+      0.9229,
+      0.9331,
+      0.9302,
+      0.9302,
+      0.9375,
+      0.9361,
+      0.9361,
+      0.9317,
+      0.9449,
+      0.9508,
+      0.9111,
+      0.9331,
+      0.9273,
+      0.9442,
+      0.9581,
+      0.9596,
+      1.0
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 31.2,
+    "region": [
+      160,
+      820,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      7,
+      121,
+      135,
+      1471
+    ]
+  }
+}

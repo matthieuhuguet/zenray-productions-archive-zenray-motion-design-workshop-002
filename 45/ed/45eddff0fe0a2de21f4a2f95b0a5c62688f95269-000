@@ -1,0 +1,127 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-mirror-polished",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "Mirror-polished aluminum",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/DMSans/DMSans[opsz,wght].ttf",
+    "family": "DMSans",
+    "axes": {
+      "wght": 837.130318946845,
+      "opsz": 19.811781858858097
+    }
+  },
+  "size_px": 130.3355,
+  "tracking_em": -0.066354,
+  "deltas_px": [
+    -0.2475,
+    -5.3187,
+    3.2945,
+    -2.9549,
+    5.7986,
+    0.6486,
+    -2.0542,
+    1.0864,
+    0.1908,
+    0.3425,
+    -3.4564,
+    2.892,
+    4.0869,
+    0.4922,
+    -0.1926,
+    -0.1926,
+    -1.6861,
+    -0.4732,
+    -2.1001,
+    0.3021,
+    -2.2425,
+    0.7654,
+    1.5125,
+    0.0
+  ],
+  "origin_px": [
+    258.472,
+    581.513
+  ],
+  "blur_px": 1.5,
+  "colour": "#d2cecf",
+  "lightmap": {
+    "x_px": [
+      365.67,
+      425.0,
+      484.33,
+      543.67,
+      603.0,
+      662.33,
+      721.67,
+      781.0,
+      840.33,
+      899.67,
+      959.0,
+      1018.33,
+      1077.67,
+      1137.0,
+      1196.33,
+      1255.67,
+      1315.0,
+      1374.33,
+      1433.67,
+      1493.0,
+      1552.33,
+      1611.67,
+      1671.0,
+      1730.33
+    ],
+    "gain": [
+      0.9856,
+      0.9904,
+      0.9952,
+      0.9936,
+      0.9968,
+      0.9984,
+      0.9976,
+      0.992,
+      0.992,
+      0.992,
+      0.9936,
+      1.0,
+      0.9952,
+      0.9984,
+      0.9968,
+      0.9968,
+      0.9968,
+      0.992,
+      0.992,
+      0.9976,
+      0.992,
+      0.8427,
+      0.8925,
+      0.8587
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 10.2333,
+    "region": [
+      160,
+      470,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      16,
+      164,
+      150,
+      1600
+    ]
+  }
+}

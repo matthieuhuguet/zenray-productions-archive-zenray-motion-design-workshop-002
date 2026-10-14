@@ -1,0 +1,98 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-gorilla",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "with Corning® Gorilla® Glass",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/Figtree/Figtree[wght].ttf",
+    "family": "Figtree",
+    "axes": {
+      "wght": 629.5175585900265
+    }
+  },
+  "size_px": 36.719,
+  "tracking_em": -0.013695,
+  "deltas_px": [
+    -0.9759,
+    0.2675,
+    -0.2527,
+    0.1193,
+    0.1193,
+    0.4618,
+    0.3746,
+    0.6581,
+    0.3572,
+    0.034,
+    0.7894,
+    -1.568,
+    -0.622,
+    -0.622,
+    0.344,
+    0.2669,
+    0.492,
+    -0.1654,
+    0.369,
+    0.4849,
+    -0.2047,
+    -0.6967,
+    -0.6967,
+    -0.1816,
+    -0.2927,
+    0.0734,
+    0.1221,
+    0.0
+  ],
+  "origin_px": [
+    714.941,
+    1007.324
+  ],
+  "blur_px": 0.4381,
+  "colour": "#e2b7a7",
+  "lightmap": {
+    "x_px": [
+      745.88,
+      803.62,
+      861.38,
+      919.12,
+      976.88,
+      1034.62,
+      1092.38,
+      1150.12
+    ],
+    "gain": [
+      0.875,
+      0.8802,
+      0.8733,
+      0.8733,
+      0.8819,
+      0.849,
+      1.0,
+      0.9965
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 14.0,
+    "region": [
+      680,
+      955,
+      560,
+      80
+    ],
+    "crop_box_tlbr": [
+      11,
+      25,
+      80,
+      511
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-mirror-polished",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "Mirror-polished aluminum",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/Figtree/Figtree[wght].ttf",
+    "family": "Figtree",
+    "axes": {
+      "wght": 897.2343266337248
+    }
+  },
+  "size_px": 118.4253,
+  "tracking_em": -0.00467,
+  "deltas_px": [
+    -0.5847,
+    1.1066,
+    2.5709,
+    -8.5531,
+    4.5287,
+    -0.8871,
+    1.5432,
+    0.5246,
+    -1.6702,
+    0.1803,
+    2.3052,
+    -4.7012,
+    3.1794,
+    -0.6202,
+    -0.4968,
+    -0.4968,
+    0.7728,
+    2.8107,
+    2.2612,
+    -2.5326,
+    -1.2377,
+    1.6243,
+    0.43,
+    0.0
+  ],
+  "origin_px": [
+    326.517,
+    577.598
+  ],
+  "blur_px": 1.5,
+  "colour": "#d0cccd",
+  "lightmap": {
+    "x_px": [
+      365.67,
+      425.0,
+      484.33,
+      543.67,
+      603.0,
+      662.33,
+      721.67,
+      781.0,
+      840.33,
+      899.67,
+      959.0,
+      1018.33,
+      1077.67,
+      1137.0,
+      1196.33,
+      1255.67,
+      1315.0,
+      1374.33,
+      1433.67,
+      1493.0,
+      1552.33,
+      1611.67,
+      1671.0,
+      1730.33
+    ],
+    "gain": [
+      0.9935,
+      0.9919,
+      0.9951,
+      0.9951,
+      0.9935,
+      0.9984,
+      0.9968,
+      0.9951,
+      0.9935,
+      0.9887,
+      0.9951,
+      1.0,
+      0.9968,
+      0.9984,
+      0.9968,
+      0.9968,
+      0.9919,
+      0.9968,
+      0.9968,
+      0.9968,
+      0.9968,
+      0.825,
+      0.8898,
+      0.9011
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 10.2333,
+    "region": [
+      160,
+      470,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      16,
+      164,
+      150,
+      1600
+    ]
+  }
+}

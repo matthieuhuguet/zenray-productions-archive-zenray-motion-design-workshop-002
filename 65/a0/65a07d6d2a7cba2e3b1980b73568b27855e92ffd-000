@@ -1,0 +1,81 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-no-worries",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "No worries.",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/AlbertSans/AlbertSans[wght].ttf",
+    "family": "AlbertSans",
+    "axes": {
+      "wght": 532.0656839330572
+    }
+  },
+  "size_px": 97.1765,
+  "tracking_em": -0.010644,
+  "deltas_px": [
+    1.0728,
+    -1.8769,
+    -1.8769,
+    1.9142,
+    0.7109,
+    1.7358,
+    -0.0329,
+    -1.5223,
+    -0.1933,
+    -1.0456,
+    0.0
+  ],
+  "origin_px": [
+    709.291,
+    573.793
+  ],
+  "blur_px": 0.3434,
+  "colour": "#cecece",
+  "lightmap": {
+    "x_px": [
+      747.0,
+      807.0,
+      867.0,
+      927.0,
+      987.0,
+      1047.0,
+      1107.0,
+      1167.0
+    ],
+    "gain": [
+      0.9951,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9951,
+      1.0,
+      1.0
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 28.5667,
+    "region": [
+      160,
+      470,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      23,
+      545,
+      117,
+      1049
+    ]
+  }
+}

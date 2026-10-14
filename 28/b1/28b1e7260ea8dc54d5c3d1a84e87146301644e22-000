@@ -1,0 +1,83 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-nfc-passkey",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "NFC Passkey",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/PlusJakartaSans/PlusJakartaSans[wght].ttf",
+    "family": "PlusJakartaSans",
+    "axes": {
+      "wght": 560.623901546911
+    }
+  },
+  "size_px": 90.1942,
+  "tracking_em": 0.012138,
+  "deltas_px": [
+    -0.0186,
+    -1.853,
+    2.9318,
+    2.9318,
+    1.1187,
+    -1.6634,
+    -2.4087,
+    -1.141,
+    -1.8946,
+    -2.7593,
+    0.0
+  ],
+  "origin_px": [
+    675.23,
+    919.942
+  ],
+  "blur_px": 0.3098,
+  "colour": "#d7d4d6",
+  "lightmap": {
+    "x_px": [
+      711.83,
+      773.5,
+      835.17,
+      896.83,
+      958.5,
+      1020.17,
+      1081.83,
+      1143.5,
+      1205.17
+    ],
+    "gain": [
+      0.9704,
+      0.9563,
+      0.9743,
+      0.9579,
+      0.9735,
+      0.975,
+      0.9688,
+      1.0,
+      0.9813
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 47.8333,
+    "region": [
+      160,
+      820,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      19,
+      509,
+      132,
+      1088
+    ]
+  }
+}

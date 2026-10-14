@@ -1,0 +1,106 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-four-secure",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "Four secure elements",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/fonts/onekey-f3-t-four-secure/V_008/font.ttf",
+    "family": "V_008",
+    "axes": {}
+  },
+  "size_px": 104.8809,
+  "tracking_em": -0.001815,
+  "deltas_px": [
+    0.0173,
+    -0.0367,
+    0.1155,
+    -0.8093,
+    -0.2443,
+    -0.0402,
+    -0.0401,
+    -0.002,
+    -0.0392,
+    0.7523,
+    -1.2278,
+    0.2386,
+    0.7226,
+    -0.0797,
+    0.3311,
+    -0.0188,
+    0.3997,
+    0.0372,
+    -0.0287,
+    0.0118
+  ],
+  "origin_px": [
+    447.858,
+    923.56
+  ],
+  "blur_px": 0.5329,
+  "colour": "#cfcfd1",
+  "lightmap": {
+    "x_px": [
+      487.41,
+      546.24,
+      605.06,
+      663.88,
+      722.71,
+      781.53,
+      840.35,
+      899.18,
+      958.0,
+      1016.82,
+      1075.65,
+      1134.47,
+      1193.29,
+      1252.12,
+      1310.94,
+      1369.76,
+      1428.59
+    ],
+    "gain": [
+      0.9839,
+      0.9936,
+      0.9839,
+      0.9968,
+      0.992,
+      0.9872,
+      0.9872,
+      0.9823,
+      0.9888,
+      1.0,
+      0.9839,
+      0.9968,
+      0.9888,
+      0.9839,
+      0.9936,
+      0.9872,
+      0.992
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 18.0,
+    "region": [
+      160,
+      820,
+      1600,
+      150
+    ],
+    "crop_box_tlbr": [
+      18,
+      286,
+      117,
+      1310
+    ]
+  }
+}

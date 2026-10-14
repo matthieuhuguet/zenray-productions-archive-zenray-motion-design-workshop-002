@@ -1,0 +1,80 @@
+{
+  "schema": "zrmd/mark@1",
+  "date": "12 October 2026",
+  "slug": "onekey-pro-2",
+  "mark": "t-eal",
+  "kind": "text",
+  "family": "caption",
+  "rights": "private-1to1",
+  "rights_note": "1:1 benchmark of a third-party mark, private, never published (Rules.md, 12 October 2026)",
+  "text": "EAL 6+ Certified",
+  "font": {
+    "file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design/ZenRayMotionDesign/datasets/fonts/files/Figtree/Figtree[wght].ttf",
+    "family": "Figtree",
+    "axes": {
+      "wght": 509.2569609228465
+    }
+  },
+  "size_px": 38.6362,
+  "tracking_em": -0.007536,
+  "deltas_px": [
+    -0.5811,
+    -0.4247,
+    0.4938,
+    0.4938,
+    1.3526,
+    -0.0288,
+    -0.0288,
+    0.2955,
+    0.603,
+    -1.8335,
+    -0.3604,
+    -0.0737,
+    -0.6763,
+    0.0463,
+    0.8792,
+    0.0
+  ],
+  "origin_px": [
+    804.769,
+    1015.012
+  ],
+  "blur_px": 0.4793,
+  "colour": "#a7a9ac",
+  "lightmap": {
+    "x_px": [
+      836.0,
+      892.0,
+      948.0,
+      1004.0,
+      1060.0
+    ],
+    "gain": [
+      0.9646,
+      0.9961,
+      0.998,
+      1.0,
+      0.9921
+    ]
+  },
+  "opacity": 1.0,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "source": {
+    "time_s": 19.0667,
+    "region": [
+      700,
+      960,
+      520,
+      80
+    ],
+    "crop_box_tlbr": [
+      15,
+      96,
+      68,
+      400
+    ]
+  }
+}
