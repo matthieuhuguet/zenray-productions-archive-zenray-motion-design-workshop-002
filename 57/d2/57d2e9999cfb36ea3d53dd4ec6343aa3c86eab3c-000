@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "kardashev-0-7-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "kardashev-0-7-m1.flac",
+ "sha256": "15ab8117de4bfa5ad7e0d26f352aee58a4aa9d5085f781c6f315837637392415",
+ "bytes": 4769252,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "kardashev-0-7",
+ "start_s": 5,
+ "end_s": 35,
+ "title": "Introducing Kardashev-0.7 (music excerpt 1: 5 to 35 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

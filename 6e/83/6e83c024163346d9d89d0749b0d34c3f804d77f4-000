@@ -1,0 +1,185 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "motion-opus-5-5",
+ "title": "Claude Opus 5.5 for launch videos",
+ "duration_s": 30.047,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 2,
+    "cutsReference": 2,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 1.0,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 3,
+    "truth": "adjudicated"
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9859,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99899,
+   "limited": true,
+   "version": "14 October 2026, 21:03",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.9309,
+    "within1Jnd": 0.6153,
+    "shots": 4,
+    "reproducibleTimeShare": 1.0,
+    "slotTimeShare": 0.0,
+    "glowShare": 0.0833,
+    "motions": {
+     "reproducedShots": 1,
+     "scored": 1,
+     "meanScore": 0.9908,
+     "framesAt60": 120
+    },
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99899,
+     "min": 0.99858,
+     "windows": 3
+    }
+   },
+   "coverage": 0.9309
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.9349,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.9185,
+   "limited": true,
+   "version": "S01 V_001",
+   "detail": {
+    "vectorShare": 0.0345,
+    "shaderShare": 0.9584,
+    "residualShare": 0.0071,
+    "explained": 0.9012,
+    "vectorLayersOk": "5/10",
+    "reading": "mostly shader or photographic content: the vector part is only the shapes listed as vector",
+    "iouArea": 0.9875,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.9185,
+     "iouArea": 0.9201,
+     "shot": "S01"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "motion-opus-5-5-m1 V_009",
+   "detail": {
+    "members": {
+     "motion-opus-5-5-m1": 1.0
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "motion-opus-5-5-m1",
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "motion-opus-5-5-m1 V_007",
+   "detail": {
+    "members": {
+     "motion-opus-5-5-m1": 0.9998
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "motion-opus-5-5-m1",
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 3,
+    "invariant": 0.9998,
+    "critic": 0.9994,
+    "auditMean": 0.9983,
+    "passTitle": 3,
+    "passMusic": 2,
+    "exact": 0.9863
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "motion-opus-5-5-m1 V_012",
+   "detail": {
+    "members": {
+     "motion-opus-5-5-m1": 1.0
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "motion-opus-5-5-m1",
+    "sound": 0.9954,
+    "sfx": 0.9863,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 0.9996
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 4,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 1
+ },
+ "lastRun": null
+}

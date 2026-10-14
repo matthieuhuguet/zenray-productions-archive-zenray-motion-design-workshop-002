@@ -1,0 +1,294 @@
+# Bible graphique de la référence memo (12 October 2026)
+
+Bible mesurée par `zrmd.bible` le 12 October 2026, à partir du fichier du cache local ; aucun pixel ni aucun échantillon de la référence n'entre dans ce document, qui ne porte que des nombres et des descriptions paraphrasées. Storyboard : [storyboard.html](storyboard.html). Données : [bible.json](bible.json). (12 October 2026)
+
+Manifeste rythmé en noir et blanc : un homme parle face caméra derrière d'immenses mots orange en capitales grasses qui remplissent l'image, puis le montage s'accélère jusqu'à des plans d'un à trois images sur la course automobile, la conquête spatiale, l'aviation, l'armée et les chantiers, avant un logotype orange sur noir. (12 October 2026)
+
+## Identité
+
+| Mesure | Valeur |
+|---|---|
+| Durée | 44,54 s |
+| Format | 3840 x 2160 |
+| Cadence du fichier | 30,000 images par seconde |
+| Cadence du contenu | 30,00 images par seconde |
+| Son | oui |
+
+## Rythme de montage
+
+La référence compte 131 plans et 130 coupes, soit 175,8 coupes par minute ; un plan dure 0,13 s en médiane et 0,34 s en moyenne, du plus court (0,03 s) au plus long (8,70 s), avec un coefficient de variation de 2,43. 104 plans durent moins d'une demi-seconde et 1 plus de trois secondes. La part des coupes tombant à 50 ms près d'un temps de la grille vaut 26 %, et celle des coupes tombant sur une attaque sonore 46 %. Le plan médian dure 0,31 temps. Le détecteur de rythme (fusion apprise des preuves, vérité adjudiquée à l'œil) a trouvé 130 coupes ; les 12 corrections de coupes de la première revue visaient l'ancien détecteur et ne sont plus appliquées.
+
+## Familles de plans
+
+| Famille | Part du temps |
+|---|---|
+| plaque 3D ou prise de vue | 62,5 % |
+| montage | 32,4 % |
+| graphique | 5,1 % |
+
+Le classement automatique (aplats, couverture du texte, entropie des zones non plates, sonde 3D) concorde avec le classement à l'œil sur 83 plans sur 98, soit 85 % ; la bible retient le classement à l'œil et garde la mesure à côté (`content_measured`).
+
+La famille « montage » regroupe les plans de moins d'une demi-seconde, quel que soit leur contenu ; la part du contenu seul est : plaque 3D ou prise de vue 92,6 %, graphique 7,1 %, carte texte 0,3 %.
+
+## Couleurs
+
+Palette globale (regroupement Lab, fusion sous 6 unités CIEDE2000, pondérée par la surface et la durée) :
+
+| Couleur | Part | L* | Chroma |
+|---|---|---|---|
+| `#0e0e0e` | 47,2 % | 3,9 | 0,1 |
+| `#323232` | 11,1 % | 20,7 | 0,2 |
+| `#545454` | 9,2 % | 35,6 | 0,2 |
+| `#dedede` | 7,8 % | 88,5 | 0,2 |
+| `#8e8e8e` | 7,0 % | 59,0 | 0,0 |
+| `#ee5e06` | 6,8 % | 58,2 | 84,8 |
+| `#b1b1b1` | 6,6 % | 72,3 | 0,0 |
+| `#707070` | 3,8 % | 47,3 | 0,2 |
+| `#c6c5c6` | 0,3 % | 79,7 | 0,5 |
+| `#454045` | 0,1 % | 27,8 | 3,8 |
+| `#242125` | 0,0 % | 13,1 | 3,3 |
+| `#817d82` | 0,0 % | 52,8 | 3,5 |
+
+Rôles (part du temps où la couleur tient ce rôle) :
+
+| Rôle | Couleurs |
+|---|---|
+| fond | `#121212` (84 %), `#b0b1ae` (4 %), `#e4e4e4` (3 %), `#8c8d89` (2 %) |
+| texte | `#484848` (1 %), `#252525` (0 %), `#747474` (0 %), `#676767` (0 %) |
+| accent | `#f06006` (5 %) |
+
+## Typographie
+
+46 lignes de texte ont été mesurées sur l'image où le texte est le plus présent de chaque plan carte texte ou graphique. La hauteur d'x, ramenée à une image de 1080 pixels de haut, va de 13,0 à 83,5 pixels, médiane 35,0 ; la densité de trait médiane vaut 0,522. On compte 23 lignes en capitales et 23 en bas de casse, et 87 % des lignes sont claires sur fond sombre. Couleurs de texte relevées : `#000000`, `#050600`, `#060606`, `#090909`, `#1b191c`, `#1c1a1e`, `#1f1c20`, `#201e21`.
+
+Appariement de police non conclu : lecture des caractères insuffisante sur les lignes candidates.
+
+## Mouvements et courbes
+
+Courbes identifiées contre la table exacte de GSAP 3.14.2 (une courbe n'est gardée que si elle explique le mouvement à 6 % de l'amplitude près et que le mouvement dépasse dix fois le bruit de mesure) :
+
+| Ease | Occurrences |
+|---|---|
+| `bounce.in` | 5 |
+| `css.ease-out` | 5 |
+| `material.standard` | 5 |
+| `elastic.inOut(1,0.3)` | 4 |
+| `bounce.out` | 4 |
+| `power2.in` | 3 |
+| `elastic.in(1,0.3)` | 3 |
+| `power3.inOut` | 3 |
+| `circ.inOut` | 3 |
+| `circ.in` | 3 |
+| `elastic.inOut(1.5,0.4)` | 3 |
+| `material.accelerate` | 3 |
+| `power1.in` | 3 |
+| `expo.out` | 3 |
+
+Un mouvement d'élément dure 0,33 s en médiane.
+
+Mouvement global de l'image (similarité chaînée image après image ; sur un fond uni, il suit le calque dominant) :
+
+| Mouvement | Plans |
+|---|---|
+| fixe | 82 |
+| roulis | 30 |
+| panoramique | 25 |
+| travelling vertical | 23 |
+| zoom avant | 19 |
+| zoom arrière | 16 |
+
+## Transitions
+
+| Transition d'entrée | Plans |
+|---|---|
+| coupe franche | 123 |
+| balayage | 3 |
+| coupe franche vers un noir | 2 |
+| ouverture | 1 |
+| coupe franche après passage au noir | 1 |
+| balayage vers un noir | 1 |
+
+## Usage de la 3D
+
+Les plaques (rendu 3D ou prise de vue) occupent 92,6 % du temps, dont 5 plans que la sonde géométrique classe comme 3D (perspective, parallaxe, scène rigide, apparence changeante ou mouvement complexe). La sonde répond juste quand elle dit 3D, mais elle manque les objets 3D qui glissent comme un calque (R04, section 10) ; les descriptions plan par plan corrigent ce point à l'œil.
+
+| Classe de la sonde | Plans |
+|---|---|
+| immobile | 54 |
+| plusieurs couches en parallaxe (2,5D) | 31 |
+| mouvement complexe (déformation, fluide ou rendu 3D éclairé) | 22 |
+| calque 2D | 16 |
+| scène 3D rigide en profondeur | 4 |
+| calque 2D déformé (affine) | 2 |
+| calque 2D dont l'apparence change (rendu éclairé ou 3D possible) | 2 |
+
+## Son
+
+Sonie intégrée -11,3 LUFS, centroïde spectral médian 2578 Hz, part harmonique 86 %. Le détecteur d'attaques relève 162 événements (attaque médium 157, clic aigu 5) et le détecteur de houles 3 montées ou souffles longs.
+
+Événements principaux (les plus forts) :
+
+| Instant | Nature | Crête |
+|---|---|---|
+| 0,60 s | attaque médium | -14,2 dB |
+| 2,94 s | attaque médium | -7,1 dB |
+| 6,79 s | attaque médium | -10,2 dB |
+| 10,65 s | attaque médium | -15,1 dB |
+| 16,23 s | attaque médium | -10,1 dB |
+| 18,36 s | attaque médium | -12,4 dB |
+| 20,93 s | attaque médium | -10,2 dB |
+| 28,64 s | attaque médium | -11,1 dB |
+| 30,35 s | attaque médium | -10,2 dB |
+| 32,92 s | attaque médium | -10,3 dB |
+| 39,74 s | attaque médium | -9,3 dB |
+| 44,01 s | clic aigu | -13,7 dB |
+
+Houles : 31,20 s (montée 0,37 s), 36,33 s (montée 0,70 s), 42,38 s (montée 0,53 s).
+
+## Musique
+
+Tempo estimé 139,5 BPM, 102 temps détectés, régularité de la grille 0,040 (écart type relatif des intervalles, 0 pour une grille parfaite). La musique ne se reprend jamais note à note : seuls le tempo, la grille, les sections, l'énergie et la production servent.
+
+| Section | Début | Fin | Niveau médian |
+|---|---|---|---|
+| 1 | 0,00 s | 13,50 s | -17,5 dB |
+| 2 | 13,50 s | 41,00 s | -12,4 dB |
+| 3 | 41,00 s | 44,55 s | -16,3 dB |
+
+## Plans
+
+| Plan | Début | Durée | Famille | Description |
+|---|---|---|---|---|
+| S01 | 0,00 s | 2,57 s | plaque 3D ou prise de vue | Un homme de dos marche dans un atelier en noir et blanc, d'énormes mots orange se remplacent par paires devant lui. |
+| S02 | 2,57 s | 1,70 s | plaque 3D ou prise de vue | L'homme face caméra en noir et blanc, un mot orange géant puis deux autres le traversent. |
+| S03 | 4,27 s | 8,70 s | plaque 3D ou prise de vue | Plan plus serré de l'homme, un mot orange géant puis un second en travers de l'image. |
+| S04 | 12,97 s | 0,07 s | montage | Le mot orange géant en capitales sur fond noir, très bref. |
+| S05 | 13,03 s | 0,03 s | montage | Le mot orange géant en surimpression sur une monoplace blanche en noir et blanc. |
+| S06 | 13,07 s | 0,03 s | montage | Le mot orange géant seul sur fond noir, une image. |
+| S07 | 13,10 s | 0,07 s | montage | Le mot orange géant seul sur fond noir, très bref. |
+| S08 | 13,17 s | 0,03 s | montage | Le mot orange géant seul sur fond noir, une image. |
+| S09 | 13,20 s | 0,03 s | montage | Le mot orange géant en surimpression sur la monoplace en noir et blanc. |
+| S10 | 13,23 s | 0,03 s | montage | Le mot orange géant seul sur fond noir, une image. |
+| S11 | 13,27 s | 0,07 s | montage | Le mot orange en surimpression sur une monoplace en noir et blanc, deux images. |
+| S12 | 13,33 s | 0,03 s | montage | Le mot orange géant seul sur fond noir, une image. |
+| S13 | 13,37 s | 0,03 s | montage | Le mot orange géant revient seul sur le noir, trois images. |
+| S14 | 13,40 s | 0,03 s | montage | Le mot orange géant seul sur fond noir, une image. |
+| S15 | 13,43 s | 0,07 s | montage | Le mot orange géant en surimpression sur la monoplace blanche qui prend un virage. |
+| S16 | 13,50 s | 0,03 s | montage | Le mot orange sur le noir puis sur la voiture, en alternance rapide. |
+| S17 | 13,53 s | 0,33 s | montage | Le mot orange sur la monoplace qui prend un virage, très bref. |
+| S18 | 13,87 s | 0,07 s | montage | Le mot orange géant seul sur fond noir, deux images. |
+| S19 | 13,93 s | 0,07 s | montage | Le mot orange géant sur la monoplace qui prend un virage, en noir et blanc. |
+| S20 | 14,00 s | 0,03 s | montage | Le mot orange alterne avec le noir et la voiture, très bref. |
+| S21 | 14,03 s | 0,03 s | montage | Le mot orange géant en surimpression sur la voiture, une image. |
+| S22 | 14,07 s | 0,03 s | montage | Le mot orange géant seul sur fond noir, un petit éclat blanc au centre. |
+| S23 | 14,10 s | 0,07 s | montage | Un petit logo blanc sur noir puis une monoplace qui décolle d'un vibreur. |
+| S24 | 14,17 s | 0,03 s | montage | Petit logo blanc de la compétition sur fond noir, une image. |
+| S25 | 14,20 s | 0,03 s | montage | Monoplace blanche vue de côté en noir et blanc, penchée dans un virage. |
+| S26 | 14,23 s | 0,03 s | montage | Petit logo blanc décentré sur fond noir, une image. |
+| S27 | 14,27 s | 0,07 s | montage | Monoplace en noir et blanc, roue avant levée, plan fixe de deux images. |
+| S28 | 14,33 s | 0,03 s | montage | Alternance du logo blanc sur noir et de la monoplace en l'air, très bref. |
+| S29 | 14,37 s | 0,03 s | montage | Monoplace en noir et blanc, roue avant levée, la même prise tenue. |
+| S30 | 14,40 s | 0,03 s | montage | Petit logo blanc sur fond noir, une image. |
+| S31 | 14,43 s | 0,07 s | montage | Monoplace blanche en gros plan, flanc et roue en noir et blanc. |
+| S32 | 14,50 s | 0,03 s | montage | Petit logo blanc sur fond noir, une image. |
+| S33 | 14,53 s | 0,03 s | montage | Petit logo blanc sur noir, trois images. |
+| S34 | 14,57 s | 0,03 s | montage | Petit logo blanc sur fond noir, deux images. |
+| S35 | 14,60 s | 0,30 s | montage | La monoplace en l'air, en noir et blanc, très bref. |
+| S36 | 14,90 s | 0,20 s | montage | Noir presque total, très bref. |
+| S37 | 15,10 s | 0,13 s | montage | Une monoplace vue de face sous les projecteurs, très bref. |
+| S38 | 15,23 s | 0,53 s | plaque 3D ou prise de vue | Profil rapproché d'une monoplace qui file, flou de vitesse. |
+| S39 | 15,77 s | 0,50 s | plaque 3D ou prise de vue | Filé de vitesse le long d'une piste, la voiture presque illisible. |
+| S40 | 16,27 s | 0,60 s | plaque 3D ou prise de vue | Vue d'en haut d'une voiture qui sort d'un virage en laissant de la fumée. |
+| S41 | 16,87 s | 0,50 s | plaque 3D ou prise de vue | Vue aérienne verticale de voitures entre deux tribunes noires de monde. |
+| S42 | 17,37 s | 0,57 s | plaque 3D ou prise de vue | Gerbe d'étincelles sous une monoplace vue de l'arrière. |
+| S43 | 17,93 s | 0,07 s | montage | Monoplace noire sur une piste vue de côté, fumée au loin, en noir et blanc. |
+| S44 | 18,00 s | 0,03 s | montage | Gerbe d'étincelles sous une monoplace, arrière-train et pneu, un mot en lettres géantes derrière. |
+| S45 | 18,03 s | 0,43 s | montage | Monoplace en contre-jour qui passe devant un mur, flou de vitesse. |
+| S46 | 18,47 s | 0,30 s | montage | Monoplace qui traverse le cadre en panoramique filé. |
+| S47 | 18,77 s | 0,30 s | montage | Gros plan sur un casque de pilote puis noir. |
+| S48 | 19,07 s | 0,03 s | montage | Écran noir, une image. |
+| S49 | 19,10 s | 0,50 s | plaque 3D ou prise de vue | Archive d'astronautes en combinaison blanche qui avancent dans un couloir. |
+| S50 | 19,60 s | 0,50 s | plaque 3D ou prise de vue | Vue d'une capsule avec la Terre à travers le hublot, archive. |
+| S51 | 20,10 s | 0,67 s | plaque 3D ou prise de vue | Empreinte de semelle sur un sol poussiéreux, archive. |
+| S52 | 20,77 s | 0,07 s | montage | Contre-plongée sur une structure et un soleil voilé, deux images. |
+| S53 | 20,83 s | 0,07 s | montage | Salle de contrôle remplie d'opérateurs, deux images. |
+| S54 | 20,90 s | 0,17 s | montage | Un engin spatial noir au-dessus des nuages, très bref. |
+| S55 | 21,07 s | 0,20 s | montage | Nuages de fumée au décollage d'une fusée, très bref. |
+| S56 | 21,27 s | 0,10 s | montage | Silhouette d'une tour de lancement dans la fumée, trois images. |
+| S57 | 21,37 s | 0,10 s | montage | Fumée de lancement en gros plan, trois images. |
+| S58 | 21,47 s | 0,07 s | montage | Fusée qui monte au-dessus d'un panache, deux images. |
+| S59 | 21,53 s | 0,20 s | montage | Foule qui regarde un lancement depuis la plage, très bref. |
+| S60 | 21,73 s | 0,10 s | montage | Foule dense qui lève les bras dans un hangar, trois images. |
+| S61 | 21,83 s | 0,17 s | montage | Panache de flammes et de fumée sous un lanceur, très bref. |
+| S62 | 22,00 s | 0,10 s | montage | Foule de dos face à l'horizon, trois images. |
+| S63 | 22,10 s | 0,10 s | montage | Plongée sur une flamme de propulsion et la plage, trois images. |
+| S64 | 22,20 s | 0,10 s | montage | Fusée minuscule dans un ciel gris, trois images. |
+| S65 | 22,30 s | 0,30 s | montage | Moteurs allumés au pied d'un lanceur, très bref. |
+| S66 | 22,60 s | 0,63 s | plaque 3D ou prise de vue | Vue aérienne d'un pas de tir avec son panache. |
+| S67 | 23,23 s | 0,30 s | montage | Rangées de pupitres de contrôle vus de dos. |
+| S68 | 23,53 s | 0,10 s | montage | Traînée de fumée sinueuse dans un ciel clair, trois images. |
+| S69 | 23,63 s | 0,10 s | montage | Un homme casqué sourit devant des écrans, trois images. |
+| S70 | 23,73 s | 0,10 s | montage | Un astronaute devant la courbe de la Terre, trois images. |
+| S71 | 23,83 s | 0,10 s | montage | Fusée qui s'élève avec sa traînée, trois images. |
+| S72 | 23,93 s | 0,07 s | montage | Rentrée atmosphérique enflammée sous un engin, deux images. |
+| S73 | 24,00 s | 0,10 s | montage | Traînée lumineuse oblique dans le ciel, trois images. |
+| S74 | 24,10 s | 0,10 s | montage | Foule en liesse sous une structure, trois images. |
+| S75 | 24,20 s | 0,30 s | montage | Petit point lumineux sur fond noir, puis noir. |
+| S76 | 24,50 s | 0,17 s | montage | Un drapeau national flotte, deux images. |
+| S77 | 24,67 s | 0,13 s | montage | Un enfant et un adulte devant un drapeau, très bref. |
+| S78 | 24,80 s | 0,13 s | montage | Drapeau sur un mât dans un ciel clair, très bref. |
+| S79 | 24,93 s | 0,23 s | montage | Flou de mouvement indistinct, très bref. |
+| S80 | 25,17 s | 0,37 s | montage | Un marin sur un pont d'envol donne le signal de départ d'un avion. |
+| S81 | 25,53 s | 0,70 s | plaque 3D ou prise de vue | Pilote casqué vu de près dans son cockpit. |
+| S82 | 26,23 s | 0,60 s | plaque 3D ou prise de vue | Personnel de pont de dos devant des avions de chasse. |
+| S83 | 26,83 s | 0,27 s | montage | Avion de chasse qui catapulte, flou, très bref. |
+| S84 | 27,10 s | 0,53 s | plaque 3D ou prise de vue | Foule de visages masqués et casqués, en plan serré. |
+| S85 | 27,63 s | 0,20 s | montage | Avion vu de face au décollage, très bref. |
+| S86 | 27,83 s | 0,40 s | montage | Patrouille de chasseurs en formation dans un ciel blanc. |
+| S87 | 28,23 s | 0,27 s | montage | Formation serrée de chasseurs, plus près. |
+| S88 | 28,50 s | 0,07 s | montage | Fond presque noir, grain à peine visible. |
+| S89 | 28,57 s | 0,03 s | montage | Des soldats casqués et masqués en noir et blanc sur une embarcation, une seule image entre deux images noires. |
+| S90 | 28,60 s | 0,03 s | montage | Noir puis soldats équipés au bord de l'eau. |
+| S91 | 28,63 s | 0,07 s | montage | Deux soldats casqués et masqués en gros plan, noir et blanc, un navire au loin. |
+| S92 | 28,70 s | 0,03 s | montage | Noir, deux images. |
+| S93 | 28,73 s | 0,03 s | montage | Deux soldats casqués et masqués en gros plan, noir et blanc, la même prise. |
+| S94 | 28,77 s | 0,03 s | montage | Fond presque noir, une image. |
+| S95 | 28,80 s | 0,07 s | montage | Soldats casqués et masqués en gros plan, noir et blanc, bord de mer. |
+| S96 | 28,87 s | 0,03 s | montage | Fond presque noir, une image. |
+| S97 | 28,90 s | 0,37 s | montage | Soldats casqués et masqués en gros plan, puis une plage. |
+| S98 | 29,27 s | 0,33 s | montage | Même casque vu de plus loin, très bref. |
+| S99 | 29,60 s | 0,13 s | montage | Soldat accroupi devant un mur rayé, très bref. |
+| S100 | 29,73 s | 0,67 s | plaque 3D ou prise de vue | Un hélicoptère dépose des soldats dans la poussière. |
+| S101 | 30,40 s | 0,77 s | plaque 3D ou prise de vue | Hélicoptère et soldats qui courent sous le souffle des pales. |
+| S102 | 31,17 s | 0,57 s | plaque 3D ou prise de vue | Un ouvrier suspendu dans une structure métallique au-dessus du vide. |
+| S103 | 31,73 s | 0,30 s | montage | Ouvriers sur un pylône métallique en contre-plongée. |
+| S104 | 32,03 s | 0,33 s | montage | Ouvriers sur un pylône, autre angle. |
+| S105 | 32,37 s | 0,07 s | montage | Vue aérienne d'un territoire, deux images. |
+| S106 | 32,43 s | 0,17 s | montage | Gerbe de métal fondu dans une fonderie, très bref. |
+| S107 | 32,60 s | 0,40 s | montage | Engin de chantier au travail parmi des débris. |
+| S108 | 33,00 s | 0,30 s | montage | Ouvriers casqués en action sur une machine. |
+| S109 | 33,30 s | 0,17 s | montage | Une main trace une ligne au crayon sur une planche. |
+| S110 | 33,47 s | 0,17 s | montage | Outil qui découpe une matière, très bref. |
+| S111 | 33,63 s | 0,10 s | montage | Étincelles d'une meuleuse, trois images. |
+| S112 | 33,73 s | 0,17 s | montage | Ouvriers qui portent une grande plaque, très bref. |
+| S113 | 33,90 s | 0,10 s | montage | Structure d'acier en plongée, trois images. |
+| S114 | 34,00 s | 0,10 s | montage | Ouvrier au milieu de caisses sur un chantier, trois images. |
+| S115 | 34,10 s | 0,13 s | montage | Échafaudages éclairés de nuit, très bref. |
+| S116 | 34,23 s | 0,23 s | montage | Machinerie industrielle et vapeur, très bref. |
+| S117 | 34,47 s | 0,50 s | plaque 3D ou prise de vue | Vue aérienne d'un chantier dense. |
+| S118 | 34,97 s | 0,93 s | plaque 3D ou prise de vue | Ouvrier casqué de dos devant un camarade, plan un peu plus long. |
+| S119 | 35,90 s | 0,40 s | montage | Vue aérienne d'un quartier de chantiers. |
+| S120 | 36,30 s | 0,50 s | plaque 3D ou prise de vue | Pompiers près d'une roue de camion, de nuit. |
+| S121 | 36,80 s | 0,30 s | montage | Engins de chantier vus de très haut sur un sol nu. |
+| S122 | 37,10 s | 0,23 s | montage | Un bulldozer en contre-jour sur un remblai. |
+| S123 | 37,33 s | 0,30 s | montage | Rue de ville la nuit avec des pompiers sur un passage piéton. |
+| S124 | 37,63 s | 0,50 s | plaque 3D ou prise de vue | Pompier masqué en gros plan dans l'obscurité. |
+| S125 | 38,13 s | 0,60 s | plaque 3D ou prise de vue | Pompiers qui traversent la rue près d'un véhicule. |
+| S126 | 38,73 s | 0,27 s | montage | Pompiers casqués en plan serré, très bref. |
+| S127 | 39,00 s | 1,07 s | plaque 3D ou prise de vue | Rue de nuit avec des véhicules d'urgence et des lumières. |
+| S128 | 40,07 s | 0,67 s | plaque 3D ou prise de vue | Silhouettes de pompiers devant un feu. |
+| S129 | 40,73 s | 1,17 s | plaque 3D ou prise de vue | Gros plan d'un pompier casqué qui regarde vers le haut. |
+| S130 | 41,90 s | 0,20 s | montage | Camion de pompiers dans une rue, noir et blanc, panneaux lumineux au fond. |
+| S131 | 42,10 s | 2,27 s | graphique | Logotype orange en minuscules arrondies centré sur fond noir, immobile. |
+
+Paramètres : `settings.json`, sections `analysis.bible`, `analysis.camera`, `analysis.easefit`, `analysis.sound` (12 October 2026).

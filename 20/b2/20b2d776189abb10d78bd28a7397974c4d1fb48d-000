@@ -1,0 +1,137 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "fin-4",
+ "title": "Introducing Fin 4",
+ "duration_s": 7.867,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 0,
+    "cutsReference": 0,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 1.0,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 0,
+    "truth": "adjudicated"
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9719,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99866,
+   "limited": true,
+   "version": "14 October 2026, 17:32",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.7298,
+    "within1Jnd": 0.4842,
+    "shots": 1,
+    "reproducibleTimeShare": 1.0,
+    "slotTimeShare": 0.0,
+    "glowShare": 0.0,
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99866,
+     "min": 0.99849,
+     "windows": 3
+    }
+   },
+   "coverage": 0.7298
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.8109,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.9058,
+   "limited": true,
+   "version": "S01 V_001",
+   "detail": {
+    "vectorShare": 0.3204,
+    "shaderShare": 0.6544,
+    "residualShare": 0.0253,
+    "explained": 0.9003,
+    "vectorLayersOk": "1/32",
+    "reading": "mostly shader or photographic content: the vector part is only the shapes listed as vector",
+    "iouArea": 0.9736,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.9058,
+     "iouArea": 0.8689,
+     "shot": "S01"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 1,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": null
+}

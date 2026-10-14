@@ -1,0 +1,182 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "interface",
+ "title": "Interface, the primary hardware for the agent era",
+ "duration_s": 90.091,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 60,
+    "cutsReference": 60,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 1.0,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 60,
+    "truth": "adjudicated"
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9324,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99409,
+   "limited": true,
+   "version": "14 October 2026, 21:04",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.4053,
+    "within1Jnd": 0.1134,
+    "shots": 61,
+    "reproducibleTimeShare": 0.0416,
+    "slotTimeShare": 0.9367,
+    "glowShare": 0.1311,
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99409,
+     "min": 0.99367,
+     "windows": 3
+    }
+   },
+   "coverage": 0.4053
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.962,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.9497,
+   "limited": true,
+   "version": "S75 V_001",
+   "detail": {
+    "vectorShare": 0.9781,
+    "shaderShare": 0.0178,
+    "residualShare": 0.004,
+    "explained": 0.9826,
+    "vectorLayersOk": "1/5",
+    "reading": "UI, text and shapes as editable vectors",
+    "iouArea": 0.9633,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.9497,
+     "iouArea": 0.9357,
+     "shot": "S75"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "interface-m1 V_008",
+   "detail": {
+    "members": {
+     "interface-m1": 1.0,
+     "interface-m2": 1.0
+    },
+    "scored": 2,
+    "total": 2,
+    "complete": true,
+    "worst": "interface-m1",
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "interface-m2 V_002",
+   "detail": {
+    "members": {
+     "interface-m1": 0.9999,
+     "interface-m2": 0.9998
+    },
+    "scored": 2,
+    "total": 2,
+    "complete": true,
+    "worst": "interface-m2",
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 6,
+    "invariant": 0.9998,
+    "critic": 0.999,
+    "auditMean": 0.998,
+    "passTitle": 6,
+    "passMusic": 5,
+    "exact": 0.9567
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "interface-m1 V_003",
+   "detail": {
+    "members": {
+     "interface-m1": 1.0,
+     "interface-m2": 1.0
+    },
+    "scored": 2,
+    "total": 2,
+    "complete": true,
+    "worst": "interface-m1",
+    "sound": 0.987,
+    "sfx": 0.9614,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 0.9742
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 61,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": null
+}

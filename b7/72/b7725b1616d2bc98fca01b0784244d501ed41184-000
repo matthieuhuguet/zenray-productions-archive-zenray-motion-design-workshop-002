@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "paper-mono-code-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "paper-mono-code-m1.flac",
+ "sha256": "e60aac5e3296194b5c67bc8e08bfcfa1f7a55228c7a3c7fdd4d5149b52a252e9",
+ "bytes": 5456242,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "paper-mono-code",
+ "start_s": 17,
+ "end_s": 47,
+ "title": "How the whole Paper Mono launch video was made (music excerpt 1: 17 to 47 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

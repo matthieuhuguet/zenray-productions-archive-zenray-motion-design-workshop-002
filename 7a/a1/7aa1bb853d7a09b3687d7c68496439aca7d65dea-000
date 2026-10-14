@@ -1,0 +1,121 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "20syl-ode-to-odd-m2",
+ "title": "20syl - Ode to Odd (music excerpt 2: 63 to 93 s)",
+ "duration_s": 30,
+ "date": "14 October 2026, 21:34",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_008",
+   "detail": {
+    "drums": 1.0,
+    "bass": 0.9999,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_002",
+   "detail": {
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 7,
+    "invariant": 0.9998,
+    "critic": 0.9993,
+    "auditMean": 0.9982,
+    "passTitle": 7,
+    "passMusic": 4,
+    "exact": 0.9733
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_007",
+   "detail": {
+    "sound": 0.991,
+    "sfx": 0.9733,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 1.0
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 0,
+  "stems": true,
+  "sfx_versions": 7,
+  "motions": 0
+ },
+ "lastRun": null
+}

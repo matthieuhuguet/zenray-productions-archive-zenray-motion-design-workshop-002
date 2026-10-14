@@ -1,0 +1,179 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "paper-mono-code",
+ "title": "How the whole Paper Mono launch video was made",
+ "duration_s": 60.587,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 0,
+    "cutsReference": 0,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 1.0,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 0,
+    "truth": "adjudicated"
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9403,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99418,
+   "limited": true,
+   "version": "14 October 2026, 17:38",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.755,
+    "within1Jnd": 0.0728,
+    "shots": 1,
+    "reproducibleTimeShare": 0.0,
+    "slotTimeShare": 1.0,
+    "glowShare": 0.0,
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99418,
+     "min": 0.99374,
+     "windows": 3
+    }
+   },
+   "coverage": 0.755
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.8216,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.957,
+   "limited": true,
+   "version": "S01 V_001",
+   "detail": {
+    "vectorShare": 0.5747,
+    "shaderShare": 0.4222,
+    "residualShare": 0.003,
+    "explained": 0.8315,
+    "vectorLayersOk": "5/13",
+    "reading": "mostly shader or photographic content: the vector part is only the shapes listed as vector",
+    "iouArea": 0.9946,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.957,
+     "iouArea": 0.9589,
+     "shot": "S01"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "paper-mono-code-m1 V_009",
+   "detail": {
+    "members": {
+     "paper-mono-code-m1": 1.0
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "paper-mono-code-m1",
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "paper-mono-code-m1 V_002",
+   "detail": {
+    "members": {
+     "paper-mono-code-m1": 0.9998
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "paper-mono-code-m1",
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 30,
+    "invariant": 0.9998,
+    "critic": 0.9992,
+    "auditMean": 0.9984,
+    "passTitle": 28,
+    "passMusic": 28,
+    "exact": 0.9607
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "paper-mono-code-m1 V_007",
+   "detail": {
+    "members": {
+     "paper-mono-code-m1": 1.0
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "paper-mono-code-m1",
+    "sound": 0.9643,
+    "sfx": 0.9607,
+    "timing": 0.9333,
+    "mix": 1.0,
+    "music": 0.9952
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 1,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": null
+}

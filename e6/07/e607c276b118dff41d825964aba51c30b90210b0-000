@@ -1,0 +1,578 @@
+{
+ "fps": 60.0,
+ "cadence": {
+  "fps": 60.0,
+  "factor": 1,
+  "duplicate_ratio": 0.282
+ },
+ "frames": 4080,
+ "duration": 68.0,
+ "width": 1920,
+ "height": 1080,
+ "cuts": [
+  {
+   "kind": "dissolve",
+   "start": 135,
+   "end": 292,
+   "frame": 185,
+   "score": 0.999,
+   "model": "dissolve",
+   "t": 3.0833333333333335
+  },
+  {
+   "frame": 296,
+   "score": 0.973,
+   "U": 0.618,
+   "F": 1.0,
+   "E": 0.681,
+   "kind": "hard",
+   "t": 4.933333333333334
+  },
+  {
+   "frame": 377,
+   "score": 0.998,
+   "U": 0.994,
+   "F": 1.0,
+   "E": 0.945,
+   "kind": "hard",
+   "t": 6.283333333333333
+  },
+  {
+   "frame": 447,
+   "score": 0.99,
+   "U": 0.922,
+   "F": 1.0,
+   "E": 0.866,
+   "kind": "hard",
+   "t": 7.45
+  },
+  {
+   "frame": 524,
+   "score": 0.997,
+   "U": 0.967,
+   "F": 1.0,
+   "E": 0.936,
+   "kind": "hard",
+   "t": 8.733333333333333
+  },
+  {
+   "frame": 612,
+   "score": 0.996,
+   "U": 0.974,
+   "F": 1.0,
+   "E": 0.874,
+   "kind": "hard",
+   "t": 10.2
+  },
+  {
+   "frame": 699,
+   "score": 0.997,
+   "U": 0.968,
+   "F": 1.0,
+   "E": 0.902,
+   "kind": "hard",
+   "t": 11.65
+  },
+  {
+   "frame": 795,
+   "score": 0.997,
+   "U": 0.986,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 13.25
+  },
+  {
+   "frame": 836,
+   "score": 0.986,
+   "U": 0.968,
+   "F": 1.0,
+   "E": 0.741,
+   "kind": "hard",
+   "t": 13.933333333333334
+  },
+  {
+   "frame": 876,
+   "score": 0.997,
+   "U": 0.93,
+   "F": 1.0,
+   "E": 0.994,
+   "kind": "hard",
+   "t": 14.6
+  },
+  {
+   "frame": 953,
+   "score": 0.993,
+   "U": 0.836,
+   "F": 0.986,
+   "E": 0.825,
+   "kind": "hard",
+   "t": 15.883333333333333
+  },
+  {
+   "kind": "whip",
+   "start": 1027,
+   "end": 1046,
+   "frame": 1042,
+   "score": 0.999,
+   "model": "whip",
+   "t": 17.366666666666667
+  },
+  {
+   "frame": 1176,
+   "score": 0.999,
+   "U": 0.933,
+   "F": 1.0,
+   "E": 0.99,
+   "kind": "hard",
+   "t": 19.6
+  },
+  {
+   "frame": 1354,
+   "score": 0.999,
+   "U": 0.883,
+   "F": 1.0,
+   "E": 0.946,
+   "kind": "hard",
+   "t": 22.566666666666666
+  },
+  {
+   "frame": 1524,
+   "score": 0.984,
+   "U": 0.889,
+   "F": 1.0,
+   "E": 0.74,
+   "kind": "hard",
+   "t": 25.4
+  },
+  {
+   "frame": 1625,
+   "score": 0.996,
+   "U": 0.7,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 27.083333333333332
+  },
+  {
+   "frame": 1706,
+   "score": 0.965,
+   "U": 0.964,
+   "F": 1.0,
+   "E": 0.537,
+   "kind": "hard",
+   "t": 28.433333333333334
+  },
+  {
+   "frame": 1771,
+   "score": 0.979,
+   "U": 1.0,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 29.516666666666666
+  },
+  {
+   "frame": 1908,
+   "score": 0.997,
+   "U": 0.922,
+   "F": 1.0,
+   "E": 0.977,
+   "kind": "hard",
+   "t": 31.8
+  },
+  {
+   "frame": 2074,
+   "score": 0.994,
+   "U": 0.805,
+   "F": 1.0,
+   "E": 0.971,
+   "kind": "hard",
+   "t": 34.56666666666667
+  },
+  {
+   "frame": 2364,
+   "score": 1.0,
+   "U": 0.958,
+   "F": 1.0,
+   "E": 0.98,
+   "kind": "hard",
+   "t": 39.4
+  },
+  {
+   "frame": 2655,
+   "score": 1.0,
+   "U": 0.882,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 44.25
+  },
+  {
+   "frame": 3012,
+   "score": 0.996,
+   "U": 0.949,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 50.2
+  },
+  {
+   "frame": 3243,
+   "score": 0.862,
+   "U": 0.745,
+   "F": 0.822,
+   "E": 0.839,
+   "kind": "hard",
+   "t": 54.05
+  },
+  {
+   "frame": 3322,
+   "score": 0.993,
+   "U": 0.736,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 55.36666666666667
+  },
+  {
+   "frame": 3480,
+   "score": 0.961,
+   "U": 0.982,
+   "F": null,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 58.0
+  },
+  {
+   "frame": 3720,
+   "score": 0.998,
+   "U": 0.754,
+   "F": 1.0,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 62.0
+  },
+  {
+   "frame": 3972,
+   "score": 0.959,
+   "U": 0.0,
+   "F": null,
+   "E": 1.0,
+   "kind": "hard",
+   "t": 66.2
+  }
+ ],
+ "shots": [
+  {
+   "id": "S01",
+   "start_frame": 0,
+   "end_frame": 185,
+   "start": 0.0,
+   "end": 3.0833333333333335,
+   "duration": 3.0833333333333335,
+   "enter": "start",
+   "enter_score": null
+  },
+  {
+   "id": "S02",
+   "start_frame": 185,
+   "end_frame": 296,
+   "start": 3.0833333333333335,
+   "end": 4.933333333333334,
+   "duration": 1.85,
+   "enter": "dissolve",
+   "enter_score": 0.999
+  },
+  {
+   "id": "S03",
+   "start_frame": 296,
+   "end_frame": 377,
+   "start": 4.933333333333334,
+   "end": 6.283333333333333,
+   "duration": 1.35,
+   "enter": "hard",
+   "enter_score": 0.973
+  },
+  {
+   "id": "S04",
+   "start_frame": 377,
+   "end_frame": 447,
+   "start": 6.283333333333333,
+   "end": 7.45,
+   "duration": 1.1666666666666667,
+   "enter": "hard",
+   "enter_score": 0.998
+  },
+  {
+   "id": "S05",
+   "start_frame": 447,
+   "end_frame": 524,
+   "start": 7.45,
+   "end": 8.733333333333333,
+   "duration": 1.2833333333333334,
+   "enter": "hard",
+   "enter_score": 0.99
+  },
+  {
+   "id": "S06",
+   "start_frame": 524,
+   "end_frame": 612,
+   "start": 8.733333333333333,
+   "end": 10.2,
+   "duration": 1.4666666666666666,
+   "enter": "hard",
+   "enter_score": 0.997
+  },
+  {
+   "id": "S07",
+   "start_frame": 612,
+   "end_frame": 699,
+   "start": 10.2,
+   "end": 11.65,
+   "duration": 1.45,
+   "enter": "hard",
+   "enter_score": 0.996
+  },
+  {
+   "id": "S08",
+   "start_frame": 699,
+   "end_frame": 795,
+   "start": 11.65,
+   "end": 13.25,
+   "duration": 1.6,
+   "enter": "hard",
+   "enter_score": 0.997
+  },
+  {
+   "id": "S09",
+   "start_frame": 795,
+   "end_frame": 836,
+   "start": 13.25,
+   "end": 13.933333333333334,
+   "duration": 0.6833333333333333,
+   "enter": "hard",
+   "enter_score": 0.997
+  },
+  {
+   "id": "S10",
+   "start_frame": 836,
+   "end_frame": 876,
+   "start": 13.933333333333334,
+   "end": 14.6,
+   "duration": 0.6666666666666666,
+   "enter": "hard",
+   "enter_score": 0.986
+  },
+  {
+   "id": "S11",
+   "start_frame": 876,
+   "end_frame": 953,
+   "start": 14.6,
+   "end": 15.883333333333333,
+   "duration": 1.2833333333333334,
+   "enter": "hard",
+   "enter_score": 0.997
+  },
+  {
+   "id": "S12",
+   "start_frame": 953,
+   "end_frame": 1042,
+   "start": 15.883333333333333,
+   "end": 17.366666666666667,
+   "duration": 1.4833333333333334,
+   "enter": "hard",
+   "enter_score": 0.993
+  },
+  {
+   "id": "S13",
+   "start_frame": 1042,
+   "end_frame": 1176,
+   "start": 17.366666666666667,
+   "end": 19.6,
+   "duration": 2.2333333333333334,
+   "enter": "whip",
+   "enter_score": 0.999
+  },
+  {
+   "id": "S14",
+   "start_frame": 1176,
+   "end_frame": 1354,
+   "start": 19.6,
+   "end": 22.566666666666666,
+   "duration": 2.966666666666667,
+   "enter": "hard",
+   "enter_score": 0.999
+  },
+  {
+   "id": "S15",
+   "start_frame": 1354,
+   "end_frame": 1524,
+   "start": 22.566666666666666,
+   "end": 25.4,
+   "duration": 2.8333333333333335,
+   "enter": "hard",
+   "enter_score": 0.999
+  },
+  {
+   "id": "S16",
+   "start_frame": 1524,
+   "end_frame": 1625,
+   "start": 25.4,
+   "end": 27.083333333333332,
+   "duration": 1.6833333333333333,
+   "enter": "hard",
+   "enter_score": 0.984
+  },
+  {
+   "id": "S17",
+   "start_frame": 1625,
+   "end_frame": 1706,
+   "start": 27.083333333333332,
+   "end": 28.433333333333334,
+   "duration": 1.35,
+   "enter": "hard",
+   "enter_score": 0.996
+  },
+  {
+   "id": "S18",
+   "start_frame": 1706,
+   "end_frame": 1771,
+   "start": 28.433333333333334,
+   "end": 29.516666666666666,
+   "duration": 1.0833333333333333,
+   "enter": "hard",
+   "enter_score": 0.965
+  },
+  {
+   "id": "S19",
+   "start_frame": 1771,
+   "end_frame": 1908,
+   "start": 29.516666666666666,
+   "end": 31.8,
+   "duration": 2.283333333333333,
+   "enter": "hard",
+   "enter_score": 0.979
+  },
+  {
+   "id": "S20",
+   "start_frame": 1908,
+   "end_frame": 2074,
+   "start": 31.8,
+   "end": 34.56666666666667,
+   "duration": 2.7666666666666666,
+   "enter": "hard",
+   "enter_score": 0.997
+  },
+  {
+   "id": "S21",
+   "start_frame": 2074,
+   "end_frame": 2364,
+   "start": 34.56666666666667,
+   "end": 39.4,
+   "duration": 4.833333333333333,
+   "enter": "hard",
+   "enter_score": 0.994
+  },
+  {
+   "id": "S22",
+   "start_frame": 2364,
+   "end_frame": 2655,
+   "start": 39.4,
+   "end": 44.25,
+   "duration": 4.85,
+   "enter": "hard",
+   "enter_score": 1.0
+  },
+  {
+   "id": "S23",
+   "start_frame": 2655,
+   "end_frame": 3012,
+   "start": 44.25,
+   "end": 50.2,
+   "duration": 5.95,
+   "enter": "hard",
+   "enter_score": 1.0
+  },
+  {
+   "id": "S24",
+   "start_frame": 3012,
+   "end_frame": 3243,
+   "start": 50.2,
+   "end": 54.05,
+   "duration": 3.85,
+   "enter": "hard",
+   "enter_score": 0.996
+  },
+  {
+   "id": "S25",
+   "start_frame": 3243,
+   "end_frame": 3322,
+   "start": 54.05,
+   "end": 55.36666666666667,
+   "duration": 1.3166666666666667,
+   "enter": "hard",
+   "enter_score": 0.862
+  },
+  {
+   "id": "S26",
+   "start_frame": 3322,
+   "end_frame": 3480,
+   "start": 55.36666666666667,
+   "end": 58.0,
+   "duration": 2.6333333333333333,
+   "enter": "hard",
+   "enter_score": 0.993
+  },
+  {
+   "id": "S27",
+   "start_frame": 3480,
+   "end_frame": 3720,
+   "start": 58.0,
+   "end": 62.0,
+   "duration": 4.0,
+   "enter": "hard",
+   "enter_score": 0.961
+  },
+  {
+   "id": "S28",
+   "start_frame": 3720,
+   "end_frame": 3972,
+   "start": 62.0,
+   "end": 66.2,
+   "duration": 4.2,
+   "enter": "hard",
+   "enter_score": 0.998
+  },
+  {
+   "id": "S29",
+   "start_frame": 3972,
+   "end_frame": 4080,
+   "start": 66.2,
+   "end": 68.0,
+   "duration": 1.8,
+   "enter": "hard",
+   "enter_score": 0.959
+  }
+ ],
+ "rhythm": {
+  "engine": "zrmd/rhythm@1",
+  "boundaries_measured": 1318,
+  "flashes": [],
+  "transitions": "learned",
+  "v1": {
+   "sensitivity": 0.5,
+   "min_shot_s": 0.0,
+   "flashes": "ignore",
+   "transitions": "typed",
+   "dissolves": true,
+   "dissolve_min_change": 0.06,
+   "dissolve_fit": 0.022,
+   "fade_around_min": 0.05,
+   "whips": true,
+   "whip_around_min": 0.08,
+   "flash_return": 0.45,
+   "tracked_veto": 0.0
+  }
+ }
+}

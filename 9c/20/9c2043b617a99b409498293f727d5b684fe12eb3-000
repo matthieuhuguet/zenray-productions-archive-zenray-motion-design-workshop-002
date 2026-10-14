@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "x-anabology-2105325733312884869-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "x-anabology-2105325733312884869-m1.flac",
+ "sha256": "62bbf4cef218976d995c5a23b2818bde907926ed9fd02ff434cb5cf64367d12d",
+ "bytes": 5819499,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "x-anabology-2105325733312884869",
+ "start_s": 124,
+ "end_s": 154,
+ "title": "anabology - Gave Claude another 12 hours to one up this..  Woke up to.. The Clody... #1 (music excerpt 1: 124 to 154 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

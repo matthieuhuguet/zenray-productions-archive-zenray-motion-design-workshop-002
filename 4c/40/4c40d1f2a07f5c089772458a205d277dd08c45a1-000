@@ -1,0 +1,839 @@
+{
+ "date": "12 October 2026",
+ "method": "Revue à l'œil des planches (une image tous les quarts de seconde, puis une tuile début, milieu, fin par plan) et des pics de différence non retenus par le détecteur ; descriptions paraphrasées, sans texte affiché ni nom de marque.",
+ "reference": "Manifeste rythmé en noir et blanc : un homme parle face caméra derrière d'immenses mots orange en capitales grasses qui remplissent l'image, puis le montage s'accélère jusqu'à des plans d'un à trois images sur la course automobile, la conquête spatiale, l'aviation, l'armée et les chantiers, avant un logotype orange sur noir.",
+ "add_cuts": [
+  {
+   "t": 13.433,
+   "kind": "hard"
+  },
+  {
+   "t": 13.867,
+   "kind": "hard"
+  },
+  {
+   "t": 14.233,
+   "kind": "hard"
+  },
+  {
+   "t": 14.5,
+   "kind": "hard"
+  },
+  {
+   "t": 18.467,
+   "kind": "hard"
+  },
+  {
+   "t": 18.767,
+   "kind": "hard"
+  },
+  {
+   "t": 29.4,
+   "kind": "hard"
+  },
+  {
+   "t": 15.53,
+   "kind": "whip"
+  },
+  {
+   "t": 15.9,
+   "kind": "whip"
+  },
+  {
+   "t": 40.067,
+   "kind": "hard"
+  },
+  {
+   "t": 40.733,
+   "kind": "hard"
+  }
+ ],
+ "remove_cuts": [
+  {
+   "t": 0.133
+  }
+ ],
+ "shots": [
+  {
+   "t": 1.2,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un homme de dos marche dans un atelier en noir et blanc, d'énormes mots orange se remplacent par paires devant lui."
+  },
+  {
+   "t": 3.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "L'homme face caméra en noir et blanc, un mot orange géant puis deux autres le traversent."
+  },
+  {
+   "t": 5.2,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Même cadre, les mots orange géants changent toutes les demi-secondes en couvrant le visage."
+  },
+  {
+   "t": 8.8,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Long plan face caméra : l'homme parle pendant que les mots orange géants se succèdent, certains sur deux lignes, d'autres sur une seule bande."
+  },
+  {
+   "t": 12.2,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Plan plus serré de l'homme, un mot orange géant puis un second en travers de l'image."
+  },
+  {
+   "t": 13.0,
+   "text": "Le mot orange géant en capitales sur fond noir, très bref."
+  },
+  {
+   "t": 13.05,
+   "text": "Le mot orange géant en surimpression sur une monoplace blanche en noir et blanc."
+  },
+  {
+   "t": 13.083,
+   "text": "Le mot orange géant seul sur fond noir, une image."
+  },
+  {
+   "t": 13.1,
+   "content": "graphic",
+   "text": "Le mot orange géant seul sur fond noir, très bref."
+  },
+  {
+   "t": 13.183,
+   "text": "Le mot orange géant seul sur fond noir, une image."
+  },
+  {
+   "t": 13.217,
+   "text": "Le mot orange géant en surimpression sur la monoplace en noir et blanc."
+  },
+  {
+   "t": 13.25,
+   "text": "Le mot orange géant seul sur fond noir, une image."
+  },
+  {
+   "t": 13.3,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Le mot orange en surimpression sur une monoplace en noir et blanc, deux images."
+  },
+  {
+   "t": 13.35,
+   "text": "Le mot orange géant seul sur fond noir, une image."
+  },
+  {
+   "t": 13.38,
+   "content": "graphic",
+   "text": "Le mot orange géant revient seul sur le noir, trois images."
+  },
+  {
+   "t": 13.417,
+   "text": "Le mot orange géant seul sur fond noir, une image."
+  },
+  {
+   "t": 13.467,
+   "text": "Le mot orange géant en surimpression sur la monoplace blanche qui prend un virage."
+  },
+  {
+   "t": 13.5,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Le mot orange sur le noir puis sur la voiture, en alternance rapide."
+  },
+  {
+   "t": 13.7,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Le mot orange sur la monoplace qui prend un virage, très bref."
+  },
+  {
+   "t": 13.9,
+   "text": "Le mot orange géant seul sur fond noir, deux images."
+  },
+  {
+   "t": 13.967,
+   "text": "Le mot orange géant sur la monoplace qui prend un virage, en noir et blanc."
+  },
+  {
+   "t": 14.0,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Le mot orange alterne avec le noir et la voiture, très bref."
+  },
+  {
+   "t": 14.05,
+   "text": "Le mot orange géant en surimpression sur la voiture, une image."
+  },
+  {
+   "t": 14.083,
+   "text": "Le mot orange géant seul sur fond noir, un petit éclat blanc au centre."
+  },
+  {
+   "t": 14.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un petit logo blanc sur noir puis une monoplace qui décolle d'un vibreur."
+  },
+  {
+   "t": 14.183,
+   "text": "Petit logo blanc de la compétition sur fond noir, une image."
+  },
+  {
+   "t": 14.217,
+   "text": "Monoplace blanche vue de côté en noir et blanc, penchée dans un virage."
+  },
+  {
+   "t": 14.25,
+   "text": "Petit logo blanc décentré sur fond noir, une image."
+  },
+  {
+   "t": 14.3,
+   "text": "Monoplace en noir et blanc, roue avant levée, plan fixe de deux images."
+  },
+  {
+   "t": 14.35,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Alternance du logo blanc sur noir et de la monoplace en l'air, très bref."
+  },
+  {
+   "t": 14.383,
+   "text": "Monoplace en noir et blanc, roue avant levée, la même prise tenue."
+  },
+  {
+   "t": 14.417,
+   "text": "Petit logo blanc sur fond noir, une image."
+  },
+  {
+   "t": 14.467,
+   "text": "Monoplace blanche en gros plan, flanc et roue en noir et blanc."
+  },
+  {
+   "t": 14.517,
+   "text": "Petit logo blanc sur fond noir, une image."
+  },
+  {
+   "t": 14.55,
+   "content": "graphic",
+   "text": "Petit logo blanc sur noir, trois images."
+  },
+  {
+   "t": 14.583,
+   "text": "Petit logo blanc sur fond noir, deux images."
+  },
+  {
+   "t": 14.75,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "La monoplace en l'air, en noir et blanc, très bref."
+  },
+  {
+   "t": 15.0,
+   "content": "graphic",
+   "text": "Noir presque total, très bref."
+  },
+  {
+   "t": 15.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Une monoplace vue de face sous les projecteurs, très bref."
+  },
+  {
+   "t": 15.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Une monoplace vue de face qui avance dans la pénombre."
+  },
+  {
+   "t": 15.7,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Profil rapproché d'une monoplace qui file, flou de vitesse."
+  },
+  {
+   "t": 16.1,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Filé de vitesse le long d'une piste, la voiture presque illisible."
+  },
+  {
+   "t": 16.5,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue d'en haut d'une voiture qui sort d'un virage en laissant de la fumée."
+  },
+  {
+   "t": 17.1,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue aérienne verticale de voitures entre deux tribunes noires de monde."
+  },
+  {
+   "t": 17.6,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Gerbe d'étincelles sous une monoplace vue de l'arrière."
+  },
+  {
+   "t": 17.967,
+   "text": "Monoplace noire sur une piste vue de côté, fumée au loin, en noir et blanc."
+  },
+  {
+   "t": 18.017,
+   "text": "Gerbe d'étincelles sous une monoplace, arrière-train et pneu, un mot en lettres géantes derrière."
+  },
+  {
+   "t": 18.2,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Monoplace en contre-jour qui passe devant un mur, flou de vitesse."
+  },
+  {
+   "t": 18.6,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Monoplace qui traverse le cadre en panoramique filé."
+  },
+  {
+   "t": 18.8,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Filé flou d'une voiture, quatre images."
+  },
+  {
+   "t": 19.0,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Gros plan sur un casque de pilote puis noir."
+  },
+  {
+   "t": 19.083,
+   "text": "Écran noir, une image."
+  },
+  {
+   "t": 19.3,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Archive d'astronautes en combinaison blanche qui avancent dans un couloir."
+  },
+  {
+   "t": 19.8,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue d'une capsule avec la Terre à travers le hublot, archive."
+  },
+  {
+   "t": 20.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Empreinte de semelle sur un sol poussiéreux, archive."
+  },
+  {
+   "t": 20.8,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Contre-plongée sur une structure et un soleil voilé, deux images."
+  },
+  {
+   "t": 20.85,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Salle de contrôle remplie d'opérateurs, deux images."
+  },
+  {
+   "t": 21.0,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un engin spatial noir au-dessus des nuages, très bref."
+  },
+  {
+   "t": 21.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Nuages de fumée au décollage d'une fusée, très bref."
+  },
+  {
+   "t": 21.3,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Silhouette d'une tour de lancement dans la fumée, trois images."
+  },
+  {
+   "t": 21.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Fumée de lancement en gros plan, trois images."
+  },
+  {
+   "t": 21.5,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Fusée qui monte au-dessus d'un panache, deux images."
+  },
+  {
+   "t": 21.6,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Foule qui regarde un lancement depuis la plage, très bref."
+  },
+  {
+   "t": 21.78,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Foule dense qui lève les bras dans un hangar, trois images."
+  },
+  {
+   "t": 21.9,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Panache de flammes et de fumée sous un lanceur, très bref."
+  },
+  {
+   "t": 22.05,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Foule de dos face à l'horizon, trois images."
+  },
+  {
+   "t": 22.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Plongée sur une flamme de propulsion et la plage, trois images."
+  },
+  {
+   "t": 22.25,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Fusée minuscule dans un ciel gris, trois images."
+  },
+  {
+   "t": 22.45,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Moteurs allumés au pied d'un lanceur, très bref."
+  },
+  {
+   "t": 22.9,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue aérienne d'un pas de tir avec son panache."
+  },
+  {
+   "t": 23.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Rangées de pupitres de contrôle vus de dos."
+  },
+  {
+   "t": 23.58,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Traînée de fumée sinueuse dans un ciel clair, trois images."
+  },
+  {
+   "t": 23.68,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un homme casqué sourit devant des écrans, trois images."
+  },
+  {
+   "t": 23.78,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un astronaute devant la courbe de la Terre, trois images."
+  },
+  {
+   "t": 23.88,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Fusée qui s'élève avec sa traînée, trois images."
+  },
+  {
+   "t": 23.96,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Rentrée atmosphérique enflammée sous un engin, deux images."
+  },
+  {
+   "t": 24.05,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Traînée lumineuse oblique dans le ciel, trois images."
+  },
+  {
+   "t": 24.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Foule en liesse sous une structure, trois images."
+  },
+  {
+   "t": 24.25,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Flammes sous un engin au-dessus de la mer, trois images."
+  },
+  {
+   "t": 24.45,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Petit point lumineux sur fond noir, puis noir."
+  },
+  {
+   "t": 24.55,
+   "text": "Fond noir tenu, sans élément visible, avant une reprise."
+  },
+  {
+   "t": 24.63,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un drapeau national flotte, deux images."
+  },
+  {
+   "t": 24.73,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un enfant et un adulte devant un drapeau, très bref."
+  },
+  {
+   "t": 24.86,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Drapeau sur un mât dans un ciel clair, très bref."
+  },
+  {
+   "t": 24.98,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Drapeau tenu dans une foule de nuit, très bref."
+  },
+  {
+   "t": 25.1,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Flou de mouvement indistinct, très bref."
+  },
+  {
+   "t": 25.183,
+   "text": "Flou de mouvement indistinct : une traînée claire horizontale sur fond sombre, une image."
+  },
+  {
+   "t": 25.35,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un marin sur un pont d'envol donne le signal de départ d'un avion."
+  },
+  {
+   "t": 25.9,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Pilote casqué vu de près dans son cockpit."
+  },
+  {
+   "t": 26.28,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Silhouette de personnel sur le pont devant des avions, trois images."
+  },
+  {
+   "t": 26.6,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Personnel de pont de dos devant des avions de chasse."
+  },
+  {
+   "t": 26.95,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Avion de chasse qui catapulte, flou, très bref."
+  },
+  {
+   "t": 27.35,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Foule de visages masqués et casqués, en plan serré."
+  },
+  {
+   "t": 27.73,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Avion vu de face au décollage, très bref."
+  },
+  {
+   "t": 28.0,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Patrouille de chasseurs en formation dans un ciel blanc."
+  },
+  {
+   "t": 28.35,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Formation serrée de chasseurs, plus près."
+  },
+  {
+   "t": 28.533,
+   "text": "Fond presque noir, grain à peine visible."
+  },
+  {
+   "t": 28.583,
+   "text": "Des soldats casqués et masqués en noir et blanc sur une embarcation, une seule image entre deux images noires."
+  },
+  {
+   "t": 28.6,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Noir puis soldats équipés au bord de l'eau."
+  },
+  {
+   "t": 28.667,
+   "text": "Deux soldats casqués et masqués en gros plan, noir et blanc, un navire au loin."
+  },
+  {
+   "t": 28.73,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Noir, deux images."
+  },
+  {
+   "t": 28.75,
+   "text": "Deux soldats casqués et masqués en gros plan, noir et blanc, la même prise."
+  },
+  {
+   "t": 28.783,
+   "text": "Fond presque noir, une image."
+  },
+  {
+   "t": 28.833,
+   "text": "Soldats casqués et masqués en gros plan, noir et blanc, bord de mer."
+  },
+  {
+   "t": 28.883,
+   "text": "Fond presque noir, une image."
+  },
+  {
+   "t": 29.0,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Soldats casqués et masqués en gros plan, puis une plage."
+  },
+  {
+   "t": 29.283,
+   "text": "Détail mécanique flou, pièces métalliques claires en noir et blanc."
+  },
+  {
+   "t": 29.35,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Casque d'un soldat équipé de jumelles de vision nocturne, très bref."
+  },
+  {
+   "t": 29.5,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Même casque vu de plus loin, très bref."
+  },
+  {
+   "t": 29.66,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Soldat accroupi devant un mur rayé, très bref."
+  },
+  {
+   "t": 30.0,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un hélicoptère dépose des soldats dans la poussière."
+  },
+  {
+   "t": 30.7,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Hélicoptère et soldats qui courent sous le souffle des pales."
+  },
+  {
+   "t": 31.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un ouvrier suspendu dans une structure métallique au-dessus du vide."
+  },
+  {
+   "t": 31.9,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvriers sur un pylône métallique en contre-plongée."
+  },
+  {
+   "t": 32.2,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvriers sur un pylône, autre angle."
+  },
+  {
+   "t": 32.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue aérienne d'un territoire, deux images."
+  },
+  {
+   "t": 32.5,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Gerbe de métal fondu dans une fonderie, très bref."
+  },
+  {
+   "t": 32.8,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Engin de chantier au travail parmi des débris."
+  },
+  {
+   "t": 33.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvriers casqués en action sur une machine."
+  },
+  {
+   "t": 33.38,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Une main trace une ligne au crayon sur une planche."
+  },
+  {
+   "t": 33.55,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Outil qui découpe une matière, très bref."
+  },
+  {
+   "t": 33.68,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Étincelles d'une meuleuse, trois images."
+  },
+  {
+   "t": 33.8,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvriers qui portent une grande plaque, très bref."
+  },
+  {
+   "t": 33.95,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Structure d'acier en plongée, trois images."
+  },
+  {
+   "t": 34.05,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvrier au milieu de caisses sur un chantier, trois images."
+  },
+  {
+   "t": 34.15,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Échafaudages éclairés de nuit, très bref."
+  },
+  {
+   "t": 34.35,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Machinerie industrielle et vapeur, très bref."
+  },
+  {
+   "t": 34.7,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue aérienne d'un chantier dense."
+  },
+  {
+   "t": 35.1,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvrier casqué de dos, très bref."
+  },
+  {
+   "t": 35.6,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Ouvrier casqué de dos devant un camarade, plan un peu plus long."
+  },
+  {
+   "t": 36.1,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Vue aérienne d'un quartier de chantiers."
+  },
+  {
+   "t": 36.55,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Pompiers près d'une roue de camion, de nuit."
+  },
+  {
+   "t": 36.95,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Engins de chantier vus de très haut sur un sol nu."
+  },
+  {
+   "t": 37.2,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Un bulldozer en contre-jour sur un remblai."
+  },
+  {
+   "t": 37.45,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Rue de ville la nuit avec des pompiers sur un passage piéton."
+  },
+  {
+   "t": 37.9,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Pompier masqué en gros plan dans l'obscurité."
+  },
+  {
+   "t": 38.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Pompiers qui traversent la rue près d'un véhicule."
+  },
+  {
+   "t": 38.85,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Pompiers casqués en plan serré, très bref."
+  },
+  {
+   "t": 39.5,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Rue de nuit avec des véhicules d'urgence et des lumières."
+  },
+  {
+   "t": 40.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Silhouettes de pompiers devant un feu."
+  },
+  {
+   "t": 41.4,
+   "content": "plate",
+   "plate_kind": "image",
+   "text": "Gros plan d'un pompier casqué qui regarde vers le haut."
+  },
+  {
+   "t": 42.0,
+   "text": "Camion de pompiers dans une rue, noir et blanc, panneaux lumineux au fond."
+  },
+  {
+   "t": 43.0,
+   "content": "graphic",
+   "text": "Logotype orange en minuscules arrondies centré sur fond noir, immobile."
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "paper-mono-code-m1",
+ "title": "How the whole Paper Mono launch video was made (music excerpt 1: 17 to 47 s)",
+ "duration_s": 30,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_009",
+   "detail": {
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_002",
+   "detail": {
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 30,
+    "invariant": 0.9998,
+    "critic": 0.9992,
+    "auditMean": 0.9984,
+    "passTitle": 28,
+    "passMusic": 28,
+    "exact": 0.9607
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_007",
+   "detail": {
+    "sound": 0.9643,
+    "sfx": 0.9607,
+    "timing": 0.9333,
+    "mix": 1.0,
+    "music": 0.9952
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 0,
+  "stems": true,
+  "sfx_versions": 7,
+  "motions": 0
+ },
+ "lastRun": null
+}

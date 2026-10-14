@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "kiasmos-blurred-m3",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "kiasmos-blurred-m3.flac",
+ "sha256": "be8004aab88cfbb93221c3cd642c36990dd5da0bf3cc2793de3ec7acc53c73fa",
+ "bytes": 6105139,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "kiasmos-blurred",
+ "start_s": 206,
+ "end_s": 236,
+ "title": "Kiasmos - Blurred (music excerpt 3: 206 to 236 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

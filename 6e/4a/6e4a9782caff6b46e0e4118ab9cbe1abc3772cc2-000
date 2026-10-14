@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "interface-m2",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "interface-m2.flac",
+ "sha256": "4ec24448f09e132b2cadd667956199cf6a52d9d7dbdfabcc18f37dae74e19762",
+ "bytes": 4915771,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "interface",
+ "start_s": 49,
+ "end_s": 79,
+ "title": "Interface, the primary hardware for the agent era (music excerpt 2: 49 to 79 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

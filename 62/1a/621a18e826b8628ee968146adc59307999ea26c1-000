@@ -1,0 +1,115 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "arkadata-music-02",
+ "title": "ARKADATA Yasuo Montage 2 \"THE UNFORGIVEN\"",
+ "duration_s": 253,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "arkadata-music-02-m1 V_008",
+   "detail": {
+    "members": {
+     "arkadata-music-02-m1": 1.0,
+     "arkadata-music-02-m2": 1.0,
+     "arkadata-music-02-m3": 1.0
+    },
+    "scored": 3,
+    "total": 3,
+    "complete": true,
+    "worst": "arkadata-music-02-m1",
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 0,
+  "stems": true,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": null
+}

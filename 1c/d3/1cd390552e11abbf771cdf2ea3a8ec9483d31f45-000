@@ -1,0 +1,121 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "flora-agents-on-canvas-m1",
+ "title": "Flora AI — agents now live on the canvas (music excerpt 1: 21 to 51 s)",
+ "duration_s": 30,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_010",
+   "detail": {
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_003",
+   "detail": {
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 3,
+    "invariant": 0.9998,
+    "critic": 0.9979,
+    "auditMean": 0.9977,
+    "passTitle": 3,
+    "passMusic": 2,
+    "exact": 0.9759
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_008",
+   "detail": {
+    "sound": 0.9919,
+    "sfx": 0.9759,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 0.9995
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 0,
+  "stems": true,
+  "sfx_versions": 8,
+  "motions": 0
+ },
+ "lastRun": null
+}

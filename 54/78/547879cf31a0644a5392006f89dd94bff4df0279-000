@@ -1,0 +1,83 @@
+{
+ "date": "12 October 2026",
+ "method": "Revue à l'œil des planches (une image tous les quarts de seconde) ; descriptions paraphrasées, sans texte affiché ni nom de marque.",
+ "reference": "Film d'interface sur fond crème : une conversation avec un assistant fabrique une vidéo de lancement, et la caméra virtuelle glisse d'un panneau à l'autre ; mots en serif et pastilles rouges qui surgissent, nuée d'icônes, compteur qui s'emballe, puis carte de fin sobre.",
+ "add_cuts": [
+  {
+   "t": 4.0,
+   "kind": "hard"
+  },
+  {
+   "t": 10.6,
+   "kind": "push"
+  },
+  {
+   "t": 13.0,
+   "kind": "zoom"
+  },
+  {
+   "t": 16.6,
+   "kind": "push"
+  },
+  {
+   "t": 23.15,
+   "kind": "hard"
+  },
+  {
+   "t": 27.0,
+   "kind": "hard"
+  }
+ ],
+ "remove_cuts": [],
+ "shots": [
+  {
+   "t": 2.0,
+   "content": "textcard",
+   "text": "Carte titre crème : un titre en serif noir s'écrit en deux lignes à gauche, une étoile rouge à droite et une petite mention apparaît dessous."
+  },
+  {
+   "t": 7.0,
+   "content": "graphic",
+   "text": "Gros plan sur une interface de conversation claire : une demande est tapée, envoyée, puis des lignes d'état défilent avec une barre de progression rouge."
+  },
+  {
+   "t": 11.8,
+   "content": "graphic",
+   "text": "La caméra glisse vers un panneau vidéo où une phrase se compose mot à mot, certains mots dans des pastilles rouges, puis la ligne file vers la gauche."
+  },
+  {
+   "t": 14.5,
+   "content": "graphic",
+   "text": "Un gros bouton rond rouge est cliqué, devient bleu, et un compteur en grands chiffres rouges monte pendant qu'une gerbe d'icônes jaillit en arc."
+  },
+  {
+   "t": 18.5,
+   "content": "graphic",
+   "text": "Retour à la conversation : une nouvelle demande est tapée, puis une liste de capacités s'affiche avec un mot surligné qui change."
+  },
+  {
+   "t": 21.4,
+   "content": "graphic",
+   "text": "Un grand rectangle rouge porte deux mots, puis des logos en tuiles viennent l'entourer."
+  },
+  {
+   "t": 22.5,
+   "content": "graphic",
+   "text": "Un mot en serif au centre d'une couronne d'icônes d'applications qui tourne puis s'efface."
+  },
+  {
+   "t": 25.0,
+   "content": "graphic",
+   "text": "Une question se construit mot à mot sur un dégradé rouge en cercle, le dernier mot dans une pastille rouge, puis deux formes rouges fusionnent en logotype à côté d'un nom."
+  },
+  {
+   "t": 28.5,
+   "content": "textcard",
+   "text": "Carte de fin crème : titre en serif, étoile rouge, adresse en dessous, immobile."
+  },
+  {
+   "t": 0.017,
+   "text": "Capture d'une fenêtre de messagerie sur fond crème : une carte de tâche avec une barre de progression rouge et un champ de réponse en bas."
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "x-anabology-2105325733312884869",
+ "title": "anabology - Gave Claude another 12 hours to one up this..  Woke up to.. The Clody... #1",
+ "duration_s": 191.637,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 158,
+    "cutsReference": 158,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 1.0,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 160,
+    "truth": "adjudicated"
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9437,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99397,
+   "limited": true,
+   "version": "14 October 2026, 21:10",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.4895,
+    "within1Jnd": 0.1657,
+    "shots": 161,
+    "reproducibleTimeShare": 0.1877,
+    "slotTimeShare": 0.7194,
+    "glowShare": 0.4882,
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99397,
+     "min": 0.99133,
+     "windows": 3
+    }
+   },
+   "coverage": 0.4895
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.8663,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.887,
+   "limited": true,
+   "version": "S44 V_005",
+   "detail": {
+    "vectorShare": 0.0959,
+    "shaderShare": 0.895,
+    "residualShare": 0.0091,
+    "explained": 0.8194,
+    "vectorLayersOk": "0/98",
+    "reading": "mostly shader or photographic content: the vector part is only the shapes listed as vector",
+    "iouArea": 0.9012,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.887,
+     "iouArea": 0.9374,
+     "shot": "S44"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "x-anabology-2105325733312884869-m1 V_008",
+   "detail": {
+    "members": {
+     "x-anabology-2105325733312884869-m1": 1.0,
+     "x-anabology-2105325733312884869-m2": 1.0,
+     "x-anabology-2105325733312884869-m3": 1.0
+    },
+    "scored": 3,
+    "total": 3,
+    "complete": true,
+    "worst": "x-anabology-2105325733312884869-m1",
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9999,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": "x-anabology-2105325733312884869-m1 V_002",
+   "detail": {
+    "members": {
+     "x-anabology-2105325733312884869-m1": 0.9999,
+     "x-anabology-2105325733312884869-m2": null,
+     "x-anabology-2105325733312884869-m3": null
+    },
+    "scored": 1,
+    "total": 3,
+    "complete": false,
+    "worst": "x-anabology-2105325733312884869-m1",
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 5,
+    "invariant": 0.9999,
+    "critic": 0.9993,
+    "auditMean": 0.9985,
+    "passTitle": 5,
+    "passMusic": 4,
+    "exact": 0.981
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": null,
+   "limited": false,
+   "version": "x-anabology-2105325733312884869-m1 V_003",
+   "detail": {
+    "members": {
+     "x-anabology-2105325733312884869-m1": 1.0,
+     "x-anabology-2105325733312884869-m2": null,
+     "x-anabology-2105325733312884869-m3": null
+    },
+    "scored": 1,
+    "total": 3,
+    "complete": false,
+    "worst": "x-anabology-2105325733312884869-m1",
+    "sound": 0.9936,
+    "sfx": 0.981,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 0.9962
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 161,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": null
+}

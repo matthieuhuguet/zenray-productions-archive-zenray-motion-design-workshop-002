@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "flora-agents-on-canvas-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "flora-agents-on-canvas-m1.flac",
+ "sha256": "c97592bcf7506066e89b816545a2b2fc2e0b22f7e53c5a2dbdbc7ccba1e6df4e",
+ "bytes": 5371621,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "flora-agents-on-canvas",
+ "start_s": 21,
+ "end_s": 51,
+ "title": "Flora AI — agents now live on the canvas (music excerpt 1: 21 to 51 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

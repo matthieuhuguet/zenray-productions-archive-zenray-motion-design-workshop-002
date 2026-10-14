@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "grandbrothers-sonic-riots-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "grandbrothers-sonic-riots-m1.flac",
+ "sha256": "0ca642b30a2b30f9247dbc9a72738b26516798662299195cc45b4a9ba497b3df",
+ "bytes": 6469313,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "grandbrothers-sonic-riots",
+ "start_s": 162,
+ "end_s": 192,
+ "title": "Grandbrothers - Sonic Riots (music excerpt 1: 162 to 192 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

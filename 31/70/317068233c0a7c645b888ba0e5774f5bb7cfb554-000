@@ -1,0 +1,2219 @@
+{
+  "date": "14 October 2026, 11:57",
+  "slug": "claude-opus-5-5",
+  "span": [
+    0.0,
+    20.053333333333335
+  ],
+  "candidates": 31,
+  "droppedAsMusic": 21,
+  "routedToMusicAsNotes": [
+    {
+      "id": "E009",
+      "t": 18.875,
+      "windowStart": 18.835,
+      "windowEnd": 19.37,
+      "detector": "transient",
+      "stem": "other",
+      "gridOffsetMs": 32.5,
+      "onGrid": false,
+      "repeatExcessDb": 3.69,
+      "backgroundShiftS": -2.64,
+      "reason": "melodic: tonal neighbours in the same phrase",
+      "peakHz": 663.0,
+      "degree": 2,
+      "centsOff": 9.8,
+      "key": "D major",
+      "distinctNotes": 1,
+      "tonalNeighbours": 1
+    },
+    {
+      "id": "E010",
+      "t": 19.37,
+      "windowStart": 19.33,
+      "windowEnd": 20.0533,
+      "peak": 19.585,
+      "detector": "swell",
+      "stem": "other",
+      "gridOffsetMs": 32.5,
+      "onGrid": false,
+      "repeatExcessDb": 4.05,
+      "backgroundShiftS": -2.64,
+      "reason": "melodic: tonal neighbours in the same phrase",
+      "peakHz": 439.9,
+      "degree": 7,
+      "centsOff": 0.6,
+      "key": "D major",
+      "distinctNotes": 1,
+      "tonalNeighbours": 1
+    }
+  ],
+  "events": [
+    {
+      "id": "E001",
+      "t": 8.53,
+      "windowStart": 8.49,
+      "windowEnd": 9.03,
+      "detector": "transient",
+      "stem": "drums",
+      "gridOffsetMs": 0.0,
+      "onGrid": true,
+      "repeatExcessDb": 45.29,
+      "backgroundShiftS": -2.64,
+      "kind": "impact",
+      "why": [
+        "lowShare 0.99 >= 0.5"
+      ],
+      "alternatives": [
+        "trigger",
+        "boom"
+      ],
+      "anchorS": 8.5141,
+      "refAnchorKind": "onset",
+      "levelDb": -14.17,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -14.17253,
+        "onsetS": 0.02411,
+        "peakS": 0.05213,
+        "rawPeakS": 0.04966,
+        "anchorKind": "onset",
+        "attackS": 0.02165,
+        "spanS": 0.141,
+        "peakHz": 44.65601,
+        "prominenceDb": 21.85997,
+        "centroidHz": 55.24508,
+        "spreadHz": 46.51013,
+        "flatness": 3e-05,
+        "harmonicity": 0.00371,
+        "centroidTraj": [
+          77.8,
+          63.0,
+          57.5,
+          63.8,
+          59.8,
+          56.6,
+          59.0,
+          56.8
+        ],
+        "lowShare": 0.98513,
+        "bandwidthHz": 30.1167,
+        "centroidSlopeOct": -0.45264,
+        "subAttacks": 4,
+        "attackRateHz": 31.91489,
+        "attackCv": 0.14817,
+        "mfccMean": [
+          -341.906,
+          78.107,
+          24.293,
+          21.171,
+          16.877,
+          17.052,
+          11.877,
+          3.028,
+          8.584,
+          8.171,
+          3.68,
+          6.185,
+          5.806
+        ],
+        "mfccStd": [
+          25.908,
+          13.282,
+          7.664,
+          10.489,
+          7.147,
+          6.3,
+          4.818,
+          7.343,
+          5.162,
+          4.102,
+          3.922,
+          3.821,
+          3.483
+        ],
+        "fluxMean": 1.06958,
+        "peakFraction": 0.19872
+      },
+      "fit": {
+        "event": "E001",
+        "kind": "chain",
+        "chainIds": [
+          "sub_drop",
+          "drum_step_pattern",
+          "fm_bell"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.5399791666666667,
+          "blocks": [
+            {
+              "block": "sub_drop",
+              "params": {
+                "start_hz": 51.125164,
+                "end_hz": 41.883976,
+                "glide_s": 0.063437,
+                "decay_s": 0.29197,
+                "drive": 1.422801,
+                "attack_s": 0.017168,
+                "amp_db": -10.019802,
+                "onset_s": 0.028643
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "drum_step_pattern",
+              "params": {
+                "onset_s": 0.080527,
+                "step_s": 0.285421,
+                "body_hz": 39.40551,
+                "drop_st": 10.461393,
+                "body_t60": 0.46688,
+                "noise_hz": 301.841705,
+                "noise_t60": 0.19999,
+                "b1_db": -0.078987,
+                "b2_db": -17.246027,
+                "b3_db": -38.417362,
+                "b4_db": -35.093105,
+                "n1_db": -12.560188,
+                "n2_db": -27.913767,
+                "n3_db": -34.91967,
+                "n4_db": -26.011349,
+                "amp_db": -26.437519
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "fm_bell",
+              "params": {
+                "carrier_hz": 51.399033,
+                "ratio": 3.306739,
+                "index": 1.5716,
+                "index_decay_s": 0.13458,
+                "amp_db": -13.293747,
+                "onset_s": 0.023085,
+                "attack_s": 0.06891,
+                "decay_s": 0.17061
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 82.64,
+        "ploss": 82.6449,
+        "b1": 0.0,
+        "errors": {
+          "stft": 2.9799,
+          "mel": 2.38,
+          "envelope": 2.1028,
+          "onset": -0.0257
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": 0,
+        "candidates": [
+          {
+            "ids": "sub_drop+drum_step_pattern+fm_bell",
+            "stage": "full",
+            "score": 82.6447,
+            "ploss": 82.6447,
+            "b1": 0.0,
+            "seconds": 773.2
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+sub_808",
+            "stage": "full",
+            "score": 82.397,
+            "ploss": 82.397,
+            "b1": 19.605,
+            "seconds": 774.38
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+compressor",
+            "stage": "grow",
+            "score": 80.8262,
+            "ploss": 80.8262,
+            "b1": 0.496,
+            "seconds": 165.67
+          },
+          {
+            "ids": "drum_step_pattern+thud+compressor",
+            "stage": "full",
+            "score": 80.4233,
+            "ploss": 80.4233,
+            "b1": 5.714,
+            "seconds": 665.21
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+reverb_noise_tail",
+            "stage": "grow",
+            "score": 79.3972,
+            "ploss": 79.3972,
+            "b1": 88.035,
+            "seconds": 176.1
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+saturation",
+            "stage": "grow",
+            "score": 79.0063,
+            "ploss": 79.0063,
+            "b1": 88.613,
+            "seconds": 151.57
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+transient_shaper",
+            "stage": "grow",
+            "score": 78.8751,
+            "ploss": 78.8751,
+            "b1": 46.841,
+            "seconds": 173.16
+          },
+          {
+            "ids": "drum_step_pattern+thud+sub_drop",
+            "stage": "grow",
+            "score": 78.6096,
+            "ploss": 78.6096,
+            "b1": 14.394,
+            "seconds": 170.9
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+peak_eq",
+            "stage": "grow",
+            "score": 78.033,
+            "ploss": 78.033,
+            "b1": 44.662,
+            "seconds": 158.55
+          },
+          {
+            "ids": "drum_step_pattern+thud+reverb_fdn",
+            "stage": "grow",
+            "score": 77.787,
+            "ploss": 77.787,
+            "b1": 4.447,
+            "seconds": 385.81
+          },
+          {
+            "ids": "sub_drop+drum_step_pattern+reverb_fdn",
+            "stage": "grow",
+            "score": 77.778,
+            "ploss": 77.778,
+            "b1": 1.245,
+            "seconds": 391.55
+          },
+          {
+            "ids": "drum_step_pattern+thud+sub_808",
+            "stage": "grow",
+            "score": 77.6387,
+            "ploss": 77.6387,
+            "b1": 18.964,
+            "seconds": 170.76
+          }
+        ],
+        "fits": 142,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E002",
+      "t": 9.065,
+      "windowStart": 9.025,
+      "windowEnd": 9.565,
+      "detector": "transient",
+      "stem": "other",
+      "gridOffsetMs": 40.0,
+      "onGrid": false,
+      "repeatExcessDb": 3.37,
+      "backgroundShiftS": -2.64,
+      "kind": "keyboard",
+      "why": [
+        "5 sub-attacks",
+        "rate 8.7 Hz in keyboard range"
+      ],
+      "alternatives": [
+        "glitch",
+        "tick"
+      ],
+      "anchorS": 9.2279,
+      "refAnchorKind": "peak",
+      "levelDb": -17.51,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -17.50575,
+        "onsetS": 0.0,
+        "peakS": 0.20289,
+        "rawPeakS": 0.29578,
+        "anchorKind": "peak",
+        "attackS": 0.26267,
+        "spanS": 0.539,
+        "peakHz": 586.88963,
+        "prominenceDb": 17.09836,
+        "centroidHz": 640.89438,
+        "spreadHz": 727.38846,
+        "flatness": 0.01015,
+        "harmonicity": 0.16998,
+        "centroidTraj": [
+          708.6,
+          572.0,
+          672.9,
+          588.5,
+          678.4,
+          735.7,
+          564.8,
+          497.8
+        ],
+        "lowShare": 0.03744,
+        "bandwidthHz": 790.74074,
+        "centroidSlopeOct": -0.50935,
+        "subAttacks": 5,
+        "attackRateHz": 8.67679,
+        "attackCv": 0.51422,
+        "mfccMean": [
+          -183.994,
+          102.529,
+          -5.513,
+          24.188,
+          -21.194,
+          11.966,
+          -16.742,
+          7.367,
+          -11.809,
+          5.047,
+          -8.038,
+          0.455,
+          -0.374
+        ],
+        "mfccStd": [
+          14.969,
+          9.66,
+          7.228,
+          7.29,
+          6.74,
+          6.877,
+          5.262,
+          5.44,
+          5.268,
+          4.409,
+          5.136,
+          4.251,
+          4.139
+        ],
+        "fluxMean": 1.27923,
+        "peakFraction": 0.37643
+      },
+      "fit": {
+        "event": "E002",
+        "kind": "chain",
+        "chainIds": [
+          "room_tone",
+          "gated_tone",
+          "wind"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.54,
+          "blocks": [
+            {
+              "block": "room_tone",
+              "params": {
+                "tilt_db_oct": -5.669814,
+                "hp_hz": 184.289429,
+                "lp_hz": 19681.699219,
+                "hum_hz": 103.682526,
+                "hum_db": -0.198246,
+                "fade_s": 0.002001,
+                "amp_db": -30.222759
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "gated_tone",
+              "params": {
+                "f0_hz": 568.637756,
+                "tilt_db_oct": -23.923775,
+                "odd_db": 11.89415,
+                "rate_hz": 2.177007,
+                "phase": 0.977291,
+                "duty": 0.127016,
+                "depth_db": 4.813437,
+                "edge_ms": 4.72929,
+                "release_s": 19.974316,
+                "amp_db": -20.010239,
+                "onset_s": 0.022998
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "wind",
+              "params": {
+                "center_hz": 420.614014,
+                "bw_oct": 1.66486,
+                "sweep_oct": 0.304895,
+                "lfo_hz": 4.057347,
+                "gust_depth": 0.998275,
+                "attack_s": 0.203086,
+                "amp_db": -22.566437
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 81.37,
+        "ploss": 81.3703,
+        "b1": 59.135,
+        "errors": {
+          "stft": 3.6369,
+          "mel": 2.381,
+          "envelope": 1.2633,
+          "onset": -0.1436
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": 0,
+        "candidates": [
+          {
+            "ids": "room_tone+gated_tone+wind",
+            "stage": "full",
+            "score": 81.3702,
+            "ploss": 81.3702,
+            "b1": 59.135,
+            "seconds": 340.02
+          },
+          {
+            "ids": "room_tone+gated_tone+transient_shaper",
+            "stage": "full",
+            "score": 81.0208,
+            "ploss": 81.0208,
+            "b1": 70.942,
+            "seconds": 373.44
+          },
+          {
+            "ids": "wind+room_tone+compressor",
+            "stage": "full",
+            "score": 80.6716,
+            "ploss": 80.6716,
+            "b1": 0.0,
+            "seconds": 237.07
+          },
+          {
+            "ids": "room_tone+gated_tone+peak_eq",
+            "stage": "full",
+            "score": 80.4897,
+            "ploss": 80.4897,
+            "b1": 60.953,
+            "seconds": 304.31
+          },
+          {
+            "ids": "wind+room_tone+pad_saw",
+            "stage": "grow",
+            "score": 79.999,
+            "ploss": 79.999,
+            "b1": 0.0,
+            "seconds": 57.81
+          },
+          {
+            "ids": "wind+room_tone+filtered_noise_burst",
+            "stage": "grow",
+            "score": 79.9653,
+            "ploss": 79.9653,
+            "b1": 0.001,
+            "seconds": 45.93
+          },
+          {
+            "ids": "wind+room_tone+peak_eq",
+            "stage": "grow",
+            "score": 79.935,
+            "ploss": 79.935,
+            "b1": 0.0,
+            "seconds": 42.94
+          },
+          {
+            "ids": "room_tone+gated_tone+delay_echo",
+            "stage": "grow",
+            "score": 79.8773,
+            "ploss": 79.8773,
+            "b1": 82.557,
+            "seconds": 93.08
+          },
+          {
+            "ids": "wind+room_tone+reverb_fdn",
+            "stage": "grow",
+            "score": 79.8323,
+            "ploss": 79.8323,
+            "b1": 0.001,
+            "seconds": 200.27
+          },
+          {
+            "ids": "room_tone+gated_tone+reverb_fdn",
+            "stage": "grow",
+            "score": 79.7559,
+            "ploss": 79.7559,
+            "b1": 64.355,
+            "seconds": 265.24
+          },
+          {
+            "ids": "wind+room_tone+delay_echo",
+            "stage": "grow",
+            "score": 79.6823,
+            "ploss": 79.6823,
+            "b1": 0.001,
+            "seconds": 66.02
+          },
+          {
+            "ids": "room_tone+gated_tone+lowpass_sweep",
+            "stage": "grow",
+            "score": 79.6437,
+            "ploss": 79.6437,
+            "b1": 65.859,
+            "seconds": 69.41
+          }
+        ],
+        "fits": 142,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E003",
+      "t": 13.955,
+      "windowStart": 13.915,
+      "windowEnd": 14.455,
+      "detector": "transient",
+      "stem": "drums",
+      "gridOffsetMs": -20.0,
+      "onGrid": true,
+      "repeatExcessDb": 12.21,
+      "backgroundShiftS": -2.64,
+      "kind": "impact",
+      "why": [
+        "lowShare 0.51 >= 0.5"
+      ],
+      "alternatives": [
+        "trigger",
+        "boom"
+      ],
+      "anchorS": 13.9642,
+      "refAnchorKind": "peak",
+      "levelDb": -36.29,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -36.28843,
+        "onsetS": 0.01069,
+        "peakS": 0.04919,
+        "rawPeakS": 0.04721,
+        "anchorKind": "peak",
+        "attackS": 0.0304,
+        "spanS": 0.496,
+        "peakHz": 512.25428,
+        "prominenceDb": 14.0557,
+        "centroidHz": 1073.8938,
+        "spreadHz": 1076.89299,
+        "flatness": 0.00918,
+        "harmonicity": 0.28679,
+        "centroidTraj": [
+          1024.1,
+          1318.7,
+          1780.8,
+          1725.2,
+          806.2,
+          655.1,
+          835.3,
+          1062.9
+        ],
+        "lowShare": 0.50526,
+        "bandwidthHz": 1.91931,
+        "centroidSlopeOct": 0.05365,
+        "subAttacks": 3,
+        "attackRateHz": 5.18135,
+        "attackCv": 0.87047,
+        "mfccMean": [
+          -374.054,
+          71.678,
+          -18.642,
+          19.085,
+          4.204,
+          7.392,
+          -3.141,
+          -1.584,
+          -0.692,
+          5.221,
+          2.64,
+          0.953,
+          -0.618
+        ],
+        "mfccStd": [
+          35.811,
+          17.556,
+          14.673,
+          7.198,
+          6.49,
+          6.351,
+          6.767,
+          5.304,
+          4.331,
+          6.107,
+          4.2,
+          4.003,
+          4.035
+        ],
+        "fluxMean": 1.44738,
+        "peakFraction": 0.07761
+      },
+      "fit": {
+        "event": "E003",
+        "kind": "chain",
+        "chainIds": [
+          "room_tone",
+          "drum_step_pattern",
+          "bass_saw"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.54,
+          "blocks": [
+            {
+              "block": "room_tone",
+              "params": {
+                "tilt_db_oct": -3.89716,
+                "hp_hz": 20.481693,
+                "lp_hz": 19765.271484,
+                "hum_hz": 48.146008,
+                "hum_db": -4.657116,
+                "fade_s": 0.002003,
+                "amp_db": -59.93211
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "drum_step_pattern",
+              "params": {
+                "onset_s": 0.038047,
+                "step_s": 0.209212,
+                "body_hz": 208.872772,
+                "drop_st": 27.841394,
+                "body_t60": 0.166199,
+                "noise_hz": 1730.86499,
+                "noise_t60": 0.342865,
+                "b1_db": -1.442192,
+                "b2_db": -39.768864,
+                "b3_db": -35.744633,
+                "b4_db": -39.959999,
+                "n1_db": -13.923107,
+                "n2_db": -38.578484,
+                "n3_db": -39.073124,
+                "n4_db": -37.83107,
+                "amp_db": -30.222668
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "bass_saw",
+              "params": {
+                "f0_hz": 281.573425,
+                "cutoff_start_hz": 3647.500732,
+                "cutoff_end_hz": 1950.570557,
+                "filter_decay_s": 0.189831,
+                "q": 5.291208,
+                "decay_s": 0.346583,
+                "amp_db": -34.998089,
+                "onset_s": 0.029923
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 80.63,
+        "ploss": 80.6273,
+        "b1": 0.0,
+        "errors": {
+          "stft": 3.4902,
+          "mel": 2.6599,
+          "envelope": 1.4724,
+          "onset": -0.0262
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": 0,
+        "candidates": [
+          {
+            "ids": "room_tone+drum_step_pattern+bass_saw",
+            "stage": "full",
+            "score": 80.6271,
+            "ploss": 80.6271,
+            "b1": 0.0,
+            "seconds": 942.72
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+reverb_noise_tail",
+            "stage": "full",
+            "score": 79.9374,
+            "ploss": 79.9374,
+            "b1": 0.133,
+            "seconds": 1037.92
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+filtered_noise_burst",
+            "stage": "full",
+            "score": 79.3129,
+            "ploss": 79.3129,
+            "b1": 0.989,
+            "seconds": 861.61
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+reverb_fdn",
+            "stage": "full",
+            "score": 79.1457,
+            "ploss": 79.1457,
+            "b1": 0.0,
+            "seconds": 2977.06
+          },
+          {
+            "ids": "room_tone+impact_layered+peak_eq",
+            "stage": "grow",
+            "score": 78.3222,
+            "ploss": 78.3222,
+            "b1": 0.0,
+            "seconds": 45.35
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+transient_shaper",
+            "stage": "grow",
+            "score": 78.2803,
+            "ploss": 78.2803,
+            "b1": 0.0,
+            "seconds": 166.53
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+peak_eq",
+            "stage": "grow",
+            "score": 78.2034,
+            "ploss": 78.2034,
+            "b1": 0.0,
+            "seconds": 157.85
+          },
+          {
+            "ids": "room_tone+impact_layered+reverb_fdn",
+            "stage": "grow",
+            "score": 78.0481,
+            "ploss": 78.0481,
+            "b1": 0.0,
+            "seconds": 232.63
+          },
+          {
+            "ids": "room_tone+drum_step_pattern",
+            "stage": "chains",
+            "score": 77.9278,
+            "ploss": 77.9278,
+            "b1": 0.0,
+            "seconds": 281.77
+          },
+          {
+            "ids": "room_tone+impact_layered+transient_shaper",
+            "stage": "grow",
+            "score": 77.9218,
+            "ploss": 77.9218,
+            "b1": 0.0,
+            "seconds": 65.28
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+highpass_sweep",
+            "stage": "grow",
+            "score": 77.9066,
+            "ploss": 77.9066,
+            "b1": 0.0,
+            "seconds": 162.72
+          },
+          {
+            "ids": "room_tone+impact_layered",
+            "stage": "chains",
+            "score": 77.8949,
+            "ploss": 77.8949,
+            "b1": 0.0,
+            "seconds": 77.01
+          }
+        ],
+        "fits": 143,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E004",
+      "t": 15.115,
+      "windowStart": 15.075,
+      "windowEnd": 16.885,
+      "peak": 15.19,
+      "detector": "swell",
+      "stem": "other",
+      "gridOffsetMs": -15.0,
+      "onGrid": true,
+      "repeatExcessDb": 7.03,
+      "backgroundShiftS": 1.32,
+      "kind": "keyboard",
+      "why": [
+        "8 sub-attacks",
+        "rate 6.5 Hz in keyboard range"
+      ],
+      "alternatives": [
+        "glitch",
+        "tick"
+      ],
+      "anchorS": 15.6311,
+      "refAnchorKind": "peak",
+      "levelDb": -11.92,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -11.92496,
+        "onsetS": 0.0,
+        "peakS": 0.55607,
+        "rawPeakS": 0.1137,
+        "anchorKind": "peak",
+        "attackS": 0.06923,
+        "spanS": 1.474,
+        "peakHz": 149.19307,
+        "prominenceDb": 7.94646,
+        "centroidHz": 627.44413,
+        "spreadHz": 939.14574,
+        "flatness": 0.01636,
+        "harmonicity": 0.38736,
+        "centroidTraj": [
+          738.3,
+          446.7,
+          528.1,
+          563.8,
+          553.4,
+          937.2,
+          885.2,
+          662.2
+        ],
+        "lowShare": 0.08408,
+        "bandwidthHz": 849.38575,
+        "centroidSlopeOct": -0.15686,
+        "subAttacks": 8,
+        "attackRateHz": 6.52985,
+        "attackCv": 0.87206,
+        "mfccMean": [
+          -165.325,
+          99.826,
+          -13.7,
+          18.237,
+          -16.034,
+          7.509,
+          -15.484,
+          8.591,
+          -7.446,
+          3.906,
+          -2.405,
+          3.075,
+          -1.213
+        ],
+        "mfccStd": [
+          54.622,
+          8.831,
+          8.341,
+          16.411,
+          7.225,
+          14.156,
+          5.908,
+          10.111,
+          4.932,
+          9.554,
+          4.825,
+          5.693,
+          5.967
+        ],
+        "fluxMean": 1.20508,
+        "peakFraction": 0.37725
+      },
+      "fit": {
+        "event": "E004",
+        "kind": "chain",
+        "chainIds": [
+          "pad_saw",
+          "supersaw",
+          "saturation"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 1.81,
+          "blocks": [
+            {
+              "block": "pad_saw",
+              "params": {
+                "f0_hz": 132.08017,
+                "detune_cents": 0.526761,
+                "sub_db": -9.790627,
+                "cutoff_start_hz": 1133.912354,
+                "cutoff_end_hz": 4252.347656,
+                "sweep_s": 1.075601,
+                "q": 0.767433,
+                "attack_s": 0.861199,
+                "decay_s": 0.387112,
+                "amp_db": -0.006001,
+                "onset_s": 0.00025
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "supersaw",
+              "params": {
+                "f0_hz": 439.577698,
+                "detune_cents": 24.606855,
+                "side_db": -25.673437,
+                "cutoff_hz": 1671.615723,
+                "attack_s": 0.001006,
+                "decay_s": 3.171106,
+                "amp_db": -17.238277,
+                "onset_s": 0.00025
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "saturation",
+              "params": {
+                "drive_db": 35.964001,
+                "bias": 0.023203,
+                "mix": 0.907563,
+                "out_db": -13.204491
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 76.4,
+        "ploss": 76.3957,
+        "b1": 44.173,
+        "errors": {
+          "stft": 3.9355,
+          "mel": 2.783,
+          "envelope": 1.8844,
+          "onset": 0.0735
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": null,
+        "candidates": [
+          {
+            "ids": "pad_saw+supersaw+saturation",
+            "stage": "full",
+            "score": 76.3957,
+            "ploss": 76.3957,
+            "b1": 44.173,
+            "seconds": 1383.49
+          },
+          {
+            "ids": "pad_saw+filtered_noise_burst+lowpass_sweep",
+            "stage": "full",
+            "score": 73.0508,
+            "ploss": 73.0508,
+            "b1": 0.001,
+            "seconds": 1414.23
+          },
+          {
+            "ids": "pad_saw+filtered_noise_burst+room_tone",
+            "stage": "full",
+            "score": 72.8364,
+            "ploss": 72.8364,
+            "b1": 42.351,
+            "seconds": 1381.91
+          },
+          {
+            "ids": "pad_saw+filtered_noise_burst+compressor",
+            "stage": "full",
+            "score": 71.9258,
+            "ploss": 71.9258,
+            "b1": 38.748,
+            "seconds": 1637.26
+          },
+          {
+            "ids": "pad_saw+filtered_noise_burst+supersaw",
+            "stage": "grow",
+            "score": 71.1044,
+            "ploss": 71.1044,
+            "b1": 9.762,
+            "seconds": 214.48
+          },
+          {
+            "ids": "pad_saw+impact_layered+saturation",
+            "stage": "grow",
+            "score": 71.0158,
+            "ploss": 71.0158,
+            "b1": 45.574,
+            "seconds": 157.42
+          },
+          {
+            "ids": "pad_saw+room_tone+saturation",
+            "stage": "grow",
+            "score": 70.9893,
+            "ploss": 70.9893,
+            "b1": 49.161,
+            "seconds": 147.06
+          },
+          {
+            "ids": "pad_saw+filtered_noise_burst+impact_layered",
+            "stage": "grow",
+            "score": 70.2867,
+            "ploss": 70.2867,
+            "b1": 11.651,
+            "seconds": 204.46
+          },
+          {
+            "ids": "pad_saw+filtered_noise_burst+bandpass_sweep",
+            "stage": "grow",
+            "score": 70.136,
+            "ploss": 70.136,
+            "b1": 11.456,
+            "seconds": 209.8
+          },
+          {
+            "ids": "pad_saw+saturation+reverb_fdn",
+            "stage": "grow",
+            "score": 69.9365,
+            "ploss": 69.9365,
+            "b1": 31.892,
+            "seconds": 516.75
+          },
+          {
+            "ids": "pad_saw+saturation+reverb_noise_tail",
+            "stage": "grow",
+            "score": 69.6988,
+            "ploss": 69.6988,
+            "b1": 9.838,
+            "seconds": 179.29
+          },
+          {
+            "ids": "pad_saw+saturation+delay_echo",
+            "stage": "grow",
+            "score": 69.4282,
+            "ploss": 69.4282,
+            "b1": 17.999,
+            "seconds": 239.21
+          }
+        ],
+        "fits": 142,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E005",
+      "t": 15.315,
+      "windowStart": 15.275,
+      "windowEnd": 15.765,
+      "detector": "transient",
+      "stem": "drums",
+      "gridOffsetMs": 20.0,
+      "onGrid": true,
+      "repeatExcessDb": 7.2,
+      "backgroundShiftS": -2.64,
+      "kind": "keyboard",
+      "why": [
+        "7 sub-attacks",
+        "rate 13.1 Hz in keyboard range"
+      ],
+      "alternatives": [
+        "glitch",
+        "tick"
+      ],
+      "anchorS": 15.2822,
+      "refAnchorKind": "onset",
+      "levelDb": -36.75,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -36.74806,
+        "onsetS": 0.00717,
+        "peakS": 0.04186,
+        "rawPeakS": 0.04173,
+        "anchorKind": "onset",
+        "attackS": 0.02715,
+        "spanS": 0.484,
+        "peakHz": 3067.96722,
+        "prominenceDb": 9.6241,
+        "centroidHz": 3478.63944,
+        "spreadHz": 1490.67724,
+        "flatness": 0.04307,
+        "harmonicity": 0.10923,
+        "centroidTraj": [
+          3741.8,
+          2451.4,
+          3462.9,
+          3446.1,
+          2058.3,
+          3128.6,
+          1986.8,
+          2980.4
+        ],
+        "lowShare": 0.04913,
+        "bandwidthHz": 3068.53995,
+        "centroidSlopeOct": -0.32822,
+        "subAttacks": 7,
+        "attackRateHz": 13.1291,
+        "attackCv": 0.65463,
+        "mfccMean": [
+          -343.222,
+          58.083,
+          -33.785,
+          20.648,
+          4.431,
+          14.379,
+          -3.386,
+          -1.255,
+          2.999,
+          1.358,
+          0.821,
+          0.305,
+          0.888
+        ],
+        "mfccStd": [
+          40.604,
+          12.05,
+          21.375,
+          10.736,
+          8.527,
+          8.345,
+          4.876,
+          5.41,
+          5.896,
+          5.28,
+          4.823,
+          5.726,
+          5.108
+        ],
+        "fluxMean": 1.5795,
+        "peakFraction": 0.07167
+      },
+      "fit": {
+        "event": "E005",
+        "kind": "chain",
+        "chainIds": [
+          "drum_step_pattern",
+          "whoosh",
+          "room_tone"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.49,
+          "blocks": [
+            {
+              "block": "drum_step_pattern",
+              "params": {
+                "onset_s": 0.033896,
+                "step_s": 0.150201,
+                "body_hz": 30.163855,
+                "drop_st": 5.287395,
+                "body_t60": 0.415097,
+                "noise_hz": 2370.206543,
+                "noise_t60": 0.137587,
+                "b1_db": -37.027851,
+                "b2_db": -21.954527,
+                "b3_db": -36.078304,
+                "b4_db": -39.527042,
+                "n1_db": -7.229801,
+                "n2_db": -5.372303,
+                "n3_db": -7.313759,
+                "n4_db": -11.616823,
+                "amp_db": -27.35939
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "whoosh",
+              "params": {
+                "lo_hz": 107.937454,
+                "hi_hz": 400.055908,
+                "bw_oct": 1.316862,
+                "duration_s": 0.459126,
+                "peak_pos": 0.166843,
+                "amp_db": -58.649982,
+                "onset_s": 0.116822
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "room_tone",
+              "params": {
+                "tilt_db_oct": -3.232006,
+                "hp_hz": 26.547483,
+                "lp_hz": 9629.424805,
+                "hum_hz": 101.585289,
+                "hum_db": -8.211414,
+                "fade_s": 0.002339,
+                "amp_db": -59.140732
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 73.66,
+        "ploss": 73.6596,
+        "b1": 0.402,
+        "errors": {
+          "stft": 3.9929,
+          "mel": 3.0527,
+          "envelope": 2.2683,
+          "onset": 0.1048
+        },
+        "stage": "grow",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": null,
+        "candidates": [
+          {
+            "ids": "drum_step_pattern+whoosh+room_tone",
+            "stage": "grow",
+            "score": 73.6596,
+            "ploss": 73.6596,
+            "b1": 0.402,
+            "seconds": 184.64
+          },
+          {
+            "ids": "drum_step_pattern+whoosh+wind",
+            "stage": "full",
+            "score": 73.3225,
+            "ploss": 73.3225,
+            "b1": 0.28,
+            "seconds": 1095.36
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+room_tone",
+            "stage": "grow",
+            "score": 72.2412,
+            "ploss": 72.2412,
+            "b1": 60.364,
+            "seconds": 279.15
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+wind",
+            "stage": "full",
+            "score": 72.2191,
+            "ploss": 72.2191,
+            "b1": 0.499,
+            "seconds": 744.54
+          },
+          {
+            "ids": "drum_step_pattern+whoosh+filtered_noise_burst",
+            "stage": "grow",
+            "score": 71.5848,
+            "ploss": 71.5848,
+            "b1": 75.242,
+            "seconds": 183.47
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+lowpass_sweep",
+            "stage": "grow",
+            "score": 71.3097,
+            "ploss": 71.3097,
+            "b1": 0.404,
+            "seconds": 229.53
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+filtered_noise_burst",
+            "stage": "grow",
+            "score": 70.7325,
+            "ploss": 70.7325,
+            "b1": 0.533,
+            "seconds": 275.22
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+peak_eq",
+            "stage": "grow",
+            "score": 70.1194,
+            "ploss": 70.1194,
+            "b1": 44.08,
+            "seconds": 215.56
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+transient_shaper",
+            "stage": "grow",
+            "score": 68.8091,
+            "ploss": 68.8091,
+            "b1": 72.696,
+            "seconds": 204.79
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+reverb_noise_tail",
+            "stage": "grow",
+            "score": 68.5581,
+            "ploss": 68.5581,
+            "b1": 66.058,
+            "seconds": 227.37
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+reverb_fdn",
+            "stage": "grow",
+            "score": 68.1465,
+            "ploss": 68.1465,
+            "b1": 0.446,
+            "seconds": 460.27
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+delay_echo",
+            "stage": "grow",
+            "score": 68.056,
+            "ploss": 68.056,
+            "b1": 52.308,
+            "seconds": 265.97
+          }
+        ],
+        "fits": 143,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E006",
+      "t": 15.765,
+      "windowStart": 15.725,
+      "windowEnd": 15.9,
+      "detector": "transient",
+      "stem": "drums",
+      "gridOffsetMs": -25.0,
+      "onGrid": true,
+      "repeatExcessDb": 13.79,
+      "backgroundShiftS": -2.64,
+      "kind": "swoosh",
+      "why": [
+        "swell-like, span 0.17"
+      ],
+      "alternatives": [
+        "whoosh",
+        "swipe"
+      ],
+      "anchorS": 15.8262,
+      "refAnchorKind": "peak",
+      "levelDb": -38.78,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -38.77614,
+        "onsetS": 0.0185,
+        "peakS": 0.10122,
+        "rawPeakS": 0.16812,
+        "anchorKind": "peak",
+        "attackS": 0.15784,
+        "spanS": 0.168,
+        "peakHz": 3025.42252,
+        "prominenceDb": 12.69229,
+        "centroidHz": 2744.7001,
+        "spreadHz": 1105.90341,
+        "flatness": 0.02546,
+        "harmonicity": 0.15043,
+        "centroidTraj": [
+          2467.3,
+          2828.4,
+          2706.3,
+          1706.6,
+          1748.9,
+          1257.3,
+          2362.2,
+          3541.6
+        ],
+        "lowShare": 0.23541,
+        "bandwidthHz": 2810.78292,
+        "centroidSlopeOct": 0.52147,
+        "subAttacks": 3,
+        "attackRateHz": 15.26718,
+        "attackCv": 0.57252,
+        "mfccMean": [
+          -349.256,
+          52.69,
+          -38.1,
+          18.921,
+          10.996,
+          22.06,
+          -1.141,
+          -5.908,
+          3.849,
+          2.737,
+          2.724,
+          1.76,
+          -2.201
+        ],
+        "mfccStd": [
+          34.374,
+          7.538,
+          22.431,
+          10.404,
+          5.698,
+          5.571,
+          4.957,
+          6.619,
+          4.47,
+          5.721,
+          3.261,
+          4.062,
+          3.825
+        ],
+        "fluxMean": 1.61429,
+        "peakFraction": 0.49241
+      },
+      "fit": {
+        "event": "E006",
+        "kind": "chain",
+        "chainIds": [
+          "drum_step_pattern",
+          "room_tone",
+          "peak_eq"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.175,
+          "blocks": [
+            {
+              "block": "drum_step_pattern",
+              "params": {
+                "onset_s": 0.029653,
+                "step_s": 0.129624,
+                "body_hz": 229.888062,
+                "drop_st": 0.148952,
+                "body_t60": 0.488855,
+                "noise_hz": 2597.332764,
+                "noise_t60": 0.148029,
+                "b1_db": -29.579762,
+                "b2_db": -19.690626,
+                "b3_db": -37.820545,
+                "b4_db": -9.520443,
+                "n1_db": -12.035988,
+                "n2_db": -8.022081,
+                "n3_db": -8.766954,
+                "n4_db": -15.199417,
+                "amp_db": -32.169044
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "room_tone",
+              "params": {
+                "tilt_db_oct": -3.510468,
+                "hp_hz": 20.301828,
+                "lp_hz": 10192.538086,
+                "hum_hz": 52.43951,
+                "hum_db": -3.316406,
+                "fade_s": 0.002011,
+                "amp_db": -59.939999
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "peak_eq",
+              "params": {
+                "freq_hz": 2284.763672,
+                "gain_db": 11.644012,
+                "q": 1.779668,
+                "out_db": -1.246485
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 80.04,
+        "ploss": 80.0442,
+        "b1": 15.104,
+        "errors": {
+          "stft": 3.797,
+          "mel": 2.4538,
+          "envelope": 1.3069,
+          "onset": 0.0432
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": null,
+        "candidates": [
+          {
+            "ids": "drum_step_pattern+room_tone+peak_eq",
+            "stage": "full",
+            "score": 80.0442,
+            "ploss": 80.0442,
+            "b1": 15.104,
+            "seconds": 728.12
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+room_tone",
+            "stage": "full",
+            "score": 77.1848,
+            "ploss": 77.1848,
+            "b1": 0.0,
+            "seconds": 792.41
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+peak_eq",
+            "stage": "full",
+            "score": 76.0455,
+            "ploss": 76.0455,
+            "b1": 0.0,
+            "seconds": 836.39
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+highpass_sweep",
+            "stage": "grow",
+            "score": 75.807,
+            "ploss": 75.807,
+            "b1": 0.0,
+            "seconds": 110.34
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+reverb_fdn",
+            "stage": "grow",
+            "score": 75.5113,
+            "ploss": 75.5113,
+            "b1": 0.0,
+            "seconds": 377.41
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+wind",
+            "stage": "grow",
+            "score": 75.3747,
+            "ploss": 75.3747,
+            "b1": 0.0,
+            "seconds": 110.5
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+delay_echo",
+            "stage": "grow",
+            "score": 75.3369,
+            "ploss": 75.3369,
+            "b1": 24.058,
+            "seconds": 125.36
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+transient_shaper",
+            "stage": "grow",
+            "score": 74.9152,
+            "ploss": 74.9152,
+            "b1": 0.0,
+            "seconds": 108.65
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+saturation",
+            "stage": "grow",
+            "score": 74.8305,
+            "ploss": 74.8305,
+            "b1": 0.0,
+            "seconds": 96.41
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+reverse_swell",
+            "stage": "grow",
+            "score": 74.6926,
+            "ploss": 74.6926,
+            "b1": 0.0,
+            "seconds": 112.76
+          },
+          {
+            "ids": "drum_step_pattern+reverse_swell+delay_echo",
+            "stage": "grow",
+            "score": 74.5037,
+            "ploss": 74.5037,
+            "b1": 0.0,
+            "seconds": 143.64
+          },
+          {
+            "ids": "drum_step_pattern+room_tone",
+            "stage": "chains",
+            "score": 74.1498,
+            "ploss": 74.1498,
+            "b1": 0.0,
+            "seconds": 89.59
+          }
+        ],
+        "fits": 141,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E007",
+      "t": 15.9,
+      "windowStart": 15.86,
+      "windowEnd": 16.4,
+      "detector": "transient",
+      "stem": "drums",
+      "gridOffsetMs": 27.5,
+      "onGrid": false,
+      "repeatExcessDb": 20.26,
+      "backgroundShiftS": -2.64,
+      "kind": "subdrop",
+      "why": [
+        "lowShare 0.96 >= 0.5",
+        "pure falling tone, long"
+      ],
+      "alternatives": [
+        "boom",
+        "impact"
+      ],
+      "anchorS": 15.9048,
+      "refAnchorKind": "peak",
+      "levelDb": -34.98,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -34.98337,
+        "onsetS": 0.00157,
+        "peakS": 0.04479,
+        "rawPeakS": 0.04478,
+        "anchorKind": "peak",
+        "attackS": 0.03334,
+        "spanS": 0.539,
+        "peakHz": 88.17027,
+        "prominenceDb": 21.41957,
+        "centroidHz": 1498.60051,
+        "spreadHz": 2230.51472,
+        "flatness": 0.00697,
+        "harmonicity": 0.66448,
+        "centroidTraj": [
+          4475.6,
+          2264.9,
+          688.8,
+          98.3,
+          86.1,
+          88.1,
+          87.3,
+          88.3
+        ],
+        "lowShare": 0.96275,
+        "bandwidthHz": 16.66731,
+        "centroidSlopeOct": -5.66297,
+        "subAttacks": 8,
+        "attackRateHz": 17.99486,
+        "attackCv": 0.80089,
+        "mfccMean": [
+          -396.067,
+          67.537,
+          -1.988,
+          24.841,
+          10.399,
+          18.043,
+          6.746,
+          4.846,
+          7.056,
+          9.208,
+          8.377,
+          7.027,
+          4.574
+        ],
+        "mfccStd": [
+          40.851,
+          14.865,
+          26.847,
+          10.462,
+          5.903,
+          4.472,
+          6.502,
+          8.258,
+          5.806,
+          5.684,
+          4.708,
+          5.23,
+          5.282
+        ],
+        "fluxMean": 1.35477,
+        "peakFraction": 0.08019
+      },
+      "fit": {
+        "event": "E007",
+        "kind": "chain",
+        "chainIds": [
+          "drum_step_pattern",
+          "room_tone",
+          "reverb_fdn"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.5399791666666667,
+          "blocks": [
+            {
+              "block": "drum_step_pattern",
+              "params": {
+                "onset_s": 0.02547,
+                "step_s": 0.183163,
+                "body_hz": 70.89801,
+                "drop_st": 7.927426,
+                "body_t60": 0.499932,
+                "noise_hz": 2919.751465,
+                "noise_t60": 0.153877,
+                "b1_db": -39.99773,
+                "b2_db": -0.558891,
+                "b3_db": -4.957291,
+                "b4_db": -20.274107,
+                "n1_db": -2.135685,
+                "n2_db": -39.242439,
+                "n3_db": -39.843449,
+                "n4_db": -32.063747,
+                "amp_db": -15.11586
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "room_tone",
+              "params": {
+                "tilt_db_oct": -0.750838,
+                "hp_hz": 38.545422,
+                "lp_hz": 19999.935547,
+                "hum_hz": 65.847328,
+                "hum_db": -1.080753,
+                "fade_s": 0.002,
+                "amp_db": -47.297142
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "reverb_fdn",
+              "params": {
+                "t60_s": 0.17201,
+                "hf_ratio": 0.100003,
+                "size": 1.092023,
+                "predelay_s": 0.013409,
+                "mix": 0.965791,
+                "out_db": 8.092682
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 76.73,
+        "ploss": 76.7265,
+        "b1": 0.0,
+        "errors": {
+          "stft": 3.5195,
+          "mel": 2.8316,
+          "envelope": 2.4397,
+          "onset": 0.0535
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": null,
+        "candidates": [
+          {
+            "ids": "drum_step_pattern+room_tone+reverb_fdn",
+            "stage": "full",
+            "score": 76.7265,
+            "ploss": 76.7265,
+            "b1": 0.0,
+            "seconds": 2465.24
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+reverb_fdn",
+            "stage": "full",
+            "score": 76.3555,
+            "ploss": 76.3555,
+            "b1": 0.005,
+            "seconds": 2809.48
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+modal_pop",
+            "stage": "full",
+            "score": 76.2674,
+            "ploss": 76.2674,
+            "b1": 85.76,
+            "seconds": 1674.83
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+reverb_noise_tail",
+            "stage": "full",
+            "score": 75.3814,
+            "ploss": 75.3814,
+            "b1": 0.003,
+            "seconds": 1606.26
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+compressor",
+            "stage": "grow",
+            "score": 74.0577,
+            "ploss": 74.0577,
+            "b1": 0.002,
+            "seconds": 196.01
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+reverb_noise_tail",
+            "stage": "grow",
+            "score": 73.1676,
+            "ploss": 73.1676,
+            "b1": 0.0,
+            "seconds": 196.37
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+bandpass_sweep",
+            "stage": "grow",
+            "score": 73.1625,
+            "ploss": 73.1625,
+            "b1": 0.006,
+            "seconds": 241.81
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+compressor",
+            "stage": "grow",
+            "score": 73.0232,
+            "ploss": 73.0232,
+            "b1": 0.002,
+            "seconds": 240.73
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+transient_shaper",
+            "stage": "grow",
+            "score": 72.4151,
+            "ploss": 72.4151,
+            "b1": 0.0,
+            "seconds": 224.81
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+peak_eq",
+            "stage": "grow",
+            "score": 72.2979,
+            "ploss": 72.2979,
+            "b1": 0.0,
+            "seconds": 219.65
+          },
+          {
+            "ids": "room_tone+drum_step_pattern+delay_echo",
+            "stage": "grow",
+            "score": 72.2278,
+            "ploss": 72.2278,
+            "b1": 0.087,
+            "seconds": 270.81
+          },
+          {
+            "ids": "drum_step_pattern+room_tone+transient_shaper",
+            "stage": "grow",
+            "score": 71.7369,
+            "ploss": 71.7369,
+            "b1": 0.065,
+            "seconds": 192.23
+          }
+        ],
+        "fits": 141,
+        "exceptions": []
+      }
+    },
+    {
+      "id": "E008",
+      "t": 17.3,
+      "windowStart": 17.26,
+      "windowEnd": 17.8,
+      "detector": "transient",
+      "stem": "drums",
+      "gridOffsetMs": 25.0,
+      "onGrid": false,
+      "repeatExcessDb": 34.09,
+      "backgroundShiftS": -1.32,
+      "kind": "impact",
+      "why": [
+        "lowShare 0.97 >= 0.5"
+      ],
+      "alternatives": [
+        "trigger",
+        "boom"
+      ],
+      "anchorS": 17.3641,
+      "refAnchorKind": "peak",
+      "levelDb": -15.58,
+      "descriptors": {
+        "resolution": "long",
+        "levelDb": -15.57996,
+        "onsetS": 0.03764,
+        "peakS": 0.10414,
+        "rawPeakS": 0.10394,
+        "anchorKind": "peak",
+        "attackS": 0.06164,
+        "spanS": 0.157,
+        "peakHz": 55.37881,
+        "prominenceDb": 11.57565,
+        "centroidHz": 75.77599,
+        "spreadHz": 172.30389,
+        "flatness": 7e-05,
+        "harmonicity": 0.35526,
+        "centroidTraj": [
+          120.5,
+          113.2,
+          111.1,
+          61.6,
+          65.2,
+          60.6,
+          64.6,
+          61.0
+        ],
+        "lowShare": 0.97028,
+        "bandwidthHz": 38.45714,
+        "centroidSlopeOct": -0.98224,
+        "subAttacks": 5,
+        "attackRateHz": 23.80952,
+        "attackCv": 0.46839,
+        "mfccMean": [
+          -335.489,
+          79.981,
+          17.081,
+          27.088,
+          20.747,
+          16.274,
+          14.999,
+          6.963,
+          8.435,
+          7.538,
+          5.784,
+          5.965,
+          5.065
+        ],
+        "mfccStd": [
+          41.221,
+          11.08,
+          21.222,
+          10.357,
+          10.621,
+          6.791,
+          4.646,
+          7.707,
+          4.524,
+          4.742,
+          4.023,
+          4.293,
+          4.63
+        ],
+        "fluxMean": 0.99545,
+        "peakFraction": 0.42351
+      },
+      "fit": {
+        "event": "E008",
+        "kind": "chain",
+        "chainIds": [
+          "sub_drop",
+          "fm_bell",
+          "transient_shaper"
+        ],
+        "chain": {
+          "sr": 48000,
+          "seconds": 0.54,
+          "blocks": [
+            {
+              "block": "sub_drop",
+              "params": {
+                "start_hz": 185.873474,
+                "end_hz": 43.143227,
+                "glide_s": 0.031048,
+                "decay_s": 1.240743,
+                "drive": 7.999971,
+                "attack_s": 0.000503,
+                "amp_db": -34.559376,
+                "onset_s": 0.033837
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "fm_bell",
+              "params": {
+                "carrier_hz": 52.543858,
+                "ratio": 2.719871,
+                "index": 2.272975,
+                "index_decay_s": 0.212231,
+                "amp_db": -11.783993,
+                "onset_s": 0.026878,
+                "attack_s": 0.079502,
+                "decay_s": 0.365565
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            },
+            {
+              "block": "transient_shaper",
+              "params": {
+                "amount": 0.305084,
+                "fast_ms": 1.765211,
+                "slow_ms": 43.181217,
+                "out_db": -2.660051
+              },
+              "gainDb": 0.0,
+              "offsetS": 0.0,
+              "seed": 0
+            }
+          ]
+        },
+        "score": 76.25,
+        "ploss": 76.2462,
+        "b1": 78.125,
+        "errors": {
+          "stft": 3.8453,
+          "mel": 2.752,
+          "envelope": 2.1482,
+          "onset": -0.0984
+        },
+        "stage": "full",
+        "ceiling": 100.0,
+        "ceilingNote": "a bank chain is deterministic: its own render scores 100",
+        "offsetS": 0.0,
+        "params": {},
+        "scoreMetric": "ploss",
+        "plossVariant": "official",
+        "seedChosen": null,
+        "candidates": [
+          {
+            "ids": "sub_drop+fm_bell+transient_shaper",
+            "stage": "full",
+            "score": 76.2462,
+            "ploss": 76.2462,
+            "b1": 78.125,
+            "seconds": 508.36
+          },
+          {
+            "ids": "sub_drop+fm_bell+reverb_fdn",
+            "stage": "full",
+            "score": 76.0619,
+            "ploss": 76.0619,
+            "b1": 78.56,
+            "seconds": 1861.32
+          },
+          {
+            "ids": "fm_bell+sub_drop+transient_shaper",
+            "stage": "full",
+            "score": 75.8583,
+            "ploss": 75.8583,
+            "b1": 72.734,
+            "seconds": 449.5
+          },
+          {
+            "ids": "fm_bell+sub_drop+reverb_fdn",
+            "stage": "full",
+            "score": 75.5544,
+            "ploss": 75.5544,
+            "b1": 75.168,
+            "seconds": 1731.61
+          },
+          {
+            "ids": "fm_bell+sub_drop+lowpass_sweep",
+            "stage": "grow",
+            "score": 74.895,
+            "ploss": 74.895,
+            "b1": 76.109,
+            "seconds": 40.31
+          },
+          {
+            "ids": "sub_drop+fm_bell+sub_808",
+            "stage": "grow",
+            "score": 74.605,
+            "ploss": 74.605,
+            "b1": 78.984,
+            "seconds": 34.26
+          },
+          {
+            "ids": "fm_bell+sub_drop+sub_808",
+            "stage": "grow",
+            "score": 74.3618,
+            "ploss": 74.3618,
+            "b1": 77.089,
+            "seconds": 40.07
+          },
+          {
+            "ids": "fm_bell+sub_drop+compressor",
+            "stage": "grow",
+            "score": 74.3408,
+            "ploss": 74.3408,
+            "b1": 74.072,
+            "seconds": 41.52
+          },
+          {
+            "ids": "fm_bell+sub_drop+peak_eq",
+            "stage": "grow",
+            "score": 74.2434,
+            "ploss": 74.2434,
+            "b1": 75.864,
+            "seconds": 36.57
+          },
+          {
+            "ids": "fm_bell+sub_drop+highpass_sweep",
+            "stage": "grow",
+            "score": 74.1671,
+            "ploss": 74.1671,
+            "b1": 79.458,
+            "seconds": 39.3
+          },
+          {
+            "ids": "sub_drop+fm_bell+bass_saw",
+            "stage": "grow",
+            "score": 73.8238,
+            "ploss": 73.8238,
+            "b1": 76.067,
+            "seconds": 44.15
+          },
+          {
+            "ids": "sub_drop+fm_bell+lowpass_sweep",
+            "stage": "grow",
+            "score": 73.539,
+            "ploss": 73.539,
+            "b1": 75.263,
+            "seconds": 36.74
+          }
+        ],
+        "fits": 141,
+        "exceptions": []
+      }
+    }
+  ]
+}

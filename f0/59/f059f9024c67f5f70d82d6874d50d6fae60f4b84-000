@@ -1,0 +1,32 @@
+[
+ {
+  "slug": "grandbrothers-bloodflow-edit-m2",
+  "corrBest200ms": -0.202,
+  "lagMs": -0.2,
+  "nullSnrDb": 0.01
+ },
+ {
+  "slug": "kiasmos-blurred-m1",
+  "corrBest200ms": -0.764,
+  "lagMs": 1.6,
+  "nullSnrDb": 1.69
+ },
+ {
+  "slug": "paper-mono-code-m1",
+  "corrBest200ms": 0.159,
+  "lagMs": -1.4,
+  "nullSnrDb": 0.18
+ },
+ {
+  "slug": "flora-agents-on-canvas-m1",
+  "corrBest200ms": 0.477,
+  "lagMs": -1.1,
+  "nullSnrDb": 0.68
+ },
+ {
+  "slug": "memo-m1",
+  "corrBest200ms": 0.222,
+  "lagMs": 1.0,
+  "nullSnrDb": 0.01
+ }
+]

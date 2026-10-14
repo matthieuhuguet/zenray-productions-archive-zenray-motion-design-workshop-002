@@ -1,0 +1,18 @@
+# Index des références mesurées (12 October 2026)
+
+Bibles graphiques et storyboards produits par `Scripts/BuildReferenceBook.py` le 12 October 2026. Les vignettes des storyboards sont lues depuis le cache local `/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/`, jamais copiées ici. La famille « montage » regroupe les plans de moins d'une demi-seconde. (12 October 2026)
+
+| Référence | Durée | Plans | Familles dominantes (part du temps) | Tempo | Bible | Storyboard |
+|---|---|---|---|---|---|---|
+| claude-opus-5-5 | 20,0 s | 37 | plaque 3D ou prise de vue 60 %, montage 37 % | 151,9 BPM | [bible](claude-opus-5-5/bible.md) | [storyboard](claude-opus-5-5/storyboard.html) |
+| fin-4 | 7,9 s | 1 | graphique 100 % | sans son | [bible](fin-4/bible.md) | [storyboard](fin-4/storyboard.html) |
+| flora-agents-on-canvas | 51,4 s | 3 | plaque 3D ou prise de vue 87 %, graphique 13 % | 117,7 BPM | [bible](flora-agents-on-canvas/bible.md) | [storyboard](flora-agents-on-canvas/storyboard.html) |
+| interface | 90,1 s | 61 | plaque 3D ou prise de vue 94 %, carte texte 4 % | 114,3 BPM | [bible](interface/bible.md) | [storyboard](interface/storyboard.html) |
+| kardashev-0-7 | 67,4 s | 15 | plaque 3D ou prise de vue 47 %, graphique 44 % | 100,0 BPM | [bible](kardashev-0-7/bible.md) | [storyboard](kardashev-0-7/storyboard.html) |
+| memo | 44,4 s | 131 | plaque 3D ou prise de vue 62 %, montage 32 % | 139,5 BPM | [bible](memo/bible.md) | [storyboard](memo/storyboard.html) |
+| motion-opus-5-5 | 29,9 s | 4 | graphique 77 %, carte texte 23 % | 122,5 BPM | [bible](motion-opus-5-5/bible.md) | [storyboard](motion-opus-5-5/storyboard.html) |
+| onekey-pro-2 | 68,0 s | 29 | plaque 3D ou prise de vue 75 %, graphique 14 % | 88,2 BPM | [bible](onekey-pro-2/bible.md) | [storyboard](onekey-pro-2/storyboard.html) |
+| paper-mono-code | 60,5 s | 1 | plaque 3D ou prise de vue 100 % | 137,9 BPM | [bible](paper-mono-code/bible.md) | [storyboard](paper-mono-code/storyboard.html) |
+| x-anabology-2105325733312884869 | 191,6 s | 161 | plaque 3D ou prise de vue 72 %, graphique 19 % | 130,4 BPM | [bible](x-anabology-2105325733312884869/bible.md) | [storyboard](x-anabology-2105325733312884869/storyboard.html) |
+| x-anabology-2106157622986748377 | 181,3 s | 28 | plaque 3D ou prise de vue 86 %, graphique 14 % | 130,4 BPM | [bible](x-anabology-2106157622986748377/bible.md) | [storyboard](x-anabology-2106157622986748377/storyboard.html) |
+| yt-4Q-o_ylnVnc | 181,8 s | 69 | graphique 98 %, montage 2 % | 142,9 BPM | [bible](yt-4Q-o_ylnVnc/bible.md) | [storyboard](yt-4Q-o_ylnVnc/storyboard.html) |

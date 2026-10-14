@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "motion-opus-5-5-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "motion-opus-5-5-m1.flac",
+ "sha256": "a31e9af67fc29f4ada634fd77ba810babe7e07665a9c4111ecacc7d8c1d164f0",
+ "bytes": 4006100,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "motion-opus-5-5",
+ "start_s": 0,
+ "end_s": 30,
+ "title": "Claude Opus 5.5 for launch videos (music excerpt 1: 0 to 30 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

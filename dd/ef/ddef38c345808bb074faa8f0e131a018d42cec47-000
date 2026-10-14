@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "grandbrothers-bloodflow-edit-m2",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "grandbrothers-bloodflow-edit-m2.flac",
+ "sha256": "2fd73525c2e4f94b873bc80c5ca8c8b453714d46ffa303ae796d7b2bae2ee41d",
+ "bytes": 6213547,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "grandbrothers-bloodflow-edit",
+ "start_s": 119,
+ "end_s": 149,
+ "title": "Grandbrothers - Bloodflow (Edit) (music excerpt 2: 119 to 149 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

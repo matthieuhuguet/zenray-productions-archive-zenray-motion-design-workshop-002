@@ -1,0 +1,26 @@
+{
+ "tempoBpm": [
+  118.085,
+  100.0
+ ],
+ "transposeSemitones": 3.0,
+ "voice": "bass",
+ "timbreBefore": {
+  "gainDb": 0.0
+ },
+ "timbreAfter": {
+  "gainDb": 6.0
+ },
+ "measured": {
+  "base": {
+   "bpm": 118.083,
+   "key": "E major",
+   "seconds": 30.0
+  },
+  "variation": {
+   "bpm": 99.999,
+   "key": "G major",
+   "seconds": 35.4521
+  }
+ }
+}

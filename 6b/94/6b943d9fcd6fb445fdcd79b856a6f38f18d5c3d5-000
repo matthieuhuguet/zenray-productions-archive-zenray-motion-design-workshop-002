@@ -1,0 +1,179 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "flora-agents-on-canvas",
+ "title": "Flora AI — agents now live on the canvas",
+ "duration_s": 51.502,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 2,
+    "cutsReference": 2,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 0.6667,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 2,
+    "truth": "adjudicated"
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9779,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99822,
+   "limited": true,
+   "version": "14 October 2026, 21:03",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.7377,
+    "within1Jnd": 0.4952,
+    "shots": 3,
+    "reproducibleTimeShare": 0.129,
+    "slotTimeShare": 0.871,
+    "glowShare": 0.4444,
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99822,
+     "min": 0.99708,
+     "windows": 3
+    }
+   },
+   "coverage": 0.7377
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.7527,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.9256,
+   "limited": true,
+   "version": "S03 V_001",
+   "detail": {
+    "vectorShare": 0.0003,
+    "shaderShare": 0.996,
+    "residualShare": 0.0036,
+    "explained": 0.7961,
+    "vectorLayersOk": "0/2",
+    "reading": "mostly shader or photographic content: the vector part is only the shapes listed as vector",
+    "iouArea": 0.7525,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.9256,
+     "iouArea": 0.9313,
+     "shot": "S03"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "flora-agents-on-canvas-m1 V_010",
+   "detail": {
+    "members": {
+     "flora-agents-on-canvas-m1": 1.0
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "flora-agents-on-canvas-m1",
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9998,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "flora-agents-on-canvas-m1 V_003",
+   "detail": {
+    "members": {
+     "flora-agents-on-canvas-m1": 0.9998
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "flora-agents-on-canvas-m1",
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 3,
+    "invariant": 0.9998,
+    "critic": 0.9979,
+    "auditMean": 0.9977,
+    "passTitle": 3,
+    "passMusic": 2,
+    "exact": 0.9759
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "flora-agents-on-canvas-m1 V_008",
+   "detail": {
+    "members": {
+     "flora-agents-on-canvas-m1": 1.0
+    },
+    "scored": 1,
+    "total": 1,
+    "complete": true,
+    "worst": "flora-agents-on-canvas-m1",
+    "sound": 0.9919,
+    "sfx": 0.9759,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 0.9995
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 3,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": null
+}

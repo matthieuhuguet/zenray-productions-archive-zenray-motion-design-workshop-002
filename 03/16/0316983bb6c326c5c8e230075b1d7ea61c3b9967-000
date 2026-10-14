@@ -1,0 +1,247 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "claude-opus-5-5",
+ "title": "Claude Opus 5.5 — first model in the Claude 5.5 family",
+ "duration_s": 20.053,
+ "date": "14 October 2026, 21:33",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "shots.json",
+   "detail": {
+    "cutsFound": 36,
+    "cutsReference": 36,
+    "extraJumps": 0,
+    "missed": 0,
+    "hardF1Tol0": 1.0,
+    "hardF1Tol1": 1.0,
+    "cutsDetected": 36,
+    "truth": "adjudicated",
+    "filmCutPresence": {
+     "score": 0.5556,
+     "found": 27,
+     "reference": 36,
+     "extra": 7
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": 0.9639,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.99739,
+   "limited": true,
+   "version": "14 October 2026, 17:49",
+   "detail": {
+    "source": "survey (backdrop field, CIEDE2000, JND 1)",
+    "fieldCoverage": 0.701,
+    "within1Jnd": 0.3359,
+    "shots": 37,
+    "reproducibleTimeShare": 0.026,
+    "slotTimeShare": 0.602,
+    "glowShare": 0.1892,
+    "film": {
+     "reproducedShots": 0,
+     "coveredShare": 0.0,
+     "meanFidelity": null
+    },
+    "ceiling": {
+     "kind": "codec identity floor (the reference against its own H.264 re-encode)",
+     "value": 0.99739,
+     "min": 0.99677,
+     "windows": 3
+    }
+   },
+   "coverage": 0.701
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": 0.8643,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "ceiling": 0.9311,
+   "limited": true,
+   "version": "S33 V_001",
+   "detail": {
+    "vectorShare": 0.1997,
+    "shaderShare": 0.7991,
+    "residualShare": 0.0013,
+    "explained": 0.3659,
+    "vectorLayersOk": "1/7",
+    "reading": "mostly shader or photographic content: the vector part is only the shapes listed as vector",
+    "iouArea": 0.9998,
+    "ceiling": {
+     "kind": "the same pipeline on the exact traced scene put through the reference codec",
+     "value": 0.9311,
+     "iouArea": 0.9622,
+     "shot": "S33"
+    }
+   },
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_014",
+   "detail": {
+    "drums": 1.0,
+    "bass": 1.0,
+    "other": 1.0,
+    "vocals": 1.0,
+    "mix": 1.0
+   },
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": 0.9997,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_015",
+   "detail": {
+    "gate": "seed-invariant official loss (headline), held-out audit and music critic beside it",
+    "events": 8,
+    "invariant": 0.9997,
+    "critic": 0.9985,
+    "auditMean": 0.9972,
+    "passTitle": 8,
+    "passMusic": 5,
+    "exact": 0.9675
+   },
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": 1.0,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": true,
+   "ceiling": null,
+   "limited": false,
+   "version": "V_020",
+   "detail": {
+    "sound": 0.9891,
+    "sfx": 0.9675,
+    "timing": 1.0,
+    "mix": 1.0,
+    "music": 1.0
+   },
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 37,
+  "stems": true,
+  "sfx_versions": 21,
+  "motions": 35
+ },
+ "lastRun": {
+  "id": "run-20261014-212229-ff6e1c",
+  "state": "running",
+  "created": "14 October 2026, 21:22",
+  "steps": [
+   {
+    "id": "shots",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "book",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "vector",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "stems",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "music",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "music-trim",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "music-polish",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "sfx",
+    "state": "cancelled",
+    "seconds": 684.0,
+    "score": 0.9997
+   },
+   {
+    "id": "sfx-trim",
+    "state": "pending",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "soundtrack",
+    "state": "pending",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "image",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "film",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   }
+  ]
+ }
+}

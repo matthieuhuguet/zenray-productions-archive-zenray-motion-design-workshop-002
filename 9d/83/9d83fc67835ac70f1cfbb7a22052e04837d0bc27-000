@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "grandbrothers-sonic-riots",
+ "page_url": "https://www.youtube.com/watch?v=uKT8mAjtmp4",
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "grandbrothers-sonic-riots.flac",
+ "sha256": "9fc0187a15bae8d3ac44182ee2db6f693b25b0a6dd203c523c2530faf86402d3",
+ "bytes": 65663450,
+ "duration_s": 324.067,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "sample_rate_hz": 48000,
+ "channels": 2,
+ "family": "youtube-music",
+ "title": "Grandbrothers - Sonic Riots",
+ "brand": "Grandbrothers",
+ "notes": [
+  "Downloaded with yt-dlp (audio only, FLAC decode) on Matthieu's request of 14 October 2026; source: official artist channel. Stays in the reference cache, never archived or published."
+ ]
+}

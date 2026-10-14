@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "memo-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "memo-m1.flac",
+ "sha256": "d41e3d8370488257e4bc7066bd5cd4ee145898316c2366ef67b5043fd54a7540",
+ "bytes": 5324988,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "memo",
+ "start_s": 13,
+ "end_s": 43,
+ "title": "Introducing Memo: ai for walkie talkies (music excerpt 1: 13 to 43 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

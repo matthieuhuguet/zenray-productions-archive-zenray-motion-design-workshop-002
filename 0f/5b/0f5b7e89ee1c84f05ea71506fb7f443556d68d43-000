@@ -1,0 +1,315 @@
+{
+ "schema": "zrmd/references-dropped@1",
+ "references": [
+  {
+   "slug": "flora-agents-on-canvas-m1",
+   "title": "Flora AI — agents now live on the canvas (music excerpt 1: 21 to 51 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Flora AI",
+   "focus": "music corpus excerpt of flora-agents-on-canvas"
+  },
+  {
+   "slug": "memo-m1",
+   "title": "Introducing Memo: ai for walkie talkies (music excerpt 1: 13 to 43 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Memo",
+   "focus": "music corpus excerpt of memo"
+  },
+  {
+   "slug": "motion-opus-5-5-m1",
+   "title": "Claude Opus 5.5 for launch videos (music excerpt 1: 0 to 30 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Motion",
+   "focus": "music corpus excerpt of motion-opus-5-5"
+  },
+  {
+   "slug": "kardashev-0-7-m1",
+   "title": "Introducing Kardashev-0.7 (music excerpt 1: 5 to 35 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Banbury Road",
+   "focus": "music corpus excerpt of kardashev-0-7"
+  },
+  {
+   "slug": "paper-mono-code-m1",
+   "title": "How the whole Paper Mono launch video was made (music excerpt 1: 17 to 47 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Agu Seguí",
+   "focus": "music corpus excerpt of paper-mono-code"
+  },
+  {
+   "slug": "interface-m1",
+   "title": "Interface, the primary hardware for the agent era (music excerpt 1: 0 to 30 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Interface",
+   "focus": "music corpus excerpt of interface"
+  },
+  {
+   "slug": "interface-m2",
+   "title": "Interface, the primary hardware for the agent era (music excerpt 2: 49 to 79 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Interface",
+   "focus": "music corpus excerpt of interface"
+  },
+  {
+   "slug": "x-anabology-2105325733312884869-m1",
+   "title": "anabology - Gave Claude another 12 hours to one up this..  Woke up to.. The Clody... #1 (music excerpt 1: 124 to 154 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "anabology",
+   "focus": "music corpus excerpt of x-anabology-2105325733312884869"
+  },
+  {
+   "slug": "x-anabology-2105325733312884869-m2",
+   "title": "anabology - Gave Claude another 12 hours to one up this..  Woke up to.. The Clody... #1 (music excerpt 2: 154 to 184 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "anabology",
+   "focus": "music corpus excerpt of x-anabology-2105325733312884869"
+  },
+  {
+   "slug": "x-anabology-2106157622986748377-m1",
+   "title": "anabology - I gave Claude another 18 hours.. and I think this one is the best one... #1 (music excerpt 1: 37 to 67 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "anabology",
+   "focus": "music corpus excerpt of x-anabology-2106157622986748377"
+  },
+  {
+   "slug": "x-anabology-2106157622986748377-m2",
+   "title": "anabology - I gave Claude another 18 hours.. and I think this one is the best one... #1 (music excerpt 2: 140 to 170 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "anabology",
+   "focus": "music corpus excerpt of x-anabology-2106157622986748377"
+  },
+  {
+   "slug": "yt-4Q-o_ylnVnc-m1",
+   "title": "Claude Opus 5.5 Music Video - Ignore Previous Instructions (music excerpt 1: 88 to 118 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Seguramente",
+   "focus": "music corpus excerpt of yt-4Q-o_ylnVnc"
+  },
+  {
+   "slug": "yt-4Q-o_ylnVnc-m2",
+   "title": "Claude Opus 5.5 Music Video - Ignore Previous Instructions (music excerpt 2: 144 to 174 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Seguramente",
+   "focus": "music corpus excerpt of yt-4Q-o_ylnVnc"
+  },
+  {
+   "slug": "arkadata-music-02-m1",
+   "title": "ARKADATA Yasuo Montage 2 \"THE UNFORGIVEN\" (music excerpt 1: 75 to 105 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": null,
+   "focus": "music corpus excerpt of arkadata-music-02"
+  },
+  {
+   "slug": "arkadata-music-02-m2",
+   "title": "ARKADATA Yasuo Montage 2 \"THE UNFORGIVEN\" (music excerpt 2: 206 to 236 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": null,
+   "focus": "music corpus excerpt of arkadata-music-02"
+  },
+  {
+   "slug": "x-anabology-2105325733312884869-m3",
+   "title": "anabology - Gave Claude another 12 hours to one up this..  Woke up to.. The Clody... #1 (music excerpt 3: 154 to 184 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "anabology",
+   "focus": "music corpus excerpt of x-anabology-2105325733312884869"
+  },
+  {
+   "slug": "x-anabology-2106157622986748377-m3",
+   "title": "anabology - I gave Claude another 18 hours.. and I think this one is the best one... #1 (music excerpt 3: 140 to 170 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "anabology",
+   "focus": "music corpus excerpt of x-anabology-2106157622986748377"
+  },
+  {
+   "slug": "yt-4Q-o_ylnVnc-m3",
+   "title": "Claude Opus 5.5 Music Video - Ignore Previous Instructions (music excerpt 3: 144 to 174 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Seguramente",
+   "focus": "music corpus excerpt of yt-4Q-o_ylnVnc"
+  },
+  {
+   "slug": "arkadata-music-02-m3",
+   "title": "ARKADATA Yasuo Montage 2 \"THE UNFORGIVEN\" (music excerpt 3: 206 to 236 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": null,
+   "focus": "music corpus excerpt of arkadata-music-02"
+  },
+  {
+   "slug": "grandbrothers-bloodflow-edit-m1",
+   "title": "Grandbrothers - Bloodflow (Edit) (music excerpt 1: 59 to 89 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Grandbrothers",
+   "focus": "music corpus excerpt of grandbrothers-bloodflow-edit"
+  },
+  {
+   "slug": "grandbrothers-bloodflow-edit-m2",
+   "title": "Grandbrothers - Bloodflow (Edit) (music excerpt 2: 119 to 149 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Grandbrothers",
+   "focus": "music corpus excerpt of grandbrothers-bloodflow-edit"
+  },
+  {
+   "slug": "grandbrothers-bloodflow-edit-m3",
+   "title": "Grandbrothers - Bloodflow (Edit) (music excerpt 3: 149 to 179 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Grandbrothers",
+   "focus": "music corpus excerpt of grandbrothers-bloodflow-edit"
+  },
+  {
+   "slug": "kiasmos-blurred-m1",
+   "title": "Kiasmos - Blurred (music excerpt 1: 63 to 93 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Kiasmos",
+   "focus": "music corpus excerpt of kiasmos-blurred"
+  },
+  {
+   "slug": "kiasmos-blurred-m2",
+   "title": "Kiasmos - Blurred (music excerpt 2: 94 to 124 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Kiasmos",
+   "focus": "music corpus excerpt of kiasmos-blurred"
+  },
+  {
+   "slug": "kiasmos-blurred-m3",
+   "title": "Kiasmos - Blurred (music excerpt 3: 206 to 236 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Kiasmos",
+   "focus": "music corpus excerpt of kiasmos-blurred"
+  },
+  {
+   "slug": "grandbrothers-sonic-riots-m1",
+   "title": "Grandbrothers - Sonic Riots (music excerpt 1: 162 to 192 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Grandbrothers",
+   "focus": "music corpus excerpt of grandbrothers-sonic-riots"
+  },
+  {
+   "slug": "grandbrothers-sonic-riots-m2",
+   "title": "Grandbrothers - Sonic Riots (music excerpt 2: 232 to 262 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Grandbrothers",
+   "focus": "music corpus excerpt of grandbrothers-sonic-riots"
+  },
+  {
+   "slug": "grandbrothers-sonic-riots-m3",
+   "title": "Grandbrothers - Sonic Riots (music excerpt 3: 262 to 292 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "Grandbrothers",
+   "focus": "music corpus excerpt of grandbrothers-sonic-riots"
+  },
+  {
+   "slug": "20syl-ode-to-odd-m1",
+   "title": "20syl - Ode to Odd (music excerpt 1: 29 to 59 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "20syl",
+   "focus": "music corpus excerpt of 20syl-ode-to-odd"
+  },
+  {
+   "slug": "20syl-ode-to-odd-m2",
+   "title": "20syl - Ode to Odd (music excerpt 2: 63 to 93 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "20syl",
+   "focus": "music corpus excerpt of 20syl-ode-to-odd"
+  },
+  {
+   "slug": "20syl-ode-to-odd-m3",
+   "title": "20syl - Ode to Odd (music excerpt 3: 93 to 123 s)",
+   "page_url": null,
+   "origin": "music-corpus",
+   "duration_s": 30,
+   "has_audio": true,
+   "brand": "20syl",
+   "focus": "music corpus excerpt of 20syl-ode-to-odd"
+  }
+ ]
+}

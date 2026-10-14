@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "kiasmos-blurred",
+ "page_url": "https://www.youtube.com/watch?v=GalsoK5laZ8",
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "kiasmos-blurred.flac",
+ "sha256": "d88758d9a1c2fdce5f819fbfe03eed9fca67641aa065d164ad057499ef83c1c9",
+ "bytes": 58265214,
+ "duration_s": 306.503,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "sample_rate_hz": 48000,
+ "channels": 2,
+ "family": "youtube-music",
+ "title": "Kiasmos - Blurred",
+ "brand": "Kiasmos",
+ "notes": [
+  "Downloaded with yt-dlp (audio only, FLAC decode) on Matthieu's request of 14 October 2026; source: Erased Tapes label channel. Stays in the reference cache, never archived or published."
+ ]
+}

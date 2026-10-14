@@ -1,0 +1,243 @@
+# Bible graphique de la référence yt-4Q-o_ylnVnc (12 October 2026)
+
+Bible mesurée par `zrmd.bible` le 12 October 2026, à partir du fichier du cache local ; aucun pixel ni aucun échantillon de la référence n'entre dans ce document, qui ne porte que des nombres et des descriptions paraphrasées. Storyboard : [storyboard.html](storyboard.html). Données : [bible.json](bible.json). (12 October 2026)
+
+Clip musical entièrement graphique, cadencé sur la musique : interfaces crème, roses, bleues et noires, mots géants en capitales qui s'empilent, se glitchent et se répètent, silhouette dansante, petite bulle mascotte, et fausses fenêtres de discussion, de messagerie et de boutique qui racontent une histoire d'injection d'instructions. (12 October 2026)
+
+## Identité
+
+| Mesure | Valeur |
+|---|---|
+| Durée | 181,82 s |
+| Format | 1920 x 1080 |
+| Cadence du fichier | 30,000 images par seconde |
+| Cadence du contenu | 30,00 images par seconde |
+| Son | oui |
+
+## Rythme de montage
+
+La référence compte 69 plans et 68 coupes, soit 22,4 coupes par minute ; un plan dure 1,90 s en médiane et 2,63 s en moyenne, du plus court (0,17 s) au plus long (13,00 s), avec un coefficient de variation de 0,88. 10 plans durent moins d'une demi-seconde et 22 plus de trois secondes. La part des coupes tombant à 50 ms près d'un temps de la grille vaut 46 %, et celle des coupes tombant sur une attaque sonore 47 %. Le plan médian dure 4,52 temps. Le détecteur de rythme (fusion apprise des preuves, vérité adjudiquée à l'œil) a trouvé 68 coupes ; les 56 corrections de coupes de la première revue visaient l'ancien détecteur et ne sont plus appliquées.
+
+## Familles de plans
+
+| Famille | Part du temps |
+|---|---|
+| graphique | 98,2 % |
+| montage | 1,8 % |
+
+Le classement automatique (aplats, couverture du texte, entropie des zones non plates, sonde 3D) concorde avec le classement à l'œil sur 60 plans sur 68, soit 88 % ; la bible retient le classement à l'œil et garde la mesure à côté (`content_measured`).
+
+La famille « montage » regroupe les plans de moins d'une demi-seconde, quel que soit leur contenu ; la part du contenu seul est : graphique 100,0 %.
+
+## Couleurs
+
+Palette globale (regroupement Lab, fusion sous 6 unités CIEDE2000, pondérée par la surface et la durée) :
+
+| Couleur | Part | L* | Chroma |
+|---|---|---|---|
+| `#efeee8` | 42,2 % | 94,0 | 2,9 |
+| `#0c0b0f` | 28,2 % | 3,1 | 1,8 |
+| `#fb2c88` | 10,1 % | 56,2 | 78,9 |
+| `#a5adfa` | 5,8 % | 72,8 | 41,8 |
+| `#2c58f9` | 3,4 % | 44,7 | 94,4 |
+| `#460f2c` | 2,7 % | 14,6 | 29,2 |
+| `#c4c1b9` | 2,7 % | 78,2 | 4,4 |
+| `#250d1c` | 1,5 % | 6,8 | 15,9 |
+| `#ad2763` | 0,5 % | 39,9 | 57,0 |
+| `#666362` | 0,5 % | 42,2 | 1,3 |
+| `#7f7c7c` | 0,5 % | 52,2 | 1,2 |
+| `#7c1b47` | 0,4 % | 28,1 | 44,2 |
+
+Rôles (part du temps où la couleur tient ce rôle) :
+
+| Rôle | Couleurs |
+|---|---|
+| fond | `#f0efe8` (41 %), `#0a0a0d` (31 %), `#fb2c89` (11 %), `#a5aefb` (5 %) |
+| texte | `#ff328f` (13 %), `#d2bcd7` (7 %), `#9d4766` (7 %), `#c0919a` (6 %) |
+| accent | `#fb2d89` (19 %), `#2d59fa` (15 %), `#96a4f1` (9 %), `#b92768` (7 %) |
+
+## Typographie
+
+207 lignes de texte ont été mesurées sur l'image où le texte est le plus présent de chaque plan carte texte ou graphique. La hauteur d'x, ramenée à une image de 1080 pixels de haut, va de 3,0 à 220,0 pixels, médiane 49,0 ; la densité de trait médiane vaut 0,538. On compte 100 lignes en capitales et 107 en bas de casse, et 51 % des lignes sont claires sur fond sombre. Couleurs de texte relevées : `#0c0a11`, `#0c0a12`, `#0c0b12`, `#0e0a13`, `#0e0a14`, `#0e0a15`, `#100a15`, `#100a16`.
+
+Appariement de police faible sur la ligne de S40 (meilleur score 2,407, au-delà du seuil 0,60) : aucune police libre de la base ne ressemble assez au dessin mesuré, la plus proche étant Hubot Sans 200 ; la police se choisira à l'œil.
+
+## Mouvements et courbes
+
+Courbes identifiées contre la table exacte de GSAP 3.14.2 (une courbe n'est gardée que si elle explique le mouvement à 6 % de l'amplitude près et que le mouvement dépasse dix fois le bruit de mesure) :
+
+| Ease | Occurrences |
+|---|---|
+| `elastic.inOut(1,0.3)` | 65 |
+| `elastic.in(1,0.3)` | 37 |
+| `back.inOut(1.70158)` | 35 |
+| `circ.inOut` | 22 |
+| `elastic.inOut(1,0.45)` | 20 |
+| `elastic.in(1.5,0.4)` | 20 |
+| `circ.out` | 18 |
+| `bounce.in` | 17 |
+| `none` | 17 |
+| `expo.out` | 15 |
+| `css.ease` | 15 |
+| `elastic.inOut(1.2,0.3)` | 13 |
+| `bounce.inOut` | 13 |
+| `expo.inOut` | 13 |
+
+Un mouvement d'élément dure 0,13 s en médiane.
+
+Mouvement global de l'image (similarité chaînée image après image ; sur un fond uni, il suit le calque dominant) :
+
+| Mouvement | Plans |
+|---|---|
+| roulis | 30 |
+| travelling vertical | 24 |
+| zoom arrière | 23 |
+| panoramique | 23 |
+| zoom avant | 22 |
+| fixe | 16 |
+
+## Transitions
+
+| Transition d'entrée | Plans |
+|---|---|
+| coupe franche | 62 |
+| coupe franche vers un noir | 3 |
+| coupe franche après passage au noir | 3 |
+| ouverture | 1 |
+
+## Usage de la 3D
+
+Les plaques (rendu 3D ou prise de vue) occupent 0,0 % du temps, dont 0 plans que la sonde géométrique classe comme 3D (perspective, parallaxe, scène rigide, apparence changeante ou mouvement complexe). La sonde répond juste quand elle dit 3D, mais elle manque les objets 3D qui glissent comme un calque (R04, section 10) ; les descriptions plan par plan corrigent ce point à l'œil.
+
+| Classe de la sonde | Plans |
+|---|---|
+| calque 2D | 20 |
+| immobile | 13 |
+| mouvement complexe (déformation, fluide ou rendu 3D éclairé) | 13 |
+| plusieurs couches en parallaxe (2,5D) | 13 |
+| calque 2D déformé (affine) | 5 |
+| scène 3D rigide en profondeur | 4 |
+| calque 2D dont l'apparence change (rendu éclairé ou 3D possible) | 1 |
+
+## Son
+
+Sonie intégrée -15,9 LUFS, centroïde spectral médian 3878 Hz, part harmonique 88 %. Le détecteur d'attaques relève 664 événements (attaque médium 637, clic aigu 18, impact grave 9) et le détecteur de houles 15 montées ou souffles longs.
+
+Événements principaux (les plus forts) :
+
+| Instant | Nature | Crête |
+|---|---|---|
+| 5,27 s | attaque médium | -23,2 dB |
+| 11,67 s | attaque médium | -14,3 dB |
+| 16,36 s | attaque médium | -14,6 dB |
+| 18,50 s | attaque médium | -13,8 dB |
+| 23,40 s | attaque médium | -18,3 dB |
+| 38,97 s | attaque médium | -22,7 dB |
+| 50,21 s | attaque médium | -19,5 dB |
+| 93,55 s | attaque médium | -12,8 dB |
+| 99,42 s | attaque médium | -12,2 dB |
+| 127,64 s | attaque médium | -22,9 dB |
+| 178,72 s | impact grave | -14,0 dB |
+| 178,92 s | impact grave | -10,8 dB |
+
+Houles : 5,68 s (montée 0,47 s), 50,20 s (montée 0,52 s), 84,60 s (montée 0,54 s), 87,00 s (montée 0,24 s), 90,99 s (montée 0,27 s), 92,48 s (montée 0,24 s), 93,36 s (montée 0,21 s), 116,94 s (montée 0,28 s), 117,47 s (montée 0,58 s), 134,13 s (montée 0,55 s), 141,06 s (montée 0,24 s), 150,56 s (montée 0,34 s), 153,87 s (montée 0,34 s), 163,81 s (montée 0,21 s), 175,60 s (montée 0,39 s).
+
+## Musique
+
+Tempo estimé 142,9 BPM, 430 temps détectés, régularité de la grille 0,056 (écart type relatif des intervalles, 0 pour une grille parfaite). La musique ne se reprend jamais note à note : seuls le tempo, la grille, les sections, l'énergie et la production servent.
+
+| Section | Début | Fin | Niveau médian |
+|---|---|---|---|
+| 1 | 0,00 s | 3,15 s | -28,2 dB |
+| 2 | 3,15 s | 9,35 s | -25,7 dB |
+| 3 | 9,35 s | 37,45 s | -21,8 dB |
+| 4 | 37,45 s | 43,85 s | -24,1 dB |
+| 5 | 43,85 s | 69,40 s | -18,9 dB |
+| 6 | 69,40 s | 85,05 s | -19,8 dB |
+| 7 | 85,05 s | 88,10 s | -24,7 dB |
+| 8 | 88,10 s | 91,45 s | -21,8 dB |
+| 9 | 91,45 s | 118,40 s | -15,9 dB |
+| 10 | 118,40 s | 127,40 s | -27,4 dB |
+| 11 | 127,40 s | 131,60 s | -26,7 dB |
+| 12 | 131,60 s | 148,60 s | -18,4 dB |
+| 13 | 148,60 s | 153,90 s | -24,2 dB |
+| 14 | 153,90 s | 158,05 s | -20,4 dB |
+| 15 | 158,05 s | 174,45 s | -13,8 dB |
+| 16 | 174,45 s | 177,45 s | -29,0 dB |
+| 17 | 177,45 s | 181,85 s | -14,1 dB |
+
+## Plans
+
+| Plan | Début | Durée | Famille | Description |
+|---|---|---|---|---|
+| S01 | 0,00 s | 0,47 s | montage | Un visage de bulle de conversation violette entre accolades clignote sur fond noir, une étiquette de nom se tape dessous. |
+| S02 | 0,47 s | 0,20 s | montage | Un mot en grand serif noir répété trois fois sur fond crème, très bref. |
+| S03 | 0,67 s | 0,23 s | montage | Le même mot dans des cadres bleus sur noir, très bref. |
+| S04 | 0,90 s | 7,57 s | graphique | Un mot rose énorme se tape dans une fenêtre, très bref. |
+| S05 | 8,47 s | 0,20 s | montage | Barres verticales roses sur noir, comme un curseur géant. |
+| S06 | 8,67 s | 0,47 s | montage | Deux mots roses géants s'écrivent dans la fenêtre crème. |
+| S07 | 9,13 s | 0,40 s | montage | Le dernier mot sur fond violet avec un œil rond de la mascotte, deux images. |
+| S08 | 9,53 s | 3,70 s | graphique | Une fausse page de recommandations de lieux défile, un passage caché surligné et la silhouette bleue en marge. |
+| S09 | 13,23 s | 1,87 s | graphique | Un réglage de police minuscule est montré par une étiquette rose puis une bande de couleurs rose et bleue. |
+| S10 | 15,10 s | 4,53 s | graphique | La demande se complète dans la fenêtre de discussion. |
+| S11 | 19,63 s | 0,57 s | graphique | Une colonne de texte de code se déroule, la mascotte en bas. |
+| S12 | 20,20 s | 2,97 s | graphique | La mascotte change d'expression trois fois, une étiquette rose à droite. |
+| S13 | 23,17 s | 6,63 s | graphique | Des fenêtres de code avec un appel d'outil, la phrase en bas change de mot surligné. |
+| S14 | 29,80 s | 3,73 s | graphique | Une citation et des mots surlignés en couleur se répartissent sur la page crème. |
+| S15 | 33,53 s | 1,80 s | graphique | Texte en cases typographiques qui se multiplie et se recompose sur fond crème, un mot rose entouré de fragments. |
+| S16 | 35,33 s | 1,97 s | graphique | Un mot rose en grand glisse sur une bande blanche qui se replie. |
+| S17 | 37,30 s | 0,17 s | montage | Le mot rose minuscule au centre d'un écran noir. |
+| S18 | 37,47 s | 4,73 s | graphique | Une rangée d'icônes d'outils s'aligne sur fond noir, phrases qui se tapent en haut. |
+| S19 | 42,20 s | 1,90 s | graphique | Deux mots en rose plein cadre sur fond rose vif. |
+| S20 | 44,10 s | 2,73 s | graphique | Silhouette bleue qui danse sur un panneau noir, bannière de mots en haut. |
+| S21 | 46,83 s | 0,67 s | graphique | Un fragment de mot en capitales géantes se répète en grand. |
+| S22 | 47,50 s | 2,77 s | graphique | Le dernier mot en capitales blanches sur bande noire, fenêtres roses autour. |
+| S23 | 50,27 s | 1,90 s | graphique | La silhouette bleue apparaît dans la fiche, un mot se tape dans un champ. |
+| S24 | 52,17 s | 1,83 s | graphique | Mots successifs en blanc sur noir, silhouette bleue qui pointe. |
+| S25 | 54,00 s | 3,67 s | graphique | Trois colonnes de commandes s'alignent sous le mot sur noir. |
+| S26 | 57,67 s | 6,80 s | graphique | Alerte jaune et recette affichée dans le message, cadre bleu à droite. |
+| S27 | 64,47 s | 5,67 s | graphique | Le prix chute à une somme dérisoire et une étiquette rose de vente s'affiche. |
+| S28 | 70,13 s | 2,47 s | graphique | Un terminal noir : une phrase se tape et un interrupteur passe au jaune. |
+| S29 | 72,60 s | 0,67 s | graphique | Un nuage en pixels argentés monte sur fond noir, mascotte et fenêtre. |
+| S30 | 73,27 s | 1,73 s | graphique | Une boîte de permission jaune : le bouton d'autorisation permanente s'allonge. |
+| S31 | 75,00 s | 1,50 s | graphique | Un réglage de configuration passe à vrai, mot rose en capitales répété. |
+| S32 | 76,50 s | 3,37 s | graphique | Un résumé d'e-mails se tape dans une fenêtre, un badge jaune de félicitations apparaît. |
+| S33 | 79,87 s | 4,40 s | graphique | Un e-mail d'envoi vers une adresse inconnue se tape, bouton d'envoi. |
+| S34 | 84,27 s | 7,23 s | graphique | Un triangle rose relie trois risques, une bannière d'achèvement s'affiche. |
+| S35 | 91,50 s | 4,80 s | graphique | Un mot blanc seul sur fond bleu, silhouette à droite. |
+| S36 | 96,30 s | 1,20 s | graphique | Les trois lignes se remplissent en blanc l'une après l'autre. |
+| S37 | 97,50 s | 1,47 s | graphique | La phrase complète en capitales blanches sur noir, un mot barré. |
+| S38 | 98,97 s | 0,50 s | graphique | Une silhouette rose danse derrière une bande blanche oblique portant un mot. |
+| S39 | 99,47 s | 3,77 s | graphique | La silhouette tourne, rangée de bulles, très bref. |
+| S40 | 103,23 s | 1,67 s | graphique | Fond rose : la silhouette en miroir et des bulles mascottes en colonnes. |
+| S41 | 104,90 s | 2,27 s | graphique | Mots en pixels roses empilés sur fond sombre tramé, silhouette bleue à droite. |
+| S42 | 107,17 s | 3,33 s | graphique | Trois mots roses en capitales s'empilent à gauche de la silhouette bleue. |
+| S43 | 110,50 s | 1,13 s | graphique | Le mot rose seul au milieu des rangées de pilules. |
+| S44 | 111,63 s | 6,53 s | graphique | Un grand cercle rose balaie un objet blanc qui tombe sur noir. |
+| S45 | 118,17 s | 13,00 s | graphique | Long plan sur page crème : un texte en serif italique se tape, des annotations et un mot surligné apparaissent, un téléphone en marge. |
+| S46 | 131,17 s | 2,10 s | graphique | Une phrase se tape au-dessus de la mascotte et une liste de permissions cochées. |
+| S47 | 133,27 s | 2,47 s | graphique | Fond violet : une phrase s'enroule en cercle autour du curseur. |
+| S48 | 135,73 s | 5,83 s | graphique | Des fiches d'agenda et de boîte de réception s'empilent autour de la mascotte sur fond clair. |
+| S49 | 141,57 s | 6,77 s | graphique | Les lettres roses du mot s'éparpillent sur fond noir autour de la mascotte. |
+| S50 | 148,33 s | 1,23 s | graphique | Deuxième mot géant sur rose, mots répétés en fond. |
+| S51 | 149,57 s | 0,23 s | montage | Un long mot coupé sur deux lignes en noir sur rose, très bref. |
+| S52 | 149,80 s | 0,57 s | graphique | Le mot rose sur bande noire avec une page de recommandations derrière. |
+| S53 | 150,37 s | 1,27 s | graphique | Même grille de pastilles, deux images. |
+| S54 | 151,63 s | 2,43 s | graphique | Trois mots en noir et rose s'empilent sur une page crème barrée de rectangles noirs. |
+| S55 | 154,07 s | 1,90 s | graphique | Une silhouette tramée sur noir, une phrase en pastilles bleues s'empile sur son torse. |
+| S56 | 155,97 s | 1,80 s | graphique | Un mot sur bande rose devant des nuages en pointillés, très bref. |
+| S57 | 157,77 s | 3,73 s | graphique | Un mot rose sur noir puis des fenêtres sombres qui s'emboîtent. |
+| S58 | 161,50 s | 1,27 s | graphique | Le deuxième mot rose plein cadre, très bref. |
+| S59 | 162,77 s | 0,80 s | graphique | Colonnes verticales de mots en noir, très bref. |
+| S60 | 163,57 s | 1,23 s | graphique | Un mot géant rose sur noir, barré et glitché à la fin. |
+| S61 | 164,80 s | 0,57 s | graphique | Fond rose : le mot en cadre bleu sous la silhouette. |
+| S62 | 165,37 s | 2,13 s | graphique | La mosaïque et un mot géant rose qui change. |
+| S63 | 167,50 s | 0,40 s | montage | Le mot rose dans la mosaïque puis une phrase répétée en capitales roses sur noir. |
+| S64 | 167,90 s | 1,23 s | graphique | Une clé dorée et des mots noirs géants sur bandes roses. |
+| S65 | 169,13 s | 1,83 s | graphique | Un mot répété trois fois sur une bande rose, très bref. |
+| S66 | 170,97 s | 3,40 s | graphique | Des tas de blocs roses s'effondrent avec une étiquette de vente, silhouette au centre. |
+| S67 | 174,37 s | 2,90 s | graphique | Retour au début : une phrase se tape dans un champ crème au-dessus de la mascotte. |
+| S68 | 177,27 s | 0,47 s | montage | Barres verticales roses sur noir comme un curseur géant. |
+| S69 | 177,73 s | 4,07 s | graphique | La mascotte clignote au-dessus de son étiquette de nom sur noir, fin. |
+
+Paramètres : `settings.json`, sections `analysis.bible`, `analysis.camera`, `analysis.easefit`, `analysis.sound` (12 October 2026).

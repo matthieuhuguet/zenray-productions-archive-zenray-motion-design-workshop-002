@@ -1,0 +1,477 @@
+{
+ "schema": "zrmd/bible@1",
+ "date": "12 October 2026",
+ "slug": "fin-4",
+ "source": {
+  "duration_s": 7.867,
+  "width": 1080,
+  "height": 1350,
+  "fps": 30.0,
+  "has_audio": false,
+  "page_url": "https://whatships.com/videos/fin-4/"
+ },
+ "cadence": {
+  "fps": 15.0,
+  "factor": 2,
+  "duplicate_ratio": 0.537
+ },
+ "frames": 236,
+ "fps": 30.0,
+ "cuts": [],
+ "detected": {
+  "shots": 1,
+  "cuts": 0
+ },
+ "review": {
+  "file": "review.json",
+  "added_cuts": 0,
+  "removed_cuts": 0,
+  "cut_corrections_superseded": 0,
+  "shots_described": 1,
+  "family_agreement": {
+   "reviewed": 1,
+   "same_content": 0,
+   "share": 0.0
+  },
+  "unmatched_entries": []
+ },
+ "summary": {
+  "families_time_share": {
+   "graphic": 1.0
+  },
+  "content_time_share": {
+   "graphic": 1.0
+  },
+  "palette": [
+   {
+    "hex": "#fbfbfb",
+    "share": 0.671,
+    "lab": [
+     98.6,
+     -0.0,
+     -0.2
+    ],
+    "chroma": 0.2
+   },
+   {
+    "hex": "#dbd9e3",
+    "share": 0.159,
+    "lab": [
+     87.2,
+     2.3,
+     -4.3
+    ],
+    "chroma": 4.9
+   },
+   {
+    "hex": "#bab7bf",
+    "share": 0.064,
+    "lab": [
+     75.0,
+     2.3,
+     -3.6
+    ],
+    "chroma": 4.3
+   },
+   {
+    "hex": "#dab4be",
+    "share": 0.046,
+    "lab": [
+     76.9,
+     15.1,
+     0.2
+    ],
+    "chroma": 15.1
+   },
+   {
+    "hex": "#90928f",
+    "share": 0.04,
+    "lab": [
+     60.4,
+     -1.5,
+     1.2
+    ],
+    "chroma": 1.9
+   },
+   {
+    "hex": "#de8c8e",
+    "share": 0.02,
+    "lab": [
+     66.8,
+     31.5,
+     12.2
+    ],
+    "chroma": 33.8
+   }
+  ],
+  "roles": {
+   "background": [
+    {
+     "hex": "#fbfbfb",
+     "share_of_time": 1.0
+    }
+   ],
+   "text": [
+    {
+     "hex": "#e0e2dc",
+     "share_of_time": 1.0
+    }
+   ],
+   "accent": [
+    {
+     "hex": "#de8c8e",
+     "share_of_time": 1.0
+    }
+   ]
+  },
+  "eases": {},
+  "element_move_median_s": null,
+  "camera_kinds": {
+   "fixe": 1
+  },
+  "transitions": {
+   "ouverture": 1
+  },
+  "typography": {
+   "lines_measured": 4,
+   "x_height_px1080": {
+    "min": 9.0,
+    "median": 19.5,
+    "max": 77.0
+   },
+   "stroke_density_median": 0.333,
+   "case": {
+    "capitales": 2,
+    "bas de casse": 2
+   },
+   "light_on_dark_share": 0.0,
+   "text_colours": [
+    "#d7d7d7",
+    "#d8d8d8",
+    "#dfdfe0",
+    "#f3f9df"
+   ]
+  },
+  "rhythm": {
+   "shots": 1,
+   "cuts": 0,
+   "duration": 7.867,
+   "cuts_per_minute": 0.0,
+   "shot_mean_s": 7.867,
+   "shot_median_s": 7.867,
+   "shot_min_s": 7.867,
+   "shot_max_s": 7.867,
+   "shot_cv": 0.0,
+   "under_0_5s": 0,
+   "over_3s": 1
+  },
+  "three_d": {
+   "plate_share": 0.0,
+   "plate_3d_shots": 0,
+   "probe_classes": {
+    "static": 1
+   }
+  }
+ },
+ "sound": null,
+ "sound_events": null,
+ "shots": [
+  {
+   "id": "S01",
+   "start": 0.0,
+   "end": 7.8667,
+   "duration": 7.8667,
+   "start_frame": 0,
+   "end_frame": 236,
+   "enter": "start",
+   "cut_source": "start",
+   "sample_fps": 30.0,
+   "frames_measured": 236,
+   "family": "graphic",
+   "content": "graphic",
+   "plate_kind": null,
+   "features": {
+    "text_cover": 0.456,
+    "nonflat_entropy": 3.61,
+    "flat_share": 0.794,
+    "texture": 0.43,
+    "colourfulness": 19.4,
+    "edge_density": 0.038
+   },
+   "palette": [
+    {
+     "lab": [
+      98.63,
+      -0.01,
+      -0.16
+     ],
+     "share": 0.6663,
+     "hex": "#fbfbfb",
+     "chroma": 0.2,
+     "role": "background"
+    },
+    {
+     "lab": [
+      87.17,
+      2.3,
+      -4.33
+     ],
+     "share": 0.1582,
+     "hex": "#dbd9e3",
+     "chroma": 4.9,
+     "role": "secondary"
+    },
+    {
+     "lab": [
+      74.99,
+      2.32,
+      -3.62
+     ],
+     "share": 0.0633,
+     "hex": "#bab7bf",
+     "chroma": 4.3,
+     "role": "secondary"
+    },
+    {
+     "lab": [
+      76.89,
+      15.14,
+      0.18
+     ],
+     "share": 0.0459,
+     "hex": "#dab4be",
+     "chroma": 15.1,
+     "role": "secondary"
+    },
+    {
+     "lab": [
+      60.37,
+      -1.54,
+      1.17
+     ],
+     "share": 0.0396,
+     "hex": "#90928f",
+     "chroma": 1.9,
+     "role": "secondary"
+    },
+    {
+     "lab": [
+      66.76,
+      31.54,
+      12.18
+     ],
+     "share": 0.0202,
+     "hex": "#de8c8e",
+     "chroma": 33.8,
+     "role": "accent"
+    }
+   ],
+   "roles": {
+    "background": "#fbfbfb",
+    "text": "#e0e2dc",
+    "accent": "#de8c8e",
+    "secondary": [
+     "#dbd9e3",
+     "#bab7bf",
+     "#dab4be",
+     "#90928f"
+    ]
+   },
+   "border_lab_std": 8.31,
+   "camera": {
+    "channels": {
+     "x": {
+      "total": -0.004,
+      "range": 0.004,
+      "moves": []
+     },
+     "y": {
+      "total": -0.002,
+      "range": 0.004,
+      "moves": []
+     },
+     "zoom": {
+      "total": -0.003,
+      "range": 0.006,
+      "moves": []
+     },
+     "roll": {
+      "total": -0.007,
+      "range": 0.008,
+      "moves": []
+     }
+    },
+    "kind": [
+     "fixe"
+    ],
+    "units": {
+     "x": "% largeur",
+     "y": "% largeur",
+     "zoom": "% échelle",
+     "roll": "degrés"
+    },
+    "probe": {
+     "pairs": 235,
+     "moving_pairs_fraction": 0.0,
+     "sim": 0.0,
+     "aff": 0.0,
+     "hom": 0.0,
+     "fun": 0.0,
+     "layers": 0.0,
+     "layers_explained": 0.0,
+     "residual": 0.0003,
+     "residual_p90": 0.0026,
+     "ecc_pairs": 0,
+     "class": "static"
+    }
+   },
+   "elements": [],
+   "elements_tracked": 30,
+   "text_lines": [
+    {
+     "box_pct": [
+      9.6,
+      54.2,
+      81.0,
+      10.6
+     ],
+     "x_height_px1080": 77.0,
+     "top_to_base_px1080": 1.0,
+     "x_over_top": 77.0,
+     "stroke_density": 0.0045,
+     "case": "capitales",
+     "color": "#f3f9df",
+     "light_on_dark": false,
+     "_crop_file": "/Users/zenray/.claude/tmp/tmp-zenray-motion-design-refcache/fin-4/typography/S01.png"
+    },
+    {
+     "box_pct": [
+      35.9,
+      36.3,
+      16.9,
+      8.7
+     ],
+     "x_height_px1080": 30.0,
+     "top_to_base_px1080": 57.0,
+     "x_over_top": 0.526,
+     "stroke_density": 0.4731,
+     "case": "bas de casse",
+     "color": "#dfdfe0",
+     "light_on_dark": false
+    },
+    {
+     "box_pct": [
+      15.5,
+      60.6,
+      8.1,
+      0.9
+     ],
+     "x_height_px1080": 9.0,
+     "top_to_base_px1080": 9.0,
+     "x_over_top": 1.0,
+     "stroke_density": 0.3266,
+     "case": "capitales",
+     "color": "#d8d8d8",
+     "light_on_dark": false
+    },
+    {
+     "box_pct": [
+      9.3,
+      81.9,
+      58.7,
+      11.0
+     ],
+     "x_height_px1080": 9.0,
+     "top_to_base_px1080": 15.0,
+     "x_over_top": 0.6,
+     "stroke_density": 0.3402,
+     "case": "bas de casse",
+     "color": "#d7d7d7",
+     "light_on_dark": false
+    }
+   ],
+   "text_frame_t": 7.833333333333333,
+   "phases": [
+    {
+     "start": 0.0,
+     "end": 7.833,
+     "thumb": "S01-p01.jpg"
+    }
+   ],
+   "thumbs": {
+    "in": "S01-in.jpg",
+    "mid": "S01-mid.jpg",
+    "out": "S01-out.jpg"
+   },
+   "first_lab": [
+    91.87,
+    1.77,
+    -1.06
+   ],
+   "last_lab": [
+    91.99,
+    1.59,
+    -0.47
+   ],
+   "transition_in": {
+    "kind": "ouverture"
+   },
+   "description": "Plan unique fixe : sur un fond blanc coiffé d'un dégradé pastel en vague, le titre reste immobile tandis qu'un point lumineux parcourt le schéma et colore successivement une boîte en bleu, une barre en violet puis une boîte en vert.",
+   "content_measured": "plate",
+   "family_measured": "plate",
+   "plate_kind_measured": "image",
+   "eye_reviewed": true,
+   "sound": {
+    "events": [],
+    "swells": []
+   }
+  }
+ ],
+ "engine": {
+  "eases": "GSAP 3.14.2 exact table",
+  "settings": "settings.json analysis.bible, camera, easefit, sound"
+ },
+ "font_match": {
+  "shot": "S01",
+  "x_height_px1080": 77.0,
+  "characters": 26,
+  "seconds": 135.1,
+  "ranking": [
+   {
+    "family": "Hubot Sans",
+    "style": "Variable",
+    "weight": 400.0,
+    "tracking_em": -0.05,
+    "score": 3.40722
+   },
+   {
+    "family": "Encode Sans",
+    "style": "Variable",
+    "weight": 575.0,
+    "tracking_em": -0.05,
+    "score": 4.43142
+   },
+   {
+    "family": "Afacad",
+    "style": "Variable",
+    "weight": 650.0,
+    "tracking_em": -0.05,
+    "score": 4.8624
+   },
+   {
+    "family": "Epilogue",
+    "style": "Variable",
+    "weight": 525.0,
+    "tracking_em": -0.05,
+    "score": 4.86337
+   },
+   {
+    "family": "Spline Sans",
+    "style": "Variable",
+    "weight": 500.0,
+    "tracking_em": -0.05,
+    "score": 4.87632
+   }
+  ]
+ }
+}

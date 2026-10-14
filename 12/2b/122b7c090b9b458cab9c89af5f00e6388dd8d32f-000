@@ -1,0 +1,210 @@
+# Bible graphique de la référence x-anabology-2106157622986748377 (12 October 2026)
+
+Bible mesurée par `zrmd.bible` le 12 October 2026, à partir du fichier du cache local ; aucun pixel ni aucun échantillon de la référence n'entre dans ce document, qui ne porte que des nombres et des descriptions paraphrasées. Storyboard : [storyboard.html](storyboard.html). Données : [bible.json](bible.json). (12 October 2026)
+
+Clip musical nostalgique construit dans l'univers d'un système d'exploitation de bureau des années 2000 : fond d'écran de colline, fenêtres et boîtes de dialogue qui s'empilent, assistant animé, économiseurs d'écran, avec une jeune femme incrustée qui danse et des prises de vue réelles dans une vraie prairie. (12 October 2026)
+
+## Identité
+
+| Mesure | Valeur |
+|---|---|
+| Durée | 181,35 s |
+| Format | 1280 x 720 |
+| Cadence du fichier | 24,000 images par seconde |
+| Cadence du contenu | 24,00 images par seconde |
+| Son | oui |
+
+## Rythme de montage
+
+La référence compte 28 plans et 27 coupes, soit 8,9 coupes par minute ; un plan dure 4,06 s en médiane et 6,47 s en moyenne, du plus court (0,04 s) au plus long (25,88 s), avec un coefficient de variation de 0,88. 1 plans durent moins d'une demi-seconde et 21 plus de trois secondes. La part des coupes tombant à 50 ms près d'un temps de la grille vaut 22 %, et celle des coupes tombant sur une attaque sonore 41 %. Le plan médian dure 8,83 temps. Le détecteur de rythme (fusion apprise des preuves, vérité adjudiquée à l'œil) a trouvé 27 coupes ; les 17 corrections de coupes de la première revue visaient l'ancien détecteur et ne sont plus appliquées.
+
+## Familles de plans
+
+| Famille | Part du temps |
+|---|---|
+| plaque 3D ou prise de vue | 86,4 % |
+| graphique | 13,6 % |
+| montage | 0,0 % |
+
+Le classement automatique (aplats, couverture du texte, entropie des zones non plates, sonde 3D) concorde avec le classement à l'œil sur 24 plans sur 27, soit 89 % ; la bible retient le classement à l'œil et garde la mesure à côté (`content_measured`).
+
+La famille « montage » regroupe les plans de moins d'une demi-seconde, quel que soit leur contenu ; la part du contenu seul est : plaque 3D ou prise de vue 86,4 %, graphique 13,6 %.
+
+## Couleurs
+
+Palette globale (regroupement Lab, fusion sous 6 unités CIEDE2000, pondérée par la surface et la durée) :
+
+| Couleur | Part | L* | Chroma |
+|---|---|---|---|
+| `#f0f2f4` | 10,1 % | 95,4 | 1,1 |
+| `#020303` | 8,5 % | 0,7 | 0,1 |
+| `#50612f` | 8,4 % | 38,7 | 30,6 |
+| `#839edf` | 7,2 % | 65,3 | 36,8 |
+| `#2c3523` | 6,6 % | 20,7 | 12,6 |
+| `#3662d5` | 6,1 % | 44,8 | 67,8 |
+| `#7285a2` | 4,3 % | 55,1 | 17,4 |
+| `#6c9a27` | 4,1 % | 58,5 | 61,9 |
+| `#dad9e0` | 3,7 % | 87,0 | 3,6 |
+| `#687f43` | 3,6 % | 50,0 | 35,1 |
+| `#5f7fdc` | 3,1 % | 54,9 | 53,5 |
+| `#3a566f` | 2,6 % | 35,5 | 17,8 |
+
+Rôles (part du temps où la couleur tient ce rôle) :
+
+| Rôle | Couleurs |
+|---|---|
+| fond | `#f4f6f9` (16 %), `#0c0e0f` (14 %), `#3e6ae0` (14 %), `#4b612a` (10 %) |
+| accent | `#3c65d3` (48 %), `#174ecc` (18 %), `#6e9a26` (8 %), `#f0d748` (3 %) |
+| texte | `#a0b8f3` (10 %), `#e1d7df` (3 %) |
+
+## Typographie
+
+6 lignes de texte ont été mesurées sur l'image où le texte est le plus présent de chaque plan carte texte ou graphique. La hauteur d'x, ramenée à une image de 1080 pixels de haut, va de 25,0 à 109,0 pixels, médiane 42,0 ; la densité de trait médiane vaut 0,639. On compte 4 lignes en capitales et 2 en bas de casse, et 100 % des lignes sont claires sur fond sombre. Couleurs de texte relevées : `#819eef`, `#aeaeba`, `#bcd3f7`, `#ebc2d7`, `#eeeeee`, `#fefefe`.
+
+Police libre la plus proche (comparateur `zrmd.analyze.fontmatch`, ligne de S106, texte lu en mémoire et jamais écrit) : Chivo 625, approche -0,02 em, score 0,369 ; Cabinet Grotesk 775, approche 0,00 em, score 0,369 ; Clash Grotesk 575, approche -0,01 em, score 0,420.
+
+## Mouvements et courbes
+
+Courbes identifiées contre la table exacte de GSAP 3.14.2 (une courbe n'est gardée que si elle explique le mouvement à 6 % de l'amplitude près et que le mouvement dépasse dix fois le bruit de mesure) :
+
+| Ease | Occurrences |
+|---|---|
+| `power2.inOut` | 53 |
+| `back.inOut(0.5)` | 13 |
+| `power3.inOut` | 11 |
+| `circ.inOut` | 10 |
+| `elastic.inOut(1,0.3)` | 10 |
+| `power1.inOut` | 9 |
+| `material.standard` | 7 |
+| `back.inOut(1.70158)` | 7 |
+| `sine.in` | 7 |
+| `back.in(3.5)` | 6 |
+| `sine.inOut` | 6 |
+| `power4.inOut` | 6 |
+| `bounce.inOut` | 6 |
+| `expo.inOut` | 6 |
+
+Un mouvement d'élément dure 0,16 s en médiane.
+
+Mouvement global de l'image (similarité chaînée image après image ; sur un fond uni, il suit le calque dominant) :
+
+| Mouvement | Plans |
+|---|---|
+| panoramique | 19 |
+| zoom avant | 17 |
+| roulis | 16 |
+| zoom arrière | 9 |
+| travelling vertical | 7 |
+| fixe | 1 |
+
+## Transitions
+
+| Transition d'entrée | Plans |
+|---|---|
+| coupe franche | 21 |
+| balayage | 2 |
+| coupe franche vers un noir | 2 |
+| ouverture | 1 |
+| fondu enchaîné | 1 |
+| coupe franche après passage au noir | 1 |
+
+## Usage de la 3D
+
+Les plaques (rendu 3D ou prise de vue) occupent 86,4 % du temps, dont 0 plans que la sonde géométrique classe comme 3D (perspective, parallaxe, scène rigide, apparence changeante ou mouvement complexe). La sonde répond juste quand elle dit 3D, mais elle manque les objets 3D qui glissent comme un calque (R04, section 10) ; les descriptions plan par plan corrigent ce point à l'œil.
+
+| Classe de la sonde | Plans |
+|---|---|
+| calque 2D | 11 |
+| immobile | 5 |
+| mouvement complexe (déformation, fluide ou rendu 3D éclairé) | 4 |
+| plusieurs couches en parallaxe (2,5D) | 4 |
+| calque 2D dont l'apparence change (rendu éclairé ou 3D possible) | 3 |
+| scène 3D rigide en profondeur | 1 |
+
+## Son
+
+Sonie intégrée -15,6 LUFS, centroïde spectral médian 3214 Hz, part harmonique 74 %. Le détecteur d'attaques relève 660 événements (attaque médium 648, clic aigu 8, impact grave 4) et le détecteur de houles 15 montées ou souffles longs.
+
+Événements principaux (les plus forts) :
+
+| Instant | Nature | Crête |
+|---|---|---|
+| 7,42 s | attaque médium | -18,5 dB |
+| 41,76 s | attaque médium | -17,0 dB |
+| 49,87 s | attaque médium | -10,8 dB |
+| 67,64 s | attaque médium | -21,3 dB |
+| 69,65 s | attaque médium | -23,6 dB |
+| 100,81 s | attaque médium | -16,2 dB |
+| 128,34 s | attaque médium | -9,7 dB |
+| 132,03 s | attaque médium | -9,8 dB |
+| 132,25 s | attaque médium | -23,3 dB |
+| 133,88 s | attaque médium | -10,3 dB |
+| 134,57 s | attaque médium | -16,5 dB |
+| 154,41 s | attaque médium | -23,4 dB |
+
+Houles : 14,35 s (montée 0,20 s), 29,23 s (montée 0,34 s), 43,16 s (montée 0,27 s), 47,68 s (montée 0,21 s), 66,61 s (montée 0,30 s), 78,26 s (montée 0,23 s), 94,84 s (montée 0,41 s), 106,87 s (montée 0,57 s), 128,97 s (montée 0,24 s), 133,09 s (montée 0,28 s), 151,16 s (montée 0,45 s), 155,46 s (montée 0,29 s), 164,07 s (montée 0,20 s), 165,93 s (montée 0,45 s), 176,92 s (montée 0,38 s).
+
+## Musique
+
+Tempo estimé 130,4 BPM, 384 temps détectés, régularité de la grille 0,077 (écart type relatif des intervalles, 0 pour une grille parfaite). La musique ne se reprend jamais note à note : seuls le tempo, la grille, les sections, l'énergie et la production servent.
+
+| Section | Début | Fin | Niveau médian |
+|---|---|---|---|
+| 1 | 0,00 s | 3,20 s | -29,1 dB |
+| 2 | 3,20 s | 7,20 s | -25,6 dB |
+| 3 | 7,20 s | 11,10 s | -22,1 dB |
+| 4 | 11,10 s | 15,30 s | -20,4 dB |
+| 5 | 15,30 s | 28,35 s | -19,0 dB |
+| 6 | 28,35 s | 37,45 s | -22,9 dB |
+| 7 | 37,45 s | 44,15 s | -18,3 dB |
+| 8 | 44,15 s | 49,55 s | -17,4 dB |
+| 9 | 49,55 s | 67,60 s | -17,8 dB |
+| 10 | 67,60 s | 70,65 s | -22,2 dB |
+| 11 | 70,65 s | 93,50 s | -18,8 dB |
+| 12 | 93,50 s | 96,50 s | -26,4 dB |
+| 13 | 96,50 s | 103,25 s | -17,1 dB |
+| 14 | 103,25 s | 108,60 s | -16,3 dB |
+| 15 | 108,60 s | 126,05 s | -22,2 dB |
+| 16 | 126,05 s | 130,75 s | -17,9 dB |
+| 17 | 130,75 s | 140,95 s | -18,0 dB |
+| 18 | 140,95 s | 144,05 s | -25,1 dB |
+| 19 | 144,05 s | 152,90 s | -16,9 dB |
+| 20 | 152,90 s | 170,45 s | -16,9 dB |
+| 21 | 170,45 s | 174,75 s | -22,8 dB |
+| 22 | 174,75 s | 178,40 s | -28,9 dB |
+| 23 | 178,40 s | 181,40 s | -73,1 dB |
+
+## Plans
+
+| Plan | Début | Durée | Famille | Description |
+|---|---|---|---|---|
+| S01 | 0,00 s | 4,04 s | plaque 3D ou prise de vue | Écran bleu d'ouverture de session d'un vieux système de bureau, une icône d'utilisateur et un message de bienvenue qui change. |
+| S02 | 4,04 s | 7,50 s | plaque 3D ou prise de vue | La danseuse sur la colline, la barre des tâches et une date apparaissent en bas. |
+| S03 | 11,54 s | 25,88 s | plaque 3D ou prise de vue | Pages de recherche empilées, la danseuse dans l'assistant. |
+| S04 | 37,42 s | 7,50 s | plaque 3D ou prise de vue | La jeune femme en robe imprimée de nuages tourne sur une colline réelle. |
+| S05 | 44,92 s | 2,50 s | plaque 3D ou prise de vue | Une flèche de curseur géante et un voilage qui flotte dans la pièce. |
+| S06 | 47,42 s | 19,04 s | graphique | Un économiseur d'écran de tuyaux colorés en 3D remplit l'image. |
+| S07 | 66,46 s | 3,92 s | plaque 3D ou prise de vue | Une fenêtre de code et des boîtes de copie de fichiers sur le bureau. |
+| S08 | 70,38 s | 1,50 s | plaque 3D ou prise de vue | Une bulle de notification se met à jour en bas de l'écran. |
+| S09 | 71,88 s | 0,04 s | montage | Fenêtre de jeu de flipper rétro avec une image de bulle translucide, et une bulle de notification en bas à droite sur un fond de prairie. |
+| S10 | 71,92 s | 2,08 s | plaque 3D ou prise de vue | Même flipper, la danseuse plus proche. |
+| S11 | 74,00 s | 5,04 s | plaque 3D ou prise de vue | Fenêtres de dialogue, puis la danseuse en robe argentée sur fond étoilé avec une phrase blanche. |
+| S12 | 79,04 s | 6,38 s | plaque 3D ou prise de vue | Fenêtres de messagerie et deux danseuses sur la colline. |
+| S13 | 85,42 s | 14,75 s | plaque 3D ou prise de vue | La colline avec une palette de couleurs flottante, très bref. |
+| S14 | 100,17 s | 3,71 s | plaque 3D ou prise de vue | La main se referme dans l'herbe, bulles d'aide. |
+| S15 | 103,88 s | 2,75 s | plaque 3D ou prise de vue | Une main tient un vieux téléphone à clapet au-dessus de l'herbe. |
+| S16 | 106,62 s | 13,83 s | plaque 3D ou prise de vue | Gros plan d'une jeune femme aux cheveux noirs dans une fourrure blanche, reflets colorés. |
+| S17 | 120,46 s | 3,25 s | plaque 3D ou prise de vue | La jeune femme en combinaison argentée pose la main contre l'écran. |
+| S18 | 123,71 s | 2,29 s | plaque 3D ou prise de vue | Une main caresse l'herbe, deux mots blancs s'écrivent au-dessus. |
+| S19 | 126,00 s | 5,54 s | graphique | Le logo et la barre de chargement grossissent puis disparaissent. |
+| S20 | 131,54 s | 3,71 s | plaque 3D ou prise de vue | Une silhouette en tenue blanche flotte dans un champ d'étoiles. |
+| S21 | 135,25 s | 5,12 s | plaque 3D ou prise de vue | Écran de bienvenue qui se fond vers le blanc. |
+| S22 | 140,38 s | 4,08 s | plaque 3D ou prise de vue | Dernières fenêtres et la danseuse sur la colline, très bref. |
+| S23 | 144,46 s | 11,08 s | plaque 3D ou prise de vue | Fin de la rotation face au ciel. |
+| S24 | 155,54 s | 3,71 s | plaque 3D ou prise de vue | Des dizaines de petites danseuses alignées sur la colline. |
+| S25 | 159,25 s | 3,62 s | plaque 3D ou prise de vue | Un vieux téléphone à clapet tenu dans l'herbe, écran allumé. |
+| S26 | 162,88 s | 2,83 s | plaque 3D ou prise de vue | Une flèche blanche géante pointe la danseuse en bleu sur la colline. |
+| S27 | 165,71 s | 6,29 s | plaque 3D ou prise de vue | La boîte d'extinction de l'ordinateur sur un fond qui se désature. |
+| S28 | 172,00 s | 9,29 s | plaque 3D ou prise de vue | La jeune femme assise dans l'herbe face au moniteur, un mot en grand blanc apparaît. |
+
+Paramètres : `settings.json`, sections `analysis.bible`, `analysis.camera`, `analysis.easefit`, `analysis.sound` (12 October 2026).

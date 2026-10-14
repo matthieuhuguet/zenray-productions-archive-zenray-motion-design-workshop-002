@@ -1,0 +1,176 @@
+# Bible graphique de la référence kardashev-0-7 (12 October 2026)
+
+Bible mesurée par `zrmd.bible` le 12 October 2026, à partir du fichier du cache local ; aucun pixel ni aucun échantillon de la référence n'entre dans ce document, qui ne porte que des nombres et des descriptions paraphrasées. Storyboard : [storyboard.html](storyboard.html). Données : [bible.json](bible.json). (12 October 2026)
+
+Annonce face caméra tournée en extérieur au soleil couchant, sous-titres en serif fins, entrecoupée d'images d'archives et de cartes graphiques bleu nuit posées sur un horizon de planète orange ; les titres s'y écrivent par un effet de lettres brouillées qui se stabilisent. (12 October 2026)
+
+## Identité
+
+| Mesure | Valeur |
+|---|---|
+| Durée | 67,42 s |
+| Format | 1920 x 1080 |
+| Cadence du fichier | 24,000 images par seconde |
+| Cadence du contenu | 24,00 images par seconde |
+| Son | oui |
+
+## Rythme de montage
+
+La référence compte 15 plans et 14 coupes, soit 12,5 coupes par minute ; un plan dure 4,17 s en médiane et 4,49 s en moyenne, du plus court (0,38 s) au plus long (16,12 s), avec un coefficient de variation de 0,98. 5 plans durent moins d'une demi-seconde et 9 plus de trois secondes. La part des coupes tombant à 50 ms près d'un temps de la grille vaut 14 %, et celle des coupes tombant sur une attaque sonore 50 %. Le plan médian dure 6,94 temps. Le détecteur de rythme (fusion apprise des preuves, vérité adjudiquée à l'œil) a trouvé 14 coupes ; les 1 corrections de coupes de la première revue visaient l'ancien détecteur et ne sont plus appliquées.
+
+## Familles de plans
+
+| Famille | Part du temps |
+|---|---|
+| plaque 3D ou prise de vue | 46,6 % |
+| graphique | 44,2 % |
+| carte texte | 6,2 % |
+| montage | 3,0 % |
+
+Le classement automatique (aplats, couverture du texte, entropie des zones non plates, sonde 3D) concorde avec le classement à l'œil sur 11 plans sur 15, soit 73 % ; la bible retient le classement à l'œil et garde la mesure à côté (`content_measured`).
+
+La famille « montage » regroupe les plans de moins d'une demi-seconde, quel que soit leur contenu ; la part du contenu seul est : plaque 3D ou prise de vue 49,6 %, graphique 44,2 %, carte texte 6,2 %.
+
+## Couleurs
+
+Palette globale (regroupement Lab, fusion sous 6 unités CIEDE2000, pondérée par la surface et la durée) :
+
+| Couleur | Part | L* | Chroma |
+|---|---|---|---|
+| `#161b2a` | 38,5 % | 10,1 | 10,6 |
+| `#c6d6b9` | 16,1 % | 83,8 | 16,3 |
+| `#181a1a` | 14,0 % | 8,9 | 1,0 |
+| `#2f415b` | 4,4 % | 27,0 | 18,1 |
+| `#2e2f28` | 2,7 % | 19,0 | 4,5 |
+| `#242f25` | 2,7 % | 17,9 | 8,9 |
+| `#65655f` | 2,6 % | 42,7 | 3,6 |
+| `#5e3f30` | 2,0 % | 29,7 | 19,0 |
+| `#a08a8d` | 1,9 % | 59,5 | 8,7 |
+| `#e0bea7` | 1,8 % | 79,3 | 18,5 |
+| `#435d7c` | 1,6 % | 38,5 | 20,9 |
+| `#60667b` | 1,4 % | 43,4 | 12,7 |
+
+Rôles (part du temps où la couleur tient ce rôle) :
+
+| Rôle | Couleurs |
+|---|---|
+| fond | `#161a28` (50 %), `#bed6b9` (46 %), `#030202` (4 %) |
+| accent | `#bc7e6a` (24 %), `#d28e76` (18 %), `#484ca8` (1 %) |
+| texte | `#f0e4ce` (24 %), `#f4f4f1` (12 %), `#d4c9ba` (8 %) |
+
+## Typographie
+
+9 lignes de texte ont été mesurées sur l'image où le texte est le plus présent de chaque plan carte texte ou graphique. La hauteur d'x, ramenée à une image de 1080 pixels de haut, va de 7,0 à 68,0 pixels, médiane 19,0 ; la densité de trait médiane vaut 0,268. On compte 3 lignes en capitales et 6 en bas de casse, et 100 % des lignes sont claires sur fond sombre. Couleurs de texte relevées : `#bdc3d0`, `#c2c7d3`, `#e5cea2`, `#e6cda3`, `#e7cfa6`, `#f2f7f8`, `#f4f2ec`, `#f5f4ef`.
+
+Appariement de police faible sur la ligne de S09 (meilleur score 0,889, au-delà du seuil 0,60) : aucune police libre de la base ne ressemble assez au dessin mesuré, la plus proche étant Work Sans 525 ; la police se choisira à l'œil.
+
+## Mouvements et courbes
+
+Courbes identifiées contre la table exacte de GSAP 3.14.2 (une courbe n'est gardée que si elle explique le mouvement à 6 % de l'amplitude près et que le mouvement dépasse dix fois le bruit de mesure) :
+
+| Ease | Occurrences |
+|---|---|
+| `sine.inOut` | 4 |
+| `circ.inOut` | 4 |
+| `elastic.out(1.5,0.4)` | 2 |
+| `none` | 2 |
+| `elastic.in(1,0.3)` | 2 |
+| `back.inOut(1.70158)` | 2 |
+| `material.accelerate` | 1 |
+| `bounce.inOut` | 1 |
+| `elastic.in(1.2,0.3)` | 1 |
+| `elastic.in(1.5,0.4)` | 1 |
+| `elastic.out(1,0.45)` | 1 |
+| `power1.in` | 1 |
+| `elastic.inOut(1,0.45)` | 1 |
+| `sine.out` | 1 |
+
+Mouvement global de l'image (similarité chaînée image après image ; sur un fond uni, il suit le calque dominant) :
+
+| Mouvement | Plans |
+|---|---|
+| zoom avant | 7 |
+| roulis | 5 |
+| travelling vertical | 4 |
+| panoramique | 3 |
+| zoom arrière | 3 |
+| fixe | 2 |
+
+## Transitions
+
+| Transition d'entrée | Plans |
+|---|---|
+| coupe franche | 14 |
+| ouverture | 1 |
+
+## Usage de la 3D
+
+Les plaques (rendu 3D ou prise de vue) occupent 49,6 % du temps, dont 0 plans que la sonde géométrique classe comme 3D (perspective, parallaxe, scène rigide, apparence changeante ou mouvement complexe). La sonde répond juste quand elle dit 3D, mais elle manque les objets 3D qui glissent comme un calque (R04, section 10) ; les descriptions plan par plan corrigent ce point à l'œil.
+
+| Classe de la sonde | Plans |
+|---|---|
+| immobile | 7 |
+| calque 2D déformé (affine) | 2 |
+| plusieurs couches en parallaxe (2,5D) | 2 |
+| calque 2D | 2 |
+| mouvement complexe (déformation, fluide ou rendu 3D éclairé) | 2 |
+
+## Son
+
+Sonie intégrée -19,1 LUFS, centroïde spectral médian 1530 Hz, part harmonique 42 %. Le détecteur d'attaques relève 322 événements (attaque médium 315, clic aigu 7) et le détecteur de houles 5 montées ou souffles longs.
+
+Événements principaux (les plus forts) :
+
+| Instant | Nature | Crête |
+|---|---|---|
+| 0,23 s | attaque médium | -15,4 dB |
+| 3,40 s | attaque médium | -23,7 dB |
+| 13,00 s | attaque médium | -16,8 dB |
+| 13,30 s | attaque médium | -21,9 dB |
+| 18,39 s | attaque médium | -30,7 dB |
+| 24,50 s | attaque médium | -16,3 dB |
+| 27,50 s | attaque médium | -24,8 dB |
+| 29,25 s | attaque médium | -24,5 dB |
+| 30,09 s | attaque médium | -11,4 dB |
+| 41,55 s | attaque médium | -20,4 dB |
+| 42,99 s | attaque médium | -12,4 dB |
+| 50,10 s | attaque médium | -23,0 dB |
+
+Houles : 0,59 s (montée 0,29 s), 1,51 s (montée 0,20 s), 5,12 s (montée 0,21 s), 47,59 s (montée 0,20 s), 64,33 s (montée 0,43 s).
+
+## Musique
+
+Tempo estimé 100,0 BPM, 102 temps détectés, régularité de la grille 0,142 (écart type relatif des intervalles, 0 pour une grille parfaite). La musique ne se reprend jamais note à note : seuls le tempo, la grille, les sections, l'énergie et la production servent.
+
+| Section | Début | Fin | Niveau médian |
+|---|---|---|---|
+| 1 | 0,00 s | 4,40 s | -24,6 dB |
+| 2 | 4,40 s | 31,15 s | -26,3 dB |
+| 3 | 31,15 s | 41,15 s | -24,4 dB |
+| 4 | 41,15 s | 45,90 s | -30,0 dB |
+| 5 | 45,90 s | 51,20 s | -26,3 dB |
+| 6 | 51,20 s | 59,30 s | -24,6 dB |
+| 7 | 59,30 s | 63,25 s | -28,0 dB |
+| 8 | 63,25 s | 67,45 s | -36,2 dB |
+
+## Plans
+
+| Plan | Début | Durée | Famille | Description |
+|---|---|---|---|---|
+| S01 | 0,00 s | 4,92 s | plaque 3D ou prise de vue | Une femme parle face caméra devant un grand pont rouge et une colline, lumière dorée, sous-titre serif centré en bas. |
+| S02 | 4,92 s | 0,38 s | montage | Archive en noir et blanc d'une machine industrielle, très bref. |
+| S03 | 5,29 s | 0,42 s | montage | Archive sépia d'ouvriers qui portent une charge le long d'une rampe. |
+| S04 | 5,71 s | 0,42 s | montage | Archive en noir et blanc de rangées d'opératrices à leurs postes. |
+| S05 | 6,12 s | 0,42 s | montage | Archive en couleur d'une salle de contrôle remplie de pupitres, très bref. |
+| S06 | 6,54 s | 0,42 s | montage | Une fusée décolle dans un ciel bleu, archive, très bref. |
+| S07 | 6,96 s | 0,54 s | plaque 3D ou prise de vue | Archive granuleuse d'un astronaute sur un sol lunaire. |
+| S08 | 7,50 s | 3,67 s | plaque 3D ou prise de vue | Retour à la femme face caméra ; une question en sous-titre, puis de très grands mots en serif clair s'inscrivent en travers de l'image. |
+| S09 | 11,17 s | 8,04 s | graphique | Carte bleu nuit sur un horizon de planète orange : un nom de produit s'écrit en lettres qui se brouillent puis se fixent, une petite mention au-dessus et une ligne qui change dessous. |
+| S10 | 19,21 s | 10,29 s | plaque 3D ou prise de vue | Un homme et la femme côte à côte face caméra, même décor ; ils se présentent, sous-titres serif en bas. |
+| S11 | 29,50 s | 16,12 s | graphique | Même fond d'horizon : un sigle se décode, une grille de petits cercles se transforme en icônes variées, un chiffre et une légende apparaissent, puis des histogrammes à barres claires et une barre dorée se succèdent avec leurs titres. |
+| S12 | 45,63 s | 7,12 s | plaque 3D ou prise de vue | Retour au duo face caméra ; de très grands nombres en serif traversent l'image en surimpression derrière eux. |
+| S13 | 52,75 s | 5,62 s | graphique | Deux graphiques en courbe sur fond d'horizon : une ligne de points qui descend, titre décodé à chaque changement. |
+| S14 | 58,38 s | 4,88 s | plaque 3D ou prise de vue | Le duo face caméra conclut, deux sous-titres successifs. |
+| S15 | 63,25 s | 4,17 s | carte texte | Carte de fin sur l'horizon orange : un petit logotype, un appel en serif centré et une adresse en dessous. |
+
+Paramètres : `settings.json`, sections `analysis.bible`, `analysis.camera`, `analysis.easefit`, `analysis.sound` (12 October 2026).

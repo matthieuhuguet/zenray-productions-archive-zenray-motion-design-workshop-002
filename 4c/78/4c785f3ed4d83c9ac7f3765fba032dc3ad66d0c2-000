@@ -1,0 +1,164 @@
+{
+ "schema": "zrmd/report@1",
+ "slug": "1791991972-ui-clip",
+ "title": "ui-clip",
+ "duration_s": 6.0,
+ "date": "14 October 2026, 17:34",
+ "modules": [
+  {
+   "module": "rhythm",
+   "label": "Rhythm",
+   "hint": "cuts and timing",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "version": null,
+   "detail": {
+    "cutsDetected": 0,
+    "truth": "none",
+    "shots": 1
+   },
+   "coverage": null
+  },
+  {
+   "module": "visual",
+   "label": "Image",
+   "hint": "shaders, 3D, 2D, fonts",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "vector",
+   "label": "Vector UI",
+   "hint": "SVG, HTML components, shapes (not shaders)",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "music",
+   "label": "Music",
+   "hint": "stems, notes, instruments",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "sfx",
+   "label": "Sound effects",
+   "hint": "events and synthesis",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  },
+  {
+   "module": "mix",
+   "label": "Mix",
+   "hint": "loudness and balance",
+   "value": null,
+   "target": 0.99,
+   "stretch": 0.999,
+   "reached": false,
+   "version": null,
+   "detail": null,
+   "coverage": null
+  }
+ ],
+ "status": {
+  "shots": 1,
+  "stems": false,
+  "sfx_versions": 0,
+  "motions": 0
+ },
+ "lastRun": {
+  "id": "run-20261014-173351-8a26ea",
+  "state": "running",
+  "created": "14 October 2026, 17:33",
+  "steps": [
+   {
+    "id": "shots",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "book",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "vector",
+    "state": "cancelled",
+    "seconds": 4.0,
+    "score": null
+   },
+   {
+    "id": "stems",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "music",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "music-trim",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "music-polish",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "sfx",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "sfx-trim",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "soundtrack",
+    "state": "skipped",
+    "seconds": null,
+    "score": null
+   },
+   {
+    "id": "film",
+    "state": "pending",
+    "seconds": null,
+    "score": null
+   }
+  ]
+ }
+}

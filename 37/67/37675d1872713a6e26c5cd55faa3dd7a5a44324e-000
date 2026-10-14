@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "x-anabology-2106157622986748377-m1",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "x-anabology-2106157622986748377-m1.flac",
+ "sha256": "1c528cfc080aa5471fc57350f684b7f1f7154da58c65505eeb271c086305f0fe",
+ "bytes": 5583820,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "x-anabology-2106157622986748377",
+ "start_s": 37,
+ "end_s": 67,
+ "title": "anabology - I gave Claude another 18 hours.. and I think this one is the best one... #1 (music excerpt 1: 37 to 67 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "schema": "zenray-motion-design/reference@1",
+ "slug": "yt-4Q-o_ylnVnc-m3",
+ "page_url": null,
+ "media_url": null,
+ "date": "14 October 2026",
+ "file_name": "yt-4Q-o_ylnVnc-m3.flac",
+ "sha256": "fdf0e21bce080615e3c318cdd1896b08543db91555189d134f58556ce28f224d",
+ "bytes": 6349204,
+ "duration_s": 30,
+ "has_audio": true,
+ "video_codec": null,
+ "audio_codec": "flac",
+ "family": "music-corpus",
+ "parent_slug": "yt-4Q-o_ylnVnc",
+ "start_s": 144,
+ "end_s": 174,
+ "title": "Claude Opus 5.5 Music Video - Ignore Previous Instructions (music excerpt 3: 144 to 174 s)",
+ "notes": [
+  "Lossless decode of the reference audio; the media stays in the reference cache (never archived or published)."
+ ]
+}

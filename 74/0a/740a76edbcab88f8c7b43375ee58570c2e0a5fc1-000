@@ -1,0 +1,45 @@
+{
+ "fps": 30.0,
+ "cadence": {
+  "fps": 15.0,
+  "factor": 2,
+  "duplicate_ratio": 0.537
+ },
+ "frames": 236,
+ "duration": 7.866666666666666,
+ "width": 1080,
+ "height": 1350,
+ "cuts": [],
+ "shots": [
+  {
+   "id": "S01",
+   "start_frame": 0,
+   "end_frame": 236,
+   "start": 0.0,
+   "end": 7.866666666666666,
+   "duration": 7.866666666666666,
+   "enter": "start",
+   "enter_score": null
+  }
+ ],
+ "rhythm": {
+  "engine": "zrmd/rhythm@1",
+  "boundaries_measured": 0,
+  "flashes": [],
+  "transitions": "learned",
+  "v1": {
+   "sensitivity": 0.5,
+   "min_shot_s": 0.0,
+   "flashes": "ignore",
+   "transitions": "typed",
+   "dissolves": true,
+   "dissolve_min_change": 0.06,
+   "dissolve_fit": 0.022,
+   "fade_around_min": 0.05,
+   "whips": true,
+   "whip_around_min": 0.08,
+   "flash_return": 0.45,
+   "tracked_veto": 0.0
+  }
+ }
+}
