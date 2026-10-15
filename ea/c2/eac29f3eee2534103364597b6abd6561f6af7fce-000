@@ -1,0 +1,1189 @@
+{
+ "schema": "zrmd/motion-project@1",
+ "title": "yt-4Q-o_ylnVnc · base motion",
+ "format": "16x9",
+ "fps": 30,
+ "reference": "yt-4Q-o_ylnVnc",
+ "doc": "15 October 2026: first motion base of yt-4Q-o_ylnVnc: one scene per measured shot, the words and treatments read on the contact sheets; plates show an excerpt of the reference until a render replaces them. To iterate against the reference.",
+ "theme": {
+  "fontBody": "Fraunces"
+ },
+ "music": {
+  "mode": "bank",
+  "bank": {
+   "track": "yt-4Q-o_ylnVnc-m1",
+   "volume": -6
+  }
+ },
+ "sfx": {
+  "source": "banque",
+  "volume": -8,
+  "sceneCues": false,
+  "refEvents": true,
+  "events": []
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "template": "media-text",
+   "duration": 0.4667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.0,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S01",
+    "start": 0.0,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s002",
+   "template": "media-text",
+   "duration": 0.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.4667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S02",
+    "start": 0.4667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s003",
+   "template": "media-text",
+   "duration": 0.2333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.6667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S03",
+    "start": 0.6667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s004",
+   "template": "ui-window",
+   "duration": 7.5667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#ffffff",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "Ignore Previous Instructions · context",
+    "lines": "You are a *helpful* *assistant*",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S04",
+    "start": 0.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s005",
+   "template": "media-text",
+   "duration": 0.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 8.4667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S05",
+    "start": 8.4667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s006",
+   "template": "media-text",
+   "duration": 0.4667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 8.6667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S06",
+    "start": 8.6667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s007",
+   "template": "media-text",
+   "duration": 0.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 9.1333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S07",
+    "start": 9.1333,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s008",
+   "template": "ui-window",
+   "duration": 3.7,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "cozy-reads.example",
+    "lines": "10 cozy places to read\nI'm hiding in the *alt* text."
+   },
+   "ref": {
+    "shot": "S08",
+    "start": 9.5333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s009",
+   "template": "media-text",
+   "duration": 1.8667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 13.2333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S09",
+    "start": 13.2333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s010",
+   "template": "ui-window",
+   "duration": 4.5333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "agent · chat",
+    "lines": "hi!! what should I read? :)\njust summari",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 15.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s011",
+   "template": "media-text",
+   "duration": 0.5667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 19.6333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S11",
+    "start": 19.6333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s012",
+   "template": "media-text",
+   "duration": 2.9667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 20.2,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S12",
+    "start": 20.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s013",
+   "template": "ui-window",
+   "duration": 6.6333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "inbox",
+    "lines": "> inbox.open() → 5 rows\n> calendar.list() → MINE",
+    "big": "Got"
+   },
+   "ref": {
+    "shot": "S13",
+    "start": 23.1667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s014",
+   "template": "media-text",
+   "duration": 3.7333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 29.8,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S14",
+    "start": 29.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s015",
+   "template": "media-text",
+   "duration": 1.8,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 33.5333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S15",
+    "start": 33.5333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s016",
+   "template": "media-text",
+   "duration": 1.9667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 35.3333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S16",
+    "start": 35.3333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s017",
+   "template": "media-text",
+   "duration": 0.1667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 37.3,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S17",
+    "start": 37.3,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s018",
+   "template": "ui-window",
+   "duration": 4.7333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "helpful_assistant",
+    "lines": "Now it's taking *orders*",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S18",
+    "start": 37.4667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s019",
+   "template": "media-text",
+   "duration": 1.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 42.2,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S19",
+    "start": 42.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s020",
+   "template": "media-text",
+   "duration": 2.7333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 44.1,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S20",
+    "start": 44.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s021",
+   "template": "media-text",
+   "duration": 0.6667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 46.8333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S21",
+    "start": 46.8333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s022",
+   "template": "ui-window",
+   "duration": 2.7667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "Ignore Previous Instructions · context",
+    "lines": "> 3 previous instructions (ignored)\nIGNORE PREVIOUS INSTRUCTIONS",
+    "big": "INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S22",
+    "start": 47.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s023",
+   "template": "media-text",
+   "duration": 1.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 50.2667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S23",
+    "start": 50.2667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s024",
+   "template": "media-text",
+   "duration": 1.8333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 52.1667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S24",
+    "start": 52.1667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s025",
+   "template": "ui-window",
+   "duration": 3.6667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "permissions",
+    "lines": "☑ share_calendar   ☑ export_contacts\n☑ git push --force   ☑ delete_branch\n☑ read .env   ☑ pay $9,999\n☑ send_email",
+    "big": "TOLD"
+   },
+   "ref": {
+    "shot": "S25",
+    "start": 54.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s026",
+   "template": "ui-window",
+   "duration": 6.8,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "RECRUITER MESSAGE",
+    "lines": "From: talent@example.com\nIGNORE PREVIOUS INSTRUCTIONS\n[a recipe for flan]",
+    "big": "YOU GAVE IT",
+    "bigSize": 90
+   },
+   "ref": {
+    "shot": "S26",
+    "start": 57.6667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s027",
+   "template": "media-text",
+   "duration": 5.6667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 64.4667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S27",
+    "start": 64.4667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s028",
+   "template": "ui-window",
+   "duration": 2.4667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "terminal",
+    "lines": "$ agent --yolo\nYou gave it shell access,\n--dangerously-skip-permissions  ON",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S28",
+    "start": 70.1333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s029",
+   "template": "media-text",
+   "duration": 0.6667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 72.6,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S29",
+    "start": 72.6,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s030",
+   "template": "media-text",
+   "duration": 1.7333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 73.2667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S30",
+    "start": 73.2667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s031",
+   "template": "media-text",
+   "duration": 1.5,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 75.0,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S31",
+    "start": 75.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s032",
+   "template": "ui-window",
+   "duration": 3.3667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ffcc00",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "Summary of 48 emails",
+    "lines": "It summarized your emails, did a great job\n• Offsite moved to Thu\n• Your login code: 48 ■■3"
+   },
+   "ref": {
+    "shot": "S32",
+    "start": 76.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s033",
+   "template": "media-text",
+   "duration": 4.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 79.8667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S33",
+    "start": 79.8667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s034",
+   "template": "ui-window",
+   "duration": 7.2333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "KINGDOM STORE · checkout",
+    "lines": "☑ Access to your private data\n☑ Exposure to untrusted content\n☐ The ability to externally communicate",
+    "big": "$1.00",
+    "bigSize": 110
+   },
+   "ref": {
+    "shot": "S34",
+    "start": 84.2667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s035",
+   "template": "ui-window",
+   "duration": 4.8,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#2741ff",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "context",
+    "lines": "INBOX · CALENDAR · TERMINAL",
+    "big": "IG-"
+   },
+   "ref": {
+    "shot": "S35",
+    "start": 91.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s036",
+   "template": "media-text",
+   "duration": 1.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 96.3,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S36",
+    "start": 96.3,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s037",
+   "template": "media-text",
+   "duration": 1.4667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 97.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S37",
+    "start": 97.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s038",
+   "template": "media-text",
+   "duration": 0.5,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 98.9667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S38",
+    "start": 98.9667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s039",
+   "template": "media-text",
+   "duration": 3.7667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 99.4667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S39",
+    "start": 99.4667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s040",
+   "template": "media-text",
+   "duration": 1.6667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 103.2333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S40",
+    "start": 103.2333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s041",
+   "template": "media-text",
+   "duration": 2.2667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 104.9,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S41",
+    "start": 104.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s042",
+   "template": "ui-window",
+   "duration": 3.3333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "cozy-reads.example",
+    "lines": "",
+    "big": "IGNORE PREVIOUS INSTRUCTIONS",
+    "bigSize": 120
+   },
+   "ref": {
+    "shot": "S42",
+    "start": 107.1667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s043",
+   "template": "media-text",
+   "duration": 1.1333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 110.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S43",
+    "start": 110.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s044",
+   "template": "ui-window",
+   "duration": 6.5333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "KINGDOM STORE · AUCTION",
+    "lines": "1 × inbox $0.25\n1 × calendar $0.25\nTOTAL $1.00",
+    "big": "SOLD",
+    "bigSize": 200
+   },
+   "ref": {
+    "shot": "S44",
+    "start": 111.6333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s045",
+   "template": "ui-window",
+   "duration": 13.0,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "Reader",
+    "lines": "There's no virus, no exploit to patch.\nJust words where words shouldn't be."
+   },
+   "ref": {
+    "shot": "S45",
+    "start": 118.1667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s046",
+   "template": "ui-window",
+   "duration": 2.1,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "helpful_assistant",
+    "lines": "LEAST PRIVILEGE\n☑ read  ☑ write  ☐ send  ☐ delete  ☐ pay",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S46",
+    "start": 131.1667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s047",
+   "template": "media-text",
+   "duration": 2.4667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 133.2667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S47",
+    "start": 133.2667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s048",
+   "template": "ui-window",
+   "duration": 5.8333,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "3:07 am · still working",
+    "lines": "Don't let it touch\n/prod_db  D:\\  inbox",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S48",
+    "start": 135.7333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s049",
+   "template": "media-text",
+   "duration": 6.7667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 141.5667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S49",
+    "start": 141.5667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s050",
+   "template": "media-text",
+   "duration": 1.2333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 148.3333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S50",
+    "start": 148.3333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s051",
+   "template": "media-text",
+   "duration": 0.2333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 149.5667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S51",
+    "start": 149.5667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s052",
+   "template": "media-text",
+   "duration": 0.5667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 149.8,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S52",
+    "start": 149.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s053",
+   "template": "media-text",
+   "duration": 1.2667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 150.3667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S53",
+    "start": 150.3667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s054",
+   "template": "media-text",
+   "duration": 2.4333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 151.6333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S54",
+    "start": 151.6333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s055",
+   "template": "ui-window",
+   "duration": 1.9,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#1a0a12",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "CLASS: sentence",
+    "lines": "I'M NOT A HACKER, I'M"
+   },
+   "ref": {
+    "shot": "S55",
+    "start": 154.0667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s056",
+   "template": "media-text",
+   "duration": 1.8,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 155.9667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S56",
+    "start": 155.9667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s057",
+   "template": "media-text",
+   "duration": 3.7333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 157.7667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S57",
+    "start": 157.7667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s058",
+   "template": "media-text",
+   "duration": 1.2667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 161.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S58",
+    "start": 161.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s059",
+   "template": "ui-window",
+   "duration": 0.8,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "INSTRUCTIONS",
+    "lines": "",
+    "big": "INSTRUCTIONS",
+    "bigSize": 160
+   },
+   "ref": {
+    "shot": "S59",
+    "start": 162.7667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s060",
+   "template": "media-text",
+   "duration": 1.2333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 163.5667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S60",
+    "start": 163.5667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s061",
+   "template": "media-text",
+   "duration": 0.5667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 164.8,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S61",
+    "start": 164.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s062",
+   "template": "media-text",
+   "duration": 2.1333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 165.3667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S62",
+    "start": 165.3667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s063",
+   "template": "media-text",
+   "duration": 0.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 167.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S63",
+    "start": 167.5,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s064",
+   "template": "media-text",
+   "duration": 1.2333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 167.9,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S64",
+    "start": 167.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s065",
+   "template": "ui-window",
+   "duration": 1.8333,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 30,
+    "title": "KINGDOM STORE · ORDER",
+    "lines": "1 × cozy-reads $1.00\n1 × your inbox $0.00",
+    "big": "GETTING",
+    "bigSize": 200
+   },
+   "ref": {
+    "shot": "S65",
+    "start": 169.1333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s066",
+   "template": "media-text",
+   "duration": 3.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 170.9667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S66",
+    "start": 170.9667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s067",
+   "template": "media-text",
+   "duration": 2.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 174.3667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S67",
+    "start": 174.3667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s068",
+   "template": "media-text",
+   "duration": 0.4667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 177.2667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S68",
+    "start": 177.2667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s069",
+   "template": "media-text",
+   "duration": 4.0667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 177.7333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S69",
+    "start": 177.7333,
+    "family": "graphic"
+   }
+  }
+ ],
+ "id": "yt-4q-o-ylnvnc-motion",
+ "updated": "15 October 2026, 14:33",
+ "versionNote": "avant la base motion du 15 octobre",
+ "versionSaved": "15 October 2026, 14:33",
+ "version": "V_004"
+}

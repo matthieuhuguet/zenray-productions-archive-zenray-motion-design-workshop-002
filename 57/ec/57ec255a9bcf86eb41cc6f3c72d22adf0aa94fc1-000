@@ -1,0 +1,1731 @@
+{
+ "schema": "zrmd/motion-project@1",
+ "title": "yt-4Q-o_ylnVnc en motion",
+ "format": "16x9",
+ "fps": 30,
+ "doc": "15 October 2026: 69 shots of the reference yt-4Q-o_ylnVnc (181.8 s), one scene per shot at the measured durations; plates show an excerpt of the reference until a 3D render replaces them; words are ZenRay 3D lines; music and effects come from the 99.9 % banks.",
+ "reference": "yt-4Q-o_ylnVnc",
+ "theme": {
+  "fontBody": "Fraunces"
+ },
+ "music": {
+  "mode": "bank",
+  "bank": {
+   "track": "yt-4Q-o_ylnVnc-m1",
+   "volume": -6
+  }
+ },
+ "sfx": {
+  "source": "banque",
+  "volume": -8,
+  "sceneCues": false,
+  "refEvents": true,
+  "events": []
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "duration": 0.4667,
+   "ref": {
+    "shot": "S01",
+    "family": "montage",
+    "start": 0.0,
+    "description": "Un visage de bulle de conversation violette entre accolades clignote sur fond noir, une étiquette de nom se tape dessous."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.0,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s02",
+   "duration": 0.2,
+   "ref": {
+    "shot": "S02",
+    "family": "montage",
+    "start": 0.4667,
+    "description": "Un mot en grand serif noir répété trois fois sur fond crème, très bref."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.4667,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s03",
+   "duration": 0.2333,
+   "ref": {
+    "shot": "S03",
+    "family": "montage",
+    "start": 0.6667,
+    "description": "Le même mot dans des cadres bleus sur noir, très bref."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.6667,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s04",
+   "duration": 7.5667,
+   "ref": {
+    "shot": "S04",
+    "family": "graphic",
+    "start": 0.9,
+    "description": "Un mot rose énorme se tape dans une fenêtre, très bref."
+   },
+   "template": "color-slam",
+   "params": {
+    "text": "Bayou",
+    "colour": "#2d59fa",
+    "textColour": "#ffffff",
+    "bg": "#121215",
+    "font": "Fraunces"
+   }
+  },
+  {
+   "id": "s05",
+   "duration": 0.2,
+   "ref": {
+    "shot": "S05",
+    "family": "montage",
+    "start": 8.4667,
+    "description": "Barres verticales roses sur noir, comme un curseur géant."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 8.4667,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s06",
+   "duration": 0.4667,
+   "ref": {
+    "shot": "S06",
+    "family": "montage",
+    "start": 8.6667,
+    "description": "Deux mots roses géants s'écrivent dans la fenêtre crème."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 8.6667,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s07",
+   "duration": 0.4,
+   "ref": {
+    "shot": "S07",
+    "family": "montage",
+    "start": 9.1333,
+    "description": "Le dernier mot sur fond violet avec un œil rond de la mascotte, deux images."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 9.1333,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s08",
+   "duration": 3.7,
+   "ref": {
+    "shot": "S08",
+    "family": "graphic",
+    "start": 9.5333,
+    "description": "Une fausse page de recommandations de lieux défile, un passage caché surligné et la silhouette bleue en marge."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f0eee8",
+    "accent": "#96a4f1",
+    "size": 105.7
+   }
+  },
+  {
+   "id": "s09",
+   "duration": 1.8667,
+   "ref": {
+    "shot": "S09",
+    "family": "graphic",
+    "start": 13.2333,
+    "description": "Un réglage de police minuscule est montré par une étiquette rose puis une bande de couleurs rose et bleue."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "From node to {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f0efe8",
+    "accent": "#2a57fb",
+    "size": 56.6
+   }
+  },
+  {
+   "id": "s10",
+   "duration": 4.5333,
+   "ref": {
+    "shot": "S10",
+    "family": "graphic",
+    "start": 15.1,
+    "description": "La demande se complète dans la fenêtre de discussion."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f0efe8",
+    "accent": "#a5abf7",
+    "size": 128.3
+   }
+  },
+  {
+   "id": "s11",
+   "duration": 0.5667,
+   "ref": {
+    "shot": "S11",
+    "family": "graphic",
+    "start": 19.6333,
+    "description": "Une colonne de texte de code se déroule, la mascotte en bas."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Louisiana Bayou",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f1eee8",
+    "accent": "#9da7f5",
+    "size": 60.4
+   }
+  },
+  {
+   "id": "s12",
+   "duration": 2.9667,
+   "ref": {
+    "shot": "S12",
+    "family": "graphic",
+    "start": 20.2,
+    "description": "La mascotte change d'expression trois fois, une étiquette rose à droite."
+   },
+   "template": "orbit-word",
+   "params": {
+    "word": "Nodes",
+    "colour": "#f7318a",
+    "bg": "#f0efe8",
+    "font": "Fraunces",
+    "seed": 12
+   }
+  },
+  {
+   "id": "s13",
+   "duration": 6.6333,
+   "ref": {
+    "shot": "S13",
+    "family": "graphic",
+    "start": 23.1667,
+    "description": "Des fenêtres de code avec un appel d'outil, la phrase en bas change de mot surligné."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Procedural by {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f0efe8",
+    "accent": "#e2552f",
+    "size": 98.1
+   }
+  },
+  {
+   "id": "s14",
+   "duration": 3.7333,
+   "ref": {
+    "shot": "S14",
+    "family": "graphic",
+    "start": 29.8,
+    "description": "Une citation et des mots surlignés en couleur se répartissent sur la page crème."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Change a value, not a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#9d4766",
+    "bg": "#f0efe8",
+    "accent": "#e2552f",
+    "size": 135.8
+   }
+  },
+  {
+   "id": "s15",
+   "duration": 1.8,
+   "ref": {
+    "shot": "S15",
+    "family": "graphic",
+    "start": 33.5333,
+    "description": "Texte en cases typographiques qui se multiplie et se recompose sur fond crème, un mot rose entouré de fragments."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Made with {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f0efe8",
+    "accent": "#e2552f",
+    "size": 258.5
+   }
+  },
+  {
+   "id": "s16",
+   "duration": 1.9667,
+   "ref": {
+    "shot": "S16",
+    "family": "graphic",
+    "start": 35.3333,
+    "description": "Un mot rose en grand glisse sur une bande blanche qui se replie."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Built in {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#cf43b0",
+    "bg": "#f0efe8",
+    "accent": "#e2552f",
+    "size": 260
+   }
+  },
+  {
+   "id": "s17",
+   "duration": 0.1667,
+   "ref": {
+    "shot": "S17",
+    "family": "montage",
+    "start": 37.3,
+    "description": "Le mot rose minuscule au centre d'un écran noir."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 37.3,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s18",
+   "duration": 4.7333,
+   "ref": {
+    "shot": "S18",
+    "family": "graphic",
+    "start": 37.4667,
+    "description": "Une rangée d'icônes d'outils s'aligne sur fond noir, phrases qui se tapent en haut."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ff72a5",
+    "bg": "#09090c",
+    "accent": "#ea2f81",
+    "size": 181.1
+   }
+  },
+  {
+   "id": "s19",
+   "duration": 1.9,
+   "ref": {
+    "shot": "S19",
+    "family": "graphic",
+    "start": 42.2,
+    "description": "Deux mots en rose plein cadre sur fond rose vif."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "From node to {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#fc2c89",
+    "bg": "#09090c",
+    "accent": "#e2552f",
+    "size": 256.6
+   }
+  },
+  {
+   "id": "s20",
+   "duration": 2.7333,
+   "ref": {
+    "shot": "S20",
+    "family": "graphic",
+    "start": 44.1,
+    "description": "Silhouette bleue qui danse sur un panneau noir, bannière de mots en haut."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fb2c89",
+    "accent": "#9d225a",
+    "size": 49.1
+   }
+  },
+  {
+   "id": "s21",
+   "duration": 0.6667,
+   "ref": {
+    "shot": "S21",
+    "family": "graphic",
+    "start": 46.8333,
+    "description": "Un fragment de mot en capitales géantes se répète en grand."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Louisiana Bayou",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#d37693",
+    "bg": "#09090c",
+    "accent": "#e2552f",
+    "size": 260
+   }
+  },
+  {
+   "id": "s22",
+   "duration": 2.7667,
+   "ref": {
+    "shot": "S22",
+    "family": "graphic",
+    "start": 47.5,
+    "description": "Le dernier mot en capitales blanches sur bande noire, fenêtres roses autour."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "One artist, one {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fb2c89",
+    "accent": "#a7245f",
+    "size": 260
+   }
+  },
+  {
+   "id": "s23",
+   "duration": 1.9,
+   "ref": {
+    "shot": "S23",
+    "family": "graphic",
+    "start": 50.2667,
+    "description": "La silhouette bleue apparaît dans la fiche, un mot se tape dans un champ."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Procedural by {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fb2c89",
+    "accent": "#e2552f",
+    "size": 96.2
+   }
+  },
+  {
+   "id": "s24",
+   "duration": 1.8333,
+   "ref": {
+    "shot": "S24",
+    "family": "graphic",
+    "start": 52.1667,
+    "description": "Mots successifs en blanc sur noir, silhouette bleue qui pointe."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Change a value, not a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#f92c88",
+    "bg": "#0b0a0d",
+    "accent": "#2a55f6",
+    "size": 116.0
+   }
+  },
+  {
+   "id": "s25",
+   "duration": 3.6667,
+   "ref": {
+    "shot": "S25",
+    "family": "graphic",
+    "start": 54.0,
+    "description": "Trois colonnes de commandes s'alignent sous le mot sur noir."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Made with {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#efede8",
+    "bg": "#0a090d",
+    "accent": "#e2552f",
+    "size": 149.1
+   }
+  },
+  {
+   "id": "s26",
+   "duration": 6.8,
+   "ref": {
+    "shot": "S26",
+    "family": "graphic",
+    "start": 57.6667,
+    "description": "Alerte jaune et recette affichée dans le message, cadre bleu à droite."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Built in {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#100f12",
+    "bg": "#f0efe8",
+    "accent": "#2c58fa",
+    "size": 79.2
+   }
+  },
+  {
+   "id": "s27",
+   "duration": 5.6667,
+   "ref": {
+    "shot": "S27",
+    "family": "graphic",
+    "start": 64.4667,
+    "description": "Le prix chute à une somme dérisoire et une étiquette rose de vente s'affiche."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#8d3f5b",
+    "bg": "#f0efe8",
+    "accent": "#f82f88",
+    "size": 147.2
+   }
+  },
+  {
+   "id": "s28",
+   "duration": 2.4667,
+   "ref": {
+    "shot": "S28",
+    "family": "graphic",
+    "start": 70.1333,
+    "description": "Un terminal noir : une phrase se tape et un interrupteur passe au jaune."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "From node to {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#f12f86",
+    "bg": "#0a090d",
+    "accent": "#fbb61c",
+    "size": 135.8
+   }
+  },
+  {
+   "id": "s29",
+   "duration": 0.6667,
+   "ref": {
+    "shot": "S29",
+    "family": "graphic",
+    "start": 72.6,
+    "description": "Un nuage en pixels argentés monte sur fond noir, mascotte et fenêtre."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ff398c",
+    "bg": "#09090c",
+    "accent": "#e2552f",
+    "size": 33.0
+   }
+  },
+  {
+   "id": "s30",
+   "duration": 1.7333,
+   "ref": {
+    "shot": "S30",
+    "family": "graphic",
+    "start": 73.2667,
+    "description": "Une boîte de permission jaune : le bouton d'autorisation permanente s'allonge."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Louisiana Bayou",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#623a4b",
+    "bg": "#c6c3b9",
+    "accent": "#fbb720",
+    "size": 94.3
+   }
+  },
+  {
+   "id": "s31",
+   "duration": 1.5,
+   "ref": {
+    "shot": "S31",
+    "family": "graphic",
+    "start": 75.0,
+    "description": "Un réglage de configuration passe à vrai, mot rose en capitales répété."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "One artist, one {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#805566",
+    "bg": "#c6c3b9",
+    "accent": "#fa2e89",
+    "size": 94.3
+   }
+  },
+  {
+   "id": "s32",
+   "duration": 3.3667,
+   "ref": {
+    "shot": "S32",
+    "family": "graphic",
+    "start": 76.5,
+    "description": "Un résumé d'e-mails se tape dans une fenêtre, un badge jaune de félicitations apparaît."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Procedural by {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#4e4c4d",
+    "bg": "#f0efe8",
+    "accent": "#a6a9f5",
+    "size": 143.4
+   }
+  },
+  {
+   "id": "s33",
+   "duration": 4.4,
+   "ref": {
+    "shot": "S33",
+    "family": "graphic",
+    "start": 79.8667,
+    "description": "Un e-mail d'envoi vers une adresse inconnue se tape, bouton d'envoi."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Change a value, not a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#863a56",
+    "bg": "#f0efe8",
+    "accent": "#e2552f",
+    "size": 132.1
+   }
+  },
+  {
+   "id": "s34",
+   "duration": 7.2333,
+   "ref": {
+    "shot": "S34",
+    "family": "graphic",
+    "start": 84.2667,
+    "description": "Un triangle rose relie trois risques, une bannière d'achèvement s'affiche."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Made with {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#4d2834",
+    "bg": "#f0efe8",
+    "accent": "#fb2d88",
+    "size": 222.6
+   }
+  },
+  {
+   "id": "s35",
+   "duration": 4.8,
+   "ref": {
+    "shot": "S35",
+    "family": "graphic",
+    "start": 91.5,
+    "description": "Un mot blanc seul sur fond bleu, silhouette à droite."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Built in {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#2857fb",
+    "accent": "#3f5ddb",
+    "size": 117.0
+   }
+  },
+  {
+   "id": "s36",
+   "duration": 1.2,
+   "ref": {
+    "shot": "S36",
+    "family": "graphic",
+    "start": 96.3,
+    "description": "Les trois lignes se remplissent en blanc l'une après l'autre."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#f2cce1",
+    "bg": "#2857fb",
+    "accent": "#e2552f",
+    "size": 94.3
+   }
+  },
+  {
+   "id": "s37",
+   "duration": 1.4667,
+   "ref": {
+    "shot": "S37",
+    "family": "graphic",
+    "start": 97.5,
+    "description": "La phrase complète en capitales blanches sur noir, un mot barré."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "From node to {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#8961d0",
+    "bg": "#0b0b0e",
+    "accent": "#4566e2",
+    "size": 94.3
+   }
+  },
+  {
+   "id": "s38",
+   "duration": 0.5,
+   "ref": {
+    "shot": "S38",
+    "family": "graphic",
+    "start": 98.9667,
+    "description": "Une silhouette rose danse derrière une bande blanche oblique portant un mot."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#09090c",
+    "accent": "#e2552f",
+    "size": 60.4
+   }
+  },
+  {
+   "id": "s39",
+   "duration": 3.7667,
+   "ref": {
+    "shot": "S39",
+    "family": "graphic",
+    "start": 99.4667,
+    "description": "La silhouette tourne, rangée de bulles, très bref."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Louisiana Bayou",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#da91d5",
+    "bg": "#09090d",
+    "accent": "#8c1d51",
+    "size": 234.0
+   }
+  },
+  {
+   "id": "s40",
+   "duration": 1.6667,
+   "ref": {
+    "shot": "S40",
+    "family": "graphic",
+    "start": 103.2333,
+    "description": "Fond rose : la silhouette en miroir et des bulles mascottes en colonnes."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "One artist, one {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fc2c89",
+    "accent": "#b92768",
+    "size": 190.6
+   }
+  },
+  {
+   "id": "s41",
+   "duration": 2.2667,
+   "ref": {
+    "shot": "S41",
+    "family": "graphic",
+    "start": 104.9,
+    "description": "Mots en pixels roses empilés sur fond sombre tramé, silhouette bleue à droite."
+   },
+   "template": "gradient-word",
+   "params": {
+    "word": "Light",
+    "phrase": "Made in {pill}",
+    "pill": "Houdini",
+    "colour": "#c4296c",
+    "ink": "#c4296c",
+    "bg": "#0f0911",
+    "font": "Fraunces"
+   }
+  },
+  {
+   "id": "s42",
+   "duration": 3.3333,
+   "ref": {
+    "shot": "S42",
+    "family": "graphic",
+    "start": 107.1667,
+    "description": "Trois mots roses en capitales s'empilent à gauche de la silhouette bleue."
+   },
+   "template": "color-slam",
+   "params": {
+    "text": "Moss",
+    "colour": "#f42c85",
+    "textColour": "#ffffff",
+    "bg": "#260c1e",
+    "font": "Fraunces"
+   }
+  },
+  {
+   "id": "s43",
+   "duration": 1.1333,
+   "ref": {
+    "shot": "S43",
+    "family": "graphic",
+    "start": 110.5,
+    "description": "Le mot rose seul au milieu des rangées de pilules."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Made with {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#deb0ba",
+    "bg": "#2a0c1f",
+    "accent": "#fb2c88",
+    "size": 260
+   }
+  },
+  {
+   "id": "s44",
+   "duration": 6.5333,
+   "ref": {
+    "shot": "S44",
+    "family": "graphic",
+    "start": 111.6333,
+    "description": "Un grand cercle rose balaie un objet blanc qui tombe sur noir."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Built in {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fc2c89",
+    "accent": "#b32b68",
+    "size": 260
+   }
+  },
+  {
+   "id": "s45",
+   "duration": 13.0,
+   "ref": {
+    "shot": "S45",
+    "family": "graphic",
+    "start": 118.1667,
+    "description": "Long plan sur page crème : un texte en serif italique se tape, des annotations et un mot surligné apparaissent, un téléphone en marge."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#f0efe8",
+    "accent": "#e2552f",
+    "size": 77.4
+   }
+  },
+  {
+   "id": "s46",
+   "duration": 2.1,
+   "ref": {
+    "shot": "S46",
+    "family": "graphic",
+    "start": 131.1667,
+    "description": "Une phrase se tape au-dessus de la mascotte et une liste de permissions cochées."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "From node to {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#e8e8ec",
+    "accent": "#a5acf9",
+    "size": 218.9
+   }
+  },
+  {
+   "id": "s47",
+   "duration": 2.4667,
+   "ref": {
+    "shot": "S47",
+    "family": "graphic",
+    "start": 133.2667,
+    "description": "Fond violet : une phrase s'enroule en cercle autour du curseur."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#a5aefb",
+    "accent": "#e2552f",
+    "size": 132.1
+   }
+  },
+  {
+   "id": "s48",
+   "duration": 5.8333,
+   "ref": {
+    "shot": "S48",
+    "family": "graphic",
+    "start": 135.7333,
+    "description": "Des fiches d'agenda et de boîte de réception s'empilent autour de la mascotte sur fond clair."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Louisiana Bayou",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#e9e8ec",
+    "accent": "#f8b523",
+    "size": 126.4
+   }
+  },
+  {
+   "id": "s49",
+   "duration": 6.7667,
+   "ref": {
+    "shot": "S49",
+    "family": "graphic",
+    "start": 141.5667,
+    "description": "Les lettres roses du mot s'éparpillent sur fond noir autour de la mascotte."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "One artist, one {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#a5aefb",
+    "accent": "#e2552f",
+    "size": 181.1
+   }
+  },
+  {
+   "id": "s50",
+   "duration": 1.2333,
+   "ref": {
+    "shot": "S50",
+    "family": "graphic",
+    "start": 148.3333,
+    "description": "Deuxième mot géant sur rose, mots répétés en fond."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Procedural by {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#0a090d",
+    "accent": "#ca2c77",
+    "size": 260
+   }
+  },
+  {
+   "id": "s51",
+   "duration": 0.2333,
+   "ref": {
+    "shot": "S51",
+    "family": "montage",
+    "start": 149.5667,
+    "description": "Un long mot coupé sur deux lignes en noir sur rose, très bref."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 149.5667,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s52",
+   "duration": 0.5667,
+   "ref": {
+    "shot": "S52",
+    "family": "graphic",
+    "start": 149.8,
+    "description": "Le mot rose sur bande noire avec une page de recommandations derrière."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Change a value, not a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#f05fa5",
+    "bg": "#09090c",
+    "accent": "#fb2c88",
+    "size": 260
+   }
+  },
+  {
+   "id": "s53",
+   "duration": 1.2667,
+   "ref": {
+    "shot": "S53",
+    "family": "graphic",
+    "start": 150.3667,
+    "description": "Même grille de pastilles, deux images."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Made with {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#fc2c89",
+    "bg": "#0a090d",
+    "accent": "#db508b",
+    "size": 237.7
+   }
+  },
+  {
+   "id": "s54",
+   "duration": 2.4333,
+   "ref": {
+    "shot": "S54",
+    "family": "graphic",
+    "start": 151.6333,
+    "description": "Trois mots en noir et rose s'empilent sur une page crème barrée de rectangles noirs."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Built in {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#111111",
+    "bg": "#efeee8",
+    "accent": "#f82d87",
+    "size": 94.3
+   }
+  },
+  {
+   "id": "s55",
+   "duration": 1.9,
+   "ref": {
+    "shot": "S55",
+    "family": "graphic",
+    "start": 154.0667,
+    "description": "Une silhouette tramée sur noir, une phrase en pastilles bleues s'empile sur son torse."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#0a090d",
+    "accent": "#2b57f9",
+    "size": 41.5
+   }
+  },
+  {
+   "id": "s56",
+   "duration": 1.8,
+   "ref": {
+    "shot": "S56",
+    "family": "graphic",
+    "start": 155.9667,
+    "description": "Un mot sur bande rose devant des nuages en pointillés, très bref."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "From node to {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#fc2b88",
+    "bg": "#0a090d",
+    "accent": "#b32a67",
+    "size": 105.7
+   }
+  },
+  {
+   "id": "s57",
+   "duration": 3.7333,
+   "ref": {
+    "shot": "S57",
+    "family": "graphic",
+    "start": 157.7667,
+    "description": "Un mot rose sur noir puis des fenêtres sombres qui s'emboîtent."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#fa2c88",
+    "bg": "#09090d",
+    "accent": "#841d49",
+    "size": 62.3
+   }
+  },
+  {
+   "id": "s58",
+   "duration": 1.2667,
+   "ref": {
+    "shot": "S58",
+    "family": "graphic",
+    "start": 161.5,
+    "description": "Le deuxième mot rose plein cadre, très bref."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Louisiana Bayou",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fb2c88",
+    "accent": "#d12775",
+    "size": 260
+   }
+  },
+  {
+   "id": "s59",
+   "duration": 0.8,
+   "ref": {
+    "shot": "S59",
+    "family": "graphic",
+    "start": 162.7667,
+    "description": "Colonnes verticales de mots en noir, très bref."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "One artist, one {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#fc2c88",
+    "accent": "#e1297b",
+    "size": 43.4
+   }
+  },
+  {
+   "id": "s60",
+   "duration": 1.2333,
+   "ref": {
+    "shot": "S60",
+    "family": "graphic",
+    "start": 163.5667,
+    "description": "Un mot géant rose sur noir, barré et glitché à la fin."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Procedural by {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#b72965",
+    "bg": "#0a090e",
+    "accent": "#6e163d",
+    "size": 226.4
+   }
+  },
+  {
+   "id": "s61",
+   "duration": 0.5667,
+   "ref": {
+    "shot": "S61",
+    "family": "graphic",
+    "start": 164.8,
+    "description": "Fond rose : le mot en cadre bleu sous la silhouette."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Change a value, not a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#0d0910",
+    "bg": "#fb2c88",
+    "accent": "#3257f8",
+    "size": 260
+   }
+  },
+  {
+   "id": "s62",
+   "duration": 2.1333,
+   "ref": {
+    "shot": "S62",
+    "family": "graphic",
+    "start": 165.3667,
+    "description": "La mosaïque et un mot géant rose qui change."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Made with {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#f3f4f6",
+    "bg": "#fb2c88",
+    "accent": "#e5b450",
+    "size": 24.5
+   }
+  },
+  {
+   "id": "s63",
+   "duration": 0.4,
+   "ref": {
+    "shot": "S63",
+    "family": "montage",
+    "start": 167.5,
+    "description": "Le mot rose dans la mosaïque puis une phrase répétée en capitales roses sur noir."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 167.5,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s64",
+   "duration": 1.2333,
+   "ref": {
+    "shot": "S64",
+    "family": "graphic",
+    "start": 167.9,
+    "description": "Une clé dorée et des mots noirs géants sur bandes roses."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Built in {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#ffffff",
+    "bg": "#0a090e",
+    "accent": "#f4b01f",
+    "size": 79.2
+   }
+  },
+  {
+   "id": "s65",
+   "duration": 1.8333,
+   "ref": {
+    "shot": "S65",
+    "family": "graphic",
+    "start": 169.1333,
+    "description": "Un mot répété trois fois sur une bande rose, très bref."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Rendered in Unreal Engine {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#b32865",
+    "bg": "#0a090d",
+    "accent": "#601437",
+    "size": 28.3
+   }
+  },
+  {
+   "id": "s66",
+   "duration": 3.4,
+   "ref": {
+    "shot": "S66",
+    "family": "graphic",
+    "start": 170.9667,
+    "description": "Des tas de blocs roses s'effondrent avec une étiquette de vente, silhouette au centre."
+   },
+   "template": "orbit-word",
+   "params": {
+    "word": "Wood",
+    "colour": "#e2552f",
+    "bg": "#09090c",
+    "font": "Fraunces",
+    "seed": 66
+   }
+  },
+  {
+   "id": "s67",
+   "duration": 2.9,
+   "ref": {
+    "shot": "S67",
+    "family": "graphic",
+    "start": 174.3667,
+    "description": "Retour au début : une phrase se tape dans un champ crème au-dessus de la mascotte."
+   },
+   "template": "kinetic-words",
+   "params": {
+    "sentence": "Every asset is a {pill}",
+    "pills": [
+     "Houdini",
+     "Unreal",
+     "Substance",
+     "Copernicus"
+    ],
+    "badge": false,
+    "font": "Fraunces",
+    "ink": "#848282",
+    "bg": "#f0efe8",
+    "accent": "#a5adfa",
+    "size": 149.1
+   }
+  },
+  {
+   "id": "s68",
+   "duration": 0.4667,
+   "ref": {
+    "shot": "S68",
+    "family": "montage",
+    "start": 177.2667,
+    "description": "Barres verticales roses sur noir comme un curseur géant."
+   },
+   "template": "media-showcase",
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 177.2667,
+    "frame": "full",
+    "fit": "cover",
+    "zoom": 1,
+    "entrance": "coupe",
+    "showCaption": false,
+    "bg": "#000000"
+   }
+  },
+  {
+   "id": "s69",
+   "duration": 4.0667,
+   "ref": {
+    "shot": "S69",
+    "family": "graphic",
+    "start": 177.7333,
+    "description": "La mascotte clignote au-dessus de son étiquette de nom sur noir, fin."
+   },
+   "template": "end-card",
+   "params": {
+    "title": "ZenRay",
+    "subtitle": "procedural 3D worlds",
+    "url": "matthieuhuguet.com",
+    "bg": "#0b0a0e",
+    "ink": "#c7c6c4",
+    "accent": "#f92e8a"
+   }
+  }
+ ],
+ "id": "yt-4q-o-ylnvnc-motion",
+ "updated": "15 October 2026, 13:40",
+ "versionNote": "avant la base motion du 15 octobre",
+ "versionSaved": "15 October 2026, 14:33",
+ "version": "V_003"
+}

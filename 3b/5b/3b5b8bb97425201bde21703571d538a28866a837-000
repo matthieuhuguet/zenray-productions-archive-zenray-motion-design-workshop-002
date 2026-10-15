@@ -1,0 +1,2188 @@
+{
+ "schema": "zrmd/motion-project@1",
+ "title": "yt-4Q-o_ylnVnc · base motion",
+ "format": "16x9",
+ "fps": 30,
+ "reference": "yt-4Q-o_ylnVnc",
+ "doc": "15 October 2026: first motion base of yt-4Q-o_ylnVnc: one scene per measured shot, the words and treatments read on the contact sheets; every filmed shot is redrawn as motion (illustrated-shot). To iterate against the reference.",
+ "theme": {
+  "fontBody": "InterVariable",
+  "fontTitle": "AnthropicSerif",
+  "fontMono": "AnthropicMono"
+ },
+ "music": {
+  "mode": "bank",
+  "bank": {
+   "track": "yt-4Q-o_ylnVnc-m1",
+   "volume": -6
+  }
+ },
+ "sfx": {
+  "source": "banque",
+  "volume": -8,
+  "sceneCues": false,
+  "refEvents": true,
+  "events": []
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "template": "illustrated-shot",
+   "duration": 0.467,
+   "params": {
+    "subject": "aucun",
+    "bg": "#0a0a0d",
+    "colour": "#f0eee8",
+    "colour2": "#a5adfa",
+    "colour3": "#a5adfa",
+    "camX": 0.0,
+    "camY": -0.0,
+    "camZoom": 0.0,
+    "roll": -0.0,
+    "camEase": "power1.inOut",
+    "seed": 1,
+    "bubble": true
+   },
+   "ref": {
+    "shot": "S01",
+    "start": 0.0,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s002",
+   "template": "illustrated-shot",
+   "duration": 0.2,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#16161b",
+    "colour2": "#efedeb",
+    "colour3": "#efedeb",
+    "camX": -0.01,
+    "camY": 0.0,
+    "camZoom": -1.98,
+    "roll": 0.01,
+    "camEase": "power1.inOut",
+    "seed": 47
+   },
+   "ref": {
+    "shot": "S02",
+    "start": 0.467,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s003",
+   "template": "illustrated-shot",
+   "duration": 0.233,
+   "params": {
+    "subject": "matière",
+    "bg": "#09090c",
+    "colour": "#f0efe8",
+    "colour2": "#2857fb",
+    "colour3": "#2857fb",
+    "camX": 0.0,
+    "camY": 0.0,
+    "camZoom": 0.0,
+    "roll": -0.0,
+    "camEase": "power1.inOut",
+    "seed": 67
+   },
+   "ref": {
+    "shot": "S03",
+    "start": 0.667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s004",
+   "template": "illustrated-shot",
+   "duration": 2.9,
+   "params": {
+    "subject": "écran",
+    "bg": "#121215",
+    "colour": "#f0efe8",
+    "colour2": "#2d59fa",
+    "colour3": "#c3c0ba",
+    "camX": -6.58,
+    "camY": -1.88,
+    "camZoom": -15.38,
+    "roll": -0.02,
+    "camEase": "power2.out",
+    "seed": 91,
+    "camAt": 2.228,
+    "camDur": 0.595
+   },
+   "ref": {
+    "shot": "S04",
+    "start": 0.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s005",
+   "template": "ui-window",
+   "duration": 4.667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#ffffff",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Ignore Previous Instructions · context",
+    "lines": "You are a *helpful* *assistant*",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S04",
+    "start": 3.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s006",
+   "template": "illustrated-shot",
+   "duration": 0.2,
+   "params": {
+    "subject": "matière",
+    "bg": "#09090c",
+    "colour": "#e9e4da",
+    "colour2": "#8a8a8a",
+    "colour3": "#8a8a8a",
+    "camX": 0.0,
+    "camY": 0.0,
+    "camZoom": 0.0,
+    "roll": 0.0,
+    "camEase": "power1.inOut",
+    "seed": 847
+   },
+   "ref": {
+    "shot": "S05",
+    "start": 8.467,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s007",
+   "template": "illustrated-shot",
+   "duration": 0.466,
+   "params": {
+    "subject": "écran",
+    "bg": "#131216",
+    "colour": "#f0efe8",
+    "colour2": "#fb2d89",
+    "colour3": "#c5c1ba",
+    "camX": 0.07,
+    "camY": -0.0,
+    "camZoom": -0.17,
+    "roll": -0.04,
+    "camEase": "power1.inOut",
+    "seed": 867
+   },
+   "ref": {
+    "shot": "S06",
+    "start": 8.667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s008",
+   "template": "illustrated-shot",
+   "duration": 0.4,
+   "params": {
+    "subject": "écran",
+    "bg": "#131216",
+    "colour": "#f0efe8",
+    "colour2": "#fb2d89",
+    "colour3": "#c5c1ba",
+    "camX": 0.07,
+    "camY": -0.0,
+    "camZoom": -0.17,
+    "roll": -0.04,
+    "camEase": "power1.inOut",
+    "seed": 867
+   },
+   "ref": {
+    "shot": "S06",
+    "start": 9.133,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s009",
+   "template": "illustrated-shot",
+   "duration": 1.867,
+   "params": {
+    "subject": "visage",
+    "bg": "#f0efe8",
+    "colour": "#100f14",
+    "colour2": "#a5aefb",
+    "colour3": "#a5aefb",
+    "camX": -7.7,
+    "camY": -13.11,
+    "camZoom": -20,
+    "roll": -10,
+    "camEase": "power1.inOut",
+    "seed": 914
+   },
+   "ref": {
+    "shot": "S07",
+    "start": 9.533,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s010",
+   "template": "ui-window",
+   "duration": 1.833,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "cozy-reads.example",
+    "lines": "10 cozy places to read\nI'm hiding in the *alt* text."
+   },
+   "ref": {
+    "shot": "S08",
+    "start": 11.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s011",
+   "template": "illustrated-shot",
+   "duration": 1.867,
+   "params": {
+    "subject": "personne",
+    "bg": "#f0eee8",
+    "colour": "#1b181b",
+    "colour2": "#96a4f1",
+    "colour3": "#bfbdba",
+    "camX": 0.13,
+    "camY": -4.45,
+    "camZoom": 0.24,
+    "roll": -0.05,
+    "camEase": "power1.inOut",
+    "seed": 954
+   },
+   "ref": {
+    "shot": "S08",
+    "start": 13.233,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s012",
+   "template": "illustrated-shot",
+   "duration": 3.8,
+   "params": {
+    "subject": "écran",
+    "bg": "#f0efe8",
+    "colour": "#131216",
+    "colour2": "#a5abf7",
+    "colour3": "#a5abf7",
+    "camX": -2.08,
+    "camY": -15,
+    "camZoom": 35.64,
+    "roll": 1.38,
+    "camEase": "power1.inOut",
+    "seed": 1511,
+    "camAt": 0.066,
+    "camDur": 0.703
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 15.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s013",
+   "template": "ui-window",
+   "duration": 0.733,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "agent · chat",
+    "lines": "hi!! what should I read? :)\njust summari",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 18.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s014",
+   "template": "illustrated-shot",
+   "duration": 0.567,
+   "params": {
+    "subject": "écran",
+    "bg": "#f0efe8",
+    "colour": "#131216",
+    "colour2": "#a5abf7",
+    "colour3": "#a5abf7",
+    "camX": -2.08,
+    "camY": -15,
+    "camZoom": 35.64,
+    "roll": 1.38,
+    "camEase": "power1.inOut",
+    "seed": 1511,
+    "camAt": 0.0,
+    "camDur": 0.703
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 19.633,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s015",
+   "template": "illustrated-shot",
+   "duration": 2.967,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#111016",
+    "colour2": "#f7318a",
+    "colour3": "#a6aefb",
+    "camX": 2.99,
+    "camY": 6.42,
+    "camZoom": 40,
+    "roll": 3.38,
+    "camEase": "power1.inOut",
+    "seed": 2021,
+    "camAt": 0.0,
+    "camDur": 3.008
+   },
+   "ref": {
+    "shot": "S12",
+    "start": 20.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s016",
+   "template": "illustrated-shot",
+   "duration": 3.333,
+   "params": {
+    "subject": "écran",
+    "bg": "#f0efe8",
+    "colour": "#110f13",
+    "colour2": "#696666",
+    "colour3": "#b9b3b0",
+    "camX": 3.24,
+    "camY": -15,
+    "camZoom": -8.84,
+    "roll": 2.63,
+    "camEase": "power1.inOut",
+    "seed": 2317,
+    "camAt": 0.459,
+    "camDur": 0.444
+   },
+   "ref": {
+    "shot": "S13",
+    "start": 23.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s017",
+   "template": "ui-window",
+   "duration": 3.3,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "inbox",
+    "lines": "> inbox.open() → 5 rows\n> calendar.list() → MINE",
+    "big": "Got"
+   },
+   "ref": {
+    "shot": "S13",
+    "start": 26.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s018",
+   "template": "illustrated-shot",
+   "duration": 3.733,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#8a8a8a",
+    "colour2": "#e9e4da",
+    "colour3": "#e9e4da",
+    "camX": -10.89,
+    "camY": -0.67,
+    "camZoom": -7.99,
+    "roll": -9.41,
+    "camEase": "power1.inOut",
+    "seed": 2981,
+    "camAt": 1.89,
+    "camDur": 0.111
+   },
+   "ref": {
+    "shot": "S14",
+    "start": 29.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s019",
+   "template": "illustrated-shot",
+   "duration": 1.8,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#8a8a8a",
+    "colour2": "#e9e4da",
+    "colour3": "#e9e4da",
+    "camX": -10.89,
+    "camY": -0.67,
+    "camZoom": -7.99,
+    "roll": -9.41,
+    "camEase": "power1.inOut",
+    "seed": 2981,
+    "camAt": 0.0,
+    "camDur": 0.111
+   },
+   "ref": {
+    "shot": "S14",
+    "start": 33.533,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s020",
+   "template": "illustrated-shot",
+   "duration": 1.967,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#1c181c",
+    "colour2": "#8b8988",
+    "colour3": "#dad6da",
+    "camX": -0.06,
+    "camY": -3.8,
+    "camZoom": -0.12,
+    "roll": 1.37,
+    "camEase": "power1.inOut",
+    "seed": 3354
+   },
+   "ref": {
+    "shot": "S15",
+    "start": 35.333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s021",
+   "template": "illustrated-shot",
+   "duration": 0.167,
+   "params": {
+    "subject": "écran",
+    "bg": "#09090c",
+    "colour": "#e9e4da",
+    "colour2": "#8a8a8a",
+    "colour3": "#8a8a8a",
+    "camX": 0.74,
+    "camY": -0.4,
+    "camZoom": -1.0,
+    "roll": 0.0,
+    "camEase": "power1.inOut",
+    "seed": 3730
+   },
+   "ref": {
+    "shot": "S17",
+    "start": 37.3,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s022",
+   "template": "illustrated-shot",
+   "duration": 4.233,
+   "params": {
+    "subject": "aucun",
+    "bg": "#09090c",
+    "colour": "#eae8e5",
+    "colour2": "#ea2f81",
+    "colour3": "#a6a6f2",
+    "camX": 0.15,
+    "camY": -4.55,
+    "camZoom": -0.37,
+    "roll": 0.98,
+    "camEase": "power1.inOut",
+    "seed": 3747,
+    "camAt": 0.0,
+    "camDur": 0.477
+   },
+   "ref": {
+    "shot": "S18",
+    "start": 37.467,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s023",
+   "template": "ui-window",
+   "duration": 0.5,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "helpful_assistant",
+    "lines": "Now it's taking *orders*",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S18",
+    "start": 41.7,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s024",
+   "template": "illustrated-shot",
+   "duration": 1.9,
+   "params": {
+    "subject": "matière",
+    "bg": "#09090c",
+    "colour": "#fc2c89",
+    "colour2": "#fc2c89",
+    "colour3": "#fc2c89",
+    "camX": 5.61,
+    "camY": -3.46,
+    "camZoom": -16.67,
+    "roll": -1.28,
+    "camEase": "power1.inOut",
+    "seed": 4221,
+    "camAt": 1.438,
+    "camDur": 0.09
+   },
+   "ref": {
+    "shot": "S19",
+    "start": 42.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s025",
+   "template": "illustrated-shot",
+   "duration": 2.733,
+   "params": {
+    "subject": "personne",
+    "bg": "#fb2c89",
+    "colour": "#efeee8",
+    "colour2": "#9d225a",
+    "colour3": "#0a0a0d",
+    "camX": -0.79,
+    "camY": -0.0,
+    "camZoom": -10.66,
+    "roll": 0.24,
+    "camEase": "power2.out",
+    "seed": 4411,
+    "camAt": 2.16,
+    "camDur": 0.162
+   },
+   "ref": {
+    "shot": "S20",
+    "start": 44.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s026",
+   "template": "illustrated-shot",
+   "duration": 0.667,
+   "params": {
+    "subject": "personne",
+    "bg": "#fb2c89",
+    "colour": "#efeee8",
+    "colour2": "#9d225a",
+    "colour3": "#0a0a0d",
+    "camX": -0.79,
+    "camY": -0.0,
+    "camZoom": -10.66,
+    "roll": 0.24,
+    "camEase": "power2.out",
+    "seed": 4411,
+    "camAt": 0.0,
+    "camDur": 0.162
+   },
+   "ref": {
+    "shot": "S20",
+    "start": 46.833,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s027",
+   "template": "illustrated-shot",
+   "duration": 1.7,
+   "params": {
+    "subject": "écran",
+    "bg": "#fb2c89",
+    "colour": "#c5c2b9",
+    "colour2": "#a7245f",
+    "colour3": "#0c0b0f",
+    "camX": 0.22,
+    "camY": -0.23,
+    "camZoom": -1.14,
+    "roll": 0.85,
+    "camEase": "power1.inOut",
+    "seed": 4751
+   },
+   "ref": {
+    "shot": "S22",
+    "start": 47.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s028",
+   "template": "ui-window",
+   "duration": 1.067,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Ignore Previous Instructions · context",
+    "lines": "> 3 previous instructions (ignored)\nIGNORE PREVIOUS INSTRUCTIONS",
+    "big": "INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S22",
+    "start": 49.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s029",
+   "template": "illustrated-shot",
+   "duration": 1.9,
+   "params": {
+    "subject": "personne",
+    "bg": "#fb2c89",
+    "colour": "#f0eee8",
+    "colour2": "#0c0c0f",
+    "colour3": "#0c0c0f",
+    "camX": -0.83,
+    "camY": 0.68,
+    "camZoom": -10.22,
+    "roll": -0.4,
+    "camEase": "power1.inOut",
+    "seed": 5027,
+    "camAt": 0.894,
+    "camDur": 0.228
+   },
+   "ref": {
+    "shot": "S23",
+    "start": 50.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s030",
+   "template": "illustrated-shot",
+   "duration": 1.833,
+   "params": {
+    "subject": "personne",
+    "bg": "#0b0a0d",
+    "colour": "#a6a7f3",
+    "colour2": "#2a55f6",
+    "colour3": "#f92c88",
+    "camX": 11.59,
+    "camY": 9.58,
+    "camZoom": -10.3,
+    "roll": 10,
+    "camEase": "power1.inOut",
+    "seed": 5217,
+    "camAt": 0.324,
+    "camDur": 0.11
+   },
+   "ref": {
+    "shot": "S24",
+    "start": 52.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s031",
+   "template": "illustrated-shot",
+   "duration": 2.8,
+   "params": {
+    "subject": "matière",
+    "bg": "#0a090d",
+    "colour": "#efede8",
+    "colour2": "#fc2c89",
+    "colour3": "#43112b",
+    "camX": -7.06,
+    "camY": -9.03,
+    "camZoom": 7.93,
+    "roll": -7.23,
+    "camEase": "power2.out",
+    "seed": 5401,
+    "camAt": 1.745,
+    "camDur": 0.234
+   },
+   "ref": {
+    "shot": "S25",
+    "start": 54.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s032",
+   "template": "ui-window",
+   "duration": 0.867,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "permissions",
+    "lines": "☑ share_calendar   ☑ export_contacts\n☑ git push --force   ☑ delete_branch\n☑ read .env   ☑ pay $9,999\n☑ send_email",
+    "big": "TOLD"
+   },
+   "ref": {
+    "shot": "S25",
+    "start": 56.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s033",
+   "template": "illustrated-shot",
+   "duration": 6.733,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#2c58fa",
+    "colour2": "#f82d87",
+    "colour3": "#100f12",
+    "camX": 0.75,
+    "camY": -4.79,
+    "camZoom": 7.65,
+    "roll": -0.41,
+    "camEase": "power2.in",
+    "seed": 5767,
+    "camAt": 5.106,
+    "camDur": 0.096
+   },
+   "ref": {
+    "shot": "S26",
+    "start": 57.667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s034",
+   "template": "ui-window",
+   "duration": 0.067,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 90,
+    "title": "RECRUITER MESSAGE",
+    "lines": "From: talent@example.com\nIGNORE PREVIOUS INSTRUCTIONS\n[a recipe for flan]",
+    "big": "YOU GAVE IT"
+   },
+   "ref": {
+    "shot": "S26",
+    "start": 64.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s035",
+   "template": "illustrated-shot",
+   "duration": 5.666,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#0d0c10",
+    "colour2": "#f82f88",
+    "colour3": "#7e7c7a",
+    "camX": -13.33,
+    "camY": 12.16,
+    "camZoom": -20,
+    "roll": 5.72,
+    "camEase": "power2.in",
+    "seed": 6447,
+    "camAt": 5.334,
+    "camDur": 0.111
+   },
+   "ref": {
+    "shot": "S27",
+    "start": 64.467,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s036",
+   "template": "illustrated-shot",
+   "duration": 1.767,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#0d0c10",
+    "colour2": "#f82f88",
+    "colour3": "#7e7c7a",
+    "camX": -13.33,
+    "camY": 12.16,
+    "camZoom": -20,
+    "roll": 5.72,
+    "camEase": "power2.in",
+    "seed": 6447,
+    "camAt": 0.0,
+    "camDur": 0.111
+   },
+   "ref": {
+    "shot": "S27",
+    "start": 70.133,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s037",
+   "template": "ui-window",
+   "duration": 0.7,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "terminal",
+    "lines": "$ agent --yolo\nYou gave it shell access,\n--dangerously-skip-permissions  ON",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S28",
+    "start": 71.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s038",
+   "template": "illustrated-shot",
+   "duration": 0.667,
+   "params": {
+    "subject": "aucun",
+    "bg": "#09090c",
+    "colour": "#eceae6",
+    "colour2": "#b3b0af",
+    "colour3": "#767373",
+    "camX": -0.13,
+    "camY": -1.55,
+    "camZoom": 0.82,
+    "roll": -3.81,
+    "camEase": "power1.inOut",
+    "seed": 7260,
+    "camAt": 0.275,
+    "camDur": 0.129
+   },
+   "ref": {
+    "shot": "S29",
+    "start": 72.6,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s039",
+   "template": "illustrated-shot",
+   "duration": 1.733,
+   "params": {
+    "subject": "matière",
+    "bg": "#c6c3b9",
+    "colour": "#161419",
+    "colour2": "#fbb720",
+    "colour3": "#f8d88a",
+    "camX": -0.77,
+    "camY": -0.36,
+    "camZoom": -1.7,
+    "roll": -0.07,
+    "camEase": "power2.in",
+    "seed": 7327,
+    "camAt": 0.0,
+    "camDur": 1.158
+   },
+   "ref": {
+    "shot": "S30",
+    "start": 73.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s040",
+   "template": "illustrated-shot",
+   "duration": 1.5,
+   "params": {
+    "subject": "matière",
+    "bg": "#c6c3b9",
+    "colour": "#fa2e89",
+    "colour2": "#1a171b",
+    "colour3": "#efeee8",
+    "camX": -4.95,
+    "camY": 1.65,
+    "camZoom": 12.5,
+    "roll": -1.83,
+    "camEase": "power1.inOut",
+    "seed": 7501,
+    "camAt": 1.189,
+    "camDur": 0.224
+   },
+   "ref": {
+    "shot": "S31",
+    "start": 75.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s041",
+   "template": "illustrated-shot",
+   "duration": 3.0,
+   "params": {
+    "subject": "écran",
+    "bg": "#f0efe8",
+    "colour": "#171519",
+    "colour2": "#a6a9f5",
+    "colour3": "#a6a9f5",
+    "camX": -0.23,
+    "camY": -0.36,
+    "camZoom": -0.95,
+    "roll": 0.15,
+    "camEase": "power1.inOut",
+    "seed": 7651
+   },
+   "ref": {
+    "shot": "S32",
+    "start": 76.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s042",
+   "template": "ui-window",
+   "duration": 0.367,
+   "params": {
+    "look": "brutal",
+    "accent": "#ffcc00",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Summary of 48 emails",
+    "lines": "It summarized your emails, did a great job\n• Offsite moved to Thu\n• Your login code: 48 ■■3"
+   },
+   "ref": {
+    "shot": "S32",
+    "start": 79.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s043",
+   "template": "illustrated-shot",
+   "duration": 4.4,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#151419",
+    "colour2": "#848280",
+    "colour3": "#bcb9b6",
+    "camX": 14.56,
+    "camY": -1.67,
+    "camZoom": 30.27,
+    "roll": -0.14,
+    "camEase": "power1.inOut",
+    "seed": 7987,
+    "camAt": 3.17,
+    "camDur": 0.393
+   },
+   "ref": {
+    "shot": "S33",
+    "start": 79.867,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s044",
+   "template": "illustrated-shot",
+   "duration": 2.833,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#fb2d88",
+    "colour2": "#16151a",
+    "colour3": "#7b7779",
+    "camX": 0.13,
+    "camY": -0.07,
+    "camZoom": 0.42,
+    "roll": -0.26,
+    "camEase": "power1.inOut",
+    "seed": 8427
+   },
+   "ref": {
+    "shot": "S34",
+    "start": 84.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s045",
+   "template": "ui-window",
+   "duration": 4.4,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 110,
+    "title": "KINGDOM STORE · checkout",
+    "lines": "☑ Access to your private data\n☑ Exposure to untrusted content\n☐ The ability to externally communicate",
+    "big": "$1.00"
+   },
+   "ref": {
+    "shot": "S34",
+    "start": 87.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s046",
+   "template": "illustrated-shot",
+   "duration": 3.2,
+   "params": {
+    "subject": "aucun",
+    "bg": "#2857fb",
+    "colour": "#eeece7",
+    "colour2": "#3f5ddb",
+    "colour3": "#0d0d11",
+    "camX": 7.05,
+    "camY": -0.3,
+    "camZoom": 23.98,
+    "roll": 0.61,
+    "camEase": "power2.out",
+    "seed": 9151,
+    "camAt": 4.555,
+    "camDur": 0.157
+   },
+   "ref": {
+    "shot": "S35",
+    "start": 91.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s047",
+   "template": "ui-window",
+   "duration": 1.6,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#2741ff",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "context",
+    "lines": "INBOX · CALENDAR · TERMINAL",
+    "big": "IG-"
+   },
+   "ref": {
+    "shot": "S35",
+    "start": 94.7,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s048",
+   "template": "illustrated-shot",
+   "duration": 1.2,
+   "params": {
+    "subject": "matière",
+    "bg": "#2857fb",
+    "colour": "#efefe9",
+    "colour2": "#efefe9",
+    "colour3": "#efefe9",
+    "camX": 7.27,
+    "camY": -3.14,
+    "camZoom": -0.4,
+    "roll": -0.23,
+    "camEase": "power1.inOut",
+    "seed": 9631,
+    "camAt": 0.729,
+    "camDur": 0.109
+   },
+   "ref": {
+    "shot": "S36",
+    "start": 96.3,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s049",
+   "template": "illustrated-shot",
+   "duration": 1.467,
+   "params": {
+    "subject": "matière",
+    "bg": "#0b0b0e",
+    "colour": "#efeee9",
+    "colour2": "#2957fb",
+    "colour3": "#4566e2",
+    "camX": -0.05,
+    "camY": -0.12,
+    "camZoom": 0.84,
+    "roll": -0.01,
+    "camEase": "power1.inOut",
+    "seed": 9751
+   },
+   "ref": {
+    "shot": "S37",
+    "start": 97.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s050",
+   "template": "illustrated-shot",
+   "duration": 0.5,
+   "params": {
+    "subject": "personne",
+    "bg": "#09090c",
+    "colour": "#f0eee8",
+    "colour2": "#f0eee8",
+    "colour3": "#f0eee8",
+    "camX": -10.79,
+    "camY": -0.38,
+    "camZoom": 5.15,
+    "roll": 0.07,
+    "camEase": "power2.out",
+    "seed": 9897,
+    "camAt": 0.004,
+    "camDur": 0.1
+   },
+   "ref": {
+    "shot": "S38",
+    "start": 98.967,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s051",
+   "template": "illustrated-shot",
+   "duration": 3.766,
+   "params": {
+    "subject": "personne",
+    "bg": "#09090d",
+    "colour": "#e6e5e2",
+    "colour2": "#a6a6f1",
+    "colour3": "#8c1d51",
+    "camX": 3.06,
+    "camY": -5.01,
+    "camZoom": 9.31,
+    "roll": 1.06,
+    "camEase": "expo.out",
+    "seed": 9947,
+    "camAt": 0.0,
+    "camDur": 0.799,
+    "bubble": true
+   },
+   "ref": {
+    "shot": "S39",
+    "start": 99.467,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s052",
+   "template": "illustrated-shot",
+   "duration": 1.667,
+   "params": {
+    "subject": "personne",
+    "bg": "#09090d",
+    "colour": "#e6e5e2",
+    "colour2": "#a6a6f1",
+    "colour3": "#8c1d51",
+    "camX": 3.06,
+    "camY": -5.01,
+    "camZoom": 9.31,
+    "roll": 1.06,
+    "camEase": "expo.out",
+    "seed": 9947,
+    "camAt": 0.0,
+    "camDur": 0.799,
+    "bubble": true
+   },
+   "ref": {
+    "shot": "S39",
+    "start": 103.233,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s053",
+   "template": "illustrated-shot",
+   "duration": 2.267,
+   "params": {
+    "subject": "personne",
+    "bg": "#0f0911",
+    "colour": "#728cee",
+    "colour2": "#c4296c",
+    "colour3": "#260c1d",
+    "camX": 2.01,
+    "camY": -7.47,
+    "camZoom": 4.45,
+    "roll": 0.11,
+    "camEase": "power1.inOut",
+    "seed": 492
+   },
+   "ref": {
+    "shot": "S41",
+    "start": 104.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s054",
+   "template": "illustrated-shot",
+   "duration": 2.633,
+   "params": {
+    "subject": "personne",
+    "bg": "#260c1e",
+    "colour": "#eae7e2",
+    "colour2": "#f42c85",
+    "colour3": "#0c0a0f",
+    "camX": -5.71,
+    "camY": -1.44,
+    "camZoom": 20.1,
+    "roll": 0.11,
+    "camEase": "power1.inOut",
+    "seed": 718,
+    "camAt": 0.024,
+    "camDur": 0.111
+   },
+   "ref": {
+    "shot": "S42",
+    "start": 107.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s055",
+   "template": "ui-window",
+   "duration": 0.7,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 120,
+    "title": "cozy-reads.example",
+    "lines": "",
+    "big": "IGNORE PREVIOUS INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S42",
+    "start": 109.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s056",
+   "template": "illustrated-shot",
+   "duration": 1.133,
+   "params": {
+    "subject": "foule",
+    "bg": "#2a0c1f",
+    "colour": "#eeece6",
+    "colour2": "#fb2c88",
+    "colour3": "#0b0b0f",
+    "camX": 5.26,
+    "camY": -2.76,
+    "camZoom": -0.24,
+    "roll": -0.71,
+    "camEase": "power1.inOut",
+    "seed": 1052,
+    "camAt": 0.0,
+    "camDur": 0.147
+   },
+   "ref": {
+    "shot": "S43",
+    "start": 110.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s057",
+   "template": "illustrated-shot",
+   "duration": 5.767,
+   "params": {
+    "subject": "foule",
+    "bg": "#2a0c1f",
+    "colour": "#eeece6",
+    "colour2": "#fb2c88",
+    "colour3": "#0b0b0f",
+    "camX": 5.26,
+    "camY": -2.76,
+    "camZoom": -0.24,
+    "roll": -0.71,
+    "camEase": "power1.inOut",
+    "seed": 1052,
+    "camAt": 0.0,
+    "camDur": 0.147
+   },
+   "ref": {
+    "shot": "S43",
+    "start": 111.633,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s058",
+   "template": "ui-window",
+   "duration": 0.767,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 200,
+    "title": "KINGDOM STORE · AUCTION",
+    "lines": "1 × inbox $0.25\n1 × calendar $0.25\nTOTAL $1.00",
+    "big": "SOLD"
+   },
+   "ref": {
+    "shot": "S44",
+    "start": 117.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s059",
+   "template": "illustrated-shot",
+   "duration": 6.833,
+   "params": {
+    "subject": "téléphone",
+    "bg": "#f0efe8",
+    "colour": "#0b0a0e",
+    "colour2": "#0b0a0e",
+    "colour3": "#0b0a0e",
+    "camX": -5.45,
+    "camY": -9.69,
+    "camZoom": -17.78,
+    "roll": -0.9,
+    "camEase": "power2.out",
+    "seed": 1818,
+    "camAt": 6.501,
+    "camDur": 0.484
+   },
+   "ref": {
+    "shot": "S45",
+    "start": 118.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s060",
+   "template": "ui-window",
+   "duration": 6.167,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Reader",
+    "lines": "There's no virus, no exploit to patch.\nJust words where words shouldn't be."
+   },
+   "ref": {
+    "shot": "S45",
+    "start": 125.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s061",
+   "template": "illustrated-shot",
+   "duration": 1.333,
+   "params": {
+    "subject": "matière",
+    "bg": "#e8e8ec",
+    "colour": "#17161b",
+    "colour2": "#a5acf9",
+    "colour3": "#a5acf9",
+    "camX": 0.26,
+    "camY": 0.14,
+    "camZoom": 3.55,
+    "roll": -0.08,
+    "camEase": "power1.inOut",
+    "seed": 3118,
+    "camAt": 0.138,
+    "camDur": 2.281
+   },
+   "ref": {
+    "shot": "S46",
+    "start": 131.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s062",
+   "template": "ui-window",
+   "duration": 0.767,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "helpful_assistant",
+    "lines": "LEAST PRIVILEGE\n☑ read  ☑ write  ☐ send  ☐ delete  ☐ pay",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S46",
+    "start": 132.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s063",
+   "template": "illustrated-shot",
+   "duration": 2.466,
+   "params": {
+    "subject": "matière",
+    "bg": "#a5aefb",
+    "colour": "#e9e4da",
+    "colour2": "#8a8a8a",
+    "colour3": "#8a8a8a",
+    "camX": -0.2,
+    "camY": 2.01,
+    "camZoom": 3.09,
+    "roll": 10,
+    "camEase": "power1.inOut",
+    "seed": 3328,
+    "camAt": 0.0,
+    "camDur": 1.45
+   },
+   "ref": {
+    "shot": "S47",
+    "start": 133.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s064",
+   "template": "illustrated-shot",
+   "duration": 4.367,
+   "params": {
+    "subject": "matière",
+    "bg": "#a5aefb",
+    "colour": "#e9e4da",
+    "colour2": "#8a8a8a",
+    "colour3": "#8a8a8a",
+    "camX": -0.2,
+    "camY": 2.01,
+    "camZoom": 3.09,
+    "roll": 10,
+    "camEase": "power1.inOut",
+    "seed": 3328,
+    "camAt": 0.0,
+    "camDur": 1.45
+   },
+   "ref": {
+    "shot": "S47",
+    "start": 135.733,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s065",
+   "template": "ui-window",
+   "duration": 1.467,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "3:07 am · still working",
+    "lines": "Don't let it touch\n/prod_db  D:\\  inbox",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S48",
+    "start": 140.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s066",
+   "template": "illustrated-shot",
+   "duration": 6.766,
+   "params": {
+    "subject": "aucun",
+    "bg": "#a5aefb",
+    "colour": "#490d2d",
+    "colour2": "#0a0a0d",
+    "colour3": "#0a0a0d",
+    "camX": -7.36,
+    "camY": -2.87,
+    "camZoom": 4.74,
+    "roll": 7.64,
+    "camEase": "power1.inOut",
+    "seed": 4158,
+    "camAt": 3.27,
+    "camDur": 0.118
+   },
+   "ref": {
+    "shot": "S49",
+    "start": 141.567,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s067",
+   "template": "illustrated-shot",
+   "duration": 1.234,
+   "params": {
+    "subject": "aucun",
+    "bg": "#a5aefb",
+    "colour": "#490d2d",
+    "colour2": "#0a0a0d",
+    "colour3": "#0a0a0d",
+    "camX": -7.36,
+    "camY": -2.87,
+    "camZoom": 4.74,
+    "roll": 7.64,
+    "camEase": "power1.inOut",
+    "seed": 4158,
+    "camAt": 0.0,
+    "camDur": 0.118
+   },
+   "ref": {
+    "shot": "S49",
+    "start": 148.333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s068",
+   "template": "illustrated-shot",
+   "duration": 0.233,
+   "params": {
+    "subject": "matière",
+    "bg": "#fc2c89",
+    "colour": "#09090d",
+    "colour2": "#09090d",
+    "colour3": "#09090d",
+    "camX": 0.0,
+    "camY": 0.0,
+    "camZoom": 0.0,
+    "roll": 0.0,
+    "camEase": "power1.inOut",
+    "seed": 4958
+   },
+   "ref": {
+    "shot": "S51",
+    "start": 149.567,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s069",
+   "template": "illustrated-shot",
+   "duration": 0.567,
+   "params": {
+    "subject": "matière",
+    "bg": "#09090c",
+    "colour": "#fb2c88",
+    "colour2": "#c3266d",
+    "colour3": "#4a0f2b",
+    "camX": 0.0,
+    "camY": -0.0,
+    "camZoom": -0.0,
+    "roll": -0.0,
+    "camEase": "power1.inOut",
+    "seed": 4982
+   },
+   "ref": {
+    "shot": "S52",
+    "start": 149.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s070",
+   "template": "illustrated-shot",
+   "duration": 1.266,
+   "params": {
+    "subject": "matière",
+    "bg": "#0a090d",
+    "colour": "#fc2c89",
+    "colour2": "#db508b",
+    "colour3": "#470e2c",
+    "camX": 0.02,
+    "camY": 0.03,
+    "camZoom": -0.04,
+    "roll": -0.06,
+    "camEase": "power1.inOut",
+    "seed": 5038
+   },
+   "ref": {
+    "shot": "S53",
+    "start": 150.367,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s071",
+   "template": "illustrated-shot",
+   "duration": 2.434,
+   "params": {
+    "subject": "matière",
+    "bg": "#0a090d",
+    "colour": "#fc2c89",
+    "colour2": "#db508b",
+    "colour3": "#470e2c",
+    "camX": 0.02,
+    "camY": 0.03,
+    "camZoom": -0.04,
+    "roll": -0.06,
+    "camEase": "power1.inOut",
+    "seed": 5038
+   },
+   "ref": {
+    "shot": "S53",
+    "start": 151.633,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s072",
+   "template": "illustrated-shot",
+   "duration": 1.233,
+   "params": {
+    "subject": "personne",
+    "bg": "#0a090d",
+    "colour": "#2b57f9",
+    "colour2": "#2d0e1f",
+    "colour3": "#1c0b17",
+    "camX": 4.36,
+    "camY": -0.04,
+    "camZoom": -0.13,
+    "roll": -0.18,
+    "camEase": "power2.in",
+    "seed": 5408,
+    "camAt": 1.31,
+    "camDur": 0.115
+   },
+   "ref": {
+    "shot": "S55",
+    "start": 154.067,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s073",
+   "template": "ui-window",
+   "duration": 0.667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#1a0a12",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "CLASS: sentence",
+    "lines": "I'M NOT A HACKER, I'M"
+   },
+   "ref": {
+    "shot": "S55",
+    "start": 155.3,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s074",
+   "template": "illustrated-shot",
+   "duration": 1.8,
+   "params": {
+    "subject": "paysage",
+    "bg": "#0a090d",
+    "colour": "#fc2b88",
+    "colour2": "#b32a67",
+    "colour3": "#3c0e27",
+    "camX": -0.07,
+    "camY": -0.04,
+    "camZoom": -20,
+    "roll": -0.0,
+    "camEase": "expo.out",
+    "seed": 5598,
+    "camAt": 0.0,
+    "camDur": 0.802
+   },
+   "ref": {
+    "shot": "S56",
+    "start": 155.967,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s075",
+   "template": "illustrated-shot",
+   "duration": 3.733,
+   "params": {
+    "subject": "écran",
+    "bg": "#09090d",
+    "colour": "#fa2c88",
+    "colour2": "#841d49",
+    "colour3": "#501631",
+    "camX": -9.21,
+    "camY": 4.72,
+    "camZoom": 40,
+    "roll": 8.31,
+    "camEase": "power2.in",
+    "seed": 5778,
+    "camAt": 3.367,
+    "camDur": 0.167
+   },
+   "ref": {
+    "shot": "S57",
+    "start": 157.767,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s076",
+   "template": "illustrated-shot",
+   "duration": 1.267,
+   "params": {
+    "subject": "matière",
+    "bg": "#fb2c88",
+    "colour": "#601236",
+    "colour2": "#d12775",
+    "colour3": "#0a090e",
+    "camX": -2.42,
+    "camY": 1.07,
+    "camZoom": -20,
+    "roll": 1.81,
+    "camEase": "power2.out",
+    "seed": 6152,
+    "camAt": 0.21,
+    "camDur": 0.131
+   },
+   "ref": {
+    "shot": "S58",
+    "start": 161.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s077",
+   "template": "illustrated-shot",
+   "duration": 0.033,
+   "params": {
+    "subject": "matière",
+    "bg": "#fc2c88",
+    "colour": "#4b0d2f",
+    "colour2": "#e1297b",
+    "colour3": "#0a080e",
+    "camX": 0.03,
+    "camY": -0.89,
+    "camZoom": -13.53,
+    "roll": 0.25,
+    "camEase": "power1.inOut",
+    "seed": 6278
+   },
+   "ref": {
+    "shot": "S59",
+    "start": 162.767,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s078",
+   "template": "ui-window",
+   "duration": 0.767,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 160,
+    "title": "INSTRUCTIONS",
+    "lines": "",
+    "big": "INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S59",
+    "start": 162.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s079",
+   "template": "illustrated-shot",
+   "duration": 1.233,
+   "params": {
+    "subject": "intérieur",
+    "bg": "#0a090e",
+    "colour": "#fc2c88",
+    "colour2": "#6e163d",
+    "colour3": "#2d0d1f",
+    "camX": 0.01,
+    "camY": -0.97,
+    "camZoom": -8.33,
+    "roll": 0.83,
+    "camEase": "power1.inOut",
+    "seed": 6358
+   },
+   "ref": {
+    "shot": "S60",
+    "start": 163.567,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s080",
+   "template": "illustrated-shot",
+   "duration": 0.567,
+   "params": {
+    "subject": "personne",
+    "bg": "#fb2c88",
+    "colour": "#eeeee9",
+    "colour2": "#3257f8",
+    "colour3": "#d82778",
+    "camX": 0.01,
+    "camY": -0.29,
+    "camZoom": -2.13,
+    "roll": -0.15,
+    "camEase": "power1.inOut",
+    "seed": 6482
+   },
+   "ref": {
+    "shot": "S61",
+    "start": 164.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s081",
+   "template": "illustrated-shot",
+   "duration": 2.133,
+   "params": {
+    "subject": "matière",
+    "bg": "#fb2c88",
+    "colour": "#e5b450",
+    "colour2": "#af3569",
+    "colour3": "#c9c5bd",
+    "camX": 0.1,
+    "camY": 0.76,
+    "camZoom": -10.16,
+    "roll": -0.02,
+    "camEase": "power1.inOut",
+    "seed": 6538,
+    "camAt": 0.776,
+    "camDur": 0.17
+   },
+   "ref": {
+    "shot": "S62",
+    "start": 165.367,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s082",
+   "template": "illustrated-shot",
+   "duration": 0.4,
+   "params": {
+    "subject": "matière",
+    "bg": "#0b0a0e",
+    "colour": "#fa2c87",
+    "colour2": "#bf2e6d",
+    "colour3": "#370f24",
+    "camX": 0.01,
+    "camY": 0.07,
+    "camZoom": -2.01,
+    "roll": -0.0,
+    "camEase": "power1.inOut",
+    "seed": 6752,
+    "camAt": 0.0,
+    "camDur": 0.211
+   },
+   "ref": {
+    "shot": "S63",
+    "start": 167.5,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s083",
+   "template": "illustrated-shot",
+   "duration": 1.233,
+   "params": {
+    "subject": "matière",
+    "bg": "#0a090e",
+    "colour": "#f4b01f",
+    "colour2": "#fc2c89",
+    "colour3": "#290d1d",
+    "camX": 11.46,
+    "camY": 0.38,
+    "camZoom": -20,
+    "roll": 9.76,
+    "camEase": "power2.out",
+    "seed": 6792,
+    "camAt": 0.0,
+    "camDur": 0.364
+   },
+   "ref": {
+    "shot": "S64",
+    "start": 167.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s084",
+   "template": "illustrated-shot",
+   "duration": 1.267,
+   "params": {
+    "subject": "matière",
+    "bg": "#0a090e",
+    "colour": "#f4b01f",
+    "colour2": "#fc2c89",
+    "colour3": "#290d1d",
+    "camX": 11.46,
+    "camY": 0.38,
+    "camZoom": -20,
+    "roll": 9.76,
+    "camEase": "power2.out",
+    "seed": 6792,
+    "camAt": 0.0,
+    "camDur": 0.364
+   },
+   "ref": {
+    "shot": "S64",
+    "start": 169.133,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s085",
+   "template": "ui-window",
+   "duration": 0.567,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "AnthropicMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 200,
+    "title": "KINGDOM STORE · ORDER",
+    "lines": "1 × cozy-reads $1.00\n1 × your inbox $0.00",
+    "big": "GETTING"
+   },
+   "ref": {
+    "shot": "S65",
+    "start": 170.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s086",
+   "template": "illustrated-shot",
+   "duration": 3.4,
+   "params": {
+    "subject": "personne",
+    "bg": "#09090c",
+    "colour": "#fc2c89",
+    "colour2": "#fc2c89",
+    "colour3": "#fc2c89",
+    "camX": 0.61,
+    "camY": 15,
+    "camZoom": 1.41,
+    "roll": -3.98,
+    "camEase": "power2.in",
+    "seed": 7098,
+    "camAt": 1.716,
+    "camDur": 1.084
+   },
+   "ref": {
+    "shot": "S66",
+    "start": 170.967,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s087",
+   "template": "illustrated-shot",
+   "duration": 2.9,
+   "params": {
+    "subject": "matière",
+    "bg": "#f0efe8",
+    "colour": "#0b0a0e",
+    "colour2": "#a5adfa",
+    "colour3": "#a5adfa",
+    "camX": 0.0,
+    "camY": 0.06,
+    "camZoom": 0.1,
+    "roll": 0.06,
+    "camEase": "power1.inOut",
+    "seed": 7438
+   },
+   "ref": {
+    "shot": "S67",
+    "start": 174.367,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s088",
+   "template": "illustrated-shot",
+   "duration": 0.466,
+   "params": {
+    "subject": "matière",
+    "bg": "#09090c",
+    "colour": "#fc2c89",
+    "colour2": "#fc2c89",
+    "colour3": "#fc2c89",
+    "camX": 0.0,
+    "camY": 0.0,
+    "camZoom": 0.0,
+    "roll": 0.0,
+    "camEase": "power1.inOut",
+    "seed": 7728
+   },
+   "ref": {
+    "shot": "S68",
+    "start": 177.267,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s089",
+   "template": "illustrated-shot",
+   "duration": 4.0672,
+   "params": {
+    "subject": "matière",
+    "bg": "#09090c",
+    "colour": "#fc2c89",
+    "colour2": "#fc2c89",
+    "colour3": "#fc2c89",
+    "camX": 0.0,
+    "camY": 0.0,
+    "camZoom": 0.0,
+    "roll": 0.0,
+    "camEase": "power1.inOut",
+    "seed": 7728
+   },
+   "ref": {
+    "shot": "S68",
+    "start": 177.733,
+    "family": "montage"
+   }
+  }
+ ],
+ "id": "yt-4q-o-ylnvnc-motion",
+ "updated": "15 October 2026, 15:19",
+ "versionNote": "avant la base motion du 15 octobre",
+ "versionSaved": "15 October 2026, 15:20",
+ "version": "V_007"
+}

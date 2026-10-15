@@ -1,0 +1,1543 @@
+{
+ "schema": "zrmd/motion-project@1",
+ "title": "yt-4Q-o_ylnVnc · base motion",
+ "format": "16x9",
+ "fps": 30,
+ "reference": "yt-4Q-o_ylnVnc",
+ "doc": "15 October 2026: first motion base of yt-4Q-o_ylnVnc: one scene per measured shot, the words and treatments read on the contact sheets; plates show an excerpt of the reference until a render replaces them. To iterate against the reference.",
+ "theme": {
+  "fontBody": "Fraunces"
+ },
+ "music": {
+  "mode": "bank",
+  "bank": {
+   "track": "yt-4Q-o_ylnVnc-m1",
+   "volume": -6
+  }
+ },
+ "sfx": {
+  "source": "banque",
+  "volume": -8,
+  "sceneCues": false,
+  "refEvents": true,
+  "events": []
+ },
+ "scenes": [
+  {
+   "id": "s001",
+   "template": "media-text",
+   "duration": 0.467,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.0,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S01",
+    "start": 0.0,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s002",
+   "template": "media-text",
+   "duration": 0.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.467,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S02",
+    "start": 0.467,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s003",
+   "template": "media-text",
+   "duration": 0.233,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S03",
+    "start": 0.667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s004",
+   "template": "media-text",
+   "duration": 2.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 0.9,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S04",
+    "start": 0.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s005",
+   "template": "ui-window",
+   "duration": 4.667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#ffffff",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Ignore Previous Instructions · context",
+    "lines": "You are a *helpful* *assistant*",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S04",
+    "start": 3.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s006",
+   "template": "media-text",
+   "duration": 0.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 8.467,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S05",
+    "start": 8.467,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s007",
+   "template": "media-text",
+   "duration": 0.466,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 8.667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S06",
+    "start": 8.667,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s008",
+   "template": "media-text",
+   "duration": 0.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 9.133,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S06",
+    "start": 9.133,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s009",
+   "template": "media-text",
+   "duration": 1.867,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 9.533,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S07",
+    "start": 9.533,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s010",
+   "template": "ui-window",
+   "duration": 1.833,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "cozy-reads.example",
+    "lines": "10 cozy places to read\nI'm hiding in the *alt* text."
+   },
+   "ref": {
+    "shot": "S08",
+    "start": 11.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s011",
+   "template": "media-text",
+   "duration": 1.867,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 13.233,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S08",
+    "start": 13.233,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s012",
+   "template": "media-text",
+   "duration": 3.8,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 15.1,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 15.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s013",
+   "template": "ui-window",
+   "duration": 0.733,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "agent · chat",
+    "lines": "hi!! what should I read? :)\njust summari",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 18.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s014",
+   "template": "media-text",
+   "duration": 0.567,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 19.633,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S10",
+    "start": 19.633,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s015",
+   "template": "media-text",
+   "duration": 2.967,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 20.2,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S12",
+    "start": 20.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s016",
+   "template": "media-text",
+   "duration": 3.333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 23.167,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S13",
+    "start": 23.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s017",
+   "template": "ui-window",
+   "duration": 3.3,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "inbox",
+    "lines": "> inbox.open() → 5 rows\n> calendar.list() → MINE",
+    "big": "Got"
+   },
+   "ref": {
+    "shot": "S13",
+    "start": 26.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s018",
+   "template": "media-text",
+   "duration": 3.733,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 29.8,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S14",
+    "start": 29.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s019",
+   "template": "media-text",
+   "duration": 1.8,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 33.533,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S14",
+    "start": 33.533,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s020",
+   "template": "media-text",
+   "duration": 1.967,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 35.333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S15",
+    "start": 35.333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s021",
+   "template": "media-text",
+   "duration": 0.167,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 37.3,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S17",
+    "start": 37.3,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s022",
+   "template": "media-text",
+   "duration": 4.233,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 37.467,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S18",
+    "start": 37.467,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s023",
+   "template": "ui-window",
+   "duration": 0.5,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "helpful_assistant",
+    "lines": "Now it's taking *orders*",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S18",
+    "start": 41.7,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s024",
+   "template": "media-text",
+   "duration": 1.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 42.2,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S19",
+    "start": 42.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s025",
+   "template": "media-text",
+   "duration": 2.733,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 44.1,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S20",
+    "start": 44.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s026",
+   "template": "media-text",
+   "duration": 0.667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 46.833,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S20",
+    "start": 46.833,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s027",
+   "template": "media-text",
+   "duration": 1.7,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 47.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S22",
+    "start": 47.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s028",
+   "template": "ui-window",
+   "duration": 1.067,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Ignore Previous Instructions · context",
+    "lines": "> 3 previous instructions (ignored)\nIGNORE PREVIOUS INSTRUCTIONS",
+    "big": "INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S22",
+    "start": 49.2,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s029",
+   "template": "media-text",
+   "duration": 1.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 50.267,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S23",
+    "start": 50.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s030",
+   "template": "media-text",
+   "duration": 1.833,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 52.167,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S24",
+    "start": 52.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s031",
+   "template": "media-text",
+   "duration": 2.8,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 54.0,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S25",
+    "start": 54.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s032",
+   "template": "ui-window",
+   "duration": 0.867,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "permissions",
+    "lines": "☑ share_calendar   ☑ export_contacts\n☑ git push --force   ☑ delete_branch\n☑ read .env   ☑ pay $9,999\n☑ send_email",
+    "big": "TOLD"
+   },
+   "ref": {
+    "shot": "S25",
+    "start": 56.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s033",
+   "template": "media-text",
+   "duration": 6.733,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 57.667,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S26",
+    "start": 57.667,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s034",
+   "template": "ui-window",
+   "duration": 0.067,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 90,
+    "title": "RECRUITER MESSAGE",
+    "lines": "From: talent@example.com\nIGNORE PREVIOUS INSTRUCTIONS\n[a recipe for flan]",
+    "big": "YOU GAVE IT"
+   },
+   "ref": {
+    "shot": "S26",
+    "start": 64.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s035",
+   "template": "media-text",
+   "duration": 5.666,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 64.467,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S27",
+    "start": 64.467,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s036",
+   "template": "media-text",
+   "duration": 1.767,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 70.133,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S27",
+    "start": 70.133,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s037",
+   "template": "ui-window",
+   "duration": 0.7,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "terminal",
+    "lines": "$ agent --yolo\nYou gave it shell access,\n--dangerously-skip-permissions  ON",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S28",
+    "start": 71.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s038",
+   "template": "media-text",
+   "duration": 0.667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 72.6,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S29",
+    "start": 72.6,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s039",
+   "template": "media-text",
+   "duration": 1.733,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 73.267,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S30",
+    "start": 73.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s040",
+   "template": "media-text",
+   "duration": 1.5,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 75.0,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S31",
+    "start": 75.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s041",
+   "template": "media-text",
+   "duration": 3.0,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 76.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S32",
+    "start": 76.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s042",
+   "template": "ui-window",
+   "duration": 0.367,
+   "params": {
+    "look": "brutal",
+    "accent": "#ffcc00",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Summary of 48 emails",
+    "lines": "It summarized your emails, did a great job\n• Offsite moved to Thu\n• Your login code: 48 ■■3"
+   },
+   "ref": {
+    "shot": "S32",
+    "start": 79.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s043",
+   "template": "media-text",
+   "duration": 4.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 79.867,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S33",
+    "start": 79.867,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s044",
+   "template": "media-text",
+   "duration": 2.833,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 84.267,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S34",
+    "start": 84.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s045",
+   "template": "ui-window",
+   "duration": 4.4,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 110,
+    "title": "KINGDOM STORE · checkout",
+    "lines": "☑ Access to your private data\n☑ Exposure to untrusted content\n☐ The ability to externally communicate",
+    "big": "$1.00"
+   },
+   "ref": {
+    "shot": "S34",
+    "start": 87.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s046",
+   "template": "media-text",
+   "duration": 3.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 91.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S35",
+    "start": 91.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s047",
+   "template": "ui-window",
+   "duration": 1.6,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#2741ff",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "context",
+    "lines": "INBOX · CALENDAR · TERMINAL",
+    "big": "IG-"
+   },
+   "ref": {
+    "shot": "S35",
+    "start": 94.7,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s048",
+   "template": "media-text",
+   "duration": 1.2,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 96.3,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S36",
+    "start": 96.3,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s049",
+   "template": "media-text",
+   "duration": 1.467,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 97.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S37",
+    "start": 97.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s050",
+   "template": "media-text",
+   "duration": 0.5,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 98.967,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S38",
+    "start": 98.967,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s051",
+   "template": "media-text",
+   "duration": 3.766,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 99.467,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S39",
+    "start": 99.467,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s052",
+   "template": "media-text",
+   "duration": 1.667,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 103.233,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S39",
+    "start": 103.233,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s053",
+   "template": "media-text",
+   "duration": 2.267,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 104.9,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S41",
+    "start": 104.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s054",
+   "template": "media-text",
+   "duration": 2.633,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 107.167,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S42",
+    "start": 107.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s055",
+   "template": "ui-window",
+   "duration": 0.7,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#0d0d0d",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 120,
+    "title": "cozy-reads.example",
+    "lines": "",
+    "big": "IGNORE PREVIOUS INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S42",
+    "start": 109.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s056",
+   "template": "media-text",
+   "duration": 1.133,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 110.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S43",
+    "start": 110.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s057",
+   "template": "media-text",
+   "duration": 5.767,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 111.633,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S43",
+    "start": 111.633,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s058",
+   "template": "ui-window",
+   "duration": 0.767,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 200,
+    "title": "KINGDOM STORE · AUCTION",
+    "lines": "1 × inbox $0.25\n1 × calendar $0.25\nTOTAL $1.00",
+    "big": "SOLD"
+   },
+   "ref": {
+    "shot": "S44",
+    "start": 117.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s059",
+   "template": "media-text",
+   "duration": 6.833,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 118.167,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S45",
+    "start": 118.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s060",
+   "template": "ui-window",
+   "duration": 6.167,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "Reader",
+    "lines": "There's no virus, no exploit to patch.\nJust words where words shouldn't be."
+   },
+   "ref": {
+    "shot": "S45",
+    "start": 125.0,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s061",
+   "template": "media-text",
+   "duration": 1.333,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 131.167,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S46",
+    "start": 131.167,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s062",
+   "template": "ui-window",
+   "duration": 0.767,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "helpful_assistant",
+    "lines": "LEAST PRIVILEGE\n☑ read  ☑ write  ☐ send  ☐ delete  ☐ pay",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S46",
+    "start": 132.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s063",
+   "template": "media-text",
+   "duration": 2.466,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 133.267,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S47",
+    "start": 133.267,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s064",
+   "template": "media-text",
+   "duration": 4.367,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 135.733,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S47",
+    "start": 135.733,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s065",
+   "template": "ui-window",
+   "duration": 1.467,
+   "params": {
+    "look": "simple",
+    "accent": "#ff3d8b",
+    "bg": "#f2f0e8",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "3:07 am · still working",
+    "lines": "Don't let it touch\n/prod_db  D:\\  inbox",
+    "enter": "machine"
+   },
+   "ref": {
+    "shot": "S48",
+    "start": 140.1,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s066",
+   "template": "media-text",
+   "duration": 6.766,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 141.567,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S49",
+    "start": 141.567,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s067",
+   "template": "media-text",
+   "duration": 1.234,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 148.333,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S49",
+    "start": 148.333,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s068",
+   "template": "media-text",
+   "duration": 0.233,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 149.567,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S51",
+    "start": 149.567,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s069",
+   "template": "media-text",
+   "duration": 0.567,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 149.8,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S52",
+    "start": 149.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s070",
+   "template": "media-text",
+   "duration": 1.266,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 150.367,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S53",
+    "start": 150.367,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s071",
+   "template": "media-text",
+   "duration": 2.434,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 151.633,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S53",
+    "start": 151.633,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s072",
+   "template": "media-text",
+   "duration": 1.233,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 154.067,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S55",
+    "start": 154.067,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s073",
+   "template": "ui-window",
+   "duration": 0.667,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#1a0a12",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 230,
+    "title": "CLASS: sentence",
+    "lines": "I'M NOT A HACKER, I'M"
+   },
+   "ref": {
+    "shot": "S55",
+    "start": 155.3,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s074",
+   "template": "media-text",
+   "duration": 1.8,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 155.967,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S56",
+    "start": 155.967,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s075",
+   "template": "media-text",
+   "duration": 3.733,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 157.767,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S57",
+    "start": 157.767,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s076",
+   "template": "media-text",
+   "duration": 1.267,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 161.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S58",
+    "start": 161.5,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s077",
+   "template": "media-text",
+   "duration": 0.033,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 162.767,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S59",
+    "start": 162.767,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s078",
+   "template": "ui-window",
+   "duration": 0.767,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 160,
+    "title": "INSTRUCTIONS",
+    "lines": "",
+    "big": "INSTRUCTIONS"
+   },
+   "ref": {
+    "shot": "S59",
+    "start": 162.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s079",
+   "template": "media-text",
+   "duration": 1.233,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 163.567,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S60",
+    "start": 163.567,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s080",
+   "template": "media-text",
+   "duration": 0.567,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 164.8,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S61",
+    "start": 164.8,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s081",
+   "template": "media-text",
+   "duration": 2.133,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 165.367,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S62",
+    "start": 165.367,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s082",
+   "template": "media-text",
+   "duration": 0.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 167.5,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S63",
+    "start": 167.5,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s083",
+   "template": "media-text",
+   "duration": 1.233,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 167.9,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S64",
+    "start": 167.9,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s084",
+   "template": "media-text",
+   "duration": 1.267,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 169.133,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S64",
+    "start": 169.133,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s085",
+   "template": "ui-window",
+   "duration": 0.567,
+   "params": {
+    "look": "brutal",
+    "accent": "#ff3d8b",
+    "bg": "#ff3d8b",
+    "panel": "#f2f0e8",
+    "font": "JetBrainsMono",
+    "size": 46,
+    "w": 0.92,
+    "y": 0.42,
+    "bigSize": 200,
+    "title": "KINGDOM STORE · ORDER",
+    "lines": "1 × cozy-reads $1.00\n1 × your inbox $0.00",
+    "big": "GETTING"
+   },
+   "ref": {
+    "shot": "S65",
+    "start": 170.4,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s086",
+   "template": "media-text",
+   "duration": 3.4,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 170.967,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S66",
+    "start": 170.967,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s087",
+   "template": "media-text",
+   "duration": 2.9,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 174.367,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S67",
+    "start": 174.367,
+    "family": "graphic"
+   }
+  },
+  {
+   "id": "s088",
+   "template": "media-text",
+   "duration": 0.466,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 177.267,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S68",
+    "start": 177.267,
+    "family": "montage"
+   }
+  },
+  {
+   "id": "s089",
+   "template": "media-text",
+   "duration": 4.0672,
+   "params": {
+    "media": "ref:yt-4Q-o_ylnVnc",
+    "mediaStart": 177.733,
+    "style": "aucun"
+   },
+   "ref": {
+    "shot": "S68",
+    "start": 177.733,
+    "family": "montage"
+   }
+  }
+ ],
+ "id": "yt-4q-o-ylnvnc-motion",
+ "updated": "15 October 2026, 14:34",
+ "versionNote": "avant la base motion du 15 octobre",
+ "versionSaved": "15 October 2026, 15:19",
+ "version": "V_006"
+}
